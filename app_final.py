@@ -1157,7 +1157,7 @@ elif page == "Case Explorer":
             """, unsafe_allow_html=True)
 
         # SHAP Waterfall
-        st.markdown('<div class="sub-header">Why This Prediction?</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sub-header">Seeing it graphically</div>', unsafe_allow_html=True)
 
         base_val = explainer.expected_value
         if isinstance(base_val, (list, np.ndarray)):
