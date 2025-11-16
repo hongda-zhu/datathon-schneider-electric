@@ -3,82 +3,83 @@
   "prediction": {
     "predicted_outcome": "Win",
     "actual_outcome": "Win",
-    "win_probability": 0.5043442249298096,
-    "threshold": 0.31458529829978943,
+    "win_probability": 0.28325775265693665,
+    "threshold": 0.2624979317188263,
     "confidence": "Low"
   },
   "key_features": {
     "customer_activity": -0.37612666666666666,
     "total_competitors": 0.0,
-    "opp_old": -0.28185,
     "cust_hitrate": -1.05056,
-    "product_A_ratio": 0.5582714034107994
+    "product_A_ratio": 0.5582714034107994,
+    "opp_quality_score": -0.20469743863568018
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": 0.017377950251102448,
+    "base_value": 0.06737297773361206,
+    "prediction_value": -0.9283589124679565,
     "top_positive_factors": [
       {
         "feature": "hitrate_contracts",
-        "shap_value": 0.3988887667655945,
+        "shap_value": 0.2625812590122223,
         "explanation": "Hitrate Contracts"
       },
       {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.25070905685424805,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.2410181760787964,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
         "feature": "opp_quality_score",
-        "shap_value": 0.1297919899225235,
+        "shap_value": 0.1980159431695938,
         "explanation": "Score agregado de calidad de oportunidad"
       },
       {
+        "feature": "product_A_ratio",
+        "shap_value": 0.1313924491405487,
+        "explanation": "Peso de ventas históricas de Product A"
+      },
+      {
         "feature": "opp_old",
-        "shap_value": 0.11880841106176376,
-        "explanation": "Antig\u00fcedad de la oportunidad"
+        "shap_value": 0.09000995010137558,
+        "explanation": "Antigüedad de la oportunidad"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.05330027639865875,
+        "explanation": "Riesgo asociado a la competencia"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "cust_hitrate",
-        "shap_value": -0.4002377390861511,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+        "shap_value": -0.3725321888923645,
+        "explanation": "Tasa de éxito histórica con el cliente"
       },
       {
         "feature": "customer_activity",
-        "shap_value": -0.29768386483192444,
+        "shap_value": -0.35614851117134094,
         "explanation": "Nivel global de actividad del cliente"
       },
       {
         "feature": "customer_engagement",
-        "shap_value": -0.27476826310157776,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.2535620927810669,
-        "explanation": "Contract Hitrate Ratio"
+        "shap_value": -0.3518607020378113,
+        "explanation": "Interacciones y calidad de relación con el cliente"
       },
       {
         "feature": "iberia_engagement",
-        "shap_value": -0.14926569163799286,
+        "shap_value": -0.15072937309741974,
         "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": -0.1448439508676529,
+        "explanation": "Número de contratos con el cliente"
       }
     ]
   },
   "business_recommendation": {
-    "action": "Nurture",
-    "priority": "Medium",
+    "action": "Re-evaluate",
+    "priority": "Low",
     "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
+      "Address the low customer hit rate by identifying and mitigating the reasons for past losses with this customer, potentially through tailored solutions or competitive pricing.",
+      "Improve customer engagement by proactively reaching out to key stakeholders with valuable insights and resources related to their specific needs, aiming to increase their activity and interest.",
+      "Leverage the high hit rate on similar contracts to highlight successful case studies and demonstrate the value proposition of Schneider Electric's solutions, specifically emphasizing the benefits of product A."
+    ],
+    "ai_generated": true
   }
 }

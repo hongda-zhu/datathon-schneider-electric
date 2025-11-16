@@ -3,72 +3,72 @@
   "prediction": {
     "predicted_outcome": "Win",
     "actual_outcome": "Loss",
-    "win_probability": 0.47501450777053833,
-    "threshold": 0.31458529829978943,
-    "confidence": "Low"
+    "win_probability": 0.5835632681846619,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
   },
   "key_features": {
     "customer_activity": -0.6462933333333333,
     "total_competitors": 2.0,
-    "opp_old": 3.54793,
     "cust_hitrate": -0.90721,
-    "product_A_ratio": 0.42830306825297426
+    "product_A_ratio": 0.42830306825297426,
+    "opp_quality_score": -0.2947297726988103
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": -0.10002521425485611,
+    "base_value": 0.06737297773361206,
+    "prediction_value": 0.3374195694923401,
     "top_positive_factors": [
       {
         "feature": "iberia_engagement",
-        "shap_value": 0.6828126907348633,
+        "shap_value": 0.9393351078033447,
         "explanation": "Engagement de clientes de Iberia"
       },
       {
         "feature": "customer_activity",
-        "shap_value": 0.5606248378753662,
+        "shap_value": 0.5543191432952881,
         "explanation": "Nivel global de actividad del cliente"
       },
       {
+        "feature": "customer_engagement",
+        "shap_value": 0.32092881202697754,
+        "explanation": "Interacciones y calidad de relación con el cliente"
+      },
+      {
         "feature": "contract_hitrate_ratio",
-        "shap_value": 0.3371913731098175,
+        "shap_value": 0.29115334153175354,
         "explanation": "Contract Hitrate Ratio"
       },
       {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.24254630506038666,
-        "explanation": "Hitrate Contracts"
-      },
-      {
         "feature": "cust_interactions",
-        "shap_value": 0.1887466460466385,
-        "explanation": "N\u00famero de interacciones con el cliente"
+        "shap_value": 0.2662155032157898,
+        "explanation": "Número de interacciones con el cliente"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "opp_old",
-        "shap_value": -0.6556462645530701,
-        "explanation": "Antig\u00fcedad de la oportunidad"
+        "shap_value": -0.6472136974334717,
+        "explanation": "Antigüedad de la oportunidad"
       },
       {
         "feature": "competition_engagement",
-        "shap_value": -0.43440359830856323,
+        "shap_value": -0.4758349359035492,
         "explanation": "Competition Engagement"
       },
       {
         "feature": "total_competitors",
-        "shap_value": -0.3168327212333679,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": -0.22964785993099213,
-        "explanation": "Opp Age Squared"
+        "shap_value": -0.3288111388683319,
+        "explanation": "Número total de competidores presentes"
       },
       {
         "feature": "competitor_Z",
-        "shap_value": -0.21201330423355103,
+        "shap_value": -0.3112955391407013,
         "explanation": "Competitor Z"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.21884208917617798,
+        "explanation": "Opp Age Squared"
       }
     ]
   },
@@ -76,7 +76,7 @@
     "action": "Nurture",
     "priority": "Medium",
     "next_steps": [
-      "Increase touchpoints and engagement",
+      "Leverage existing engagement",
       "Maintain momentum with key stakeholders",
       "Monitor competitive landscape and adjust pricing/offer."
     ]

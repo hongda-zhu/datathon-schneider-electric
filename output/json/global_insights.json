@@ -1,54 +1,117 @@
 {
   "model_performance": {
-    "threshold": 0.31458529829978943,
-    "f1_score": 0.8343475321162948,
-    "auc": 0.9211501440923088,
-    "precision": 0.7679860592481952,
-    "recall": 0.9132622853759621,
-    "accuracy": 0.8293871866295265
+    "threshold": 0.2624979317188263,
+    "f1_score": 0.8369507676019058,
+    "auc": 0.9219260047919686,
+    "precision": 0.7568214456677836,
+    "recall": 0.9360568383658969,
+    "accuracy": 0.8284122562674094
   },
   "feature_importance_top20": {
-    "opp_old": 0.2220253199338913,
-    "opp_age_squared": 0.19357720017433167,
-    "cust_hitrate": 0.03474123775959015,
-    "competitor_diversity": 0.0320499986410141,
-    "product_A_recommended": 0.024918876588344574,
-    "iberia_competition": 0.02193238027393818,
-    "hitrate_interaction": 0.02051543816924095,
-    "competition_engagement": 0.02012774907052517,
-    "product_count": 0.020084736868739128,
-    "competition_risk": 0.019014010205864906,
-    "product_A": 0.018757246434688568,
-    "total_competitors": 0.01826263777911663,
-    "product_C": 0.018237654119729996,
-    "product_A_ratio": 0.018219584599137306,
-    "product_A_sold_in_the_past": 0.018185492604970932,
-    "contract_hitrate_ratio": 0.016940660774707794,
-    "cust_interactions": 0.016691727563738823,
-    "opp_maturity": 0.01652088388800621,
-    "competitor_Z": 0.016384882852435112,
-    "customer_engagement": 0.015808286145329475
+    "opp_maturity": 0.3165907561779022,
+    "opp_age_squared": 0.2509899139404297,
+    "opp_old": 0.09197305887937546,
+    "competitor_diversity": 0.02330554462969303,
+    "cust_hitrate": 0.018840305507183075,
+    "product_A_recommended": 0.016100646927952766,
+    "iberia_competition": 0.012225698679685593,
+    "competition_risk": 0.011464519426226616,
+    "product_A_ratio": 0.011326845735311508,
+    "has_past_sales": 0.011319427751004696,
+    "competition_engagement": 0.011155975051224232,
+    "customer_engagement": 0.010763335973024368,
+    "product_A": 0.010657315142452717,
+    "total_competitors": 0.010490114800632,
+    "cust_interactions": 0.010291855782270432,
+    "product_A_sold_in_the_past": 0.010209289379417896,
+    "competitor_Z": 0.00997160468250513,
+    "contract_hitrate_ratio": 0.009884442202746868,
+    "product_C": 0.00946264062076807,
+    "customer_activity": 0.009392735548317432
   },
   "prediction_distribution": {
     "total_samples": 7180,
-    "predicted_wins": 4017,
-    "predicted_losses": 3163,
-    "win_rate": 0.5594707520891364,
-    "avg_win_probability": 0.8034825921058655,
-    "avg_loss_probability": 0.06996280699968338
+    "predicted_wins": 4178,
+    "predicted_losses": 3002,
+    "win_rate": 0.5818941504178273,
+    "avg_win_probability": 0.7851972579956055,
+    "avg_loss_probability": 0.05729503557085991,
+    "probability_buckets": {
+      "Low": 3110,
+      "Medium": 571,
+      "High": 612,
+      "Very High": 2887
+    }
+  },
+  "feature_statistics": {
+    "customer_activity": {
+      "median": -0.036939999999999994,
+      "p25": -0.4428066666666666,
+      "p75": 0.2961533333333334
+    },
+    "total_competitors": {
+      "median": 0.0,
+      "p25": 0.0,
+      "p75": 1.0
+    },
+    "cust_hitrate": {
+      "median": -0.21872,
+      "p25": -0.93024,
+      "p75": 0.84372
+    },
+    "cust_interactions": {
+      "median": -0.43173,
+      "p25": -0.6817,
+      "p75": 0.36166
+    },
+    "opp_quality_score": {
+      "median": 0.11948722730118971,
+      "p25": -0.2271390226988103,
+      "p75": 0.5658317980812652
+    }
+  },
+  "shap_drivers": {
+    "top_positive": [
+      {
+        "feature": "hitrate_contracts",
+        "mean_shap": 0.014435297809541225
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "mean_shap": 0.016058553010225296
+      },
+      {
+        "feature": "total_past_sales",
+        "mean_shap": 0.028473131358623505
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "cust_interactions",
+        "mean_shap": -0.06803100556135178
+      },
+      {
+        "feature": "opp_old",
+        "mean_shap": -0.05378417670726776
+      },
+      {
+        "feature": "cust_hitrate",
+        "mean_shap": -0.04202849045395851
+      }
+    ]
   },
   "business_insights": [
-    "Customer engagement (activity + hitrate + interactions) is the strongest driver of wins.",
-    "High competitor presence and diversity significantly reduces win probability.",
-    "Opportunities with balanced age (not too new, not too old) show better conversion.",
-    "Historical success with Product A is a strong predictor of future wins.",
-    "Iberia customers behave differently and deserve a tailored strategy."
+    "Opportunity maturity and age are strong indicators, suggesting timing and deal progression are critical factors in our win/loss prediction. Focusing on early-stage qualification and proactively managing longer sales cycles is essential for optimizing win rates.",
+    "A high customer hit rate (cust_hitrate) is a positive signal, but its relative importance in the model is lower than opportunity age. This implies a greater focus on proactive opportunity management than simply relying on existing customer relationships.",
+    "Competitor diversity (competitor_diversity), iberia_competition, and competition_risk, as top features, emphasize the importance of understanding the competitive landscape. Knowing who we're competing against and the risks they pose is vital for successful bidding.",
+    "The prominence of product_A_recommended and product_A_ratio suggests a strong correlation between offering Product A and opportunity success. This highlights the importance of understanding the reasons behind Product A's strong performance and replicating these successes across other offerings.",
+    "While we have a high win rate (58.2%) and excellent AUC (0.922), the recall (0.936) indicates the model effectively identifies winning opportunities. However, the lower precision (0.757) suggests that a portion of predicted wins are actually losses, signaling a need for further refinements in win prediction."
   ],
   "recommendations": [
-    "Prioritize opportunities with high customer_activity and customer_engagement.",
-    "Act early on deals with multiple competitors to avoid losing momentum.",
-    "Leverage historical product_A_sold_in_the_past to design cross-sell strategies.",
-    "De-prioritize very old, low-engagement opportunities (low opp_quality_score).",
-    "Increase touchpoints for medium-probability deals to push them into high-probability segment."
+    "Develop stricter opportunity qualification criteria, especially for older opportunities (opp_age_squared, opp_old) and establish clear milestones to drive deals forward. Implement a standardized opportunity health check process at various maturity stages to mitigate risk.",
+    "Invest in competitive intelligence to better understand competitor strategies and develop tailored value propositions. Focus on regions like Iberia (iberia_competition) that are particularly competitive, and ensure competitive risk is proactively managed.",
+    "Analyze why Product A (product_A_recommended, product_A_ratio) performs so well and replicate its success by incorporating similar features and benefits into other product offerings. Consider bundling product A or leveraging it as a loss leader to capture market share.",
+    "Create targeted sales plays for different customer segments, focusing on those with a lower historical win rate (cust_hitrate). Tailor our approach to address their specific needs and build confidence in our solutions through targeted demonstrations and references.",
+    "Refine the AI model by incorporating additional features that could improve precision without sacrificing recall, focusing on distinguishing factors between predicted wins and actual losses. Explore features related to negotiation tactics, price competitiveness, and executive engagement."
   ]
 }

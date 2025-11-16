@@ -3,72 +3,72 @@
   "prediction": {
     "predicted_outcome": "Win",
     "actual_outcome": "Loss",
-    "win_probability": 0.6598348021507263,
-    "threshold": 0.31458529829978943,
-    "confidence": "Medium"
+    "win_probability": 0.6348108053207397,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
   },
   "key_features": {
     "customer_activity": 0.66662,
     "total_competitors": 0.0,
-    "opp_old": -0.28185,
     "cust_hitrate": 1.12382,
-    "product_A_ratio": 0.4505694523896198
+    "product_A_ratio": 0.4505694523896198,
+    "opp_quality_score": 0.7173597809558478
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": 0.6625580191612244,
+    "base_value": 0.06737297773361206,
+    "prediction_value": 0.5529110431671143,
     "top_positive_factors": [
       {
-        "feature": "cust_hitrate",
-        "shap_value": 0.6053935289382935,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.28637465834617615,
-        "explanation": "Opp Month"
-      },
-      {
         "feature": "contract_hitrate_ratio",
-        "shap_value": 0.22088895738124847,
+        "shap_value": 0.43781760334968567,
         "explanation": "Contract Hitrate Ratio"
       },
       {
-        "feature": "customer_activity",
-        "shap_value": 0.17729337513446808,
-        "explanation": "Nivel global de actividad del cliente"
+        "feature": "cust_hitrate",
+        "shap_value": 0.3572554886341095,
+        "explanation": "Tasa de éxito histórica con el cliente"
       },
       {
-        "feature": "customer_engagement",
-        "shap_value": 0.1728970855474472,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+        "feature": "opp_month",
+        "shap_value": 0.23349806666374207,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.17023104429244995,
+        "explanation": "Número de contratos con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.13410411775112152,
+        "explanation": "Número de interacciones con el cliente"
       }
     ],
     "top_negative_factors": [
       {
-        "feature": "product_A_ratio",
-        "shap_value": -0.2290777713060379,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.18873444199562073,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
         "feature": "opp_quality_score",
-        "shap_value": -0.18407393991947174,
+        "shap_value": -0.2673950493335724,
         "explanation": "Score agregado de calidad de oportunidad"
       },
       {
-        "feature": "total_past_sales",
-        "shap_value": -0.1576433628797531,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
+        "feature": "product_A_ratio",
+        "shap_value": -0.2630898952484131,
+        "explanation": "Peso de ventas históricas de Product A"
       },
       {
-        "feature": "cust_contracts",
-        "shap_value": -0.14576946198940277,
-        "explanation": "N\u00famero de contratos con el cliente"
+        "feature": "customer_engagement",
+        "shap_value": -0.1138419583439827,
+        "explanation": "Interacciones y calidad de relación con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.11223254352807999,
+        "explanation": "Volumen total de ventas históricas"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.08780791610479355,
+        "explanation": "Cust In Iberia"
       }
     ]
   },

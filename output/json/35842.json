@@ -3,72 +3,72 @@
   "prediction": {
     "predicted_outcome": "Win",
     "actual_outcome": "Win",
-    "win_probability": 0.992026150226593,
-    "threshold": 0.31458529829978943,
+    "win_probability": 0.9932582378387451,
+    "threshold": 0.2624979317188263,
     "confidence": "High"
   },
   "key_features": {
     "customer_activity": 0.23308333333333334,
     "total_competitors": 1.0,
-    "opp_old": -0.28185,
     "cust_hitrate": 1.73092,
-    "product_A_ratio": 0.4814135689281547
+    "product_A_ratio": 0.4814135689281547,
+    "opp_quality_score": 0.7817664275712619
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": 4.823582649230957,
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.992671489715576,
     "top_positive_factors": [
       {
         "feature": "cust_hitrate",
-        "shap_value": 1.466554880142212,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+        "shap_value": 1.0117782354354858,
+        "explanation": "Tasa de éxito histórica con el cliente"
       },
       {
         "feature": "product_A_ratio",
-        "shap_value": 0.8868585228919983,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+        "shap_value": 0.7651406526565552,
+        "explanation": "Peso de ventas históricas de Product A"
       },
       {
         "feature": "customer_engagement",
-        "shap_value": 0.41659361124038696,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+        "shap_value": 0.7187708616256714,
+        "explanation": "Interacciones y calidad de relación con el cliente"
       },
       {
-        "feature": "competition_engagement",
-        "shap_value": 0.39327946305274963,
-        "explanation": "Competition Engagement"
+        "feature": "opp_quality_score",
+        "shap_value": 0.5295271277427673,
+        "explanation": "Score agregado de calidad de oportunidad"
       },
       {
         "feature": "cust_interactions",
-        "shap_value": 0.3351289629936218,
-        "explanation": "N\u00famero de interacciones con el cliente"
+        "shap_value": 0.39668092131614685,
+        "explanation": "Número de interacciones con el cliente"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "opp_month",
-        "shap_value": -0.22518956661224365,
+        "shap_value": -0.1146969422698021,
         "explanation": "Opp Month"
       },
       {
         "feature": "competitor_Y",
-        "shap_value": -0.0708414763212204,
+        "shap_value": -0.10808537900447845,
         "explanation": "Competitor Y"
       },
       {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.016165796667337418,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
         "feature": "cust_in_iberia",
-        "shap_value": -0.031040798872709274,
+        "shap_value": -0.016088875010609627,
         "explanation": "Cust In Iberia"
       },
       {
         "feature": "competitor_Z",
-        "shap_value": -0.02757963538169861,
+        "shap_value": -0.01091146282851696,
         "explanation": "Competitor Z"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.010153606534004211,
-        "explanation": "Product A Sold In The Past"
       }
     ]
   },

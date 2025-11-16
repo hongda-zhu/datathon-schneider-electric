@@ -3,72 +3,72 @@
   "prediction": {
     "predicted_outcome": "Loss",
     "actual_outcome": "Loss",
-    "win_probability": 0.11580228060483932,
-    "threshold": 0.31458529829978943,
-    "confidence": "High"
+    "win_probability": 0.09017922729253769,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
   },
   "key_features": {
     "customer_activity": -0.3738333333333334,
     "total_competitors": 1.0,
-    "opp_old": -0.28185,
     "cust_hitrate": -0.40501,
-    "product_A_ratio": 0.42830306825297426
+    "product_A_ratio": 0.42830306825297426,
+    "opp_quality_score": -0.062331772698810295
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": -2.0327954292297363,
+    "base_value": 0.06737297773361206,
+    "prediction_value": -2.311450242996216,
     "top_positive_factors": [
       {
         "feature": "contract_hitrate_ratio",
-        "shap_value": 0.18990342319011688,
+        "shap_value": 0.20145487785339355,
         "explanation": "Contract Hitrate Ratio"
       },
       {
         "feature": "opp_old",
-        "shap_value": 0.11604446917772293,
-        "explanation": "Antig\u00fcedad de la oportunidad"
+        "shap_value": 0.09255974739789963,
+        "explanation": "Antigüedad de la oportunidad"
       },
       {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.10559915006160736,
-        "explanation": "Cust In Iberia"
+        "feature": "hitrate_contracts",
+        "shap_value": 0.0555303618311882,
+        "explanation": "Hitrate Contracts"
       },
       {
         "feature": "total_past_sales",
-        "shap_value": 0.05900178104639053,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
+        "shap_value": 0.05199512839317322,
+        "explanation": "Volumen total de ventas históricas"
       },
       {
-        "feature": "customer_engagement",
-        "shap_value": 0.04476643726229668,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+        "feature": "iberia_competition",
+        "shap_value": 0.03275703638792038,
+        "explanation": "Competencia en clientes de Iberia"
       }
     ],
     "top_negative_factors": [
       {
-        "feature": "competition_engagement",
-        "shap_value": -0.38039976358413696,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.3670254349708557,
-        "explanation": "N\u00famero de interacciones con el cliente"
+        "feature": "customer_activity",
+        "shap_value": -0.471832811832428,
+        "explanation": "Nivel global de actividad del cliente"
       },
       {
         "feature": "competition_risk",
-        "shap_value": -0.36550092697143555,
+        "shap_value": -0.42818683385849,
         "explanation": "Riesgo asociado a la competencia"
       },
       {
-        "feature": "cust_hitrate",
-        "shap_value": -0.33932092785835266,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+        "feature": "competition_engagement",
+        "shap_value": -0.34276604652404785,
+        "explanation": "Competition Engagement"
       },
       {
         "feature": "opp_quality_score",
-        "shap_value": -0.31174761056900024,
+        "shap_value": -0.31512847542762756,
         "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.3138284683227539,
+        "explanation": "Competitor Z"
       }
     ]
   },

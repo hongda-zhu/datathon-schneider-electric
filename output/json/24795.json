@@ -3,72 +3,72 @@
   "prediction": {
     "predicted_outcome": "Loss",
     "actual_outcome": "Loss",
-    "win_probability": 0.020647814497351646,
-    "threshold": 0.31458529829978943,
-    "confidence": "High"
+    "win_probability": 0.023720404133200645,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
   },
   "key_features": {
     "customer_activity": 0.014423333333333342,
     "total_competitors": 1.0,
-    "opp_old": -0.28185,
     "cust_hitrate": 0.55049,
-    "product_A_ratio": 0.42830306825297426
+    "product_A_ratio": 0.42830306825297426,
+    "opp_quality_score": 0.3407952273011897
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": -3.8592820167541504,
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.7174148559570312,
     "top_positive_factors": [
       {
-        "feature": "cust_hitrate",
-        "shap_value": 0.07774041593074799,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+        "feature": "opp_old",
+        "shap_value": 0.055086854845285416,
+        "explanation": "Antigüedad de la oportunidad"
       },
       {
-        "feature": "opp_old",
-        "shap_value": 0.07209951430559158,
-        "explanation": "Antig\u00fcedad de la oportunidad"
+        "feature": "cust_hitrate",
+        "shap_value": 0.043973278254270554,
+        "explanation": "Tasa de éxito histórica con el cliente"
       },
       {
         "feature": "total_competitors",
-        "shap_value": 0.0636356845498085,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": 0.020824218168854713,
-        "explanation": "Competencia en clientes de Iberia"
+        "shap_value": 0.041397083550691605,
+        "explanation": "Número total de competidores presentes"
       },
       {
         "feature": "hitrate_interaction",
-        "shap_value": 0.020414108410477638,
+        "shap_value": 0.030559398233890533,
         "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.026909710839390755,
+        "explanation": "Volumen total de ventas históricas"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "competition_risk",
-        "shap_value": -1.3299838304519653,
+        "shap_value": -1.2040094137191772,
         "explanation": "Riesgo asociado a la competencia"
       },
       {
         "feature": "cust_interactions",
-        "shap_value": -0.6153219938278198,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.5083572268486023,
-        "explanation": "Nivel global de actividad del cliente"
+        "shap_value": -0.6920620203018188,
+        "explanation": "Número de interacciones con el cliente"
       },
       {
         "feature": "opp_month",
-        "shap_value": -0.44161751866340637,
+        "shap_value": -0.38227444887161255,
         "explanation": "Opp Month"
       },
       {
-        "feature": "cust_contracts",
-        "shap_value": -0.22717095911502838,
-        "explanation": "N\u00famero de contratos con el cliente"
+        "feature": "customer_activity",
+        "shap_value": -0.3698987662792206,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.224060520529747,
+        "explanation": "Competition Engagement"
       }
     ]
   },
