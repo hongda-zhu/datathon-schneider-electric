@@ -1071,40 +1071,46 @@ elif page == "Case Explorer":
         # Key features
         #st.markdown('<div class="sub-header">Key Features for This Opportunity</div>', unsafe_allow_html=True)
         if case_json:
-            key_feats = case_json["key_features"]
-            feature_stats = global_insights.get("feature_statistics", {})
+            try:
+                key_feats = case_json["key_features"]
+                feature_stats = global_insights.get("feature_statistics", {})
 
-            col1, col2, col3 = st.columns(3)
+                col1, col2, col3 = st.columns(3)
 
-            # Customer Activity
-            cust_act_val = key_feats['customer_activity']
-            cust_act_label, _ = get_feature_context("customer_activity", cust_act_val, feature_stats)
-            col1.metric(
-                translate_feature("customer_activity"),
-                f"{cust_act_val:.3f}",
-                delta=cust_act_label if cust_act_label else None,
-                help="Customer activity level (average of hit rate, interactions, and contracts)"
-            )
+                # Customer Activity
+                cust_act_val = key_feats['customer_activity']
+                cust_act_label, _ = get_feature_context("customer_activity", cust_act_val, feature_stats)
+                col1.metric(
+                    translate_feature("customer_activity"),
+                    f"{cust_act_val:.3f}",
+                    delta=cust_act_label if cust_act_label else None,
+                    help="Customer activity level (average of hit rate, interactions, and contracts)"
+                )
 
-            # Total Competitors
-            comp_val = key_feats['total_competitors']
-            comp_label, _ = get_feature_context("total_competitors", comp_val, feature_stats)
-            col2.metric(
-                translate_feature("total_competitors"),
-                f"{comp_val:.0f}",
-                delta=comp_label if comp_label else None,
-                help="Total number of competitors present in this opportunity"
-            )
+                # Total Competitors
+                comp_val = key_feats['total_competitors']
+                comp_label, _ = get_feature_context("total_competitors", comp_val, feature_stats)
+                col2.metric(
+                    translate_feature("total_competitors"),
+                    f"{comp_val:.0f}",
+                    delta=comp_label if comp_label else None,
+                    help="Total number of competitors present in this opportunity"
+                )
 
-            # Opportunity Quality Score
-            opp_quality_val = key_feats['opp_quality_score']
-            opp_quality_label, _ = get_feature_context("opp_quality_score", opp_quality_val, feature_stats)
-            col3.metric(
-                translate_feature("opp_quality_score"),
-                f"{opp_quality_val:.3f}",
-                delta=opp_quality_label if opp_quality_label else None,
-                help="Composite quality score based on customer activity, hit rate, and Product A affinity. Higher is better."
-            )
+                # Opportunity Quality Score
+                opp_quality_val = key_feats['opp_quality_score']
+                opp_quality_label, _ = get_feature_context("opp_quality_score", opp_quality_val, feature_stats)
+                col3.metric(
+                    translate_feature("opp_quality_score"),
+                    f"{opp_quality_val:.3f}",
+                    delta=opp_quality_label if opp_quality_label else None,
+                    help="Composite quality score based on customer activity, hit rate, and Product A affinity. Higher is better."
+                )
+            except Exception as e:
+                st.error(f"Error loading key features: {str(e)}")
+                st.write(f"Debug - case_json keys: {list(case_json.keys()) if case_json else 'None'}")
+        else:
+            st.warning("Case data not available. JSON file may be missing.")
 
         # Top SHAP Factors
         if case_json and "shap_analysis" in case_json:
