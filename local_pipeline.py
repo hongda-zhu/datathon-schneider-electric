@@ -684,7 +684,7 @@ print(f"  Accuracy  : {acc:.4f}")
 
 print("\nGenerated Files:")
 print("  - output/json/global_insights.json")
-print("  - output/json/[id].json  (primeros 300 opportunities)")
+print("  - output/json/[id].json  (todos los opportunities del set de test)")
 print("  - output/images/shap_summary.png")
 print("  - output/images/feature_importance.png")
 print("  - output/images/probability_distribution.png")
