@@ -990,8 +990,8 @@ elif page == "Case Explorer":
 
         # Prediction results
         st.markdown('<div class="sub-header">Prediction Results</div>', unsafe_allow_html=True)
-        col1, col2, col3, col4 = st.columns(4)
-        col1.metric("Opportunity ID", str(case_id))
+        col2, col3, col4 = st.columns(3)
+        #col1.metric("Opportunity ID", str(case_id))
         col2.metric(
             "Win Probability",
             f"{prob:.1%}",
