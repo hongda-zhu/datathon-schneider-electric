@@ -930,28 +930,42 @@ if page == "Global Insights":
     else:
         st.info("SHAP summary image not found. Please regenerate it from the Colab notebook.")
 
-    # Data dictionary drivers
     # SHAP drivers textual summary
     if "shap_drivers" in global_insights:
         st.markdown("**Key Drivers:**")
 
-        col_pos, col_neg = st.columns(2)
+        # Build HTML for positive drivers
+        positive_drivers_html = ""
+        for driver in global_insights["shap_drivers"]["top_positive"]:
+            feat_name = translate_feature(driver["feature"])
+            shap_val = driver["mean_shap"]
+            positive_drivers_html += f"• <strong>{feat_name}</strong> (+{shap_val:.3f})<br>"
 
-        with col_pos:
-            st.markdown("**Increase Win Chance:**")
-            for driver in global_insights["shap_drivers"]["top_positive"]:
-                feat_name = translate_feature(driver["feature"])
-                shap_val = driver["mean_shap"]
-                st.markdown(f"- **{feat_name}** (+{shap_val:.3f})")
+        # Build HTML for negative drivers
+        negative_drivers_html = ""
+        for driver in global_insights["shap_drivers"]["top_negative"]:
+            feat_name = translate_feature(driver["feature"])
+            shap_val = driver["mean_shap"]
+            negative_drivers_html += f"• <strong>{feat_name}</strong> ({shap_val:.3f})<br>"
 
-        with col_neg:
-            st.markdown("**Decrease Win Chance:**")
-            for driver in global_insights["shap_drivers"]["top_negative"]:
-                feat_name = translate_feature(driver["feature"])
-                shap_val = driver["mean_shap"]
-                st.markdown(f"- **{feat_name}** ({shap_val:.3f})")
-
-        st.caption("Average SHAP values across all opportunities. Positive values push predictions toward win, negative values toward loss.")
+        st.markdown(f"""
+        <div class="insight-box">
+        <table width="100%">
+        <tr>
+        <td width="50%" valign="top">
+        <strong>Increase Win Chance:</strong><br><br>
+        {positive_drivers_html}
+        </td>
+        <td width="50%" valign="top">
+        <strong>Decrease Win Chance:</strong><br><br>
+        {negative_drivers_html}
+        </td>
+        </tr>
+        </table>
+        <br>
+        <em>Average SHAP values across all opportunities. Positive values push predictions toward win, negative values toward loss.</em>
+        </div>
+        """, unsafe_allow_html=True)
 
 
 # ============================================================
@@ -1091,26 +1105,41 @@ elif page == "Case Explorer":
         if case_json and "shap_analysis" in case_json:
             st.markdown('<div class="sub-header">Key Drivers for This Opportunity</div>', unsafe_allow_html=True)
 
-            col_win, col_loss = st.columns(2)
+            # Build HTML for positive factors
+            positive_html = ""
+            for factor in case_json["shap_analysis"]["top_positive_factors"][:3]:
+                feat_name = translate_feature(factor["feature"])
+                shap_val = factor["shap_value"]
+                positive_html += f"• <strong>{feat_name}</strong> (+{shap_val:.3f})<br>"
 
-            with col_win:
-                st.markdown("**What Pushes Toward Win:**")
-                for factor in case_json["shap_analysis"]["top_positive_factors"][:3]:
+            # Build HTML for negative factors
+            negative_html = ""
+            if case_json["shap_analysis"]["top_negative_factors"]:
+                for factor in case_json["shap_analysis"]["top_negative_factors"][:3]:
                     feat_name = translate_feature(factor["feature"])
                     shap_val = factor["shap_value"]
-                    st.markdown(f"- **{feat_name}** (+{shap_val:.3f})")
+                    negative_html += f"• <strong>{feat_name}</strong> ({shap_val:.3f})<br>"
+            else:
+                negative_html = "• <em>No significant negative factors</em><br>"
 
-            with col_loss:
-                st.markdown("**What Holds It Back:**")
-                if case_json["shap_analysis"]["top_negative_factors"]:
-                    for factor in case_json["shap_analysis"]["top_negative_factors"][:3]:
-                        feat_name = translate_feature(factor["feature"])
-                        shap_val = factor["shap_value"]
-                        st.markdown(f"- **{feat_name}** ({shap_val:.3f})")
-                else:
-                    st.markdown("- *No significant negative factors*")
-
-            st.caption("SHAP values show how each feature affects this specific prediction. Larger absolute values = stronger influence.")
+            st.markdown(f"""
+            <div class="insight-box">
+            <table width="100%">
+            <tr>
+            <td width="50%" valign="top">
+            <strong>What Pushes Toward Win:</strong><br><br>
+            {positive_html}
+            </td>
+            <td width="50%" valign="top">
+            <strong>What Holds It Back:</strong><br><br>
+            {negative_html}
+            </td>
+            </tr>
+            </table>
+            <br>
+            <em>SHAP values show how each feature affects this specific prediction. Larger absolute values = stronger influence.</em>
+            </div>
+            """, unsafe_allow_html=True)
 
         # SHAP Waterfall
         st.markdown('<div class="sub-header">Why This Prediction?</div>', unsafe_allow_html=True)
@@ -1170,16 +1199,19 @@ elif page == "Case Explorer":
             st.markdown('<div class="sub-header">🎯 Recommended Action</div>', unsafe_allow_html=True)
             rec = case_json["business_recommendation"]
 
+            # Build next steps HTML
+            next_steps_html = ""
+            for i, step in enumerate(rec['next_steps'], 1):
+                next_steps_html += f"{i}. {step}<br>"
+
             st.markdown(f"""
             <div class='success-box'>
             <strong>Recommended Action:</strong> {rec['action']}<br>
-            <strong>Priority Level:</strong> {rec['priority']}
+            <strong>Priority Level:</strong> {rec['priority']}<br><br>
+            <strong>Next Steps:</strong><br>
+            {next_steps_html}
             </div>
             """, unsafe_allow_html=True)
-
-            st.markdown("**Next Steps:**")
-            for i, step in enumerate(rec['next_steps'], 1):
-                st.markdown(f"{i}. {step}")
 
 # ============================================================
 # PAGE 3: WHAT-IF SIMULATOR
@@ -1394,31 +1426,12 @@ elif page == "What-If Simulator":
         col2.metric("New Prediction", "Win" if new_pred == 1 else "Loss")
         col3.metric("Change", f"{delta_prob:+.1%}")
 
-        # Visual indicator
-        if delta_prob > 0.1:
-            st.markdown(
-                '<div class="success-box"><strong>Significant Improvement!</strong> These changes increase win probability. Consider implementing these actions.</div>',
-                unsafe_allow_html=True
-            )
-        elif delta_prob < -0.1:
-            st.markdown(
-                '<div class="warning-box"><strong>Warning:</strong> These changes decrease win probability. Avoid this scenario.</div>',
-                unsafe_allow_html=True
-            )
-        else:
-            st.markdown(
-                '<div class="insight-box"><strong>Minor change</strong> in win probability.</div>',
-                unsafe_allow_html=True
-            )
-
-        # Detailed change summary
-        st.markdown("**What Changed:**")
-
+        # Build change summary first
         changes = []
         scenario_summary = None
         if preset_action:
             if preset_action == "reset":
-                scenario_summary = "Reset sliders to original values"
+                scenario_summary = "Reset to original"
             elif preset_action in preset_meta_map:
                 scenario_summary = preset_meta_map[preset_action]["short"]
 
@@ -1428,46 +1441,64 @@ elif page == "What-If Simulator":
             new_val = float(modified_row.get('cust_interactions', 0))
             if abs(new_val - orig_val) > 0.01:
                 delta_val = new_val - orig_val
-                changes.append(f"**Customer Interactions:** {orig_val:.2f} -> {new_val:.2f} ({delta_val:+.2f})")
+                changes.append(f"Customer Interactions: {orig_val:.2f} → {new_val:.2f} ({delta_val:+.2f})")
 
         if 'cust_hitrate' in feature_names:
             orig_val = float(original_row.get('cust_hitrate', 0))
             new_val = float(modified_row.get('cust_hitrate', 0))
             if abs(new_val - orig_val) > 0.01:
                 delta_val = new_val - orig_val
-                changes.append(f"**Customer Success Rate:** {orig_val:.2f} -> {new_val:.2f} ({delta_val:+.2f})")
+                changes.append(f"Customer Success Rate: {orig_val:.2f} → {new_val:.2f} ({delta_val:+.2f})")
 
         if 'opp_old' in feature_names:
             orig_val = float(original_row.get('opp_old', 0))
             new_val = float(modified_row.get('opp_old', 0))
             if abs(new_val - orig_val) > 0.01:
                 delta_val = new_val - orig_val
-                changes.append(f"**Opportunity Age:** {orig_val:.2f} -> {new_val:.2f} ({delta_val:+.2f})")
+                changes.append(f"Opportunity Age: {orig_val:.2f} → {new_val:.2f} ({delta_val:+.2f})")
 
         if 'total_competitors' in feature_names:
             orig_val = int(original_row.get('total_competitors', 0))
             new_val = int(modified_row.get('total_competitors', 0))
             if orig_val != new_val:
                 delta_val = new_val - orig_val
-                changes.append(f"**Total Competitors:** {orig_val} -> {new_val} ({delta_val:+d})")
+                changes.append(f"Total Competitors: {orig_val} → {new_val} ({delta_val:+d})")
 
         original_label = "Win" if original_pred == 1 else "Loss"
         new_label = "Win" if new_pred == 1 else "Loss"
         if original_pred != new_pred:
-            changes.insert(0, f"**Prediction:** {original_label} -> {new_label}")
+            changes.insert(0, f"Prediction: {original_label} → {new_label}")
 
         if scenario_summary:
-            changes.insert(0, f"**Scenario:** {scenario_summary}")
+            changes.insert(0, f"Scenario: {scenario_summary}")
 
+        # Build change summary text
+        change_summary = ""
         if changes:
-            for change in changes:
-                st.markdown(f"- {change}")
+            change_summary = "<br>".join([f"• {change}" for change in changes])
 
-            # Impact summary
-            pp_change = delta_prob * 100
-            st.info(f"**Net Impact:** These changes moved win probability by **{pp_change:+.1f} percentage points** (from {original_prob:.1%} to {new_prob:.1%})")
+        pp_change = delta_prob * 100
+
+        # Visual indicator with embedded changes
+        if delta_prob > 0.1:
+            st.markdown(
+                f'<div class="success-box"><strong>Significant Improvement!</strong> These changes increase win probability. Consider implementing these actions.<br><br><strong>What Changed:</strong><br>{change_summary}<br><br><strong>Net Impact:</strong> These changes moved win probability by <strong>{pp_change:+.1f} percentage points</strong> (from {original_prob:.1%} to {new_prob:.1%})</div>',
+                unsafe_allow_html=True
+            )
+        elif delta_prob < -0.1:
+            st.markdown(
+                f'<div class="warning-box"><strong>Warning:</strong> These changes decrease win probability. Avoid this scenario.<br><br><strong>What Changed:</strong><br>{change_summary}<br><br><strong>Net Impact:</strong> Win probability decreased by <strong>{pp_change:.1f} percentage points</strong> (from {original_prob:.1%} to {new_prob:.1%})</div>',
+                unsafe_allow_html=True
+            )
         else:
-            st.markdown("- *No changes made*")
+            st.markdown(
+                '<div class="insight-box"><strong>Minor change</strong> in win probability.</div>',
+                unsafe_allow_html=True
+            )
+            if changes:
+                st.markdown("**What Changed:**")
+                for change in changes:
+                    st.markdown(f"- {change}")
 
         st.markdown("---")
 
