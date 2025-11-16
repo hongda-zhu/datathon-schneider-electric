@@ -1072,7 +1072,7 @@ elif page == "Case Explorer":
         )
 
         # Key features
-        st.markdown('<div class="sub-header">Key Features for This Opportunity</div>', unsafe_allow_html=True)
+        #st.markdown('<div class="sub-header">Key Features for This Opportunity</div>', unsafe_allow_html=True)
         if case_json:
             key_feats = case_json["key_features"]
             feature_stats = global_insights.get("feature_statistics", {})
