@@ -853,23 +853,11 @@ if page == "Global Insights":
 
         st.markdown("""
         <div class="chart-description">
-        <strong>¿Qué significa esto?</strong> El modelo asigna a cada oportunidad una probabilidad de ganar (0-100%).
-        Aquí se agrupan por nivel de confianza:
-        <br><br>
-        <strong>🔴 Low (0-30%):</strong> Probabilidad <strong>baja</strong> de ganar. Estas oportunidades necesitan
-        intervención urgente o re-evaluación. Considerar si vale la pena invertir recursos.<br>
-
-        <strong>🟠 Medium (30-50%):</strong> Probabilidad <strong>media</strong>. Están en zona de riesgo.
-        <u>Oportunidad de mejora:</u> aumentar interacciones, abordar objeciones, reducir competencia.<br>
-
-        <strong>🟢 High (50-70%):</strong> Probabilidad <strong>alta</strong> de ganar. Mantener el momentum,
-        acelerar cierre y asegurar que no se pierdan.<br>
-
-        <strong>🔵 Very High (70-100%):</strong> Probabilidad <strong>muy alta</strong>. Priorizar estos deals
-        para cerrarlos rápidamente y liberar recursos para casos Medium.
-        <br><br>
-        <strong>Estrategia recomendada:</strong> Enfocarse en mover deals de <strong>Medium → High</strong>
-        aumentando touchpoints con el cliente.
+        <strong>🔴 Low (0-30%):</strong> Urgent intervention or re-evaluation needed<br>
+        <strong>🟠 Medium (30-50%):</strong> Increase interactions, address objections<br>
+        <strong>🟢 High (50-70%):</strong> Maintain momentum, accelerate close<br>
+        <strong>🔵 Very High (70-100%):</strong> Prioritize to close quickly<br><br>
+        <strong>Strategy:</strong> Move Medium → High deals by increasing customer touchpoints
         </div>
         """, unsafe_allow_html=True)
 
@@ -978,8 +966,14 @@ elif page == "Case Explorer":
     st.markdown("**Explore detailed predictions and explanations for specific opportunities**")
 
     # Case ID input
-    available_ids = X_test.index.tolist()
-    case_id = st.selectbox("Select Opportunity ID", available_ids, index=0)
+    available_ids = sorted(X_test.index.tolist())
+
+    case_id = st.selectbox(
+        "Select Opportunity ID",
+        available_ids,
+        index=available_ids.index(102) if 102 in available_ids else 0,
+        help=f"Choose from {len(available_ids):,} opportunities in the test set"
+    )
 
     if case_id is not None:
         # Get row data
@@ -1060,7 +1054,7 @@ elif page == "Case Explorer":
         )
 
         # Key features
-        st.markdown('<div class="sub-header">Key Features for This Opportunity</div>', unsafe_allow_html=True)
+        #st.markdown('<div class="sub-header">Key Features for This Opportunity</div>', unsafe_allow_html=True)
         if case_json:
             key_feats = case_json["key_features"]
             feature_stats = global_insights.get("feature_statistics", {})
@@ -1200,6 +1194,7 @@ elif page == "What-If Simulator":
 
     # Select base case
     available_ids = X_test.index.tolist()
+    available_ids.sort()
     base_id = st.selectbox("Select Base Opportunity", available_ids, index=0)
 
     if base_id is not None:
