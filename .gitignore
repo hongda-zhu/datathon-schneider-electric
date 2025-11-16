@@ -101,17 +101,23 @@ credentials.json
 ehthumbs.db
 Thumbs.db
 
-# PDFs (if statement contains sensitive info)
-# Uncomment if needed:
-# *.pdf
+# PDFs
+*.pdf
 
-# Images (if generated, uncomment if needed)
-# *.png
-# *.jpg
-# *.jpeg
+# Generated images
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.gif
 
-# JSON outputs (if generated, uncomment if needed)
-# output/json/*.json
+# Generated JSON outputs
+output/json/*.json
+
+# Scraped/downloaded content
+out_*/
+scraped/
+downloads/
 
 # SHAP values
 shap_values.pkl
