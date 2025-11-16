@@ -574,8 +574,8 @@ st.markdown("""
         border-color: var(--md-blue);
     }
     
-    .st-emotion-cache-11ofl8m {
-        background: #d5d5d5;
+    summary {
+        background-color: #e5e5e5 !important;
     }
 </style>
 """, unsafe_allow_html=True)
