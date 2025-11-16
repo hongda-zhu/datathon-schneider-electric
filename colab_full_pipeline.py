@@ -393,10 +393,10 @@ with open("output/json/global_insights.json", "w") as f:
 print("✅ Saved: output/json/global_insights.json")
 
 # ------------------------------------------------------------
-# 9. INDIVIDUAL OPPORTUNITY JSON (primeros 300)
+# 9. INDIVIDUAL OPPORTUNITY JSON (todos los casos)
 # ------------------------------------------------------------
 print("\n" + "="*70)
-print("👤 INDIVIDUAL OPPORTUNITY ANALYSIS (300 casos)")
+print("👤 INDIVIDUAL OPPORTUNITY ANALYSIS (todos los casos)")
 print("="*70)
 
 base_val = explainer.expected_value
@@ -428,7 +428,7 @@ def get_factor_explanation(feature_name: str) -> str:
     }
     return explanations.get(feature_name, feature_name.replace("_", " ").title())
 
-test_indices = X_test.index[:300]
+test_indices = X_test.index
 
 for idx_count, idx in enumerate(test_indices, start=1):
     row_pos = X_test.index.get_loc(idx)
@@ -510,9 +510,9 @@ for idx_count, idx in enumerate(test_indices, start=1):
         json.dump(analysis, f, indent=2)
 
     if idx_count % 50 == 0:
-        print(f"  → {idx_count}/300 JSONs generados")
+        print(f"  → {idx_count}/{len(test_indices)} JSONs generados")
 
-print("✅ 300 análisis individuales guardados en output/json/")
+print(f"✅ {len(test_indices)} análisis individuales guardados en output/json/")
 
 # ------------------------------------------------------------
 # 10. RESUMEN FINAL
@@ -530,7 +530,7 @@ print(f"  Accuracy  : {acc:.4f}")
 
 print("\nGenerated Files:")
 print("  - output/json/global_insights.json")
-print("  - output/json/[id].json  (primeros 300 opportunities)")
+print("  - output/json/[id].json  (todos los opportunities del set de test)")
 print("  - output/images/shap_summary.png")
 print("  - output/images/feature_importance.png")
 print("  - output/images/probability_distribution.png")

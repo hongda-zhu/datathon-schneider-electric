@@ -387,10 +387,10 @@ with open("output/json/global_insights.json", "w") as f:
 print("✅ Saved: output/json/global_insights.json")
 
 # ------------------------------------------------------------
-# 9. INDIVIDUAL OPPORTUNITY JSON (primeros 300)
+# 9. INDIVIDUAL OPPORTUNITY JSON (todos los casos)
 # ------------------------------------------------------------
 print("\n" + "="*70)
-print("👤 INDIVIDUAL OPPORTUNITY ANALYSIS (300 casos)")
+print("👤 INDIVIDUAL OPPORTUNITY ANALYSIS (todos los casos)")
 print("="*70)
 
 base_val = explainer.expected_value
@@ -422,7 +422,7 @@ def get_factor_explanation(feature_name: str) -> str:
     }
     return explanations.get(feature_name, feature_name.replace("_", " ").title())
 
-test_indices = X_test.index[:300]
+test_indices = X_test.index
 
 for idx_count, idx in enumerate(test_indices, start=1):
     row_pos = X_test.index.get_loc(idx)
@@ -504,9 +504,9 @@ for idx_count, idx in enumerate(test_indices, start=1):
         json.dump(analysis, f, indent=2)
 
     if idx_count % 50 == 0:
-        print(f"  → {idx_count}/300 JSONs generados")
+        print(f"  → {idx_count}/{len(test_indices)} JSONs generados")
 
-print("✅ 300 análisis individuales guardados en output/json/")
+print(f"✅ {len(test_indices)} análisis individuales guardados en output/json/")
 
 # ------------------------------------------------------------
 # 10. SAVE MODEL & DATA FOR STREAMLIT
@@ -540,7 +540,10 @@ with open("output/metadata.json", "w") as f:
 print("✅ Model, explainer, data, and metadata saved in output/")
 
 # ------------------------------------------------------------
-# 11. GEMINI AI FOR INSIGHTS
+# 11. GEMINI AI FOR INSIGHTS (ALL 300 CASES)
+# ------------------------------------------------------------
+# FREE TIER: 15 requests/min → 4s delay between requests (~20 min total)
+# PAID API: Remove time.sleep(4) for instant processing (~2 min total)
 # ------------------------------------------------------------
 gemini_key = os.environ.get("GEMINI_API_KEY")
 if gemini_key:
@@ -591,22 +594,28 @@ Task:
 
         print("✅ LLM insights guardados en output/json/global_insights.json")
 
-        # ----- Sample case recommendations -----
+        # ----- Case recommendations (ALL 300 cases with LLM) -----
+        import time
         sample_indices = list(X_test.index[:300])
-        sample_cases = sample_indices[:5] + sample_indices[100:105] + sample_indices[200:205]
+        total_cases = len(sample_indices)
         enhanced = 0
 
-        for idx in sample_cases:
+        print(f"\n🔄 Processing {total_cases} cases with LLM (4s delay between requests for free tier)")
+        print(f"⏱️ Estimated time: ~{total_cases * 4 / 60:.1f} minutes\n")
+
+        for i, idx in enumerate(sample_indices, 1):
             json_path = Path(f"output/json/{idx}.json")
             if not json_path.exists():
                 continue
-            with open(json_path) as f:
-                case_data = json.load(f)
 
-            shap_pos = case_data["shap_analysis"]["top_positive_factors"][:3]
-            shap_neg = case_data["shap_analysis"]["top_negative_factors"][:3]
+            try:
+                with open(json_path) as f:
+                    case_data = json.load(f)
 
-            case_prompt = f"""You advise Schneider Electric sales teams.
+                shap_pos = case_data["shap_analysis"]["top_positive_factors"][:3]
+                shap_neg = case_data["shap_analysis"]["top_negative_factors"][:3]
+
+                case_prompt = f"""You advise Schneider Electric sales teams.
 Opportunity ID: {idx}
 Win probability: {case_data['prediction']['win_probability']:.1%}
 Top positive factors:
@@ -615,22 +624,44 @@ Top negative factors:
 {'; '.join([f"{item['feature']}:{item['shap_value']:.2f}" for item in shap_neg])}
 Output 3 actionable next steps in JSON under 'next_steps'. One sentence per step."""
 
-            resp_case = model_llm.generate_content(case_prompt)
-            resp_text = resp_case.text.strip()
-            if resp_text.startswith("```"):
-                resp_text = resp_text.split("```")[1]
-                if resp_text.startswith("json"):
-                    resp_text = resp_text[4:]
+                # Retry logic for API errors
+                max_retries = 3
+                for attempt in range(max_retries):
+                    try:
+                        resp_case = model_llm.generate_content(case_prompt)
+                        resp_text = resp_case.text.strip()
+                        if resp_text.startswith("```"):
+                            resp_text = resp_text.split("```")[1]
+                            if resp_text.startswith("json"):
+                                resp_text = resp_text[4:]
 
-            llm_case = json.loads(resp_text)
-            case_data["business_recommendation"]["next_steps"] = llm_case.get("next_steps", case_data["business_recommendation"]["next_steps"])
-            case_data["business_recommendation"]["ai_generated"] = True
+                        llm_case = json.loads(resp_text)
+                        case_data["business_recommendation"]["next_steps"] = llm_case.get("next_steps", case_data["business_recommendation"]["next_steps"])
+                        case_data["business_recommendation"]["ai_generated"] = True
 
-            with open(json_path, "w") as f:
-                json.dump(case_data, f, indent=2, ensure_ascii=False)
-            enhanced += 1
+                        with open(json_path, "w") as f:
+                            json.dump(case_data, f, indent=2, ensure_ascii=False)
+                        enhanced += 1
+                        break  # Success, exit retry loop
+                    except Exception as retry_error:
+                        if attempt < max_retries - 1:
+                            print(f"  ⚠️ Retry {attempt + 1}/{max_retries} for case {idx}: {retry_error}")
+                            time.sleep(2)  # Brief pause before retry
+                        else:
+                            print(f"  ❌ Failed case {idx} after {max_retries} attempts: {retry_error}")
 
-        print(f"✅ Recomendaciones AI generadas para {enhanced} oportunidades de ejemplo")
+            except Exception as e:
+                print(f"  ❌ Error processing case {idx}: {e}")
+
+            # Progress indicator
+            if i % 10 == 0 or i == total_cases:
+                print(f"  Progress: {i}/{total_cases} ({i/total_cases*100:.1f}%) - {enhanced} enhanced")
+
+            # Rate limiting for free tier (15 requests/minute = 1 request every 4 seconds)
+            if i < total_cases:  # Don't sleep after last request
+                time.sleep(4)
+
+        print(f"\n✅ Recomendaciones AI generadas para {enhanced} oportunidades")
 
     except Exception as e:
         print(f"⚠️ No se pudieron generar insights con Gemini: {e}")
@@ -653,7 +684,7 @@ print(f"  Accuracy  : {acc:.4f}")
 
 print("\nGenerated Files:")
 print("  - output/json/global_insights.json")
-print("  - output/json/[id].json  (primeros 300 opportunities)")
+print("  - output/json/[id].json  (todos los opportunities del set de test)")
 print("  - output/images/shap_summary.png")
 print("  - output/images/feature_importance.png")
 print("  - output/images/probability_distribution.png")
