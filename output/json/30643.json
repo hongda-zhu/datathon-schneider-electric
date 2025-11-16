@@ -1,83 +1,83 @@
 {
   "opportunity_id": "30643",
   "prediction": {
-    "predicted_outcome": "Loss",
+    "predicted_outcome": "Win",
     "actual_outcome": "Win",
-    "win_probability": 0.21325154602527618,
-    "threshold": 0.31458529829978943,
+    "win_probability": 0.5222093462944031,
+    "threshold": 0.2624979317188263,
     "confidence": "Medium"
   },
   "key_features": {
     "customer_activity": 0.09615666666666665,
     "total_competitors": 1.0,
-    "opp_old": -0.28185,
     "cust_hitrate": 1.00219,
-    "product_A_ratio": 1.883614754692369
+    "product_A_ratio": 1.883614754692369,
+    "opp_quality_score": 1.0829499018769475
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": -1.3054362535476685,
+    "base_value": 0.06737297773361206,
+    "prediction_value": 0.08889558166265488,
     "top_positive_factors": [
       {
         "feature": "cust_hitrate",
-        "shap_value": 0.33890512585639954,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+        "shap_value": 0.6319735646247864,
+        "explanation": "Tasa de éxito histórica con el cliente"
       },
       {
-        "feature": "competition_engagement",
-        "shap_value": 0.16486354172229767,
-        "explanation": "Competition Engagement"
+        "feature": "opp_month",
+        "shap_value": 0.31040459871292114,
+        "explanation": "Opp Month"
       },
       {
-        "feature": "cust_interactions",
-        "shap_value": 0.15947768092155457,
-        "explanation": "N\u00famero de interacciones con el cliente"
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.2612673342227936,
+        "explanation": "Product B Sold In The Past"
       },
       {
         "feature": "iberia_competition",
-        "shap_value": 0.15642133355140686,
+        "shap_value": 0.2603903114795685,
         "explanation": "Competencia en clientes de Iberia"
       },
       {
-        "feature": "opp_old",
-        "shap_value": 0.06801905483007431,
-        "explanation": "Antig\u00fcedad de la oportunidad"
+        "feature": "cust_interactions",
+        "shap_value": 0.13236215710639954,
+        "explanation": "Número de interacciones con el cliente"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "opp_quality_score",
-        "shap_value": -0.4561038911342621,
+        "shap_value": -0.5927107930183411,
         "explanation": "Score agregado de calidad de oportunidad"
       },
       {
-        "feature": "competition_risk",
-        "shap_value": -0.37140995264053345,
-        "explanation": "Riesgo asociado a la competencia"
+        "feature": "total_past_sales",
+        "shap_value": -0.28707030415534973,
+        "explanation": "Volumen total de ventas históricas"
       },
       {
-        "feature": "total_past_sales",
-        "shap_value": -0.31500837206840515,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
+        "feature": "cust_contracts",
+        "shap_value": -0.21449348330497742,
+        "explanation": "Número de contratos con el cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.15517956018447876,
+        "explanation": "Hitrate Contracts"
       },
       {
         "feature": "customer_activity",
-        "shap_value": -0.27798542380332947,
+        "shap_value": -0.12398752570152283,
         "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.21081840991973877,
-        "explanation": "Contract Hitrate Ratio"
       }
     ]
   },
   "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
+    "action": "Nurture",
+    "priority": "Medium",
     "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
       "Monitor competitive landscape and adjust pricing/offer."
     ]
   }

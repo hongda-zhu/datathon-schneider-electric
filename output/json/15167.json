@@ -3,72 +3,72 @@
   "prediction": {
     "predicted_outcome": "Loss",
     "actual_outcome": "Loss",
-    "win_probability": 0.07482021301984787,
-    "threshold": 0.31458529829978943,
-    "confidence": "High"
+    "win_probability": 0.04505835473537445,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
   },
   "key_features": {
     "customer_activity": -0.5689000000000001,
     "total_competitors": 0.0,
-    "opp_old": -0.28185,
     "cust_hitrate": -0.67503,
-    "product_A_ratio": 0.0890865021079127
+    "product_A_ratio": 0.0890865021079127,
+    "opp_quality_score": -0.337544399156835
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": -2.5148985385894775,
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.0536937713623047,
     "top_positive_factors": [
       {
-        "feature": "product_A_ratio",
-        "shap_value": 0.10117024928331375,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.09408318251371384,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
         "feature": "opp_month",
-        "shap_value": 0.04742676019668579,
+        "shap_value": 0.21507416665554047,
         "explanation": "Opp Month"
       },
       {
-        "feature": "total_competitors",
-        "shap_value": 0.03753744438290596,
-        "explanation": "N\u00famero total de competidores presentes"
+        "feature": "opp_old",
+        "shap_value": 0.08788114786148071,
+        "explanation": "Antigüedad de la oportunidad"
       },
       {
-        "feature": "total_past_sales",
-        "shap_value": 0.026665542274713516,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
+        "feature": "product_A_ratio",
+        "shap_value": 0.06544789671897888,
+        "explanation": "Peso de ventas históricas de Product A"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.046276483684778214,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.046131428331136703,
+        "explanation": "Número de interacciones con el cliente"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "cust_hitrate",
-        "shap_value": -0.9217837452888489,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.7672312259674072,
-        "explanation": "Product A Sold In The Past"
+        "shap_value": -1.02046537399292,
+        "explanation": "Tasa de éxito histórica con el cliente"
       },
       {
         "feature": "opp_quality_score",
-        "shap_value": -0.40698501467704773,
+        "shap_value": -0.6618996262550354,
         "explanation": "Score agregado de calidad de oportunidad"
       },
       {
-        "feature": "customer_activity",
-        "shap_value": -0.28198033571243286,
-        "explanation": "Nivel global de actividad del cliente"
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.5360532999038696,
+        "explanation": "Product B Sold In The Past"
       },
       {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.21366606652736664,
-        "explanation": "Product B Sold In The Past"
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.3487456440925598,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.23136374354362488,
+        "explanation": "Hitrate Contracts"
       }
     ]
   },

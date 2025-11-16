@@ -3,72 +3,72 @@
   "prediction": {
     "predicted_outcome": "Loss",
     "actual_outcome": "Loss",
-    "win_probability": 0.0012228668201714754,
-    "threshold": 0.31458529829978943,
-    "confidence": "High"
+    "win_probability": 0.0010941524524241686,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
   },
   "key_features": {
     "customer_activity": -0.6558299999999999,
     "total_competitors": 2.0,
-    "opp_old": -0.28185,
     "cust_hitrate": -1.07711,
-    "product_A_ratio": -0.10524615583408707
+    "product_A_ratio": -0.10524615583408707,
+    "opp_quality_score": -0.5619804623336347
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": -6.705327033996582,
+    "base_value": 0.06737297773361206,
+    "prediction_value": -6.816684722900391,
     "top_positive_factors": [
       {
-        "feature": "opp_month",
-        "shap_value": 0.1490919142961502,
-        "explanation": "Opp Month"
-      },
-      {
         "feature": "opp_old",
-        "shap_value": 0.054959941655397415,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "has_competition",
-        "shap_value": 0.013984564691781998,
-        "explanation": "Indicador de presencia de competencia"
+        "shap_value": 0.04405447095632553,
+        "explanation": "Antigüedad de la oportunidad"
       },
       {
         "feature": "opp_age_squared",
-        "shap_value": 0.009877529926598072,
+        "shap_value": 0.020709794014692307,
         "explanation": "Opp Age Squared"
       },
       {
-        "feature": "product_C",
-        "shap_value": 0.0012065884657204151,
-        "explanation": "Product C"
+        "feature": "cust_in_iberia",
+        "shap_value": 0.015611735172569752,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "opp_maturity",
+        "shap_value": 0.004935917444527149,
+        "explanation": "Madurez de la oportunidad"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.004141232930123806,
+        "explanation": "Número de contratos con el cliente"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "cust_hitrate",
-        "shap_value": -1.1274036169052124,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+        "shap_value": -1.0100513696670532,
+        "explanation": "Tasa de éxito histórica con el cliente"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": -0.9723283052444458,
+        "explanation": "Product A Recommended"
       },
       {
         "feature": "competition_engagement",
-        "shap_value": -0.8981993794441223,
+        "shap_value": -0.7179044485092163,
         "explanation": "Competition Engagement"
       },
       {
         "feature": "opp_quality_score",
-        "shap_value": -0.7512317299842834,
+        "shap_value": -0.6526809930801392,
         "explanation": "Score agregado de calidad de oportunidad"
       },
       {
-        "feature": "product_A_recommended",
-        "shap_value": -0.7490085363388062,
-        "explanation": "Product A Recommended"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.6005520820617676,
-        "explanation": "N\u00famero de interacciones con el cliente"
+        "feature": "competition_risk",
+        "shap_value": -0.639302670955658,
+        "explanation": "Riesgo asociado a la competencia"
       }
     ]
   },
