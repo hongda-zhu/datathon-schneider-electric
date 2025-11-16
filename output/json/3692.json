@@ -1,11 +1,11 @@
 {
   "opportunity_id": "3692",
   "prediction": {
-    "predicted_outcome": "Loss",
+    "predicted_outcome": "Win",
     "actual_outcome": "Loss",
-    "win_probability": 0.30019745230674744,
-    "threshold": 0.31458529829978943,
-    "confidence": "Medium"
+    "win_probability": 0.3737781345844269,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
   },
   "key_features": {
     "customer_activity": -0.7109933333333333,
@@ -15,59 +15,59 @@
     "product_A_ratio": 0.42830306825297426
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": -0.8463575839996338,
+    "base_value": 0.06737297773361206,
+    "prediction_value": -0.5160424709320068,
     "top_positive_factors": [
       {
-        "feature": "total_past_sales",
-        "shap_value": 0.16574110090732574,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
         "feature": "cust_interactions",
-        "shap_value": 0.12424664199352264,
+        "shap_value": 0.30288413166999817,
         "explanation": "N\u00famero de interacciones con el cliente"
       },
       {
+        "feature": "opp_month",
+        "shap_value": 0.18295709788799286,
+        "explanation": "Opp Month"
+      },
+      {
         "feature": "opp_old",
-        "shap_value": 0.11404121667146683,
+        "shap_value": 0.08654076606035233,
         "explanation": "Antig\u00fcedad de la oportunidad"
       },
       {
-        "feature": "customer_activity",
-        "shap_value": 0.05993097275495529,
-        "explanation": "Nivel global de actividad del cliente"
+        "feature": "total_past_sales",
+        "shap_value": 0.05111532658338547,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
       },
       {
-        "feature": "competition_risk",
-        "shap_value": 0.0337558388710022,
-        "explanation": "Riesgo asociado a la competencia"
+        "feature": "competition_engagement",
+        "shap_value": 0.030928388237953186,
+        "explanation": "Competition Engagement"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "cust_hitrate",
-        "shap_value": -0.6468333601951599,
+        "shap_value": -0.701942503452301,
         "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
       },
       {
         "feature": "contract_hitrate_ratio",
-        "shap_value": -0.26741790771484375,
+        "shap_value": -0.26728183031082153,
         "explanation": "Contract Hitrate Ratio"
       },
       {
+        "feature": "customer_activity",
+        "shap_value": -0.09549671411514282,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
         "feature": "opp_quality_score",
-        "shap_value": -0.2526819407939911,
+        "shap_value": -0.08258867263793945,
         "explanation": "Score agregado de calidad de oportunidad"
       },
       {
-        "feature": "product_A_ratio",
-        "shap_value": -0.07090555131435394,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
         "feature": "hitrate_contracts",
-        "shap_value": -0.06186041235923767,
+        "shap_value": -0.059389468282461166,
         "explanation": "Hitrate Contracts"
       }
     ]
@@ -77,7 +77,7 @@
     "priority": "Low",
     "next_steps": [
       "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
+      "Maintain momentum with key stakeholders",
       "Capitalize on the lack of competition to close fast."
     ]
   }

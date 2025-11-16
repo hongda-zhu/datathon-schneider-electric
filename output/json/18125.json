@@ -3,9 +3,9 @@
   "prediction": {
     "predicted_outcome": "Win",
     "actual_outcome": "Win",
-    "win_probability": 0.702221155166626,
-    "threshold": 0.31458529829978943,
-    "confidence": "Medium"
+    "win_probability": 0.7135916352272034,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
   },
   "key_features": {
     "customer_activity": -0.70743,
@@ -15,60 +15,60 @@
     "product_A_ratio": 0.42830306825297426
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": 0.8578972220420837,
+    "base_value": 0.06737297773361206,
+    "prediction_value": 0.9128925800323486,
     "top_positive_factors": [
       {
         "feature": "customer_engagement",
-        "shap_value": 0.37572282552719116,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+        "shap_value": 0.3252355754375458,
+        "explanation": "Interacciones y calidad de relación con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.24156980216503143,
+        "explanation": "Score agregado de calidad de oportunidad"
       },
       {
         "feature": "cust_interactions",
-        "shap_value": 0.36328691244125366,
-        "explanation": "N\u00famero de interacciones con el cliente"
+        "shap_value": 0.21234342455863953,
+        "explanation": "Número de interacciones con el cliente"
       },
       {
         "feature": "contract_hitrate_ratio",
-        "shap_value": 0.17414399981498718,
+        "shap_value": 0.11488768458366394,
         "explanation": "Contract Hitrate Ratio"
       },
       {
-        "feature": "total_past_sales",
-        "shap_value": 0.13497893512248993,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
         "feature": "opp_old",
-        "shap_value": 0.12469042837619781,
-        "explanation": "Antig\u00fcedad de la oportunidad"
+        "shap_value": 0.0984167605638504,
+        "explanation": "Antigüedad de la oportunidad"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "cust_hitrate",
-        "shap_value": -0.2402927726507187,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.18816585838794708,
-        "explanation": "Opp Month"
+        "shap_value": -0.2798963189125061,
+        "explanation": "Tasa de éxito histórica con el cliente"
       },
       {
         "feature": "customer_activity",
-        "shap_value": -0.11963412910699844,
+        "shap_value": -0.11162985116243362,
         "explanation": "Nivel global de actividad del cliente"
       },
       {
+        "feature": "opp_month",
+        "shap_value": -0.10636750608682632,
+        "explanation": "Opp Month"
+      },
+      {
         "feature": "hitrate_contracts",
-        "shap_value": -0.0965181216597557,
+        "shap_value": -0.09922443330287933,
         "explanation": "Hitrate Contracts"
       },
       {
         "feature": "cust_contracts",
-        "shap_value": -0.06272780150175095,
-        "explanation": "N\u00famero de contratos con el cliente"
+        "shap_value": -0.024736352264881134,
+        "explanation": "Número de contratos con el cliente"
       }
     ]
   },
@@ -76,9 +76,10 @@
     "action": "Accelerate",
     "priority": "High",
     "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
+      "Increase customer engagement by scheduling a follow-up meeting to address any outstanding questions or concerns, aiming to build stronger relationships.",
+      "Improve the customer hit rate by identifying past unsuccessful deals with this customer and analyzing why they were lost, then tailoring the current offer to address those previous shortcomings.",
+      "Boost customer activity by proactively sharing relevant content, such as case studies or product demos, to re-engage them and demonstrate the value of our solution."
+    ],
+    "ai_generated": true
   }
 }

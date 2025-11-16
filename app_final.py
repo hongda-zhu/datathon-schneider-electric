@@ -834,10 +834,34 @@ if page == "Global Insights":
         st.markdown("---")
         st.markdown("**Win Probability Distribution**")
 
-        bucket_labels = ["Low (0-30%)", "Medium (30-50%)", "High (50-70%)", "Very High (70-100%)"]
+        st.markdown("""
+        <div class="chart-description">
+        <strong>¿Qué significa esto?</strong> El modelo asigna a cada oportunidad una probabilidad de ganar (0-100%).
+        Aquí se agrupan por nivel de confianza:
+        <br><br>
+        <strong>🔴 Low (0-30%):</strong> Probabilidad <strong>baja</strong> de ganar. Estas oportunidades necesitan
+        intervención urgente o re-evaluación. Considerar si vale la pena invertir recursos.<br>
+
+        <strong>🟠 Medium (30-50%):</strong> Probabilidad <strong>media</strong>. Están en zona de riesgo.
+        <u>Oportunidad de mejora:</u> aumentar interacciones, abordar objeciones, reducir competencia.<br>
+
+        <strong>🟢 High (50-70%):</strong> Probabilidad <strong>alta</strong> de ganar. Mantener el momentum,
+        acelerar cierre y asegurar que no se pierdan.<br>
+
+        <strong>🔵 Very High (70-100%):</strong> Probabilidad <strong>muy alta</strong>. Priorizar estos deals
+        para cerrarlos rápidamente y liberar recursos para casos Medium.
+        <br><br>
+        <strong>Estrategia recomendada:</strong> Enfocarse en mover deals de <strong>Medium → High</strong>
+        aumentando touchpoints con el cliente.
+        </div>
+        """, unsafe_allow_html=True)
+
+        # Use actual labels from JSON
+        bucket_labels_json = ["Low", "Medium", "High", "Very High"]
+        bucket_labels_display = ["🔴 Low (0-30%)", "🟠 Medium (30-50%)", "🟢 High (50-70%)", "🔵 Very High (70-100%)"]
         buckets_df = pd.DataFrame({
-            "Confidence Level": bucket_labels,
-            "Number of Opportunities": [dist["probability_buckets"].get(label, 0) for label in bucket_labels]
+            "Confidence Level": bucket_labels_display,
+            "Number of Opportunities": [dist["probability_buckets"].get(label, 0) for label in bucket_labels_json]
         })
 
         fig_buckets = px.bar(
@@ -850,13 +874,12 @@ if page == "Global Insights":
         )
         fig_buckets.update_traces(textposition="outside")
         fig_buckets.update_layout(
-            xaxis_title="Confidence Level",
-            yaxis_title="Number of Opportunities",
+            xaxis_title="Nivel de Confianza",
+            yaxis_title="Número de Oportunidades",
             showlegend=False,
             margin=dict(l=10, r=10, t=10, b=10)
         )
-        st.plotly_chart(fig_buckets, use_container_width=True)
-        st.caption("Distribution of opportunities by predicted win probability. Focus resources on moving Medium deals to High/Very High categories.")
+        st.plotly_chart(fig_buckets, width="stretch")
 
     # Feature importance
     st.markdown('<div class="sub-header">Top Influential Features</div>', unsafe_allow_html=True)
@@ -895,13 +918,13 @@ if page == "Global Insights":
         margin=dict(l=0, r=0, t=10, b=10),
         coloraxis_showscale=False
     )
-    st.plotly_chart(fig_feat, use_container_width=True)
+    st.plotly_chart(fig_feat, width="stretch")
 
     # SHAP summary (static image)
     st.markdown('<div class="sub-header">Feature Impact on Win Probability</div>', unsafe_allow_html=True)
     if Path("output/images/shap_summary.png").exists():
         with st.expander("See SHAP summary plot"):
-            st.image("output/images/shap_summary.png", use_container_width=True)
+            st.image("output/images/shap_summary.png", width="stretch")
             st.caption("Each dot represents an opportunity. Red = high feature value, Blue = low feature value. Right side increases win chance, left side decreases it.")
     else:
         st.info("SHAP summary image not found. Please regenerate it from the Colab notebook.")
@@ -1166,17 +1189,17 @@ elif page == "What-If Simulator":
         row_pos = X_test.index.get_loc(base_id)
         original_row = X_test.loc[base_id].copy()
 
-        # Initialize slider states when opportunity changes
+        # Initialize slider states when opportunity changes (only if not already set)
         if st.session_state.get("last_base_id") != base_id:
             st.session_state["last_base_id"] = base_id
             if 'cust_interactions' in feature_names:
-                st.session_state["slider_interactions"] = float(original_row.get('cust_interactions', 0.5))
+                st.session_state["slider_interactions"] = clamp_value(float(original_row.get('cust_interactions', 0.5)), 0.0, 2.0)
             if 'cust_hitrate' in feature_names:
-                st.session_state["slider_hitrate"] = float(original_row.get('cust_hitrate', 0.5))
+                st.session_state["slider_hitrate"] = clamp_value(float(original_row.get('cust_hitrate', 0.5)), 0.0, 1.0)
             if 'opp_old' in feature_names:
-                st.session_state["slider_opp_old"] = float(original_row.get('opp_old', 0.0))
+                st.session_state["slider_opp_old"] = clamp_value(float(original_row.get('opp_old', 0.0)), -2.0, 2.0)
             if 'total_competitors' in feature_names:
-                st.session_state["slider_competitors"] = float(original_row.get('total_competitors', 0))
+                st.session_state["slider_competitors"] = clamp_value(float(original_row.get('total_competitors', 0)), 0.0, 5.0)
 
         # Get original prediction
         original_prob, original_pred = get_prediction(original_row)
@@ -1226,7 +1249,7 @@ elif page == "What-If Simulator":
         preset_cols = st.columns(len(preset_options))
         for (option, meta), col in zip(preset_options, preset_cols):
             with col:
-                if st.button(meta["label"], use_container_width=True):
+                if st.button(meta["label"], use_container_width=True):  # Buttons don't support width parameter yet
                     preset_action = option
                 st.caption(meta["description"])
 
@@ -1280,28 +1303,18 @@ elif page == "What-If Simulator":
         col1, col2 = st.columns(2)
 
         with col1:
-            st.markdown('<div class="md-control-card">', unsafe_allow_html=True)
             st.markdown("**Customer Engagement**")
             if 'cust_interactions' in feature_names:
                 feature_stats = global_insights.get("feature_statistics", {})
-                # Get context for help text
                 stats = feature_stats.get('cust_interactions', {})
                 help_text = "Number of interactions with the customer (normalized)"
                 if stats:
                     help_text += f"\n• Average: {stats.get('median', 0):.2f}\n• P25: {stats.get('p25', 0):.2f}, P75: {stats.get('p75', 0):.2f}"
 
-                current_val = clamp_value(
-                    float(st.session_state.get("slider_interactions", float(modified_row.get('cust_interactions', 0.5)))),
-                    0.0,
-                    2.0
-                )
-                st.session_state["slider_interactions"] = current_val
-
                 new_interactions = st.slider(
                     translate_feature("cust_interactions"),
                     min_value=0.0,
                     max_value=2.0,
-                    value=current_val,
                     step=0.1,
                     help=help_text,
                     key="slider_interactions"
@@ -1315,41 +1328,23 @@ elif page == "What-If Simulator":
                 if stats:
                     help_text += f"\n• Average: {stats.get('median', 0):.2f}\n• P25: {stats.get('p25', 0):.2f}, P75: {stats.get('p75', 0):.2f}"
 
-                current_val = clamp_value(
-                    float(st.session_state.get("slider_hitrate", float(modified_row.get('cust_hitrate', 0.5)))),
-                    0.0,
-                    1.0
-                )
-                st.session_state["slider_hitrate"] = current_val
-
                 new_hitrate = st.slider(
                     translate_feature("cust_hitrate"),
                     min_value=0.0,
                     max_value=1.0,
-                    value=current_val,
                     step=0.05,
                     help=help_text,
                     key="slider_hitrate"
                 )
                 modified_row['cust_hitrate'] = new_hitrate
-            st.markdown('</div>', unsafe_allow_html=True)
 
         with col2:
-            st.markdown('<div class="md-control-card">', unsafe_allow_html=True)
             st.markdown("**Opportunity Characteristics**")
             if 'opp_old' in feature_names:
-                current_val = clamp_value(
-                    float(st.session_state.get("slider_opp_old", float(modified_row.get('opp_old', 0.0)))),
-                    -2.0,
-                    2.0
-                )
-                st.session_state["slider_opp_old"] = current_val
-
                 new_opp_age = st.slider(
                     translate_feature("opp_old"),
                     min_value=-2.0,
                     max_value=2.0,
-                    value=current_val,
                     step=0.1,
                     help="Opportunity age (standardized)\n• -2 = Very new\n• 0 = Average age\n• +2 = Very old",
                     key="slider_opp_old"
@@ -1357,24 +1352,15 @@ elif page == "What-If Simulator":
                 modified_row['opp_old'] = new_opp_age
 
             if 'total_competitors' in feature_names:
-                current_val = clamp_value(
-                    float(st.session_state.get("slider_competitors", float(modified_row.get('total_competitors', 0)))),
-                    0.0,
-                    5.0
-                )
-                st.session_state["slider_competitors"] = current_val
-
                 new_competitors = st.slider(
                     translate_feature("total_competitors"),
                     min_value=0,
                     max_value=5,
-                    value=int(current_val),
                     step=1,
                     help="Number of active competitors\n• 0 = No competition (best)\n• 1-2 = Moderate competition\n• 3+ = High competition (challenging)",
                     key="slider_competitors"
                 )
                 modified_row['total_competitors'] = float(new_competitors)
-            st.markdown('</div>', unsafe_allow_html=True)
 
         # Recalculate derived features
         if 'customer_activity' in feature_names and all(f in feature_names for f in ['cust_hitrate', 'cust_interactions', 'cust_contracts']):

@@ -3,8 +3,8 @@
   "prediction": {
     "predicted_outcome": "Win",
     "actual_outcome": "Win",
-    "win_probability": 0.4482141435146332,
-    "threshold": 0.31458529829978943,
+    "win_probability": 0.3874931335449219,
+    "threshold": 0.2624979317188263,
     "confidence": "Low"
   },
   "key_features": {
@@ -15,66 +15,66 @@
     "product_A_ratio": 0.42830306825297426
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": -0.2078891098499298,
+    "base_value": 0.06737297773361206,
+    "prediction_value": -0.45786190032958984,
     "top_positive_factors": [
       {
         "feature": "iberia_engagement",
-        "shap_value": 0.23114119470119476,
+        "shap_value": 0.16766147315502167,
         "explanation": "Engagement de clientes de Iberia"
       },
       {
         "feature": "contract_hitrate_ratio",
-        "shap_value": 0.18468013405799866,
+        "shap_value": 0.12735891342163086,
         "explanation": "Contract Hitrate Ratio"
       },
       {
-        "feature": "opp_old",
-        "shap_value": 0.11593309044837952,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
         "feature": "total_past_sales",
-        "shap_value": 0.08296358585357666,
+        "shap_value": 0.10344312340021133,
         "explanation": "Volumen total de ventas hist\u00f3ricas"
       },
       {
-        "feature": "cust_contracts",
-        "shap_value": 0.06480709463357925,
-        "explanation": "N\u00famero de contratos con el cliente"
+        "feature": "opp_old",
+        "shap_value": 0.09593803435564041,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.038572944700717926,
+        "explanation": "Score agregado de calidad de oportunidad"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "cust_hitrate",
-        "shap_value": -0.6276984214782715,
+        "shap_value": -0.6369263529777527,
         "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
       },
       {
         "feature": "opp_month",
-        "shap_value": -0.20757147669792175,
+        "shap_value": -0.29201534390449524,
         "explanation": "Opp Month"
       },
       {
-        "feature": "product_A_ratio",
-        "shap_value": -0.10601621121168137,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+        "feature": "hitrate_contracts",
+        "shap_value": -0.1128421500325203,
+        "explanation": "Hitrate Contracts"
       },
       {
         "feature": "customer_engagement",
-        "shap_value": -0.09606936573982239,
+        "shap_value": -0.09182325750589371,
         "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
       },
       {
-        "feature": "hitrate_contracts",
-        "shap_value": -0.08911895751953125,
-        "explanation": "Hitrate Contracts"
+        "feature": "product_A_ratio",
+        "shap_value": -0.0856965109705925,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
       }
     ]
   },
   "business_recommendation": {
-    "action": "Nurture",
-    "priority": "Medium",
+    "action": "Re-evaluate",
+    "priority": "Low",
     "next_steps": [
       "Increase touchpoints and engagement",
       "Maintain momentum with key stakeholders",

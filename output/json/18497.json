@@ -3,8 +3,8 @@
   "prediction": {
     "predicted_outcome": "Win",
     "actual_outcome": "Win",
-    "win_probability": 0.9619326591491699,
-    "threshold": 0.31458529829978943,
+    "win_probability": 0.9772588014602661,
+    "threshold": 0.2624979317188263,
     "confidence": "High"
   },
   "key_features": {
@@ -15,60 +15,60 @@
     "product_A_ratio": 0.4575411913814955
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": 3.2295854091644287,
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.7605717182159424,
     "top_positive_factors": [
       {
+        "feature": "competition_risk",
+        "shap_value": 0.7012878656387329,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.5168269276618958,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
         "feature": "competition_engagement",
-        "shap_value": 0.6066663265228271,
+        "shap_value": 0.4567316770553589,
         "explanation": "Competition Engagement"
       },
       {
         "feature": "product_A_ratio",
-        "shap_value": 0.5649762153625488,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+        "shap_value": 0.4024129807949066,
+        "explanation": "Peso de ventas históricas de Product A"
       },
       {
-        "feature": "competition_risk",
-        "shap_value": 0.4487846791744232,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.40868446230888367,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.39898306131362915,
-        "explanation": "Score agregado de calidad de oportunidad"
+        "feature": "customer_activity",
+        "shap_value": 0.38615772128105164,
+        "explanation": "Nivel global de actividad del cliente"
       }
     ],
     "top_negative_factors": [
       {
-        "feature": "cust_hitrate",
-        "shap_value": -0.1250954419374466,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.0908961221575737,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.08779134601354599,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
         "feature": "contract_hitrate_ratio",
-        "shap_value": -0.08182210475206375,
+        "shap_value": -0.12704893946647644,
         "explanation": "Contract Hitrate Ratio"
       },
       {
-        "feature": "total_competitors",
-        "shap_value": -0.01838037744164467,
-        "explanation": "N\u00famero total de competidores presentes"
+        "feature": "iberia_engagement",
+        "shap_value": -0.12401126325130463,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.08526889979839325,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.05820591747760773,
+        "explanation": "Tasa de éxito histórica con el cliente"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.04275762289762497,
+        "explanation": "Competitor Y"
       }
     ]
   },
@@ -76,9 +76,10 @@
     "action": "Accelerate",
     "priority": "High",
     "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
+      "Given the low contract hit rate ratio, review the contract terms and conditions with the customer to identify and address any potential concerns or roadblocks to ensure a smooth and favorable agreement.",
+      "Since Iberia engagement is a negative factor, proactively reach out to the Iberia team to understand their concerns and tailor engagement strategies to address regional needs and build stronger relationships.",
+      "Despite strong competition engagement, continue actively engaging with the customer to reinforce our value proposition and further solidify our position as the preferred vendor, especially given the high win probability."
+    ],
+    "ai_generated": true
   }
 }

@@ -3,8 +3,8 @@
   "prediction": {
     "predicted_outcome": "Win",
     "actual_outcome": "Win",
-    "win_probability": 0.9769238829612732,
-    "threshold": 0.31458529829978943,
+    "win_probability": 0.9885576963424683,
+    "threshold": 0.2624979317188263,
     "confidence": "High"
   },
   "key_features": {
@@ -15,59 +15,59 @@
     "product_A_ratio": 0.7592895536340267
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": 3.7456107139587402,
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.458932876586914,
     "top_positive_factors": [
       {
+        "feature": "competition_risk",
+        "shap_value": 0.7878469824790955,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
         "feature": "contract_hitrate_ratio",
-        "shap_value": 0.5798516273498535,
+        "shap_value": 0.7580544948577881,
         "explanation": "Contract Hitrate Ratio"
       },
       {
         "feature": "cust_hitrate",
-        "shap_value": 0.45708727836608887,
+        "shap_value": 0.6238295435905457,
         "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
       },
       {
-        "feature": "product_A_ratio",
-        "shap_value": 0.4037990868091583,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
         "feature": "customer_activity",
-        "shap_value": 0.39106443524360657,
+        "shap_value": 0.5012096166610718,
         "explanation": "Nivel global de actividad del cliente"
       },
       {
-        "feature": "competition_risk",
-        "shap_value": 0.37837928533554077,
-        "explanation": "Riesgo asociado a la competencia"
+        "feature": "cust_interactions",
+        "shap_value": 0.3250177502632141,
+        "explanation": "N\u00famero de interacciones con el cliente"
       }
     ],
     "top_negative_factors": [
       {
-        "feature": "total_past_sales",
-        "shap_value": -0.27098432183265686,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.0475025437772274,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
         "feature": "competitor_Y",
-        "shap_value": -0.03561864420771599,
+        "shap_value": -0.21802008152008057,
         "explanation": "Competitor Y"
       },
       {
+        "feature": "total_past_sales",
+        "shap_value": -0.20488537847995758,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.02984512597322464,
+        "explanation": "Hitrate Interaction"
+      },
+      {
         "feature": "has_competition",
-        "shap_value": -0.005075100809335709,
+        "shap_value": -0.005899364128708839,
         "explanation": "Indicador de presencia de competencia"
       },
       {
         "feature": "product_A",
-        "shap_value": -0.002376977354288101,
+        "shap_value": -0.0029870406724512577,
         "explanation": "Product A"
       }
     ]

@@ -3,8 +3,8 @@
   "prediction": {
     "predicted_outcome": "Win",
     "actual_outcome": "Win",
-    "win_probability": 0.8833989500999451,
-    "threshold": 0.31458529829978943,
+    "win_probability": 0.8824300765991211,
+    "threshold": 0.2624979317188263,
     "confidence": "High"
   },
   "key_features": {
@@ -15,59 +15,59 @@
     "product_A_ratio": 0.6978280129943352
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": 2.0250165462493896,
+    "base_value": 0.06737297773361206,
+    "prediction_value": 2.0156466960906982,
     "top_positive_factors": [
       {
         "feature": "product_A_ratio",
-        "shap_value": 0.9600261449813843,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.6394476294517517,
-        "explanation": "Nivel global de actividad del cliente"
+        "shap_value": 0.7231740355491638,
+        "explanation": "Peso de ventas históricas de Product A"
       },
       {
         "feature": "customer_engagement",
-        "shap_value": 0.4591371417045593,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.2569970190525055,
-        "explanation": "Competition Engagement"
+        "shap_value": 0.45263880491256714,
+        "explanation": "Interacciones y calidad de relación con el cliente"
       },
       {
         "feature": "contract_hitrate_ratio",
-        "shap_value": 0.2563273012638092,
+        "shap_value": 0.4019814133644104,
         "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.3677704930305481,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.191043421626091,
+        "explanation": "Opp Month"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "cust_hitrate",
-        "shap_value": -0.7634473443031311,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+        "shap_value": -0.5810965895652771,
+        "explanation": "Tasa de éxito histórica con el cliente"
       },
       {
         "feature": "total_competitors",
-        "shap_value": -0.25916823744773865,
-        "explanation": "N\u00famero total de competidores presentes"
+        "shap_value": -0.2270013988018036,
+        "explanation": "Número total de competidores presentes"
       },
       {
         "feature": "cust_interactions",
-        "shap_value": -0.2580719292163849,
-        "explanation": "N\u00famero de interacciones con el cliente"
+        "shap_value": -0.20750723779201508,
+        "explanation": "Número de interacciones con el cliente"
       },
       {
         "feature": "competitor_diversity",
-        "shap_value": -0.07402919977903366,
+        "shap_value": -0.07818279415369034,
         "explanation": "Diversidad de competidores en la oferta"
       },
       {
         "feature": "competitor_Y",
-        "shap_value": -0.05779891461133957,
+        "shap_value": -0.03452955558896065,
         "explanation": "Competitor Y"
       }
     ]
@@ -76,9 +76,16 @@
     "action": "Accelerate",
     "priority": "High",
     "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
+      {
+        "step": "Given the negative impact of 'cust_hitrate', proactively offer the customer a compelling success story or case study from a similar company where Schneider Electric delivered significant value to address any perceived risk based on past experiences with other vendors."
+      },
+      {
+        "step": "Address the negative impact of 'total_competitors' by conducting a thorough competitive analysis highlighting Schneider Electric's distinct advantages and differentiators, and presenting this information persuasively to the customer."
+      },
+      {
+        "step": "Improve the negative 'cust_interactions' score by scheduling a series of focused and value-driven meetings with key stakeholders to demonstrate Schneider Electric's expertise and commitment, reinforcing the positive 'customer_engagement' factor."
+      }
+    ],
+    "ai_generated": true
   }
 }

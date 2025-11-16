@@ -3,9 +3,9 @@
   "prediction": {
     "predicted_outcome": "Loss",
     "actual_outcome": "Loss",
-    "win_probability": 0.027947740629315376,
-    "threshold": 0.31458529829978943,
-    "confidence": "High"
+    "win_probability": 0.019607773050665855,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
   },
   "key_features": {
     "customer_activity": -0.07450666666666668,
@@ -15,60 +15,60 @@
     "product_A_ratio": 0.42830306825297426
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": -3.549074411392212,
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.9120261669158936,
     "top_positive_factors": [
       {
         "feature": "cust_hitrate",
-        "shap_value": 0.2853260934352875,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+        "shap_value": 0.08981697261333466,
+        "explanation": "Tasa de éxito histórica con el cliente"
       },
       {
         "feature": "opp_old",
-        "shap_value": 0.08919718116521835,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.03589802607893944,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "product_A_recommended",
-        "shap_value": 0.015534462407231331,
-        "explanation": "Product A Recommended"
+        "shap_value": 0.0651707798242569,
+        "explanation": "Antigüedad de la oportunidad"
       },
       {
         "feature": "opp_age_squared",
-        "shap_value": 0.01535058207809925,
+        "shap_value": 0.022512950003147125,
         "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.013824906200170517,
+        "explanation": "Número total de competidores presentes"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.013546624220907688,
+        "explanation": "Product A Recommended"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "competition_risk",
-        "shap_value": -0.892314076423645,
+        "shap_value": -0.9216923713684082,
         "explanation": "Riesgo asociado a la competencia"
       },
       {
         "feature": "opp_month",
-        "shap_value": -0.6188799142837524,
+        "shap_value": -0.7751381397247314,
         "explanation": "Opp Month"
       },
       {
-        "feature": "customer_engagement",
-        "shap_value": -0.45861849188804626,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+        "feature": "cust_interactions",
+        "shap_value": -0.4061330258846283,
+        "explanation": "Número de interacciones con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.39796969294548035,
+        "explanation": "Contract Hitrate Ratio"
       },
       {
         "feature": "customer_activity",
-        "shap_value": -0.4138179421424866,
+        "shap_value": -0.3096526563167572,
         "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.3217310309410095,
-        "explanation": "N\u00famero de interacciones con el cliente"
       }
     ]
   },
@@ -76,9 +76,10 @@
     "action": "Re-evaluate",
     "priority": "Low",
     "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
+      "Develop a direct competitive counter-strategy to address the high competition risk, focusing on Schneider Electric's unique value proposition and differentiation.",
+      "Accelerate the sales cycle by proactively engaging the customer and addressing any outstanding needs or concerns to mitigate the negative impact of the opportunity's age within the month.",
+      "Increase the frequency and quality of customer interactions, ensuring each touchpoint adds value and builds stronger relationships, to overcome the negative impact of current interaction levels."
+    ],
+    "ai_generated": true
   }
 }

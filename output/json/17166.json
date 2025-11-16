@@ -3,9 +3,9 @@
   "prediction": {
     "predicted_outcome": "Win",
     "actual_outcome": "Loss",
-    "win_probability": 0.6764200329780579,
-    "threshold": 0.31458529829978943,
-    "confidence": "Medium"
+    "win_probability": 0.27994489669799805,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
   },
   "key_features": {
     "customer_activity": 0.63696,
@@ -15,68 +15,68 @@
     "product_A_ratio": 1.7344510775223336
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": 0.7373682260513306,
+    "base_value": 0.06737297773361206,
+    "prediction_value": -0.9447343945503235,
     "top_positive_factors": [
       {
         "feature": "product_A_ratio",
-        "shap_value": 0.8247023820877075,
+        "shap_value": 0.535658597946167,
         "explanation": "Peso de ventas hist\u00f3ricas de Product A"
       },
       {
         "feature": "product_A_sold_in_the_past",
-        "shap_value": 0.32511192560195923,
+        "shap_value": 0.17104950547218323,
         "explanation": "Product A Sold In The Past"
       },
       {
-        "feature": "customer_activity",
-        "shap_value": 0.31030139327049255,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.20003992319107056,
-        "explanation": "Score agregado de calidad de oportunidad"
+        "feature": "opp_month",
+        "shap_value": 0.1618480384349823,
+        "explanation": "Opp Month"
       },
       {
         "feature": "iberia_competition",
-        "shap_value": 0.18382801115512848,
+        "shap_value": 0.1557895839214325,
         "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.1222776472568512,
+        "explanation": "Nivel global de actividad del cliente"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "cust_hitrate",
-        "shap_value": -0.6092645525932312,
+        "shap_value": -0.8946030735969543,
         "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
       },
       {
         "feature": "cust_interactions",
-        "shap_value": -0.40203389525413513,
+        "shap_value": -0.48307809233665466,
         "explanation": "N\u00famero de interacciones con el cliente"
       },
       {
         "feature": "contract_hitrate_ratio",
-        "shap_value": -0.29749590158462524,
+        "shap_value": -0.47763705253601074,
         "explanation": "Contract Hitrate Ratio"
       },
       {
         "feature": "iberia_engagement",
-        "shap_value": -0.19397912919521332,
+        "shap_value": -0.3539365231990814,
         "explanation": "Engagement de clientes de Iberia"
       },
       {
-        "feature": "customer_engagement",
-        "shap_value": -0.18320684134960175,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+        "feature": "hitrate_contracts",
+        "shap_value": -0.20216749608516693,
+        "explanation": "Hitrate Contracts"
       }
     ]
   },
   "business_recommendation": {
-    "action": "Nurture",
-    "priority": "Medium",
+    "action": "Re-evaluate",
+    "priority": "Low",
     "next_steps": [
-      "Leverage existing engagement",
+      "Increase touchpoints and engagement",
       "Maintain momentum with key stakeholders",
       "Monitor competitive landscape and adjust pricing/offer."
     ]

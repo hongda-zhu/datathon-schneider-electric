@@ -3,9 +3,9 @@
   "prediction": {
     "predicted_outcome": "Loss",
     "actual_outcome": "Loss",
-    "win_probability": 0.06525162607431412,
-    "threshold": 0.31458529829978943,
-    "confidence": "High"
+    "win_probability": 0.06917128711938858,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
   },
   "key_features": {
     "customer_activity": 0.21305333333333332,
@@ -15,60 +15,60 @@
     "product_A_ratio": 0.2979707876290558
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": -2.6620266437530518,
+    "base_value": 0.06737297773361206,
+    "prediction_value": -2.5994911193847656,
     "top_positive_factors": [
       {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.07598350942134857,
-        "explanation": "Hitrate Contracts"
-      },
-      {
         "feature": "opp_old",
-        "shap_value": 0.07101395726203918,
+        "shap_value": 0.05719541758298874,
         "explanation": "Antig\u00fcedad de la oportunidad"
       },
       {
         "feature": "competitor_Z",
-        "shap_value": 0.020088646560907364,
+        "shap_value": 0.041107598692178726,
         "explanation": "Competitor Z"
       },
       {
         "feature": "cust_hitrate",
-        "shap_value": 0.01659909076988697,
+        "shap_value": 0.03801142796874046,
         "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
       },
       {
-        "feature": "hitrate_interaction",
-        "shap_value": 0.010101165622472763,
-        "explanation": "Hitrate Interaction"
+        "feature": "opp_age_squared",
+        "shap_value": 0.022954663261771202,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.00991614069789648,
+        "explanation": "Low Engagement Risk"
       }
     ],
     "top_negative_factors": [
       {
-        "feature": "customer_activity",
-        "shap_value": -0.5182647109031677,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
         "feature": "cust_interactions",
-        "shap_value": -0.447535902261734,
+        "shap_value": -0.5665296912193298,
         "explanation": "N\u00famero de interacciones con el cliente"
       },
       {
         "feature": "customer_engagement",
-        "shap_value": -0.3898123502731323,
+        "shap_value": -0.39970752596855164,
         "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
       },
       {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.2631818354129791,
-        "explanation": "Contract Hitrate Ratio"
+        "feature": "opp_quality_score",
+        "shap_value": -0.3828132450580597,
+        "explanation": "Score agregado de calidad de oportunidad"
       },
       {
-        "feature": "opp_quality_score",
-        "shap_value": -0.23857739567756653,
-        "explanation": "Score agregado de calidad de oportunidad"
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.23402315378189087,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.17856846749782562,
+        "explanation": "Nivel global de actividad del cliente"
       }
     ]
   },

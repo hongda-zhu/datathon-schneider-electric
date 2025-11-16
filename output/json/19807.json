@@ -3,8 +3,8 @@
   "prediction": {
     "predicted_outcome": "Win",
     "actual_outcome": "Win",
-    "win_probability": 0.9887880682945251,
-    "threshold": 0.31458529829978943,
+    "win_probability": 0.9746674299240112,
+    "threshold": 0.2624979317188263,
     "confidence": "High"
   },
   "key_features": {
@@ -15,60 +15,60 @@
     "product_A_ratio": 0.42830306825297426
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": 4.479499340057373,
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.6500070095062256,
     "top_positive_factors": [
       {
+        "feature": "customer_engagement",
+        "shap_value": 1.0913758277893066,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
         "feature": "cust_hitrate",
-        "shap_value": 1.1435518264770508,
+        "shap_value": 0.9223295450210571,
         "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
       },
       {
         "feature": "opp_month",
-        "shap_value": 0.7286449074745178,
+        "shap_value": 0.42810505628585815,
         "explanation": "Opp Month"
       },
       {
-        "feature": "customer_engagement",
-        "shap_value": 0.7277924418449402,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.49416929483413696,
-        "explanation": "Nivel global de actividad del cliente"
+        "feature": "hitrate_contracts",
+        "shap_value": 0.29520758986473083,
+        "explanation": "Hitrate Contracts"
       },
       {
         "feature": "cust_interactions",
-        "shap_value": 0.27017754316329956,
+        "shap_value": 0.21965239942073822,
         "explanation": "N\u00famero de interacciones con el cliente"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "iberia_engagement",
-        "shap_value": -0.11918338388204575,
+        "shap_value": -0.24599029123783112,
         "explanation": "Engagement de clientes de Iberia"
       },
       {
         "feature": "cust_in_iberia",
-        "shap_value": -0.04352538660168648,
+        "shap_value": -0.0681333839893341,
         "explanation": "Cust In Iberia"
       },
       {
-        "feature": "competition_engagement",
-        "shap_value": -0.014904065057635307,
-        "explanation": "Competition Engagement"
-      },
-      {
         "feature": "iberia_competition",
-        "shap_value": -0.014545208774507046,
+        "shap_value": -0.037245165556669235,
         "explanation": "Competencia en clientes de Iberia"
       },
       {
-        "feature": "product_A_ratio",
-        "shap_value": -0.014230603352189064,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+        "feature": "competition_engagement",
+        "shap_value": -0.03274033963680267,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.010626431554555893,
+        "explanation": "Product A Sold In The Past"
       }
     ]
   },

@@ -3,9 +3,9 @@
   "prediction": {
     "predicted_outcome": "Loss",
     "actual_outcome": "Win",
-    "win_probability": 0.11804135888814926,
-    "threshold": 0.31458529829978943,
-    "confidence": "High"
+    "win_probability": 0.13511121273040771,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
   },
   "key_features": {
     "customer_activity": -0.17767999999999998,
@@ -15,60 +15,60 @@
     "product_A_ratio": 1.3121270825261528
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": -2.011110782623291,
+    "base_value": 0.06737297773361206,
+    "prediction_value": -1.8565037250518799,
     "top_positive_factors": [
       {
-        "feature": "opp_old",
-        "shap_value": 0.09364195168018341,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.08523708581924438,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.044202834367752075,
-        "explanation": "Competitor Z"
+        "feature": "hitrate_contracts",
+        "shap_value": 0.09493902325630188,
+        "explanation": "Hitrate Contracts"
       },
       {
         "feature": "iberia_engagement",
-        "shap_value": 0.033871181309223175,
+        "shap_value": 0.08594730496406555,
         "explanation": "Engagement de clientes de Iberia"
       },
       {
+        "feature": "opp_old",
+        "shap_value": 0.08273221552371979,
+        "explanation": "Antigüedad de la oportunidad"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.06089630350470543,
+        "explanation": "Tasa de éxito histórica con el cliente"
+      },
+      {
         "feature": "has_past_sales",
-        "shap_value": 0.022193633019924164,
+        "shap_value": 0.04740447178483009,
         "explanation": "Has Past Sales"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "customer_activity",
-        "shap_value": -0.8794575333595276,
+        "shap_value": -0.7286927700042725,
         "explanation": "Nivel global de actividad del cliente"
       },
       {
-        "feature": "total_past_sales",
-        "shap_value": -0.3032606542110443,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
         "feature": "cust_interactions",
-        "shap_value": -0.27538764476776123,
-        "explanation": "N\u00famero de interacciones con el cliente"
+        "shap_value": -0.3412744104862213,
+        "explanation": "Número de interacciones con el cliente"
       },
       {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.23450136184692383,
-        "explanation": "Contract Hitrate Ratio"
+        "feature": "opp_quality_score",
+        "shap_value": -0.2850706875324249,
+        "explanation": "Score agregado de calidad de oportunidad"
       },
       {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.1878606230020523,
-        "explanation": "Product B Sold In The Past"
+        "feature": "customer_engagement",
+        "shap_value": -0.2637605667114258,
+        "explanation": "Interacciones y calidad de relación con el cliente"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.14791695773601532,
+        "explanation": "Product A Sold In The Past"
       }
     ]
   },
@@ -76,9 +76,10 @@
     "action": "Re-evaluate",
     "priority": "Low",
     "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
+      "Increase customer activity by scheduling a meeting to understand their current challenges and future needs, directly addressing the -0.73 impact of 'customer_activity'.",
+      "Improve customer interactions by proactively sharing relevant case studies and technical resources to address concerns indicated by the -0.34 impact of 'cust_interactions'.",
+      "Boost the opportunity quality score by refining the solution proposal based on recent customer feedback and clearly articulating the value proposition, counteracting the -0.29 impact of 'opp_quality_score'."
+    ],
+    "ai_generated": true
   }
 }

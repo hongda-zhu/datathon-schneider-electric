@@ -3,9 +3,9 @@
   "prediction": {
     "predicted_outcome": "Loss",
     "actual_outcome": "Loss",
-    "win_probability": 0.021387401968240738,
-    "threshold": 0.31458529829978943,
-    "confidence": "High"
+    "win_probability": 0.017843222245573997,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
   },
   "key_features": {
     "customer_activity": 0.1076133333333333,
@@ -15,60 +15,60 @@
     "product_A_ratio": 0.42830306825297426
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": -3.8233351707458496,
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.008127689361572,
     "top_positive_factors": [
       {
         "feature": "opp_old",
-        "shap_value": 0.06883300840854645,
+        "shap_value": 0.05617135390639305,
         "explanation": "Antig\u00fcedad de la oportunidad"
       },
       {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.03296718746423721,
+        "explanation": "Cust In Iberia"
+      },
+      {
         "feature": "opp_age_squared",
-        "shap_value": 0.010917184874415398,
+        "shap_value": 0.014809387736022472,
         "explanation": "Opp Age Squared"
       },
       {
         "feature": "low_engagement_risk",
-        "shap_value": 0.0062844050116837025,
+        "shap_value": 0.006878741085529327,
         "explanation": "Low Engagement Risk"
       },
       {
-        "feature": "product_C",
-        "shap_value": 0.0013961667427793145,
-        "explanation": "Product C"
-      },
-      {
         "feature": "opp_maturity",
-        "shap_value": 0.0012159791076555848,
+        "shap_value": 0.004572213161736727,
         "explanation": "Madurez de la oportunidad"
       }
     ],
     "top_negative_factors": [
       {
-        "feature": "customer_engagement",
-        "shap_value": -0.560643196105957,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
         "feature": "cust_hitrate",
-        "shap_value": -0.5489583015441895,
+        "shap_value": -0.7869431972503662,
         "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
       },
       {
+        "feature": "customer_engagement",
+        "shap_value": -0.49877890944480896,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
         "feature": "opp_quality_score",
-        "shap_value": -0.4545447528362274,
+        "shap_value": -0.47377756237983704,
         "explanation": "Score agregado de calidad de oportunidad"
       },
       {
         "feature": "contract_hitrate_ratio",
-        "shap_value": -0.4520764946937561,
+        "shap_value": -0.4002714157104492,
         "explanation": "Contract Hitrate Ratio"
       },
       {
-        "feature": "competition_engagement",
-        "shap_value": -0.45063555240631104,
-        "explanation": "Competition Engagement"
+        "feature": "competition_risk",
+        "shap_value": -0.3779979646205902,
+        "explanation": "Riesgo asociado a la competencia"
       }
     ]
   },

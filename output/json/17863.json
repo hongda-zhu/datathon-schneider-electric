@@ -3,8 +3,8 @@
   "prediction": {
     "predicted_outcome": "Win",
     "actual_outcome": "Loss",
-    "win_probability": 0.9859455227851868,
-    "threshold": 0.31458529829978943,
+    "win_probability": 0.9846112132072449,
+    "threshold": 0.2624979317188263,
     "confidence": "High"
   },
   "key_features": {
@@ -15,59 +15,59 @@
     "product_A_ratio": 0.6978280129943352
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": 4.250666618347168,
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.158602237701416,
     "top_positive_factors": [
       {
         "feature": "product_A_ratio",
-        "shap_value": 0.8148276805877686,
+        "shap_value": 0.8409637212753296,
         "explanation": "Peso de ventas hist\u00f3ricas de Product A"
       },
       {
-        "feature": "competition_risk",
-        "shap_value": 0.5014050006866455,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
         "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.46855446696281433,
+        "shap_value": 0.64632648229599,
         "explanation": "Product B Sold In The Past"
       },
       {
         "feature": "opp_quality_score",
-        "shap_value": 0.41782450675964355,
+        "shap_value": 0.6177950501441956,
         "explanation": "Score agregado de calidad de oportunidad"
       },
       {
+        "feature": "competition_risk",
+        "shap_value": 0.5227689146995544,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
         "feature": "iberia_engagement",
-        "shap_value": 0.35676535964012146,
+        "shap_value": 0.42540696263313293,
         "explanation": "Engagement de clientes de Iberia"
       }
     ],
     "top_negative_factors": [
       {
-        "feature": "has_competition",
-        "shap_value": -0.009227262809872627,
-        "explanation": "Indicador de presencia de competencia"
+        "feature": "competition_engagement",
+        "shap_value": -0.04869837313890457,
+        "explanation": "Competition Engagement"
       },
       {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.007356765680015087,
-        "explanation": "Hitrate Interaction"
+        "feature": "total_past_sales",
+        "shap_value": -0.046354759484529495,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
       },
       {
-        "feature": "competitor_X",
-        "shap_value": -0.0027868482284247875,
-        "explanation": "Competitor X"
+        "feature": "cust_interactions",
+        "shap_value": -0.03833535313606262,
+        "explanation": "N\u00famero de interacciones con el cliente"
       },
       {
-        "feature": "product_A",
-        "shap_value": -0.002690556226298213,
-        "explanation": "Product A"
+        "feature": "product_mix",
+        "shap_value": -0.002781596500426531,
+        "explanation": "Diversidad de productos activos"
       },
       {
         "feature": "product_D",
-        "shap_value": -0.0012924856273457408,
+        "shap_value": -0.0016036394517868757,
         "explanation": "Product D"
       }
     ]

@@ -3,8 +3,8 @@
   "prediction": {
     "predicted_outcome": "Win",
     "actual_outcome": "Win",
-    "win_probability": 0.9945302605628967,
-    "threshold": 0.31458529829978943,
+    "win_probability": 0.9941837191581726,
+    "threshold": 0.2624979317188263,
     "confidence": "High"
   },
   "key_features": {
@@ -15,60 +15,55 @@
     "product_A_ratio": 14.042139384116714
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": 5.203037261962891,
+    "base_value": 0.06737297773361206,
+    "prediction_value": 5.141258239746094,
     "top_positive_factors": [
       {
         "feature": "contract_hitrate_ratio",
-        "shap_value": 1.1190637350082397,
+        "shap_value": 1.169589877128601,
         "explanation": "Contract Hitrate Ratio"
       },
       {
         "feature": "cust_hitrate",
-        "shap_value": 0.6262578368186951,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+        "shap_value": 0.6232787370681763,
+        "explanation": "Tasa de éxito histórica con el cliente"
       },
       {
         "feature": "product_A_ratio",
-        "shap_value": 0.49881938099861145,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.44453132152557373,
-        "explanation": "N\u00famero de interacciones con el cliente"
+        "shap_value": 0.4697924256324768,
+        "explanation": "Peso de ventas históricas de Product A"
       },
       {
         "feature": "customer_activity",
-        "shap_value": 0.33975762128829956,
+        "shap_value": 0.4627995789051056,
         "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.3866945505142212,
+        "explanation": "Opp Month"
       }
     ],
     "top_negative_factors": [
       {
-        "feature": "total_past_sales",
-        "shap_value": -0.08055676519870758,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
+        "feature": "competition_engagement",
+        "shap_value": -0.021801017224788666,
+        "explanation": "Competition Engagement"
       },
       {
-        "feature": "competitor_Y",
-        "shap_value": -0.011817136779427528,
-        "explanation": "Competitor Y"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": -0.004490328952670097,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.002681864658370614,
-        "explanation": "N\u00famero total de competidores presentes"
+        "feature": "has_competition",
+        "shap_value": -0.0021121432073414326,
+        "explanation": "Indicador de presencia de competencia"
       },
       {
         "feature": "product_D",
-        "shap_value": -0.0008874065242707729,
+        "shap_value": -0.0010896057356148958,
         "explanation": "Product D"
+      },
+      {
+        "feature": "product_A",
+        "shap_value": -0.000869297597091645,
+        "explanation": "Product A"
       }
     ]
   },
@@ -76,9 +71,16 @@
     "action": "Accelerate",
     "priority": "High",
     "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
+      {
+        "step": "Capitalize on the high 'contract_hitrate_ratio' by proactively offering tailored contract terms that align with the customer's specific needs and highlight our superior win rate in similar situations."
+      },
+      {
+        "step": "Leverage the strong 'cust_hitrate' to build even stronger rapport with the customer, emphasizing our proven track record of success with clients like them and soliciting testimonials to further reinforce trust."
+      },
+      {
+        "step": "While competition engagement is low, remain vigilant by gathering intelligence on competitor activities and preparing counter-arguments focusing on the superior value proposition of product A, given its positive impact on win probability."
+      }
+    ],
+    "ai_generated": true
   }
 }

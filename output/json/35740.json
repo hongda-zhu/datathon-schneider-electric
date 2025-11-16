@@ -3,9 +3,9 @@
   "prediction": {
     "predicted_outcome": "Loss",
     "actual_outcome": "Loss",
-    "win_probability": 0.015429464168846607,
-    "threshold": 0.31458529829978943,
-    "confidence": "High"
+    "win_probability": 0.015382268466055393,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
   },
   "key_features": {
     "customer_activity": -0.16524666666666668,
@@ -15,60 +15,60 @@
     "product_A_ratio": 0.28661645616022935
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": -4.155926704406738,
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.1590399742126465,
     "top_positive_factors": [
       {
-        "feature": "competition_engagement",
-        "shap_value": 0.1600343883037567,
-        "explanation": "Competition Engagement"
-      },
-      {
         "feature": "contract_hitrate_ratio",
-        "shap_value": 0.07714308053255081,
+        "shap_value": 0.18736740946769714,
         "explanation": "Contract Hitrate Ratio"
       },
       {
         "feature": "opp_old",
-        "shap_value": 0.07683507353067398,
+        "shap_value": 0.06725241988897324,
         "explanation": "Antig\u00fcedad de la oportunidad"
       },
       {
-        "feature": "competitor_Y",
-        "shap_value": 0.05825454741716385,
-        "explanation": "Competitor Y"
+        "feature": "opp_age_squared",
+        "shap_value": 0.016078677028417587,
+        "explanation": "Opp Age Squared"
       },
       {
-        "feature": "opp_age_squared",
-        "shap_value": 0.014602805487811565,
-        "explanation": "Opp Age Squared"
+        "feature": "has_competition",
+        "shap_value": 0.011296730488538742,
+        "explanation": "Indicador de presencia de competencia"
+      },
+      {
+        "feature": "opp_maturity",
+        "shap_value": 0.008038600906729698,
+        "explanation": "Madurez de la oportunidad"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "cust_hitrate",
-        "shap_value": -0.6084144115447998,
+        "shap_value": -0.6994845271110535,
         "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
       },
       {
-        "feature": "customer_engagement",
-        "shap_value": -0.4856724739074707,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.434551864862442,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
         "feature": "opp_quality_score",
-        "shap_value": -0.4095073938369751,
+        "shap_value": -0.42193132638931274,
         "explanation": "Score agregado de calidad de oportunidad"
       },
       {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.36386579275131226,
-        "explanation": "Product A Sold In The Past"
+        "feature": "opp_month",
+        "shap_value": -0.40282535552978516,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.37054142355918884,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.3298240900039673,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
       }
     ]
   },

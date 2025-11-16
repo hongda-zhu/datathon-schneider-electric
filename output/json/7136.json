@@ -3,9 +3,9 @@
   "prediction": {
     "predicted_outcome": "Loss",
     "actual_outcome": "Loss",
-    "win_probability": 0.09939442574977875,
-    "threshold": 0.31458529829978943,
-    "confidence": "High"
+    "win_probability": 0.08669447153806686,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
   },
   "key_features": {
     "customer_activity": -0.27174333333333334,
@@ -15,60 +15,60 @@
     "product_A_ratio": 0.42830306825297426
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": -2.2039711475372314,
+    "base_value": 0.06737297773361206,
+    "prediction_value": -2.3546817302703857,
     "top_positive_factors": [
       {
         "feature": "opp_old",
-        "shap_value": 0.12486603856086731,
+        "shap_value": 0.10195193439722061,
         "explanation": "Antig\u00fcedad de la oportunidad"
       },
       {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.06950277090072632,
-        "explanation": "Hitrate Contracts"
+        "feature": "opp_age_squared",
+        "shap_value": 0.0335007980465889,
+        "explanation": "Opp Age Squared"
       },
       {
-        "feature": "total_past_sales",
-        "shap_value": 0.037585701793432236,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.03094300627708435,
-        "explanation": "Competitor Z"
+        "feature": "cust_contracts",
+        "shap_value": 0.027240244671702385,
+        "explanation": "N\u00famero de contratos con el cliente"
       },
       {
         "feature": "hitrate_interaction",
-        "shap_value": 0.026609277352690697,
+        "shap_value": 0.02181061916053295,
         "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.021353229880332947,
+        "explanation": "Low Engagement Risk"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "contract_hitrate_ratio",
-        "shap_value": -0.6445222496986389,
+        "shap_value": -0.6158226132392883,
         "explanation": "Contract Hitrate Ratio"
       },
       {
         "feature": "customer_activity",
-        "shap_value": -0.5390322208404541,
+        "shap_value": -0.5119837522506714,
         "explanation": "Nivel global de actividad del cliente"
       },
       {
         "feature": "cust_interactions",
-        "shap_value": -0.2558032274246216,
+        "shap_value": -0.35930830240249634,
         "explanation": "N\u00famero de interacciones con el cliente"
       },
       {
-        "feature": "opp_month",
-        "shap_value": -0.2225450575351715,
-        "explanation": "Opp Month"
+        "feature": "cust_hitrate",
+        "shap_value": -0.2581028640270233,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
       },
       {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.21944685280323029,
-        "explanation": "Product B Sold In The Past"
+        "feature": "iberia_engagement",
+        "shap_value": -0.2512374520301819,
+        "explanation": "Engagement de clientes de Iberia"
       }
     ]
   },

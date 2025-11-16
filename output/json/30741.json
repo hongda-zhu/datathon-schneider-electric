@@ -3,8 +3,8 @@
   "prediction": {
     "predicted_outcome": "Win",
     "actual_outcome": "Win",
-    "win_probability": 0.5094332695007324,
-    "threshold": 0.31458529829978943,
+    "win_probability": 0.37181028723716736,
+    "threshold": 0.2624979317188263,
     "confidence": "Low"
   },
   "key_features": {
@@ -15,68 +15,68 @@
     "product_A_ratio": 0.6882563219912617
   },
   "shap_analysis": {
-    "base_value": 0.0683107003569603,
-    "prediction_value": 0.0377378985285759,
+    "base_value": 0.06737297773361206,
+    "prediction_value": -0.524458110332489,
     "top_positive_factors": [
       {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.34302985668182373,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
         "feature": "product_A_ratio",
-        "shap_value": 0.3320944607257843,
+        "shap_value": 0.640084445476532,
         "explanation": "Peso de ventas hist\u00f3ricas de Product A"
       },
       {
-        "feature": "cust_contracts",
-        "shap_value": 0.24552258849143982,
-        "explanation": "N\u00famero de contratos con el cliente"
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.41769644618034363,
+        "explanation": "Product B Sold In The Past"
       },
       {
         "feature": "hitrate_contracts",
-        "shap_value": 0.21220801770687103,
+        "shap_value": 0.24037155508995056,
         "explanation": "Hitrate Contracts"
       },
       {
+        "feature": "cust_contracts",
+        "shap_value": 0.21880775690078735,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
         "feature": "opp_old",
-        "shap_value": 0.10674478113651276,
+        "shap_value": 0.08130291849374771,
         "explanation": "Antig\u00fcedad de la oportunidad"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "cust_hitrate",
-        "shap_value": -0.5312321782112122,
+        "shap_value": -0.5367063879966736,
         "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
       },
       {
-        "feature": "customer_activity",
-        "shap_value": -0.2869015634059906,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.2592971920967102,
-        "explanation": "Opp Month"
-      },
-      {
         "feature": "contract_hitrate_ratio",
-        "shap_value": -0.136960968375206,
+        "shap_value": -0.38981443643569946,
         "explanation": "Contract Hitrate Ratio"
       },
       {
-        "feature": "opp_quality_score",
-        "shap_value": -0.09501522779464722,
-        "explanation": "Score agregado de calidad de oportunidad"
+        "feature": "customer_activity",
+        "shap_value": -0.3696471154689789,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.2982694208621979,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.20940501987934113,
+        "explanation": "Opp Month"
       }
     ]
   },
   "business_recommendation": {
-    "action": "Nurture",
-    "priority": "Medium",
+    "action": "Re-evaluate",
+    "priority": "Low",
     "next_steps": [
-      "Leverage existing engagement",
+      "Increase touchpoints and engagement",
       "Maintain momentum with key stakeholders",
       "Capitalize on the lack of competition to close fast."
     ]
