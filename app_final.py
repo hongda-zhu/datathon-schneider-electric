@@ -1212,6 +1212,7 @@ elif page == "What-If Simulator":
 
     # Select base case
     available_ids = X_test.index.tolist()
+    available_ids.sort()
     base_id = st.selectbox("Select Base Opportunity", available_ids, index=0)
 
     if base_id is not None:
