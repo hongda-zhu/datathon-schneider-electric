@@ -1125,7 +1125,7 @@ elif page == "Case Explorer":
             for factor in case_json["shap_analysis"]["top_positive_factors"][:3]:
                 feat_name = translate_feature(factor["feature"])
                 shap_val = factor["shap_value"]
-                positive_html += f"• <strong>{feat_name}</strong> (+{shap_val:.3f})<br>"
+                positive_html += f"<li><strong>{feat_name}</strong> (+{shap_val:.3f})</li>"
 
             # Build HTML for negative factors
             negative_html = ""
@@ -1133,24 +1133,19 @@ elif page == "Case Explorer":
                 for factor in case_json["shap_analysis"]["top_negative_factors"][:3]:
                     feat_name = translate_feature(factor["feature"])
                     shap_val = factor["shap_value"]
-                    negative_html += f"• <strong>{feat_name}</strong> ({shap_val:.3f})<br>"
+                    negative_html += f"<li><strong>{feat_name}</strong> ({shap_val:.3f})</li>"
             else:
                 negative_html = "• <em>No significant negative factors</em><br>"
 
             st.markdown(f"""
-            <div class="insight-box">
-            <table width="100%">
-            <tr>
-            <td width="50%" valign="top">
-            <strong>What Pushes Toward Win:</strong><br><br>
+            <div class='md-driver-grid'>
+            <div class='md-driver-card positive'><h4> What Pushes Toward Win:</h4><ul>
             {positive_html}
-            </td>
-            <td width="50%" valign="top">
-            <strong>What Holds It Back:</strong><br><br>
+            </ul></div>
+            <div class='md-driver-card negative'><h4> What Holds It Back:</h4><ul>
             {negative_html}
-            </td>
-            </tr>
-            </table>
+            </ul></div>
+            </div>
             <br>
             <em>SHAP values show how each feature affects this specific prediction. Larger absolute values = stronger influence.</em>
             </div>
@@ -1536,17 +1531,17 @@ elif page == "What-If Simulator":
 
             pos_drivers, neg_drivers = summarize_shap(new_shap, feature_names)
             if pos_drivers or neg_drivers:
-                st.markdown("**Key drivers after your adjustments:**")
+                st.markdown('<div class="sub-header">Key Drivers for after your adjustment</div>', unsafe_allow_html=True)
                 driver_html = "<div class='md-driver-grid'>"
                 if pos_drivers:
                     driver_html += "<div class='md-driver-card positive'><h4>What helps now</h4><ul>"
                     for name, val in pos_drivers:
-                        driver_html += f"<li>{name}: {val:+.2f}</li>"
+                        driver_html += f"<li>• {name}: {val:+.2f}</li>"
                     driver_html += "</ul></div>"
                 if neg_drivers:
                     driver_html += "<div class='md-driver-card negative'><h4>What still hurts</h4><ul>"
                     for name, val in neg_drivers:
-                        driver_html += f"<li>{name}: {val:+.2f}</li>"
+                        driver_html += f"<li>• {name}: {val:+.2f}</li>"
                     driver_html += "</ul></div>"
                 driver_html += "</div>"
                 st.markdown(driver_html, unsafe_allow_html=True)
