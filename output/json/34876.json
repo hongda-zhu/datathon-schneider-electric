@@ -10,9 +10,9 @@
   "key_features": {
     "customer_activity": -0.38960333333333336,
     "total_competitors": 0.0,
-    "opp_old": -0.28185,
     "cust_hitrate": -0.77837,
-    "product_A_ratio": 0.0890865021079127
+    "product_A_ratio": 0.0890865021079127,
+    "opp_quality_score": -0.31475739915683487
   },
   "shap_analysis": {
     "base_value": 0.06737297773361206,
@@ -21,22 +21,22 @@
       {
         "feature": "total_past_sales",
         "shap_value": 0.3253365457057953,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
+        "explanation": "Volumen total de ventas históricas"
       },
       {
         "feature": "opp_old",
         "shap_value": 0.07374310493469238,
-        "explanation": "Antig\u00fcedad de la oportunidad"
+        "explanation": "Antigüedad de la oportunidad"
       },
       {
         "feature": "cust_interactions",
         "shap_value": 0.060530032962560654,
-        "explanation": "N\u00famero de interacciones con el cliente"
+        "explanation": "Número de interacciones con el cliente"
       },
       {
         "feature": "cust_contracts",
         "shap_value": 0.0262509323656559,
-        "explanation": "N\u00famero de contratos con el cliente"
+        "explanation": "Número de contratos con el cliente"
       },
       {
         "feature": "opp_age_squared",
@@ -48,7 +48,7 @@
       {
         "feature": "cust_hitrate",
         "shap_value": -1.0515942573547363,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+        "explanation": "Tasa de éxito histórica con el cliente"
       },
       {
         "feature": "product_A_sold_in_the_past",

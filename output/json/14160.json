@@ -10,9 +10,9 @@
   "key_features": {
     "customer_activity": -0.008086666666666686,
     "total_competitors": 0.0,
-    "opp_old": -0.28185,
     "cust_hitrate": -0.34026,
-    "product_A_ratio": 0.7865637766681798
+    "product_A_ratio": 0.7865637766681798,
+    "opp_quality_score": 0.21012151066727194
   },
   "shap_analysis": {
     "base_value": 0.06737297773361206,
@@ -41,19 +41,19 @@
       {
         "feature": "product_A_ratio",
         "shap_value": 0.3020520508289337,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+        "explanation": "Peso de ventas históricas de Product A"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "total_past_sales",
         "shap_value": -0.1640007346868515,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
+        "explanation": "Volumen total de ventas históricas"
       },
       {
         "feature": "cust_interactions",
         "shap_value": -0.11223246902227402,
-        "explanation": "N\u00famero de interacciones con el cliente"
+        "explanation": "Número de interacciones con el cliente"
       },
       {
         "feature": "iberia_competition",
@@ -63,7 +63,7 @@
       {
         "feature": "total_competitors",
         "shap_value": -0.008403658866882324,
-        "explanation": "N\u00famero total de competidores presentes"
+        "explanation": "Número total de competidores presentes"
       },
       {
         "feature": "product_A",

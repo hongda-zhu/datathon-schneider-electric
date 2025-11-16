@@ -10,9 +10,9 @@
   "key_features": {
     "customer_activity": -0.70743,
     "total_competitors": 0.0,
-    "opp_old": -0.28185,
     "cust_hitrate": -1.1667,
-    "product_A_ratio": 0.42830306825297426
+    "product_A_ratio": 0.42830306825297426,
+    "opp_quality_score": -0.39091777269881023
   },
   "shap_analysis": {
     "base_value": 0.06737297773361206,

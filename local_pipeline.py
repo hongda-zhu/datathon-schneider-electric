@@ -314,7 +314,7 @@ probability_buckets = {
 
 feature_stats_cols = [
     "customer_activity", "total_competitors",
-    "opp_old", "cust_hitrate", "cust_interactions"
+    "opp_quality_score", "cust_hitrate", "cust_interactions"
 ]
 
 feature_statistics = {}
@@ -457,7 +457,7 @@ for idx_count, idx in enumerate(test_indices, start=1):
         "key_features": {
             "customer_activity": float(x_row.get("customer_activity", 0.0)),
             "total_competitors": float(x_row.get("total_competitors", 0.0)),
-            "opp_old": float(x_row.get("opp_old", 0.0)),
+            "opp_quality_score": float(x_row.get("opp_quality_score", 0.0)),
             "cust_hitrate": float(x_row.get("cust_hitrate", 0.0)),
             "product_A_ratio": float(x_row.get("product_A_ratio", 0.0))
         },

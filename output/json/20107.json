@@ -10,9 +10,9 @@
   "key_features": {
     "customer_activity": -0.7030133333333333,
     "total_competitors": 0.0,
-    "opp_old": -0.28185,
     "cust_hitrate": -1.07737,
-    "product_A_ratio": 0.42830306825297426
+    "product_A_ratio": 0.42830306825297426,
+    "opp_quality_score": -0.3627937726988102
   },
   "shap_analysis": {
     "base_value": 0.06737297773361206,
@@ -36,19 +36,19 @@
       {
         "feature": "total_past_sales",
         "shap_value": 0.10055801272392273,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
+        "explanation": "Volumen total de ventas históricas"
       },
       {
         "feature": "opp_old",
         "shap_value": 0.09256331622600555,
-        "explanation": "Antig\u00fcedad de la oportunidad"
+        "explanation": "Antigüedad de la oportunidad"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "cust_hitrate",
         "shap_value": -0.5702080130577087,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+        "explanation": "Tasa de éxito histórica con el cliente"
       },
       {
         "feature": "contract_hitrate_ratio",
@@ -63,7 +63,7 @@
       {
         "feature": "product_A_ratio",
         "shap_value": -0.07143329828977585,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+        "explanation": "Peso de ventas históricas de Product A"
       },
       {
         "feature": "product_B_sold_in_the_past",

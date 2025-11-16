@@ -596,26 +596,39 @@ def get_feature_context(feature_name, value, feature_stats):
     stats = feature_stats[feature_name]
     p25 = stats["p25"]
     p75 = stats["p75"]
+    median = stats.get("median", p25)
 
-    # Determine label and delta
-    if value < p25:
-        label = "Low"
-        delta_color = "off"  # Gray/neutral
-    elif value > p75:
-        label = "High"
-        delta_color = "normal"  # Green (positive)
+    # Special case: if p25 == p75, distribution is very concentrated
+    if abs(p25 - p75) < 0.0001:  # Essentially the same value
+        if abs(value - median) < 0.0001:
+            label = "Typical"
+            delta_color = "off"
+        elif value > median:
+            label = "Outlier (High)"
+            delta_color = "normal" if "compet" not in feature_name.lower() else "inverse"
+        else:
+            label = "Outlier (Low)"
+            delta_color = "off"
     else:
-        label = "Average"
-        delta_color = "off"
-
-    # For competitors, reverse the interpretation (fewer is better)
-    if "compet" in feature_name.lower():
+        # Normal case: use percentiles
         if value < p25:
-            label = "Low (Good)"
-            delta_color = "normal"
+            label = "Low"
+            delta_color = "off"
         elif value > p75:
-            label = "High (Concern)"
-            delta_color = "inverse"  # Red
+            label = "High"
+            delta_color = "normal"
+        else:
+            label = "Average"
+            delta_color = "off"
+
+        # For competitors, reverse the interpretation (fewer is better)
+        if "compet" in feature_name.lower():
+            if value < p25:
+                label = "Low (Good)"
+                delta_color = "normal"
+            elif value > p75:
+                label = "High (Concern)"
+                delta_color = "inverse"
 
     return label, delta_color
 
@@ -1070,14 +1083,14 @@ elif page == "Case Explorer":
                 help="Total number of competitors present in this opportunity"
             )
 
-            # Opportunity Age
-            opp_age_val = key_feats['opp_old']
-            opp_age_label, _ = get_feature_context("opp_old", opp_age_val, feature_stats)
+            # Opportunity Quality Score
+            opp_quality_val = key_feats['opp_quality_score']
+            opp_quality_label, _ = get_feature_context("opp_quality_score", opp_quality_val, feature_stats)
             col3.metric(
-                translate_feature("opp_old"),
-                f"{opp_age_val:.3f}",
-                delta=opp_age_label if opp_age_label else None,
-                help="Opportunity age (normalized)"
+                translate_feature("opp_quality_score"),
+                f"{opp_quality_val:.3f}",
+                delta=opp_quality_label if opp_quality_label else None,
+                help="Composite quality score based on customer activity, hit rate, and Product A affinity. Higher is better."
             )
 
         # Top SHAP Factors

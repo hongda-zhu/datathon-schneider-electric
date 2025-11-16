@@ -10,9 +10,9 @@
   "key_features": {
     "customer_activity": -0.6941366666666666,
     "total_competitors": 1.0,
-    "opp_old": -0.28185,
     "cust_hitrate": -1.05074,
-    "product_A_ratio": 0.42830306825297426
+    "product_A_ratio": 0.42830306825297426,
+    "opp_quality_score": -0.3521417726988103
   },
   "shap_analysis": {
     "base_value": 0.06737297773361206,
@@ -26,17 +26,17 @@
       {
         "feature": "cust_interactions",
         "shap_value": 0.19097867608070374,
-        "explanation": "N\u00famero de interacciones con el cliente"
+        "explanation": "Número de interacciones con el cliente"
       },
       {
         "feature": "total_past_sales",
         "shap_value": 0.08845268934965134,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
+        "explanation": "Volumen total de ventas históricas"
       },
       {
         "feature": "opp_old",
         "shap_value": 0.07908983528614044,
-        "explanation": "Antig\u00fcedad de la oportunidad"
+        "explanation": "Antigüedad de la oportunidad"
       },
       {
         "feature": "iberia_competition",
@@ -48,7 +48,7 @@
       {
         "feature": "cust_hitrate",
         "shap_value": -0.8907400369644165,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+        "explanation": "Tasa de éxito histórica con el cliente"
       },
       {
         "feature": "contract_hitrate_ratio",

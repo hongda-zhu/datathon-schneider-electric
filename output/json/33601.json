@@ -10,9 +10,9 @@
   "key_features": {
     "customer_activity": 0.11172,
     "total_competitors": 0.0,
-    "opp_old": -0.28185,
     "cust_hitrate": -1.01333,
-    "product_A_ratio": 0.5923967544899261
+    "product_A_ratio": 0.5923967544899261,
+    "opp_quality_score": -0.03352429820402958
   },
   "shap_analysis": {
     "base_value": 0.06737297773361206,
@@ -26,7 +26,7 @@
       {
         "feature": "opp_old",
         "shap_value": 0.06425462663173676,
-        "explanation": "Antig\u00fcedad de la oportunidad"
+        "explanation": "Antigüedad de la oportunidad"
       },
       {
         "feature": "competition_engagement",
@@ -41,24 +41,24 @@
       {
         "feature": "cust_contracts",
         "shap_value": 0.015744520351290703,
-        "explanation": "N\u00famero de contratos con el cliente"
+        "explanation": "Número de contratos con el cliente"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "cust_hitrate",
         "shap_value": -1.0852611064910889,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+        "explanation": "Tasa de éxito histórica con el cliente"
       },
       {
         "feature": "customer_engagement",
         "shap_value": -0.9568079113960266,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+        "explanation": "Interacciones y calidad de relación con el cliente"
       },
       {
         "feature": "cust_interactions",
         "shap_value": -0.6470648050308228,
-        "explanation": "N\u00famero de interacciones con el cliente"
+        "explanation": "Número de interacciones con el cliente"
       },
       {
         "feature": "opp_month",

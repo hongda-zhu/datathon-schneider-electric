@@ -10,9 +10,9 @@
   "key_features": {
     "customer_activity": 0.08970333333333336,
     "total_competitors": 0.0,
-    "opp_old": -0.28185,
     "cust_hitrate": 0.67042,
-    "product_A_ratio": 0.42830306825297426
+    "product_A_ratio": 0.42830306825297426,
+    "opp_quality_score": 0.39935822730118975
   },
   "shap_analysis": {
     "base_value": 0.06737297773361206,
@@ -21,7 +21,7 @@
       {
         "feature": "cust_hitrate",
         "shap_value": 0.7173275351524353,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+        "explanation": "Tasa de éxito histórica con el cliente"
       },
       {
         "feature": "contract_hitrate_ratio",
@@ -36,7 +36,7 @@
       {
         "feature": "customer_engagement",
         "shap_value": 0.15003325045108795,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+        "explanation": "Interacciones y calidad de relación con el cliente"
       },
       {
         "feature": "customer_activity",
@@ -48,7 +48,7 @@
       {
         "feature": "cust_interactions",
         "shap_value": -0.3100893497467041,
-        "explanation": "N\u00famero de interacciones con el cliente"
+        "explanation": "Número de interacciones con el cliente"
       },
       {
         "feature": "product_B_sold_in_the_past",
@@ -58,7 +58,7 @@
       {
         "feature": "cust_contracts",
         "shap_value": -0.04091488942503929,
-        "explanation": "N\u00famero de contratos con el cliente"
+        "explanation": "Número de contratos con el cliente"
       },
       {
         "feature": "cust_in_iberia",
@@ -68,7 +68,7 @@
       {
         "feature": "product_A_ratio",
         "shap_value": -0.016045251861214638,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+        "explanation": "Peso de ventas históricas de Product A"
       }
     ]
   },

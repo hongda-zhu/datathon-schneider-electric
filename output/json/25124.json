@@ -10,9 +10,9 @@
   "key_features": {
     "customer_activity": -0.08788,
     "total_competitors": 1.0,
-    "opp_old": -0.28185,
     "cust_hitrate": 0.21375,
-    "product_A_ratio": 0.07403054058630755
+    "product_A_ratio": 0.07403054058630755,
+    "opp_quality_score": 0.06737321623452303
   },
   "shap_analysis": {
     "base_value": 0.06737297773361206,
@@ -48,7 +48,7 @@
       {
         "feature": "cust_interactions",
         "shap_value": -0.10941747575998306,
-        "explanation": "N\u00famero de interacciones con el cliente"
+        "explanation": "Número de interacciones con el cliente"
       },
       {
         "feature": "competitor_Z",
@@ -63,7 +63,7 @@
       {
         "feature": "cust_contracts",
         "shap_value": -0.02288803644478321,
-        "explanation": "N\u00famero de contratos con el cliente"
+        "explanation": "Número de contratos con el cliente"
       },
       {
         "feature": "product_A",

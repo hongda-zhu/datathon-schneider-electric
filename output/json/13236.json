@@ -10,9 +10,9 @@
   "key_features": {
     "customer_activity": -0.42412333333333335,
     "total_competitors": 0.0,
-    "opp_old": -0.28185,
     "cust_hitrate": -1.02322,
-    "product_A_ratio": 0.7427134529660532
+    "product_A_ratio": 0.7427134529660532,
+    "opp_quality_score": -0.1371176188135787
   },
   "shap_analysis": {
     "base_value": 0.06737297773361206,
@@ -26,12 +26,12 @@
       {
         "feature": "product_A_ratio",
         "shap_value": 0.3164331912994385,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+        "explanation": "Peso de ventas históricas de Product A"
       },
       {
         "feature": "customer_engagement",
         "shap_value": 0.2642255425453186,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+        "explanation": "Interacciones y calidad de relación con el cliente"
       },
       {
         "feature": "iberia_engagement",
@@ -41,14 +41,14 @@
       {
         "feature": "cust_interactions",
         "shap_value": 0.18573473393917084,
-        "explanation": "N\u00famero de interacciones con el cliente"
+        "explanation": "Número de interacciones con el cliente"
       }
     ],
     "top_negative_factors": [
       {
         "feature": "cust_hitrate",
         "shap_value": -0.4047049582004547,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+        "explanation": "Tasa de éxito histórica con el cliente"
       },
       {
         "feature": "contract_hitrate_ratio",
@@ -58,7 +58,7 @@
       {
         "feature": "total_past_sales",
         "shap_value": -0.16523611545562744,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
+        "explanation": "Volumen total de ventas históricas"
       },
       {
         "feature": "competition_risk",

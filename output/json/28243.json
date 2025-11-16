@@ -10,9 +10,9 @@
   "key_features": {
     "customer_activity": 0.3265166666666667,
     "total_competitors": 1.0,
-    "opp_old": 3.54793,
     "cust_hitrate": -0.56734,
-    "product_A_ratio": 0.43935833939045627
+    "product_A_ratio": 0.43935833939045627,
+    "opp_quality_score": 0.10349633575618251
   },
   "shap_analysis": {
     "base_value": 0.06737297773361206,
@@ -36,7 +36,7 @@
       {
         "feature": "customer_engagement",
         "shap_value": 0.4227261543273926,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+        "explanation": "Interacciones y calidad de relación con el cliente"
       },
       {
         "feature": "opp_quality_score",
@@ -48,7 +48,7 @@
       {
         "feature": "cust_hitrate",
         "shap_value": -0.2887584865093231,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+        "explanation": "Tasa de éxito histórica con el cliente"
       },
       {
         "feature": "iberia_engagement",
@@ -68,7 +68,7 @@
       {
         "feature": "cust_interactions",
         "shap_value": -0.10447440296411514,
-        "explanation": "N\u00famero de interacciones con el cliente"
+        "explanation": "Número de interacciones con el cliente"
       }
     ]
   },

@@ -10,9 +10,9 @@
   "key_features": {
     "customer_activity": -0.06467666666666667,
     "total_competitors": 1.0,
-    "opp_old": -0.28185,
     "cust_hitrate": 0.45725,
-    "product_A_ratio": 0.42830306825297426
+    "product_A_ratio": 0.42830306825297426,
+    "opp_quality_score": 0.2890932273011897
   },
   "shap_analysis": {
     "base_value": 0.06737297773361206,
@@ -31,7 +31,7 @@
       {
         "feature": "customer_engagement",
         "shap_value": 0.46267297863960266,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+        "explanation": "Interacciones y calidad de relación con el cliente"
       },
       {
         "feature": "opp_month",
@@ -41,7 +41,7 @@
       {
         "feature": "cust_hitrate",
         "shap_value": 0.2960953414440155,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+        "explanation": "Tasa de éxito histórica con el cliente"
       }
     ],
     "top_negative_factors": [
@@ -53,7 +53,7 @@
       {
         "feature": "product_A_ratio",
         "shap_value": -0.1057431772351265,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+        "explanation": "Peso de ventas históricas de Product A"
       },
       {
         "feature": "competitor_Z",
@@ -63,7 +63,7 @@
       {
         "feature": "cust_interactions",
         "shap_value": -0.06104192137718201,
-        "explanation": "N\u00famero de interacciones con el cliente"
+        "explanation": "Número de interacciones con el cliente"
       },
       {
         "feature": "competition_risk",

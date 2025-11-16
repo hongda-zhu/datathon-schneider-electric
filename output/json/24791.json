@@ -10,9 +10,9 @@
   "key_features": {
     "customer_activity": 0.4866766666666667,
     "total_competitors": 2.0,
-    "opp_old": -0.28185,
     "cust_hitrate": 1.73092,
-    "product_A_ratio": 0.42830306825297426
+    "product_A_ratio": 0.42830306825297426,
+    "opp_quality_score": 0.8366002273011897
   },
   "shap_analysis": {
     "base_value": 0.06737297773361206,
@@ -21,7 +21,7 @@
       {
         "feature": "cust_hitrate",
         "shap_value": 1.0055707693099976,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+        "explanation": "Tasa de éxito histórica con el cliente"
       },
       {
         "feature": "opp_quality_score",
@@ -48,12 +48,12 @@
       {
         "feature": "total_competitors",
         "shap_value": -0.20170259475708008,
-        "explanation": "N\u00famero total de competidores presentes"
+        "explanation": "Número total de competidores presentes"
       },
       {
         "feature": "product_A_ratio",
         "shap_value": -0.17041616141796112,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+        "explanation": "Peso de ventas históricas de Product A"
       },
       {
         "feature": "competition_engagement",
@@ -68,7 +68,7 @@
       {
         "feature": "customer_engagement",
         "shap_value": -0.05135517194867134,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+        "explanation": "Interacciones y calidad de relación con el cliente"
       }
     ]
   },

@@ -10,9 +10,9 @@
   "key_features": {
     "customer_activity": -0.15589666666666666,
     "total_competitors": 1.0,
-    "opp_old": -0.28185,
     "cust_hitrate": 0.25967,
-    "product_A_ratio": 0.42830306825297426
+    "product_A_ratio": 0.42830306825297426,
+    "opp_quality_score": 0.2024532273011897
   },
   "shap_analysis": {
     "base_value": 0.06737297773361206,
@@ -21,12 +21,12 @@
       {
         "feature": "opp_old",
         "shap_value": 0.044431425631046295,
-        "explanation": "Antig\u00fcedad de la oportunidad"
+        "explanation": "Antigüedad de la oportunidad"
       },
       {
         "feature": "total_competitors",
         "shap_value": 0.02291375771164894,
-        "explanation": "N\u00famero total de competidores presentes"
+        "explanation": "Número total de competidores presentes"
       },
       {
         "feature": "opp_age_squared",
@@ -68,7 +68,7 @@
       {
         "feature": "cust_interactions",
         "shap_value": -0.22555814683437347,
-        "explanation": "N\u00famero de interacciones con el cliente"
+        "explanation": "Número de interacciones con el cliente"
       }
     ]
   },
