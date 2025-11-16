@@ -772,25 +772,6 @@ if page == "Global Insights":
     st.markdown('<div class="main-header">Global Model Insights</div>', unsafe_allow_html=True)
     st.markdown("**Comprehensive overview of model performance and key patterns across all opportunities**")
 
-    # Combined insights and recommendations at the top
-    st.markdown("---")
-
-    insights_text = " ".join(global_insights["business_insights"])
-    recommendations_text = " ".join(global_insights["recommendations"])
-
-    combined_html = f"""
-    <div class='combined-insights-box'>
-        <div class='insights-section'>
-            <strong style='color: #2196f3; font-size: 1.1rem;'>Key Insights:</strong> {insights_text}
-        </div>
-        <div class='recommendations-section'>
-            <strong style='color: #4caf50; font-size: 1.1rem;'>Recommendations:</strong> {recommendations_text}
-        </div>
-    </div>
-    """
-    st.markdown(combined_html, unsafe_allow_html=True)
-
-    st.markdown("---")
 
     # Performance metrics
     st.markdown('<div class="sub-header">Model Performance Metrics</div>', unsafe_allow_html=True)
@@ -1511,10 +1492,9 @@ elif page == "What-If Simulator":
                 for change in changes:
                     st.markdown(f"- {change}")
 
-        st.markdown("---")
+        #st.markdown("---")
 
         # SHAP for modified
-        st.markdown('<div class="sub-header">Updated SHAP Explanation</div>', unsafe_allow_html=True)
         try:
             new_shap = explainer.shap_values(modified_row.values.reshape(1, -1))
             if isinstance(new_shap, list):
@@ -1525,9 +1505,6 @@ elif page == "What-If Simulator":
             base_val = explainer.expected_value
             if isinstance(base_val, (list, np.ndarray)):
                 base_val = float(base_val[1] if len(np.atleast_1d(base_val)) > 1 else base_val[0])
-
-            plot_shap_waterfall(new_shap, modified_row, base_val)
-            st.caption("Starting from the average prediction, red bars increase the probability and blue bars decrease it for this simulated scenario.")
 
             pos_drivers, neg_drivers = summarize_shap(new_shap, feature_names)
             if pos_drivers or neg_drivers:
@@ -1545,6 +1522,13 @@ elif page == "What-If Simulator":
                     driver_html += "</ul></div>"
                 driver_html += "</div>"
                 st.markdown(driver_html, unsafe_allow_html=True)
+                st.markdown('<br>', unsafe_allow_html=True)
+
+            st.markdown('<div class="sub-header">Updated Graphical Representation</div>', unsafe_allow_html=True)
+            plot_shap_waterfall(new_shap, modified_row, base_val)
+            st.caption("Starting from the average prediction, red bars increase the probability and blue bars decrease it for this simulated scenario.")
+
+
 
             with st.expander("How to interpret this chart"):
                 st.markdown("""
