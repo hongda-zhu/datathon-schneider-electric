@@ -925,8 +925,13 @@ if page == "Global Insights":
     st.markdown('<div class="sub-header">Feature Impact on Win Probability</div>', unsafe_allow_html=True)
     if Path("output/images/shap_summary.png").exists():
         with st.expander("See SHAP summary plot"):
+            st.markdown("""
+                <div class="chart-description">
+                Each dot represents an opportunity. Red = high feature value, Blue = low feature value. Right side increases win chance, left side decreases it. 
+                </div>
+                """, unsafe_allow_html=True)
             st.image("output/images/shap_summary.png", width="stretch")
-            st.caption("Each dot represents an opportunity. Red = high feature value, Blue = low feature value. Right side increases win chance, left side decreases it.")
+            #st.caption("Each dot represents an opportunity. Red = high feature value, Blue = low feature value. Right side increases win chance, left side decreases it.")
     else:
         st.info("SHAP summary image not found. Please regenerate it from the Colab notebook.")
 
