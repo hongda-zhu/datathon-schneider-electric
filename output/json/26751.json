@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "26751",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.5637187957763672,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.28426999999999997,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.5564869348534202,
+    "cust_hitrate": 1.62364,
+    "product_A_ratio": -2.82214983713355
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 0.25626760721206665,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.7170656323432922,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "product_D",
+        "shap_value": 0.5426353812217712,
+        "explanation": "Product D"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.3614242374897003,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.3469852805137634,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": 0.3034311830997467,
+        "explanation": "Diversidad de productos activos"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -0.9446901082992554,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.39242902398109436,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.25580501556396484,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.24168147146701813,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.17253540456295013,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Nurture",
+    "priority": "Medium",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

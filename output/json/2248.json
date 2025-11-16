@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "2248",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9694925546646118,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.22730333333333338,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.7535862273011897,
+    "cust_hitrate": 1.71358,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.458801507949829,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.9121209383010864,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.561866283416748,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.48287931084632874,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.46897754073143005,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.3067447245121002,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.11465790867805481,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.08681192249059677,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.049366407096385956,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.03607301414012909,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": -0.029461517930030823,
+        "explanation": "Low Engagement Risk"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

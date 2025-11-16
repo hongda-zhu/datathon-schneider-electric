@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "18765",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.995384156703949,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.1894066666666667,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.572423600843165,
+    "cust_hitrate": 1.59989,
+    "product_A_ratio": 0.0890865021079127
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 5.373622417449951,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 1.7463014125823975,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.7732739448547363,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.48509350419044495,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.47667330503463745,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.4137814939022064,
+        "explanation": "Opp Month"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -0.5289351940155029,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.23751933872699738,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.15052221715450287,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "opp_maturity",
+        "shap_value": -0.07880110293626785,
+        "explanation": "Madurez de la oportunidad"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": -0.056179989129304886,
+        "explanation": "Low Engagement Risk"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

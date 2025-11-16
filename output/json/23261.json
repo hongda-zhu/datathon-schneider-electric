@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "23261",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.9386357069015503,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.18358000000000005,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.7011182273011898,
+    "cust_hitrate": 1.58241,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 2.7275960445404053,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 1.3566356897354126,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.9138742089271545,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.6591438055038452,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.44960349798202515,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.358321875333786,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -0.8433873653411865,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.40950411558151245,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.28055232763290405,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.2198571115732193,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.16103331744670868,
+        "explanation": "Product B Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

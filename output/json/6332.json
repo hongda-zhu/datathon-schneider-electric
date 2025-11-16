@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "6332",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.0009877467527985573,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.5882533333333333,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.5231670733515413,
+    "cust_hitrate": -1.04827,
+    "product_A_ratio": 2.5353101833788534
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -6.919092178344727,
+    "top_positive_factors": [
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.15970787405967712,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.019384637475013733,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.006539891939610243,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "has_competition",
+        "shap_value": 0.0036547845229506493,
+        "explanation": "Indicador de presencia de competencia"
+      },
+      {
+        "feature": "competitor_diversity",
+        "shap_value": 0.0010597112122923136,
+        "explanation": "Diversidad de competidores en la oferta"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -1.8206192255020142,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -1.2389805316925049,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.7703709602355957,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.46303674578666687,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.4583008885383606,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

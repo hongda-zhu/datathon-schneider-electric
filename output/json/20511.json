@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "20511",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.893575131893158,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.2838033333333333,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.7757382273011897,
+    "cust_hitrate": 1.73092,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 2.127790927886963,
+    "top_positive_factors": [
+      {
+        "feature": "product_A",
+        "shap_value": 1.2996877431869507,
+        "explanation": "Product A"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": 0.8549595475196838,
+        "explanation": "Diversidad de productos activos"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.5384461283683777,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.23267504572868347,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.1553449034690857,
+        "explanation": "Product A Recommended"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.8944664597511292,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.28864628076553345,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.16859471797943115,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.08324923366308212,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.06360146403312683,
+        "explanation": "Hitrate Contracts"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

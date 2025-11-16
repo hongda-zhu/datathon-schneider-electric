@@ -1,0 +1,85 @@
+{
+  "opportunity_id": "13187",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.0034741903655231,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.3957633333333333,
+    "total_competitors": 2.0,
+    "opp_quality_score": 0.27579288481990566,
+    "cust_hitrate": 0.6974,
+    "product_A_ratio": -0.13039028795023577
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -5.65890645980835,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.044191427528858185,
+        "explanation": "Antigüedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.016331374645233154,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.011691318824887276,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.007141321897506714,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "opp_maturity",
+        "shap_value": 0.003818097524344921,
+        "explanation": "Madurez de la oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.7744346857070923,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.6674846410751343,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.4646102488040924,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.4537099599838257,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.4497051537036896,
+        "explanation": "Volumen total de ventas históricas"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Immediately gather intelligence on the competitor's proposed solution and pricing to identify potential weaknesses and differentiators for Schneider Electric.",
+      "Implement a strategy to improve the opportunity quality score by addressing any gaps in customer needs understanding, solution alignment, or stakeholder engagement, potentially including a revised proposal or demonstration.",
+      "Proactively re-engage with the customer to understand their concerns regarding the competition and to reinforce the value proposition of Schneider Electric's solution, emphasizing aspects where Schneider Electric outperforms the competitor."
+    ],
+    "ai_generated": true
+  }
+}

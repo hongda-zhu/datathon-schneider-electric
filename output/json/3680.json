@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "3680",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.004542602226138115,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.22088,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.6038134408490511,
+    "cust_hitrate": -0.45696,
+    "product_A_ratio": -1.0011536021226277
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -5.389700412750244,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.048412345349788666,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.04598333314061165,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.04553758725523949,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": 0.035301804542541504,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.026711538434028625,
+        "explanation": "Riesgo asociado a la competencia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.763099193572998,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.7407950162887573,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.6603533625602722,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.5501407980918884,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": -0.4308045506477356,
+        "explanation": "Product A Recommended"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

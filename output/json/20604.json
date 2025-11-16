@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "20604",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9759522080421448,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.08240333333333331,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.16565987785929756,
+    "cust_hitrate": -0.73175,
+    "product_A_ratio": 0.9011596946482439
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.703367233276367,
+    "top_positive_factors": [
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.5512424111366272,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.46734124422073364,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.4295854866504669,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.40126729011535645,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.37459832429885864,
+        "explanation": "Product B Sold In The Past"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.2678844630718231,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.07000068575143814,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.032873090356588364,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.019565578550100327,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "product_A",
+        "shap_value": -0.005905100144445896,
+        "explanation": "Product A"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

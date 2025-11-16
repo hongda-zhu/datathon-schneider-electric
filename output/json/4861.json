@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "4861",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.858792245388031,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.8295466666666665,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.5362459861106451,
+    "cust_hitrate": 0.3766,
+    "product_A_ratio": 0.43600496527661287
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 1.8052942752838135,
+    "top_positive_factors": [
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.4771892726421356,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.34465816617012024,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.28041690587997437,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.2445276528596878,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.2306617796421051,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.503871500492096,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.15437909960746765,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.03538770601153374,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.03364352881908417,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.03343608230352402,
+        "explanation": "Product B Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "23244",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.012435703538358212,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.01133333333333336,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.01439888719977242,
+    "cust_hitrate": -0.56734,
+    "product_A_ratio": 0.38100778200056884
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.374666690826416,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.04183110594749451,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.032327212393283844,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "has_competition",
+        "shap_value": 0.02200367860496044,
+        "explanation": "Indicador de presencia de competencia"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.011871273629367352,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.011426233686506748,
+        "explanation": "Competition Engagement"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.6948291659355164,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.5809884071350098,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.43039751052856445,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": -0.3936443030834198,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.3648029863834381,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

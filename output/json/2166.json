@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "2166",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.0060984003357589245,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.18810333333333332,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.032652993249986384,
+    "cust_hitrate": -0.7081,
+    "product_A_ratio": 0.47162998312496596
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -5.09360933303833,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.04602012410759926,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.029034510254859924,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.010240728966891766,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "competitor_diversity",
+        "shap_value": 0.008952497504651546,
+        "explanation": "Diversidad de competidores en la oferta"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.008406915701925755,
+        "explanation": "Opp Age Squared"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -1.26529860496521,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -1.0634078979492188,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.6162845492362976,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.5212172865867615,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.25552573800086975,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

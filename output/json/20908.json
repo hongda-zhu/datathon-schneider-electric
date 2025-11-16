@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "20908",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.033916737884283066,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.30916666666666665,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.18706200280380222,
+    "cust_hitrate": -0.13493,
+    "product_A_ratio": -0.13458250700950558
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.3493423461914062,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.0633246973156929,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.022245535627007484,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.018732009455561638,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "has_competition",
+        "shap_value": 0.017939474433660507,
+        "explanation": "Indicador de presencia de competencia"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.010135982185602188,
+        "explanation": "Low Engagement Risk"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": -0.4962599575519562,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.4676528573036194,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.45662638545036316,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.4071703553199768,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.3385438024997711,
+        "explanation": "Nivel global de actividad del cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "23923",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9809573888778687,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.30012333333333335,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.09701834338479723,
+    "cust_hitrate": 0.1313,
+    "product_A_ratio": 0.36916335846199305
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.941850185394287,
+    "top_positive_factors": [
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.8703122735023499,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.8337562680244446,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.6335781812667847,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.6074321866035461,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.4369046092033386,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": -0.23957735300064087,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.2241503894329071,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.12397702038288116,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": -0.060555797070264816,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.05335213243961334,
+        "explanation": "Nivel global de actividad del cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

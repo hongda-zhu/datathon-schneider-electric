@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "24308",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.003353789681568742,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.3827933333333333,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.1251045763763523,
+    "cust_hitrate": -1.10572,
+    "product_A_ratio": 1.4291464409408807
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -5.694303035736084,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.06765937060117722,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.018725886940956116,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.011290350928902626,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "has_past_sales",
+        "shap_value": 0.010512144304811954,
+        "explanation": "Has Past Sales"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.008584813214838505,
+        "explanation": "Low Engagement Risk"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -1.3272004127502441,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.6628031134605408,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.646379292011261,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.5547551512718201,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.38195130228996277,
+        "explanation": "Competitor Z"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

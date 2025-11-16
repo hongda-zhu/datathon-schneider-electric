@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "339",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9918789863586426,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.36922000000000005,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.6989132273011898,
+    "cust_hitrate": 1.38942,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.805151462554932,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 1.0645413398742676,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.8047636151313782,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.5728346705436707,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.5385702848434448,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.3663986027240753,
+        "explanation": "Score agregado de calidad de oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.1084471270442009,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.06849457323551178,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.06537407636642456,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": -0.026379020884633064,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.014081474393606186,
+        "explanation": "Product A Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

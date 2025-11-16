@@ -1,0 +1,85 @@
+{
+  "opportunity_id": "3692",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.3737781345844269,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
+  },
+  "key_features": {
+    "customer_activity": -0.7109933333333333,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.3723697726988102,
+    "cust_hitrate": -1.10131,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -0.5160424709320068,
+    "top_positive_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.30288413166999817,
+        "explanation": "Número de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.18295709788799286,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.08654076606035233,
+        "explanation": "Antigüedad de la oportunidad"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.05111532658338547,
+        "explanation": "Volumen total de ventas históricas"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.030928388237953186,
+        "explanation": "Competition Engagement"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.701942503452301,
+        "explanation": "Tasa de éxito histórica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.26728183031082153,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.09549671411514282,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.08258867263793945,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.059389468282461166,
+        "explanation": "Hitrate Contracts"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Address the low customer hit rate by researching past interactions, identifying pain points, and tailoring the solution to better meet their needs.",
+      "Improve the contract hit rate ratio by reviewing contract terms, offering flexible payment options, or demonstrating a strong ROI to justify the contract value.",
+      "Increase customer activity by proactively engaging with them through product demos, webinars, or personalized presentations to reignite interest and address any concerns."
+    ],
+    "ai_generated": true
+  }
+}

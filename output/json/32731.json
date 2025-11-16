@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "32731",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.0003507343935780227,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.4096466666666667,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.24842486462625077,
+    "cust_hitrate": -1.05587,
+    "product_A_ratio": 0.4780753384343731
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -7.955129146575928,
+    "top_positive_factors": [
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.21943727135658264,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.12855146825313568,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.013279449194669724,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": 0.013116147369146347,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": 0.008990591391921043,
+        "explanation": "Product A Sold In The Past"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "product_A_recommended",
+        "shap_value": -2.0228235721588135,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": -1.7920386791229248,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -1.3206740617752075,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.613909900188446,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.417011559009552,
+        "explanation": "Engagement de clientes de Iberia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

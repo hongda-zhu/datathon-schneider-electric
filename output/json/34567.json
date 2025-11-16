@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "34567",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.0036343252286314964,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.39719,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.4069148058825584,
+    "cust_hitrate": 0.35389,
+    "product_A_ratio": 0.45397701470639606
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -5.6136908531188965,
+    "top_positive_factors": [
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.22352184355258942,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.012320214882493019,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.0103280795738101,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.009997740387916565,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "competitor_diversity",
+        "shap_value": 0.008014872670173645,
+        "explanation": "Diversidad de competidores en la oferta"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -2.1605541706085205,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.652740478515625,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.43678930401802063,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.3544847071170807,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.30175480246543884,
+        "explanation": "Product B Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

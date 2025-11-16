@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "5806",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.949588418006897,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.04246,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.16094626926016814,
+    "cust_hitrate": 0.09119,
+    "product_A_ratio": 0.3021281731504204
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 2.9358060359954834,
+    "top_positive_factors": [
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.4783109426498413,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.45464834570884705,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.41388553380966187,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.38288742303848267,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.29092687368392944,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.13548819720745087,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.07498308271169662,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.03735371306538582,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.03620707616209984,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.029431091621518135,
+        "explanation": "Competitor Z"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

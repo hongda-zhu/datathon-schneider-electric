@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "30048",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.0061773210763931274,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.06547000000000003,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.30184368442649934,
+    "cust_hitrate": -1.15364,
+    "product_A_ratio": 0.15972328893375173
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -5.080672264099121,
+    "top_positive_factors": [
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.22249512374401093,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.1886804848909378,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.04313456267118454,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.019704652950167656,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.011258737184107304,
+        "explanation": "N\u00famero total de competidores presentes"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -1.642932653427124,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -1.0402016639709473,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.4218553900718689,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.37552887201309204,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.34734150767326355,
+        "explanation": "Competitor Z"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

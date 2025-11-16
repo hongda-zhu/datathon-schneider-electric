@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "33341",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.9659547805786133,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.15805666666666662,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.4645388866932869,
+    "cust_hitrate": 1.29934,
+    "product_A_ratio": 0.0682997167332173
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.3454270362854004,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 1.0424013137817383,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.7273380160331726,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "product_A",
+        "shap_value": 0.5898351073265076,
+        "explanation": "Product A"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": 0.4679919183254242,
+        "explanation": "Diversidad de productos activos"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.3734790086746216,
+        "explanation": "Product B Sold In The Past"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -0.2985895276069641,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.23551489412784576,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.21259118616580963,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.13248787820339203,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.10798158496618271,
+        "explanation": "Hitrate Interaction"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

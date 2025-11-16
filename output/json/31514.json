@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "31514",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9833903908729553,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.23308333333333334,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.618813216234523,
+    "cust_hitrate": 1.73092,
+    "product_A_ratio": 0.07403054058630755
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.081029415130615,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.9971427321434021,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.5517709851264954,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.4266388416290283,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.3710594177246094,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.3040286898612976,
+        "explanation": "Competencia en clientes de Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.09632126986980438,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.05021725222468376,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "has_competition",
+        "shap_value": -0.013413949869573116,
+        "explanation": "Indicador de presencia de competencia"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.00831164512783289,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": -0.00488852197304368,
+        "explanation": "Low Engagement Risk"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

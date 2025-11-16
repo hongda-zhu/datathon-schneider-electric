@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "22230",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.025858236476778984,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.2985966666666667,
+    "total_competitors": 2.0,
+    "opp_quality_score": -0.1963561151800943,
+    "cust_hitrate": -0.18207,
+    "product_A_ratio": -0.13039028795023577
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.6289286613464355,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.0687672570347786,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.029800347983837128,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.029138028621673584,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.019848933443427086,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.01511502917855978,
+        "explanation": "Cust In Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.4954834580421448,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.45322495698928833,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.4398510158061981,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.34684860706329346,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.2617693841457367,
+        "explanation": "N\u00famero total de competidores presentes"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

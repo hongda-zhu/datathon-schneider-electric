@@ -1,0 +1,91 @@
+{
+  "opportunity_id": "25199",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.7758504152297974,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.19852333333333336,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.6603612273011897,
+    "cust_hitrate": 1.43161,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 1.241645336151123,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.6831607222557068,
+        "explanation": "Tasa de éxito histórica con el cliente"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.3338298499584198,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.223732590675354,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.18429581820964813,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.1125689297914505,
+        "explanation": "Hitrate Contracts"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.24286726117134094,
+        "explanation": "Número de interacciones con el cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.1872064471244812,
+        "explanation": "Interacciones y calidad de relación con el cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.07745462656021118,
+        "explanation": "Peso de ventas históricas de Product A"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.048770688474178314,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.04024853557348251,
+        "explanation": "Hitrate Interaction"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      {
+        "step": "Increase the quality and relevance of customer interactions by focusing on their specific pain points and demonstrating how our solutions directly address them, thereby improving cust_interactions."
+      },
+      {
+        "step": "Proactively engage the customer with valuable content and personalized communication to boost customer_engagement and demonstrate our commitment to their success."
+      },
+      {
+        "step": "Evaluate the current product mix and explore opportunities to introduce complementary products or solutions that reduce the reliance on product A, addressing the product_A_ratio concern."
+      }
+    ],
+    "ai_generated": true
+  }
+}

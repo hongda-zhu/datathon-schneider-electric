@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "21477",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9939204454421997,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.11732666666666669,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.5141823155735007,
+    "cust_hitrate": 1.38365,
+    "product_A_ratio": 0.15972328893375173
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 5.096730709075928,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 1.0665849447250366,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.6953904032707214,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.38924625515937805,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.381917268037796,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.37249937653541565,
+        "explanation": "Nivel global de actividad del cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.07318528741598129,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": -0.04879564419388771,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "has_competition",
+        "shap_value": -0.017862310633063316,
+        "explanation": "Indicador de presencia de competencia"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": -0.007065892219543457,
+        "explanation": "Diversidad de productos activos"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.005540676414966583,
+        "explanation": "Competencia en clientes de Iberia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "22137",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.9989714622497559,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 1.79728,
+    "total_competitors": 0.0,
+    "opp_quality_score": 1.9782198737758434,
+    "cust_hitrate": 1.65424,
+    "product_A_ratio": 2.3569096844396085
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 6.878623008728027,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 1.4455310106277466,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 1.1337428092956543,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.7659509778022766,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.6775570511817932,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.6503548622131348,
+        "explanation": "N\u00famero de contratos con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.08244596421718597,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.06471628695726395,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.029841069132089615,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": -0.00828190054744482,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.008034557104110718,
+        "explanation": "Competencia en clientes de Iberia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

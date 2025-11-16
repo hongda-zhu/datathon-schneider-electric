@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "63",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9885576963424683,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.024653333333333343,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.3428368214536107,
+    "cust_hitrate": 0.10575,
+    "product_A_ratio": 0.7592895536340267
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.458932876586914,
+    "top_positive_factors": [
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.7878469824790955,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.7580544948577881,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.6238295435905457,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.5012096166610718,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.3250177502632141,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.21802008152008057,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.20488537847995758,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.02984512597322464,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "has_competition",
+        "shap_value": -0.005899364128708839,
+        "explanation": "Indicador de presencia de competencia"
+      },
+      {
+        "feature": "product_A",
+        "shap_value": -0.0029870406724512577,
+        "explanation": "Product A"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

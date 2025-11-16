@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "20628",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.03167635574936867,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.6644199999999999,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.3389598646262507,
+    "cust_hitrate": -1.10288,
+    "product_A_ratio": 0.4780753384343731
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.419996976852417,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.06596989929676056,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.06578610092401505,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.06499876081943512,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.05232873186469078,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.04407763481140137,
+        "explanation": "Cust In Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -1.056756615638733,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.48281779885292053,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.3645756244659424,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.3597370982170105,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "competitor_X",
+        "shap_value": -0.32390832901000977,
+        "explanation": "Competitor X"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

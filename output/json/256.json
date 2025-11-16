@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "256",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9920096397399902,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.29616000000000003,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.5437253811953832,
+    "cust_hitrate": 0.75724,
+    "product_A_ratio": 0.5692634529884579
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.821503162384033,
+    "top_positive_factors": [
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.5223181247711182,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.5207205414772034,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.515109121799469,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.49999678134918213,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.479779988527298,
+        "explanation": "Engagement de clientes de Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.03030196763575077,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": -0.003004977246746421,
+        "explanation": "Diversidad de productos activos"
+      },
+      {
+        "feature": "product_A",
+        "shap_value": -0.002071686089038849,
+        "explanation": "Product A"
+      },
+      {
+        "feature": "product_D",
+        "shap_value": -0.0017557879909873009,
+        "explanation": "Product D"
+      },
+      {
+        "feature": "product_count",
+        "shap_value": -0.0003922021423932165,
+        "explanation": "N\u00famero de l\u00edneas de producto en la oportunidad"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

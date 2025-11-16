@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "7176",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.010860085487365723,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.6671933333333334,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.6609037037701975,
+    "cust_hitrate": -1.15467,
+    "product_A_ratio": -0.2858617594254937
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.511740684509277,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.06196365877985954,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.025279229506850243,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.018314503133296967,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.017020193859934807,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": 0.008892880752682686,
+        "explanation": "Hitrate Interaction"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.6835477352142334,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.5631330013275146,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.5194904804229736,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.4805058240890503,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.34539008140563965,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

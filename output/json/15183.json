@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "15183",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9758298397064209,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.31261666666666665,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.40403374126144714,
+    "cust_hitrate": 0.57561,
+    "product_A_ratio": -1.6762543531536176
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.6981699466705322,
+    "top_positive_factors": [
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.6530582904815674,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.5421064496040344,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.362475723028183,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.3131755292415619,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.3076857328414917,
+        "explanation": "Opp Month"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.12436068803071976,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.01819588989019394,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.010249867103993893,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "has_competition",
+        "shap_value": -0.00973305944353342,
+        "explanation": "Indicador de presencia de competencia"
+      },
+      {
+        "feature": "has_past_sales",
+        "shap_value": -0.00608191080391407,
+        "explanation": "Has Past Sales"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

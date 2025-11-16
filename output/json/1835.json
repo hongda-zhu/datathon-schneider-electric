@@ -1,0 +1,85 @@
+{
+  "opportunity_id": "1835",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.0016815450508147478,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.17311666666666667,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.17855062773853167,
+    "cust_hitrate": -1.04185,
+    "product_A_ratio": 0.46484843065367076
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -6.386358737945557,
+    "top_positive_factors": [
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.09430627524852753,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.062194835394620895,
+        "explanation": "Antigüedad de la oportunidad"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.02196306362748146,
+        "explanation": "Volumen total de ventas históricas"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.021406074985861778,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": 0.009143294766545296,
+        "explanation": "Product A Sold In The Past"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "product_A_recommended",
+        "shap_value": -2.1992878913879395,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -1.2423166036605835,
+        "explanation": "Tasa de éxito histórica con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.6732378005981445,
+        "explanation": "Número de interacciones con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.5394291877746582,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.38629859685897827,
+        "explanation": "Engagement de clientes de Iberia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Immediately re-evaluate the recommended product and explore alternative solutions to address customer needs, potentially pivoting away from product A.",
+      "Analyze past customer interactions and hit rates to understand the root cause of the low conversion and develop a targeted engagement strategy to improve customer confidence.",
+      "Increase the frequency and quality of customer interactions, focusing on addressing concerns and building trust, to demonstrate commitment and value."
+    ],
+    "ai_generated": true
+  }
+}

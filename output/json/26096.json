@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "26096",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.015967076644301414,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.2960833333333333,
+    "total_competitors": 1.0,
+    "opp_quality_score": 1.0850020377358494,
+    "cust_hitrate": -0.38913,
+    "product_A_ratio": 3.2264150943396226
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.121129989624023,
+    "top_positive_factors": [
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.246604785323143,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.0981123223900795,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.07633370906114578,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.048652004450559616,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": 0.03386569023132324,
+        "explanation": "Hitrate Interaction"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -1.1914726495742798,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.6553076505661011,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.5586637258529663,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.4504077434539795,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.4150310456752777,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

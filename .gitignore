@@ -47,12 +47,11 @@ Thumbs.db
 *.ipynb
 
 # Output directories
-output/
 out_2/
-*.pkl
-*.h5
-*.model
-*.joblib
+output/*.pkl
+output/*.h5
+output/*.model
+output/*.joblib
 
 # Logs
 *.log
@@ -74,4 +73,3 @@ logs/
 
 # Streamlit
 .streamlit/secrets.toml
-

@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "13959",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9876469373703003,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.06153333333333333,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.18125114710739845,
+    "cust_hitrate": -0.25095,
+    "product_A_ratio": -0.3110653677684961
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.381422519683838,
+    "top_positive_factors": [
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.5856776833534241,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.5439014434814453,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.518231987953186,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.5025550127029419,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.4880675971508026,
+        "explanation": "Nivel global de actividad del cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.05813083052635193,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.02715439908206463,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": -0.003833863651379943,
+        "explanation": "Diversidad de productos activos"
+      },
+      {
+        "feature": "product_A",
+        "shap_value": -0.0026784627698361874,
+        "explanation": "Product A"
+      },
+      {
+        "feature": "product_D",
+        "shap_value": -0.001425230992026627,
+        "explanation": "Product D"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

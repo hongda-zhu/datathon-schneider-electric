@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "14280",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9647774696350098,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.21886999999999998,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.3264543357561825,
+    "cust_hitrate": 0.2835,
+    "product_A_ratio": 0.43935833939045627
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.3102097511291504,
+    "top_positive_factors": [
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.47360730171203613,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.4275018572807312,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.358445942401886,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.2759825885295868,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.2696060240268707,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.27581077814102173,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.05530894547700882,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.00608727615326643,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": -0.004308818373829126,
+        "explanation": "Diversidad de productos activos"
+      },
+      {
+        "feature": "product_D",
+        "shap_value": -0.0015578762395307422,
+        "explanation": "Product D"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

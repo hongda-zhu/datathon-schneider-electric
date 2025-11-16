@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "21227",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.0006863094167783856,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.6594866666666667,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.2940592273011897,
+    "cust_hitrate": -0.25036,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -7.283497333526611,
+    "top_positive_factors": [
+      {
+        "feature": "competitor_Y",
+        "shap_value": 0.03246704488992691,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.02820068597793579,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.012595444917678833,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.010851584374904633,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.009227448143064976,
+        "explanation": "Cust In Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -1.6237730979919434,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": -0.9253860116004944,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.6049510836601257,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.5649644732475281,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.4745984673500061,
+        "explanation": "Competition Engagement"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

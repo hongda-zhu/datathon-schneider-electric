@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "35451",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9572449922561646,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.8269266666666667,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.28999454014598536,
+    "cust_hitrate": 0.49106,
+    "product_A_ratio": -0.2635036496350365
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.1085729598999023,
+    "top_positive_factors": [
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.5344008803367615,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.5253589153289795,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.4651642143726349,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.2602444887161255,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.24356898665428162,
+        "explanation": "Competition Engagement"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.09207175672054291,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.0897076427936554,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.06039799749851227,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.013257486745715141,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": -0.010544901713728905,
+        "explanation": "N\u00famero de contratos con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

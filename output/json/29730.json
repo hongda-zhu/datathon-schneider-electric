@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "29730",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Win",
+    "win_probability": 0.16863147914409637,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
+  },
+  "key_features": {
+    "customer_activity": -0.2410566666666667,
+    "total_competitors": 2.0,
+    "opp_quality_score": -0.06922601586301952,
+    "cust_hitrate": -0.39261,
+    "product_A_ratio": 0.3021849603424512
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -1.595357894897461,
+    "top_positive_factors": [
+      {
+        "feature": "product_mix",
+        "shap_value": 0.967362105846405,
+        "explanation": "Diversidad de productos activos"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.8729218244552612,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "product_A",
+        "shap_value": 0.7667355537414551,
+        "explanation": "Product A"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.08830220997333527,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.06537967920303345,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.5132179856300354,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.509674072265625,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.4911632537841797,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.4688955843448639,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.3769574463367462,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

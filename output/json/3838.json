@@ -1,0 +1,94 @@
+{
+  "opportunity_id": "3838",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.11791899055242538,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
+  },
+  "key_features": {
+    "customer_activity": -0.01716999999999998,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.46021822730118966,
+    "cust_hitrate": 0.98016,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -2.012286424636841,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.42559191584587097,
+        "explanation": "Tasa de éxito histórica con el cliente"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.18601933121681213,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.06730620563030243,
+        "explanation": "Antigüedad de la oportunidad"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.052326418459415436,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.034634560346603394,
+        "explanation": "Volumen total de ventas históricas"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.5693201422691345,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.34036561846733093,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.3302796483039856,
+        "explanation": "Interacciones y calidad de relación con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.317789226770401,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.19008590281009674,
+        "explanation": "Competitor Y"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      {
+        "step": "Develop a competitive matrix highlighting Schneider Electric's key differentiators and value proposition compared to the competition to mitigate the high competition risk.",
+        "rationale": "Addressing the competition_risk is crucial to improving win probability."
+      },
+      {
+        "step": "Proactively re-engage the customer by scheduling a meeting to understand their current needs, address concerns, and re-emphasize the value of our solution to combat low customer_engagement.",
+        "rationale": "Increase customer engagement to improve odds"
+      },
+      {
+        "step": "Increase customer activity by providing them with valuable resources, demos, or site visits tailored to their specific challenges, aiming to stimulate activity and demonstrate commitment.",
+        "rationale": "Increase customer activity to signal interest in our solution"
+      }
+    ],
+    "ai_generated": true
+  }
+}

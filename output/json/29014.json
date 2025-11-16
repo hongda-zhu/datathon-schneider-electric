@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "29014",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.006724090781062841,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.74173,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.7784278109589263,
+    "cust_hitrate": 1.6671,
+    "product_A_ratio": 0.13944702739731582
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.995312213897705,
+    "top_positive_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.04397726431488991,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.030962379649281502,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.01540978904813528,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "opp_maturity",
+        "shap_value": 0.0032831132411956787,
+        "explanation": "Madurez de la oportunidad"
+      },
+      {
+        "feature": "has_competition",
+        "shap_value": 0.0011787187540903687,
+        "explanation": "Indicador de presencia de competencia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": -0.7340734004974365,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.6397837996482849,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.5408046841621399,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.47151726484298706,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.4504918158054352,
+        "explanation": "Engagement de clientes de Iberia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

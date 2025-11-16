@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "23337",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9935656189918518,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.10063333333333335,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.5838957952827164,
+    "cust_hitrate": 1.19228,
+    "product_A_ratio": 0.49005448820679115
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 5.039651870727539,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 1.0627723932266235,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.5002252459526062,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.44720718264579773,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.3159081041812897,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.3115554749965668,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.15695825219154358,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.031601760536432266,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": -0.02061273716390133,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.015281000174582005,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.015101581811904907,
+        "explanation": "Competitor Y"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

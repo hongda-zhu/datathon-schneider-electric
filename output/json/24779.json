@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "24779",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.00790087878704071,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.3289066666666666,
+    "total_competitors": 2.0,
+    "opp_quality_score": -1.0471271814209417,
+    "cust_hitrate": -0.35718,
+    "product_A_ratio": -2.1032529535523543
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.832841396331787,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.07121481746435165,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.02352146804332733,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.014398125931620598,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.00853682029992342,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "opp_maturity",
+        "shap_value": 0.008407814428210258,
+        "explanation": "Madurez de la oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.6314901113510132,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.5294635891914368,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.4871066212654114,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.43676549196243286,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.39647945761680603,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

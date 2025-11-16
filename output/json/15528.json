@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "15528",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.023963475599884987,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.47401333333333323,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.19294032653734355,
+    "cust_hitrate": -0.70832,
+    "product_A_ratio": 0.404399183656641
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.706970691680908,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.06010220944881439,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.05392342060804367,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.03086339682340622,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.01646585389971733,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.015874769538640976,
+        "explanation": "Low Engagement Risk"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.7199166417121887,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.6709079742431641,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.37262117862701416,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.3264865577220917,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.2752114236354828,
+        "explanation": "Nivel global de actividad del cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

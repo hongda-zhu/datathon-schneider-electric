@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "17898",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.0082584572955966,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.10447666666666666,
+    "total_competitors": 2.0,
+    "opp_quality_score": 0.4390124011444714,
+    "cust_hitrate": 0.77995,
+    "product_A_ratio": 0.4342110028611785
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.788222789764404,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.05160834267735481,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.02340422198176384,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.007418375462293625,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": 0.005748441442847252,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "opp_maturity",
+        "shap_value": 0.005146491806954145,
+        "explanation": "Madurez de la oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.5820487141609192,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.522028386592865,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.41810840368270874,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.3726908564567566,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.3447283208370209,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

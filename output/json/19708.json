@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "19708",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.002966764150187373,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.26492666666666664,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.9692872086341426,
+    "cust_hitrate": -0.92602,
+    "product_A_ratio": -1.5300080215853566
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -5.817310333251953,
+    "top_positive_factors": [
+      {
+        "feature": "competitor_Y",
+        "shap_value": 0.05534660071134567,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.05046912655234337,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.017480697482824326,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.012442548759281635,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.006943805143237114,
+        "explanation": "Competition Engagement"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -1.0216933488845825,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.7285428643226624,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.6047916412353516,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.5954015851020813,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.4124698340892792,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "opportunity_id": "23525",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.7022250890731812,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.5208233333333333,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.33493577269881025,
+    "cust_hitrate": -1.1667,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 0.857916533946991,
+    "top_positive_factors": [
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.33839696645736694,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.17583540081977844,
+        "explanation": "Interacciones y calidad de relación con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.13383713364601135,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.12609823048114777,
+        "explanation": "Número de contratos con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.11994433403015137,
+        "explanation": "Número de interacciones con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.28872326016426086,
+        "explanation": "Tasa de éxito histórica con el cliente"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.21848689019680023,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.06884277611970901,
+        "explanation": "Peso de ventas históricas de Product A"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.06322585046291351,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.018749192357063293,
+        "explanation": "Cust In Iberia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      {
+        "step": "Develop a strategy to improve the customer's overall hit rate with Schneider Electric, potentially through targeted training or showcasing successful case studies with similar clients.",
+        "rationale": "Addresses the 'cust_hitrate' negative factor by focusing on improving the customer's overall success with Schneider Electric products and services."
+      },
+      {
+        "step": "Increase engagement with the Iberian team to understand their specific needs and challenges related to this opportunity.",
+        "rationale": "Directly tackles the 'iberia_engagement' negative factor by ensuring the Iberia team is fully informed and supportive of the proposed solution."
+      },
+      {
+        "step": "Investigate the 'product_A_ratio' and explore opportunities to diversify the product mix to better align with the customer's comprehensive needs, potentially highlighting complementary solutions.",
+        "rationale": "Addresses the 'product_A_ratio' by suggesting a broader offering and mitigating potential reliance on a single product, which might be perceived as a risk by the customer."
+      }
+    ],
+    "ai_generated": true
+  }
+}

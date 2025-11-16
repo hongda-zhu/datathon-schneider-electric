@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "35448",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.9863302111625671,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 1.18687,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.9445744930893147,
+    "cust_hitrate": 1.73072,
+    "product_A_ratio": 0.17324373272328664
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.278806686401367,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 1.1645307540893555,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.4477497935295105,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.44414445757865906,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.44357797503471375,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.3443836569786072,
+        "explanation": "Score agregado de calidad de oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "product_A_recommended",
+        "shap_value": -0.0057183788157999516,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "product_A",
+        "shap_value": -0.0029301655013114214,
+        "explanation": "Product A"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.0026153307408094406,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "product_D",
+        "shap_value": -0.001715374062769115,
+        "explanation": "Product D"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.0013566315174102783,
+        "explanation": "Riesgo asociado a la competencia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

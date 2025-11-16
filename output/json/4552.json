@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "4552",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.02697349153459072,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.43717999999999996,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.2901508862259679,
+    "cust_hitrate": -1.13847,
+    "product_A_ratio": 0.4563602844350803
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.5855588912963867,
+    "top_positive_factors": [
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.6426525712013245,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.09639924764633179,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.06871508061885834,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "product_count",
+        "shap_value": 0.06254565715789795,
+        "explanation": "N\u00famero de l\u00edneas de producto en la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.026310833171010017,
+        "explanation": "Opp Age Squared"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.8799583911895752,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.548406183719635,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.47025108337402344,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.3600820004940033,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.35664308071136475,
+        "explanation": "Competition Engagement"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

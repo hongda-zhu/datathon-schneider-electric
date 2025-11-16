@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "25418",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.07447230070829391,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.10714333333333335,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.23294996285792702,
+    "cust_hitrate": 0.03527,
+    "product_A_ratio": 0.4755649071448175
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -2.519937515258789,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.08286388218402863,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.0323602668941021,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.01703925058245659,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "opp_maturity",
+        "shap_value": 0.009948276914656162,
+        "explanation": "Madurez de la oportunidad"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": 0.007841061800718307,
+        "explanation": "Hitrate Interaction"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.4769214689731598,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.42638152837753296,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.2844410836696625,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.23531971871852875,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.20149123668670654,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}
