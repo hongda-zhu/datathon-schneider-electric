@@ -1008,15 +1008,19 @@ elif page == "Case Explorer":
             help="Real outcome of this opportunity"
         )
 
+        new_shap = explainer.shap_values(row.values.reshape(1, -1))
+        if isinstance(new_shap, list):
+            new_shap = new_shap[1][0]
+        else:
+            new_shap = new_shap[0]
+        base_val = explainer.expected_value
+        if isinstance(base_val, (list, np.ndarray)):
+            base_val = float(base_val[1] if len(np.atleast_1d(base_val)) > 1 else base_val[0])
+
+        top_positive, top_negative = summarize_shap(new_shap, feature_names)
+
         # Confidence indicator with explanation
         threshold_distance = (prob - threshold) * 100  # in percentage points
-
-        # Get top factors for explanation
-        top_positive = []
-        top_negative = []
-        if case_json and "shap_analysis" in case_json:
-            top_positive = case_json["shap_analysis"]["top_positive_factors"][:2]
-            top_negative = case_json["shap_analysis"]["top_negative_factors"][:2]
 
         # Determine confidence based on distance from threshold
         if threshold_distance > 40:  # >40pp above threshold
@@ -1024,28 +1028,28 @@ elif page == "Case Explorer":
             confidence_class = "success-box"
             explanation = f"Probability ({prob:.1%}) exceeds threshold ({threshold:.1%}) by {threshold_distance:.1f} percentage points."
             if top_positive:
-                top_factor = translate_feature(top_positive[0]["feature"])
+                top_factor, _ = top_positive[0]
                 explanation += f" Strong positive signals from {top_factor}."
         elif threshold_distance > 10:  # 10-40pp above threshold
             confidence_level = "Medium-High"
             confidence_class = "success-box"
             explanation = f"Probability ({prob:.1%}) is {threshold_distance:.1f}pp above threshold ({threshold:.1%})."
             if top_negative:
-                top_concern = translate_feature(top_negative[0]["feature"])
+                top_concern, _ = top_negative[0]
                 explanation += f" Watch for potential issues with {top_concern}."
         elif threshold_distance > 0:  # 0-10pp above threshold
             confidence_level = "Medium"
             confidence_class = "warning-box"
             explanation = f"Probability ({prob:.1%}) barely exceeds threshold ({threshold:.1%}) by only {threshold_distance:.1f}pp."
             if top_negative:
-                top_concern = translate_feature(top_negative[0]["feature"])
+                top_concern, _ = top_negative[0]
                 explanation += f" Negative signals from {top_concern} are holding it back."
         else:  # Below threshold
             confidence_level = "Low"
             confidence_class = "warning-box"
             explanation = f"Probability ({prob:.1%}) is {abs(threshold_distance):.1f}pp below threshold ({threshold:.1%})."
             if top_negative:
-                main_blocker = translate_feature(top_negative[0]["feature"])
+                main_blocker, _ = top_negative[0]
                 explanation += f" Main blocker: {main_blocker}."
 
         st.markdown(
@@ -1055,9 +1059,15 @@ elif page == "Case Explorer":
 
         # Key features
         #st.markdown('<div class="sub-header">Key Features for This Opportunity</div>', unsafe_allow_html=True)
-        if case_json:
+        if True:
             try:
-                key_feats = case_json["key_features"]
+                key_feats = {
+                    "customer_activity": row['customer_activity'],
+                    "total_competitors": row['total_competitors'],
+                    "opp_quality_score": row['opp_quality_score'],
+                    "cust_hitrate": row['cust_hitrate'],
+                    "product_A_ratio": row['product_A_ratio']
+                }
                 feature_stats = global_insights.get("feature_statistics", {})
 
                 col1, col2, col3 = st.columns(3)
@@ -1093,27 +1103,25 @@ elif page == "Case Explorer":
                 )
             except Exception as e:
                 st.error(f"Error loading key features: {str(e)}")
-                st.write(f"Debug - case_json keys: {list(case_json.keys()) if case_json else 'None'}")
+                #st.write(f"Debug - case_json keys: {list(case_json.keys()) if case_json else 'None'}")
         else:
             st.warning("Case data not available. JSON file may be missing.")
 
         # Top SHAP Factors
-        if case_json and "shap_analysis" in case_json:
+        if True:
             st.markdown('<div class="sub-header">Key Drivers for This Opportunity</div>', unsafe_allow_html=True)
 
             # Build HTML for positive factors
             positive_html = ""
-            for factor in case_json["shap_analysis"]["top_positive_factors"][:3]:
-                feat_name = translate_feature(factor["feature"])
-                shap_val = factor["shap_value"]
+            for factor in top_positive[:3]:
+                feat_name, shap_val = factor
                 positive_html += f"<li><strong>{feat_name}</strong> (+{shap_val:.3f})</li>"
 
             # Build HTML for negative factors
             negative_html = ""
-            if case_json["shap_analysis"]["top_negative_factors"]:
-                for factor in case_json["shap_analysis"]["top_negative_factors"][:3]:
-                    feat_name = translate_feature(factor["feature"])
-                    shap_val = factor["shap_value"]
+            if True:
+                for factor in top_negative[:3]:
+                    feat_name, shap_val = factor
                     negative_html += f"<li><strong>{feat_name}</strong> ({shap_val:.3f})</li>"
             else:
                 negative_html = "• <em>No significant negative factors</em><br>"
@@ -1142,25 +1150,22 @@ elif page == "Case Explorer":
         st.caption("Red bars push probability UP (toward win), blue bars push it DOWN (toward loss). Starting from average, each feature adjusts the final prediction.")
 
         # SHAP waterfall summary
-        if case_json and "shap_analysis" in case_json:
-            top_pos = case_json["shap_analysis"]["top_positive_factors"]
-            top_neg = case_json["shap_analysis"]["top_negative_factors"]
+        if True:
+            top_pos = top_positive
+            top_neg = top_negative
 
             summary_parts = []
 
             if top_pos:
-                top_pos_name = translate_feature(top_pos[0]["feature"])
-                top_pos_val = top_pos[0]["shap_value"]
+                top_pos_name, top_pos_val = top_pos[0]
                 summary_parts.append(f"**Strongest positive push:** {top_pos_name} (+{top_pos_val:.2f})")
 
             if len(top_pos) > 1:
-                second_pos_name = translate_feature(top_pos[1]["feature"])
-                second_pos_val = top_pos[1]["shap_value"]
+                second_pos_name, second_pos_val = top_pos[1]
                 summary_parts.append(f"{second_pos_name} (+{second_pos_val:.2f})")
 
             if top_neg:
-                top_neg_name = translate_feature(top_neg[0]["feature"])
-                top_neg_val = top_neg[0]["shap_value"]
+                top_neg_name, top_neg_val = top_neg[0]
                 summary_parts.append(f"**Main obstacle:** {top_neg_name} ({top_neg_val:.2f})")
 
             if summary_parts:
