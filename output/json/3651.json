@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "3651",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.02925591915845871,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.5329833333333333,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.32596679203742035,
+    "cust_hitrate": -0.64336,
+    "product_A_ratio": 0.06734051990644908
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.501983880996704,
+    "top_positive_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.1165454089641571,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.08017914742231369,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.06558410078287125,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.0653703585267067,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.02565697580575943,
+        "explanation": "Opp Age Squared"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.569218099117279,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.4643600583076477,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.42372897267341614,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.38634973764419556,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.35235610604286194,
+        "explanation": "Product A Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

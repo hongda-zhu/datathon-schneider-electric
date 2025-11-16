@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "11147",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.8479645252227783,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.1720033333333333,
+    "total_competitors": 2.0,
+    "opp_quality_score": 0.2418142273011897,
+    "cust_hitrate": 0.40698,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 1.7187249660491943,
+    "top_positive_factors": [
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.4509003758430481,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.3905510902404785,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.3847736418247223,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.2746022641658783,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.2281559854745865,
+        "explanation": "Opp Month"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.23125146329402924,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.1055617555975914,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.06657545268535614,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.060493066906929016,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": -0.04971342533826828,
+        "explanation": "Low Engagement Risk"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

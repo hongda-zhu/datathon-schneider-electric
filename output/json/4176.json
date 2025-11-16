@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "4176",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.31885820627212524,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
+  },
+  "key_features": {
+    "customer_activity": -0.26421333333333336,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.09855522730118971,
+    "cust_hitrate": 0.02166,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -0.759023129940033,
+    "top_positive_factors": [
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.2533184885978699,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.2419329136610031,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.09787075966596603,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.0672316923737526,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.05266153812408447,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.49358826875686646,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.43317943811416626,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.19677627086639404,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.19291196763515472,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.13078075647354126,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

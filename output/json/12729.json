@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "12729",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9508826732635498,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.1957066666666667,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.23657877269881028,
+    "cust_hitrate": -1.16396,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 2.9631786346435547,
+    "top_positive_factors": [
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.6895332932472229,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.4483507573604584,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.41796523332595825,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.3309805691242218,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.3265645205974579,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.24171966314315796,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": -0.13436059653759003,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.08297540992498398,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.0712490826845169,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.04298014938831329,
+        "explanation": "Opp Age Squared"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

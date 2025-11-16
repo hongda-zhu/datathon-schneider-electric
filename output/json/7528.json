@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "7528",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.0159706212580204,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.27213000000000004,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.6476072086341427,
+    "cust_hitrate": -0.39081,
+    "product_A_ratio": -1.5300080215853566
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.120905876159668,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.07536625117063522,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.03321164846420288,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.021912407130002975,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "opp_maturity",
+        "shap_value": 0.008630271069705486,
+        "explanation": "Madurez de la oportunidad"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.004402327351272106,
+        "explanation": "Low Engagement Risk"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.8846426010131836,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.48458606004714966,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.43487000465393066,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.34819576144218445,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.34633558988571167,
+        "explanation": "Product B Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

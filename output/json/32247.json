@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "32247",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.012201325967907906,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.5004900000000001,
+    "total_competitors": 1.0,
+    "opp_quality_score": 1.538372374628345,
+    "cust_hitrate": -0.49911,
+    "product_A_ratio": 3.844895936570862
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.393932819366455,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.05005433410406113,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.03679191693663597,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.01565880887210369,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.009273957461118698,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.0073630064725875854,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -1.1341300010681152,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.5382197499275208,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.533869206905365,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.5274744629859924,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.3476259410381317,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "31824",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9332549571990967,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.12581333333333333,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.4785552273011897,
+    "cust_hitrate": 0.8983,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 2.637795925140381,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.6159456968307495,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.3533188998699188,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.28977516293525696,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.24057117104530334,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.19776113331317902,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.044757179915905,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.0265659149736166,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.015288728289306164,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.011247263289988041,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": -0.007760968059301376,
+        "explanation": "Diversidad de productos activos"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

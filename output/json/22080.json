@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "22080",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.022279459983110428,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.4432933333333334,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.09940778991596638,
+    "cust_hitrate": -0.79815,
+    "product_A_ratio": 0.682563025210084
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.781559705734253,
+    "top_positive_factors": [
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.7830677628517151,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.08020572364330292,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.061146821826696396,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "product_count",
+        "shap_value": 0.054689712822437286,
+        "explanation": "N\u00famero de l\u00edneas de producto en la oportunidad"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": 0.045607201755046844,
+        "explanation": "Hitrate Interaction"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.9124153256416321,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.7126595377922058,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.6142897009849548,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.48387765884399414,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.475355863571167,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

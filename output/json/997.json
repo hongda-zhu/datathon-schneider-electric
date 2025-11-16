@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "997",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.6573273539543152,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.04001666666666667,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.18245291594413923,
+    "cust_hitrate": 0.07476,
+    "product_A_ratio": 0.4300747898603481
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 0.6514071822166443,
+    "top_positive_factors": [
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.3848126530647278,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.2639126777648926,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.25825855135917664,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.19567956030368805,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.09000629931688309,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.21428951621055603,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.20036591589450836,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.16394802927970886,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.13748329877853394,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.10158342123031616,
+        "explanation": "Cust In Iberia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Nurture",
+    "priority": "Medium",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "17114",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.986872673034668,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.04242666666666665,
+    "total_competitors": 2.0,
+    "opp_quality_score": 0.42991022730118966,
+    "cust_hitrate": 0.90439,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.319842338562012,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 1.1242449283599854,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.5334489941596985,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.4591120779514313,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.4500195384025574,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.4384770393371582,
+        "explanation": "Riesgo asociado a la competencia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.1394502967596054,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.06387684494256973,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.06110122799873352,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.022345440462231636,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.01836058497428894,
+        "explanation": "Competencia en clientes de Iberia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

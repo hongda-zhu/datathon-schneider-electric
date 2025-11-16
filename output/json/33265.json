@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "33265",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.02510061487555504,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.2409,
+    "total_competitors": 2.0,
+    "opp_quality_score": 0.4833218330104612,
+    "cust_hitrate": 0.10247,
+    "product_A_ratio": 1.3121270825261528
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.6594436168670654,
+    "top_positive_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": 0.09574973583221436,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.0604817271232605,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.053152892738580704,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.03332729637622833,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.02566623128950596,
+        "explanation": "Product A Recommended"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.9596622586250305,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.3929740786552429,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.35313498973846436,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.316292405128479,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.3127785325050354,
+        "explanation": "N\u00famero total de competidores presentes"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

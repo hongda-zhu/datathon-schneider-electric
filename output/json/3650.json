@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "3650",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.41213253140449524,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
+  },
+  "key_features": {
+    "customer_activity": -0.73279,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.3985257726988103,
+    "cust_hitrate": -1.1667,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -0.35515695810317993,
+    "top_positive_factors": [
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.15672343969345093,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.137185737490654,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.11753392219543457,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.10425589233636856,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.06413700431585312,
+        "explanation": "Riesgo asociado a la competencia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.333748459815979,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.23931992053985596,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.13540659844875336,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.12092088162899017,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.10574138909578323,
+        "explanation": "Score agregado de calidad de oportunidad"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Nurture",
+    "priority": "Medium",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

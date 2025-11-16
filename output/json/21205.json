@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "21205",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9329354166984558,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.73279,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.45520041753590823,
+    "cust_hitrate": -1.1667,
+    "product_A_ratio": 0.28661645616022935
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 2.632678270339966,
+    "top_positive_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": 0.49043330550193787,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": 0.3818567991256714,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.2611503601074219,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.23059800267219543,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.17452770471572876,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.17102175951004028,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.018154950812458992,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.013002457097172737,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "has_competition",
+        "shap_value": -0.012343311682343483,
+        "explanation": "Indicador de presencia de competencia"
+      },
+      {
+        "feature": "product_A",
+        "shap_value": -0.005980032961815596,
+        "explanation": "Product A"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

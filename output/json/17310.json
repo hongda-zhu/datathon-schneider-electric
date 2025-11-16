@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "17310",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.07648779451847076,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.73279,
+    "total_competitors": 2.0,
+    "opp_quality_score": -0.3985257726988103,
+    "cust_hitrate": -1.1667,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -2.4910526275634766,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.08314568549394608,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.07107502967119217,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.062140945345163345,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.026090309023857117,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.01597432605922222,
+        "explanation": "Product A Recommended"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.6596615314483643,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.5591846108436584,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.42401495575904846,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.2745448052883148,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.23372185230255127,
+        "explanation": "Competitor Y"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

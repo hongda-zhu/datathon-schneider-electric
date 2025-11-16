@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "20679",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.009113042615354061,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.41484000000000004,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.3031407726988103,
+    "cust_hitrate": -1.1667,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.688894271850586,
+    "top_positive_factors": [
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.31093698740005493,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.15246841311454773,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.10626007616519928,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.030846286565065384,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.019174054265022278,
+        "explanation": "Low Engagement Risk"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -2.4866902828216553,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.697141706943512,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.5706406235694885,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.33518874645233154,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.20772317051887512,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

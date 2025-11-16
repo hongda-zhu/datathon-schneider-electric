@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "27692",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.11616916954517365,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
+  },
+  "key_features": {
+    "customer_activity": 0.11548333333333334,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.2378592273011897,
+    "cust_hitrate": 0.10631,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -2.0292177200317383,
+    "top_positive_factors": [
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.10327878594398499,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.08099299669265747,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.07109620422124863,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.03155774995684624,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.02946295589208603,
+        "explanation": "Competitor Z"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.5585486888885498,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.37954261898994446,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.370082825422287,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.26201075315475464,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.23036324977874756,
+        "explanation": "Score agregado de calidad de oportunidad"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

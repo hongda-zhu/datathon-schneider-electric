@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "29078",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.0955396369099617,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.17037333333333335,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.5040798330104612,
+    "cust_hitrate": -0.23961,
+    "product_A_ratio": 1.3121270825261528
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -2.2477972507476807,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.09123058617115021,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.054456062614917755,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.039097659289836884,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.031001033261418343,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.02933460846543312,
+        "explanation": "Opp Age Squared"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.5848048329353333,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.5705636739730835,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.4464956820011139,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.2425612211227417,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.19366787374019623,
+        "explanation": "Engagement de clientes de Iberia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "13572",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.14660531282424927,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
+  },
+  "key_features": {
+    "customer_activity": 0.15714666666666666,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.4248622273011897,
+    "cust_hitrate": 0.68799,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -1.7614777088165283,
+    "top_positive_factors": [
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.08259908109903336,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.07190311700105667,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.06348900496959686,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.0630335807800293,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.0359717458486557,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.38185814023017883,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.3344744145870209,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.32341763377189636,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.29438936710357666,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.23212110996246338,
+        "explanation": "Opp Month"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

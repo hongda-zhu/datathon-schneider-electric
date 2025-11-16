@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "7126",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.024590780958533287,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.6533833333333333,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.36844877269881027,
+    "cust_hitrate": -1.14585,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.6804866790771484,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.07676337659358978,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": 0.05794229358434677,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.02672772854566574,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.023398976773023605,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.022329214960336685,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.9332353472709656,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.5564870238304138,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.3962026536464691,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.28926408290863037,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.2389276623725891,
+        "explanation": "Riesgo asociado a la competencia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

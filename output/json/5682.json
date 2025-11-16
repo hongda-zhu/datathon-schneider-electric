@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "5682",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.03454289585351944,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.2775533333333334,
+    "total_competitors": 2.0,
+    "opp_quality_score": -0.09677777269881027,
+    "cust_hitrate": -0.61611,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.33040189743042,
+    "top_positive_factors": [
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.23624461889266968,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.08538901805877686,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.06398934125900269,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.02390439249575138,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.02033509686589241,
+        "explanation": "Cust In Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.589659571647644,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.46137315034866333,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.43669670820236206,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.43101462721824646,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.3569526970386505,
+        "explanation": "Score agregado de calidad de oportunidad"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

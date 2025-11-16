@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "32560",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.4239889979362488,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.5752666666666667,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.3048827726988103,
+    "cust_hitrate": -1.01208,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -0.30641913414001465,
+    "top_positive_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.1796015202999115,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.1739697903394699,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.1279934197664261,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.09964226931333542,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.0653078705072403,
+        "explanation": "Engagement de clientes de Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.6116136312484741,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.2239588499069214,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.11316856741905212,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.09351693093776703,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.06609772145748138,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Nurture",
+    "priority": "Medium",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

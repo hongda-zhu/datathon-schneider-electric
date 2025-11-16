@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "22671",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.48615577816963196,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.42631,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.5220542273011897,
+    "cust_hitrate": 0.7428,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -0.055391281843185425,
+    "top_positive_factors": [
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.3690347373485565,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.16976654529571533,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.11473742127418518,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.08485516905784607,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.07602552324533463,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.4988706111907959,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.15021111071109772,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.1090061217546463,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.0781746357679367,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.056619372218847275,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Nurture",
+    "priority": "Medium",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

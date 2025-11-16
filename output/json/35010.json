@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "35010",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9919581413269043,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.8689866666666667,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.8438613155735006,
+    "cust_hitrate": 1.73092,
+    "product_A_ratio": 0.15972328893375173
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.815018177032471,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 1.31303071975708,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.5110045075416565,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.3823530673980713,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.33463215827941895,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": 0.3266305923461914,
+        "explanation": "Product A Sold In The Past"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.07743237912654877,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.03466324880719185,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": -0.005804004147648811,
+        "explanation": "Diversidad de productos activos"
+      },
+      {
+        "feature": "product_A",
+        "shap_value": -0.0056524984538555145,
+        "explanation": "Product A"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.005172720644623041,
+        "explanation": "Competition Engagement"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

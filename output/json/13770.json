@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "13770",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Win",
+    "win_probability": 0.03345006704330444,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.44468000000000013,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.08520022730118973,
+    "cust_hitrate": -0.73175,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.363680601119995,
+    "top_positive_factors": [
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.1254037469625473,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.08100701868534088,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.03744145482778549,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.022470183670520782,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.01982843317091465,
+        "explanation": "Opp Age Squared"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "customer_engagement",
+        "shap_value": -1.363205909729004,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.795664370059967,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.38631346821784973,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.32887980341911316,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.2831599712371826,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

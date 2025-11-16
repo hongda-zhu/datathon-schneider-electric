@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "22897",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9930589199066162,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.23308333333333334,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.8476607026798588,
+    "cust_hitrate": 1.73092,
+    "product_A_ratio": 0.6461492566996471
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.963329792022705,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 1.1675546169281006,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.7989460825920105,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.6296548843383789,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.37456175684928894,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.3149248957633972,
+        "explanation": "Riesgo asociado a la competencia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.04238040745258331,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.034633371978998184,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.03305188566446304,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.009545312263071537,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": -0.0033394943457096815,
+        "explanation": "Product A Recommended"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

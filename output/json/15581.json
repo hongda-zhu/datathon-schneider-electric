@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "15581",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.005300728138536215,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.5836066666666667,
+    "total_competitors": 2.0,
+    "opp_quality_score": -0.24884877269881034,
+    "cust_hitrate": -0.81696,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -5.234591960906982,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.04875290021300316,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": 0.03353675454854965,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.027736084535717964,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.018099453300237656,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "opp_maturity",
+        "shap_value": 0.004923311527818441,
+        "explanation": "Madurez de la oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -1.1567925214767456,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.5740654468536377,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.569564938545227,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.5440210103988647,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.5371970534324646,
+        "explanation": "Competition Engagement"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "2755",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9761582612991333,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.6965633333333333,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.43974848502677333,
+    "cust_hitrate": -1.1667,
+    "product_A_ratio": 0.2980762874330667
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.7121856212615967,
+    "top_positive_factors": [
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.7288438677787781,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.5938067436218262,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.537472128868103,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.4253566861152649,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": 0.32778605818748474,
+        "explanation": "Product A Sold In The Past"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": -0.21097102761268616,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.1520100086927414,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": -0.04200778156518936,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.01777995377779007,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": -0.009605847299098969,
+        "explanation": "Diversidad de productos activos"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

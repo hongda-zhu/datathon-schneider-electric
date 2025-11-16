@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "17754",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9821459650993347,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.19475666666666666,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.7145302273011896,
+    "cust_hitrate": 1.61594,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.007511138916016,
+    "top_positive_factors": [
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.8471518754959106,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.7515255808830261,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.6791092753410339,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.5394748449325562,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.35961484909057617,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.07494964450597763,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.07180309295654297,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.06699946522712708,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.038376059383153915,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.035841770470142365,
+        "explanation": "N\u00famero total de competidores presentes"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

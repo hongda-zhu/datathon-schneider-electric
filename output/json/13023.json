@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "13023",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9315297603607178,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.1449033333333333,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.09531768927324602,
+    "cust_hitrate": -0.44133,
+    "product_A_ratio": 0.46061422318311507
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 2.610429286956787,
+    "top_positive_factors": [
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.6292707920074463,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.6252414584159851,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.5406245589256287,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.3928021490573883,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.35815444588661194,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -1.2764205932617188,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.24633543193340302,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "opp_maturity",
+        "shap_value": -0.09998107701539993,
+        "explanation": "Madurez de la oportunidad"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.08902984112501144,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.061080995947122574,
+        "explanation": "Competition Engagement"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

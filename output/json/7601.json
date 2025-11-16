@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "7601",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.5208383798599243,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.4480433333333333,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.45102708693441784,
+    "cust_hitrate": 0.46809,
+    "product_A_ratio": 0.44046771733604473
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 0.08340169489383698,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.34870150685310364,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.20315496623516083,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.19865456223487854,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.19160830974578857,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.0946405753493309,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.3385019302368164,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.2875638008117676,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": -0.12023869901895523,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.10991450399160385,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.09594251215457916,
+        "explanation": "Product B Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Nurture",
+    "priority": "Medium",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

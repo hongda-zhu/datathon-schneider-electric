@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "15875",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.14831584692001343,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
+  },
+  "key_features": {
+    "customer_activity": -0.6796466666666667,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.33475377269881035,
+    "cust_hitrate": -1.00727,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -1.7478721141815186,
+    "top_positive_factors": [
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.3190281093120575,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.17424261569976807,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.16790980100631714,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.10816466063261032,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.07721849530935287,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.9742103219032288,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.41915589570999146,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.33927810192108154,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.2779132127761841,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.2747490704059601,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

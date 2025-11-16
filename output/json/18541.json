@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "18541",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9116089940071106,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.34901333333333334,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.7953012273011897,
+    "cust_hitrate": 1.73092,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 2.3334403038024902,
+    "top_positive_factors": [
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 1.1710766553878784,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.6034388542175293,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.49562519788742065,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.26234686374664307,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.15173238515853882,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.205671027302742,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.16399428248405457,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.09162415564060211,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": -0.058764632791280746,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.056659091264009476,
+        "explanation": "Competencia en clientes de Iberia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

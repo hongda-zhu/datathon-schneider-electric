@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "19889",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9910991787910461,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.042656666666666655,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.3624167046541107,
+    "cust_hitrate": 0.2678,
+    "product_A_ratio": 0.7371842616352767
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.712679386138916,
+    "top_positive_factors": [
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.6492577195167542,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.6351804137229919,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.5915396809577942,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.5662145614624023,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.4203380048274994,
+        "explanation": "Product A Recommended"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.07027830928564072,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.05853525176644325,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.021657530218362808,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.010168716311454773,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.006754249334335327,
+        "explanation": "N\u00famero total de competidores presentes"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "25891",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.6102824807167053,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.05246666666666666,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.4178622273011897,
+    "cust_hitrate": 0.87427,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 0.44850069284439087,
+    "top_positive_factors": [
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.3315008878707886,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.33111321926116943,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.22928433120250702,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.08335293084383011,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.06751694530248642,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.38421210646629333,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.21062470972537994,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.10953716188669205,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.05300939828157425,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.039949413388967514,
+        "explanation": "Hitrate Interaction"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Nurture",
+    "priority": "Medium",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

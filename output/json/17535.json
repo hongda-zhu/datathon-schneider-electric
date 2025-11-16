@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "17535",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.09213900566101074,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.6602766666666667,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.5167222273011898,
+    "cust_hitrate": 0.49106,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -2.287792205810547,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.18003983795642853,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.09108573943376541,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.08399118483066559,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.034063830971717834,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.03111572563648224,
+        "explanation": "N\u00famero total de competidores presentes"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.5019717216491699,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.3765585720539093,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.36689820885658264,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.33378228545188904,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.23510250449180603,
+        "explanation": "Engagement de clientes de Iberia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

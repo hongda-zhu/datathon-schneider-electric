@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "3364",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.17004311084747314,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
+  },
+  "key_features": {
+    "customer_activity": -0.5887966666666666,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.35289177269881034,
+    "cust_hitrate": -1.15858,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -1.5853228569030762,
+    "top_positive_factors": [
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.11556664854288101,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.10313019901514053,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.09931211918592453,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.09652233868837357,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.09184719622135162,
+        "explanation": "Engagement de clientes de Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.5773200392723083,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.43638110160827637,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.38391944766044617,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.3253461420536041,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.2094675451517105,
+        "explanation": "Hitrate Contracts"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

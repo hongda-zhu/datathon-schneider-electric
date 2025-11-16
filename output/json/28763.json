@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "28763",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.04280247911810875,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.021506666666666674,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.29322013519114765,
+    "cust_hitrate": 0.52155,
+    "product_A_ratio": 0.35801783797786907
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.1074161529541016,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.06158747896552086,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.05196072533726692,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.023153113201260567,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.01480135228484869,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "opp_maturity",
+        "shap_value": 0.007215281017124653,
+        "explanation": "Madurez de la oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.6014606356620789,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.4859069883823395,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.42304229736328125,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.3341153860092163,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.28657305240631104,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

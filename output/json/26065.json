@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "26065",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9818686842918396,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.04242666666666665,
+    "total_competitors": 2.0,
+    "opp_quality_score": 0.42991022730118966,
+    "cust_hitrate": 0.90439,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.9918220043182373,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 1.0184781551361084,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.45303019881248474,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.35897567868232727,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.3578859567642212,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.34539595246315,
+        "explanation": "Score agregado de calidad de oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.12624599039554596,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.0657968744635582,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.05345330387353897,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.03342758119106293,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.024226609617471695,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

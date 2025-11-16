@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "30968",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.0008645105408504605,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.21346333333333337,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.10597740946346004,
+    "cust_hitrate": -0.7081,
+    "product_A_ratio": 0.63592102365865
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -7.0524821281433105,
+    "top_positive_factors": [
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.1462620496749878,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.041111577302217484,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.01222738903015852,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "has_past_sales",
+        "shap_value": 0.001400344423018396,
+        "explanation": "Has Past Sales"
+      },
+      {
+        "feature": "competitor_diversity",
+        "shap_value": 0.001343417796306312,
+        "explanation": "Diversidad de competidores en la oferta"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -1.3830724954605103,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -1.2551261186599731,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.8950890302658081,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.5419371724128723,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.5136963725090027,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

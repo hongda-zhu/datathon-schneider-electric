@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "5262",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.4859604239463806,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.6617133333333333,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.31323377269881025,
+    "cust_hitrate": -0.95347,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -0.05617336928844452,
+    "top_positive_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": 0.2305523157119751,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.10431332141160965,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.09740637242794037,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.09640126675367355,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.08469531685113907,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.44352641701698303,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.38682663440704346,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.3543446660041809,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.07754349708557129,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.04000465199351311,
+        "explanation": "Hitrate Interaction"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Nurture",
+    "priority": "Medium",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

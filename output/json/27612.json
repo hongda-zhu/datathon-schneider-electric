@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "27612",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9885439276695251,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.61169,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.11933769094227983,
+    "cust_hitrate": 0.14967,
+    "product_A_ratio": -0.2726757726443003
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.457722187042236,
+    "top_positive_factors": [
+      {
+        "feature": "customer_activity",
+        "shap_value": 1.0925103425979614,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.8359470963478088,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.49451372027397156,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.44507458806037903,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.4367142915725708,
+        "explanation": "Score agregado de calidad de oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "product_A_recommended",
+        "shap_value": -0.5134096145629883,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.04307178407907486,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.04211124777793884,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.03318540006875992,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.03307588770985603,
+        "explanation": "Engagement de clientes de Iberia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

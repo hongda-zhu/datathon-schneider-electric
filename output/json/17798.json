@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "17798",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.19898410141468048,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
+  },
+  "key_features": {
+    "customer_activity": 0.3308966666666667,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.7898662273011896,
+    "cust_hitrate": 1.73092,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -1.3926565647125244,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.35265088081359863,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.14717818796634674,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.043320976197719574,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.0379294827580452,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.031327277421951294,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.37950757145881653,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.33670657873153687,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.3065757751464844,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.2769080102443695,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.2122110277414322,
+        "explanation": "Hitrate Contracts"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "34315",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.04421062767505646,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.5855766666666667,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.33924777269881035,
+    "cust_hitrate": -1.11632,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.0735747814178467,
+    "top_positive_factors": [
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.14933428168296814,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.07950854301452637,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.07804464548826218,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.05876150354743004,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.02381069026887417,
+        "explanation": "Competitor Z"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -1.0179824829101562,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.5426468849182129,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.514941394329071,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.47261378169059753,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.45144256949424744,
+        "explanation": "Hitrate Contracts"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

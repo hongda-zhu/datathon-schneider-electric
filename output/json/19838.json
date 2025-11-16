@@ -1,0 +1,91 @@
+{
+  "opportunity_id": "19838",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.06526954472064972,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.7834533333333334,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.2769525401459854,
+    "cust_hitrate": 0.49106,
+    "product_A_ratio": -0.2635036496350365
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -2.6617331504821777,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.20974433422088623,
+        "explanation": "Tasa de éxito histórica con el cliente"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.08519329875707626,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.0692281424999237,
+        "explanation": "Antigüedad de la oportunidad"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.04965115711092949,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.0454719252884388,
+        "explanation": "Número total de competidores presentes"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": -0.7071201801300049,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.5491654872894287,
+        "explanation": "Número de interacciones con el cliente"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.5033586621284485,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.277936726808548,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.2677510678768158,
+        "explanation": "Engagement de clientes de Iberia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      {
+        "step": "Given the strong negative impact of 'opp_month', immediately understand and address any seasonality issues impacting the customer's decision-making timeline, offering incentives if needed to accelerate the process."
+      },
+      {
+        "step": "Address the 'cust_interactions' issue by scheduling a high-value engagement, such as a technical deep-dive or executive presentation, to rebuild rapport and demonstrate commitment."
+      },
+      {
+        "step": "Investigate the 'product_B_sold_in_the_past' issue to identify potential satisfaction concerns or compatibility issues with our current offering and proactively propose tailored solutions."
+      }
+    ],
+    "ai_generated": true
+  }
+}

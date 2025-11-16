@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "27916",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.1160246953368187,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
+  },
+  "key_features": {
+    "customer_activity": -0.6603333333333333,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.3767887726988103,
+    "cust_hitrate": -1.1667,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -2.0306267738342285,
+    "top_positive_factors": [
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.257674902677536,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.19656133651733398,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.08788875490427017,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": 0.043757855892181396,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.033770907670259476,
+        "explanation": "Opp Age Squared"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.3083142638206482,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.2727934718132019,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.2627841830253601,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.24453838169574738,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.21769461035728455,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "15387",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Win",
+    "win_probability": 0.24403424561023712,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
+  },
+  "key_features": {
+    "customer_activity": -0.24985333333333334,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.1809982273011897,
+    "cust_hitrate": 0.28211,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -1.1306877136230469,
+    "top_positive_factors": [
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.33686259388923645,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.09365205466747284,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.08650901168584824,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.03434426337480545,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.033780887722969055,
+        "explanation": "Opp Age Squared"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.7346809506416321,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.37224507331848145,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.35434162616729736,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.1806604266166687,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.15671907365322113,
+        "explanation": "Nivel global de actividad del cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "1375",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9936766028404236,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.4678333333333334,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.45297402281545107,
+    "cust_hitrate": 0.83753,
+    "product_A_ratio": 0.15341255703862763
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 5.057163238525391,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.7438939213752747,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.5867677330970764,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.4333459734916687,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.40579530596733093,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.3843095004558563,
+        "explanation": "Competition Engagement"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "product_mix",
+        "shap_value": -0.0069869207218289375,
+        "explanation": "Diversidad de productos activos"
+      },
+      {
+        "feature": "product_A",
+        "shap_value": -0.0026589997578412294,
+        "explanation": "Product A"
+      },
+      {
+        "feature": "product_D",
+        "shap_value": -0.0018447464099153876,
+        "explanation": "Product D"
+      },
+      {
+        "feature": "product_count",
+        "shap_value": -0.0011041968828067183,
+        "explanation": "N\u00famero de l\u00edneas de producto en la oportunidad"
+      },
+      {
+        "feature": "competitor_diversity",
+        "shap_value": -0.0005878418451175094,
+        "explanation": "Diversidad de competidores en la oferta"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

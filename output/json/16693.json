@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "16693",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.02506837621331215,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.31727,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.047322838282927944,
+    "cust_hitrate": -0.13861,
+    "product_A_ratio": -0.015687904292680143
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.6607625484466553,
+    "top_positive_factors": [
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.08872907608747482,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.03940378502011299,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.02879694290459156,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.021013453602790833,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.019911715760827065,
+        "explanation": "Product A Recommended"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.7654787302017212,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.5071431994438171,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.39455413818359375,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.34935006499290466,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": -0.22568514943122864,
+        "explanation": "N\u00famero de contratos con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

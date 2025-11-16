@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "10791",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.06468716263771057,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.11673333333333331,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.34074222730118975,
+    "cust_hitrate": 0.68147,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -2.6713192462921143,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.09142829477787018,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.09047918021678925,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.03150076046586037,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.01095866784453392,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "opp_maturity",
+        "shap_value": 0.009445887058973312,
+        "explanation": "Madurez de la oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.5064359307289124,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.48444417119026184,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.4170311689376831,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.40711885690689087,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.30017784237861633,
+        "explanation": "Opp Month"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

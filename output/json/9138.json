@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "9138",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9222483038902283,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.22748333333333334,
+    "total_competitors": 2.0,
+    "opp_quality_score": 0.07601346664686029,
+    "cust_hitrate": 0.25141,
+    "product_A_ratio": 0.1720886666171507
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 2.473289728164673,
+    "top_positive_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.5613073110580444,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.4068772494792938,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.3426057696342468,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.34008511900901794,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.26431772112846375,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.21697594225406647,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.1414150893688202,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.12800489366054535,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.09057436883449554,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.08690477907657623,
+        "explanation": "Competition Engagement"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

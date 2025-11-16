@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "4530",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.8764991760253906,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.5152033333333333,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.8566045287965047,
+    "cust_hitrate": 1.42247,
+    "product_A_ratio": 0.6882563219912617
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 1.959688663482666,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.9637206792831421,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.7143446207046509,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.4042989909648895,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.31121137738227844,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.19935360550880432,
+        "explanation": "Product B Sold In The Past"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.3277280032634735,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.29411518573760986,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.1921069324016571,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.07444782555103302,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.07017984241247177,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

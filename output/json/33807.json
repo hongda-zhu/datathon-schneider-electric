@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "33807",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9897834658622742,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.5392433333333334,
+    "total_competitors": 2.0,
+    "opp_quality_score": 1.0941889579767334,
+    "cust_hitrate": 1.73092,
+    "product_A_ratio": 1.0328498949418337
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.573484420776367,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 1.6304665803909302,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.9562958478927612,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.4970397353172302,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.26416540145874023,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.23472590744495392,
+        "explanation": "Competencia en clientes de Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.15941186249256134,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.12214887887239456,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.09613866358995438,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.08540459722280502,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "competitor_diversity",
+        "shap_value": -0.02316785603761673,
+        "explanation": "Diversidad de competidores en la oferta"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

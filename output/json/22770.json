@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "22770",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9690691828727722,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 1.1394399999999998,
+    "total_competitors": 0.0,
+    "opp_quality_score": 1.0223492273011896,
+    "cust_hitrate": 1.69732,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.4445834159851074,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.912591278553009,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.702797532081604,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.304308146238327,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.259745329618454,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.2473938763141632,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.06522917002439499,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.06416495144367218,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.03342553228139877,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.026401294395327568,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.012167460285127163,
+        "explanation": "Product A Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

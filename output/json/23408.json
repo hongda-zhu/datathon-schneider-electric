@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "23408",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.9161693453788757,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.22288333333333332,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.0805842273011897,
+    "cust_hitrate": -0.52534,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 2.3914010524749756,
+    "top_positive_factors": [
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.593701183795929,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.51214200258255,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.40910401940345764,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.2202090173959732,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.20709501206874847,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.0876709520816803,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.05290411040186882,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.03556568920612335,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.031272657215595245,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.024789031594991684,
+        "explanation": "Competitor Z"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

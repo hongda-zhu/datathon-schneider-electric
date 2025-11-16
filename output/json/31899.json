@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "31899",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.7094565033912659,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.27454666666666666,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.5440666237662853,
+    "cust_hitrate": 0.0077,
+    "product_A_ratio": -1.5718515594157132
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 0.8927461504936218,
+    "top_positive_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.5866600275039673,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.3847455382347107,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.23533423244953156,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.10870253294706345,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.09847196191549301,
+        "explanation": "Cust In Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.529778242111206,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.12962691485881805,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.09477927535772324,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.04423791542649269,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.0388367585837841,
+        "explanation": "Product A Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

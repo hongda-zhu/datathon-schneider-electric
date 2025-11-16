@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "8863",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.0285625159740448,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.48188000000000003,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.18658007641611749,
+    "cust_hitrate": -0.71828,
+    "product_A_ratio": 0.43366980895970636
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.526684284210205,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.04032843932509422,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.011375832371413708,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.011228768154978752,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": 0.010897831059992313,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.010358764789998531,
+        "explanation": "N\u00famero total de competidores presentes"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": -0.7065265774726868,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.5718891024589539,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.5520120859146118,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.3460865914821625,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.29984551668167114,
+        "explanation": "Nivel global de actividad del cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

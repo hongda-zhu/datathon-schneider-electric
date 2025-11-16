@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "13294",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.03034496307373047,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.5012066666666667,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.3064727726988103,
+    "cust_hitrate": -1.09144,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.4643101692199707,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.08931377530097961,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.05969390645623207,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.05266283452510834,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.045268263667821884,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.02713208645582199,
+        "explanation": "Low Engagement Risk"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.9151172637939453,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.6481875777244568,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.6398937106132507,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.45143452286720276,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.33547455072402954,
+        "explanation": "Nivel global de actividad del cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

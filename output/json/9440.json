@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "9440",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.05809551104903221,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.7146766666666666,
+    "total_competitors": 2.0,
+    "opp_quality_score": -0.39309177269881024,
+    "cust_hitrate": -1.1667,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -2.7858150005340576,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.08017415553331375,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.06045852228999138,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.040922414511442184,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.026062773540616035,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.024570753797888756,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.5556313395500183,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.35932278633117676,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.26952189207077026,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.2604076564311981,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.2516568601131439,
+        "explanation": "N\u00famero total de competidores presentes"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

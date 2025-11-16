@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "3933",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9757959246635437,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.15205666666666667,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.011605987330202669,
+    "cust_hitrate": 0.04295,
+    "product_A_ratio": 0.11084496832550665
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.696730375289917,
+    "top_positive_factors": [
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.8030052781105042,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.7990614175796509,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": 0.546888530254364,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.4491558372974396,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.24485690891742706,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.10646898299455643,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.05627148970961571,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.0435946099460125,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.041271645575761795,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.03581145778298378,
+        "explanation": "Opp Month"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

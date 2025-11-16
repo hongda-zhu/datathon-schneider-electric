@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "4352",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.6377361416816711,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.4842566666666667,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.10028577269881034,
+    "cust_hitrate": -0.4211,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 0.5655524730682373,
+    "top_positive_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": 0.3816207945346832,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.1880234032869339,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.13534840941429138,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.1269053965806961,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.12013201415538788,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.2868906259536743,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.24292922019958496,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.16718415915966034,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.14144772291183472,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.07897958159446716,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Nurture",
+    "priority": "Medium",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

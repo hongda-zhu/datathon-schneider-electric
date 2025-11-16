@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "7987",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.25427377223968506,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
+  },
+  "key_features": {
+    "customer_activity": -0.16327,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.21661412833607177,
+    "cust_hitrate": -0.65365,
+    "product_A_ratio": 1.1542253208401794
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -1.0759470462799072,
+    "top_positive_factors": [
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.32247793674468994,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.1823728233575821,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.07700417190790176,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.06411529332399368,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.05577497184276581,
+        "explanation": "Cust In Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.7758744955062866,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.27732616662979126,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.14542366564273834,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.12308275699615479,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.11896764487028122,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

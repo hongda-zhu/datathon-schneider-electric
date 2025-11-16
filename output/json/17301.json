@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "17301",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.875872790813446,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.03608999999999999,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.4328372273011897,
+    "cust_hitrate": 0.83563,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 1.9539144039154053,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.5752667784690857,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.4628627896308899,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.33793532848358154,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.24070848524570465,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.15313422679901123,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.15086743235588074,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.09602183848619461,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.0521789975464344,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.041883304715156555,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.03725220635533333,
+        "explanation": "Competencia en clientes de Iberia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

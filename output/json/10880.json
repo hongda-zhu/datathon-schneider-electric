@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "10880",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.06284447759389877,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.50174,
+    "total_competitors": 1.0,
+    "opp_quality_score": -3.033138966942147,
+    "cust_hitrate": -0.65831,
+    "product_A_ratio": -6.712809917355366
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -2.7021849155426025,
+    "top_positive_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": 0.1575624942779541,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.061095647513866425,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.037175294011831284,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.026143020018935204,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.02459883503615856,
+        "explanation": "N\u00famero de contratos con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.6991952657699585,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.5559099316596985,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.397992342710495,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.37684550881385803,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.2889373302459717,
+        "explanation": "Nivel global de actividad del cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

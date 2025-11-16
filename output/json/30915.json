@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "30915",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.009067591279745102,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.3947066666666667,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.4262722273011897,
+    "cust_hitrate": 0.45513,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.693935394287109,
+    "top_positive_factors": [
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.18390682339668274,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.17632494866847992,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.09664902836084366,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.07939299196004868,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "has_competition",
+        "shap_value": 0.027222584933042526,
+        "explanation": "Indicador de presencia de competencia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -2.437302827835083,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.7130782008171082,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.32714641094207764,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.26117855310440063,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.2512585520744324,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

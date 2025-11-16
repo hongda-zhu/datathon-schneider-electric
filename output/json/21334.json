@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "21334",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.012336873449385166,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.41007333333333335,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.5027120658911762,
+    "cust_hitrate": -0.82891,
+    "product_A_ratio": -0.3275426647279406
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.382749080657959,
+    "top_positive_factors": [
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.26922544836997986,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.2665310204029083,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.08909065276384354,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.07522843778133392,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.0262395478785038,
+        "explanation": "Opp Age Squared"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -1.023545265197754,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.6620253324508667,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.49709829688072205,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.49266666173934937,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.39629384875297546,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

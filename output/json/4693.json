@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "4693",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9645498394966125,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.11908999999999999,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.1468022273011897,
+    "cust_hitrate": -0.20082,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.303532361984253,
+    "top_positive_factors": [
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.8394798636436462,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.5089726448059082,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.44273316860198975,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.43636393547058105,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.34630852937698364,
+        "explanation": "Hitrate Contracts"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.15671154856681824,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.09219939261674881,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.09079618752002716,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.05257079377770424,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.024336880072951317,
+        "explanation": "Product A Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

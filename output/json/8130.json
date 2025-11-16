@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "8130",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.012639115564525127,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.7997466666666666,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.26341722730118966,
+    "cust_hitrate": -0.49276,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.358235836029053,
+    "top_positive_factors": [
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.2487550675868988,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.06441939622163773,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.022837501019239426,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": 0.012576320208609104,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.012121569365262985,
+        "explanation": "N\u00famero total de competidores presentes"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -1.6902868747711182,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.5140435099601746,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.4630875587463379,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.44514426589012146,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.3291396498680115,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

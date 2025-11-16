@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "19745",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.11717671900987625,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
+  },
+  "key_features": {
+    "customer_activity": -0.57443,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.2269687548403751,
+    "cust_hitrate": -0.77857,
+    "product_A_ratio": 0.44732811289906205
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -2.019442081451416,
+    "top_positive_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.30976998805999756,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.1769004911184311,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.04633612558245659,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": 0.03306404501199722,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.032432395964860916,
+        "explanation": "Cust In Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.9934538006782532,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.35933950543403625,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.27092403173446655,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.24621425569057465,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.20569603145122528,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

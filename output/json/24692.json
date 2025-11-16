@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "24692",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.3246033787727356,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
+  },
+  "key_features": {
+    "customer_activity": -0.73279,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.3985257726988103,
+    "cust_hitrate": -1.1667,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -0.7326958775520325,
+    "top_positive_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": 0.19002385437488556,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.18810822069644928,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.1576639860868454,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.1053427904844284,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.08092669397592545,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.4663969874382019,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.4090447723865509,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.20265774428844452,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.16589561104774475,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.12740923464298248,
+        "explanation": "Competition Engagement"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

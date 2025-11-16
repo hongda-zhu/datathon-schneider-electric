@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "11419",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.005839805584400892,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.3353933333333334,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.09862331949762604,
+    "cust_hitrate": -0.58313,
+    "product_A_ratio": 0.44233420125593503
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -5.137195587158203,
+    "top_positive_factors": [
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.08335359394550323,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.053749147802591324,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": 0.034568142145872116,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.015818022191524506,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.014707897789776325,
+        "explanation": "Cust In Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -1.1959291696548462,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.8511086106300354,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.6106821894645691,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.5432555079460144,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.5126252174377441,
+        "explanation": "Riesgo asociado a la competencia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

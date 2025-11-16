@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "4518",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Win",
+    "win_probability": 0.11504936218261719,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
+  },
+  "key_features": {
+    "customer_activity": -0.15999666666666668,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.1910112273011897,
+    "cust_hitrate": 0.22563,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -2.0401711463928223,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.08679259568452835,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.031084775924682617,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.029410429298877716,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.028529858216643333,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "opp_maturity",
+        "shap_value": 0.010283524170517921,
+        "explanation": "Madurez de la oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.42364564538002014,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.41347116231918335,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.3443285822868347,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.251803994178772,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.22578249871730804,
+        "explanation": "Product B Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

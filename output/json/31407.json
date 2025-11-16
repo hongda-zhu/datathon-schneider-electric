@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "31407",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.005375978536903858,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.9921033333333332,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.24056522730118968,
+    "cust_hitrate": -0.76129,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -5.220423698425293,
+    "top_positive_factors": [
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.16926157474517822,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.10707556456327438,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.03578324243426323,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.0354195311665535,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.027642272412776947,
+        "explanation": "N\u00famero de contratos con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -2.331193685531616,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.6813203692436218,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.6301503777503967,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.5869863033294678,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.2648802697658539,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

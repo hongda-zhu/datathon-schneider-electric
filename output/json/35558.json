@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "35558",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.007568134926259518,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.6193333333333334,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.29324348957850865,
+    "cust_hitrate": -1.00022,
+    "product_A_ratio": 0.48155627605372847
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.8762078285217285,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.050124458968639374,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.019799120724201202,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.011582665145397186,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "opp_maturity",
+        "shap_value": 0.006067122332751751,
+        "explanation": "Madurez de la oportunidad"
+      },
+      {
+        "feature": "competitor_diversity",
+        "shap_value": 0.005142169538885355,
+        "explanation": "Diversidad de competidores en la oferta"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -1.064099907875061,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.5707179307937622,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.4070659875869751,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.39706382155418396,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.3776715397834778,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

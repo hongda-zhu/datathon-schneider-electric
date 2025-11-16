@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "34468",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.03692023828625679,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.3463166666666666,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.13424030324475897,
+    "cust_hitrate": -0.00728,
+    "product_A_ratio": -0.07040325811189746
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.26137638092041,
+    "top_positive_factors": [
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.30945098400115967,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.2944721281528473,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.13356085121631622,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.05189596489071846,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.017833737656474113,
+        "explanation": "N\u00famero de contratos con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -1.6034417152404785,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.458948016166687,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.442415326833725,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.40556952357292175,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.3163566291332245,
+        "explanation": "Product A Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

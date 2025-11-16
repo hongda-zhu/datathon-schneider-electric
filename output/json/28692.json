@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "28692",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.7484311461448669,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.14963000000000004,
+    "total_competitors": 0.0,
+    "opp_quality_score": -3.3188265657974525,
+    "cust_hitrate": 1.48056,
+    "product_A_ratio": -9.51970891449363
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 1.0902624130249023,
+    "top_positive_factors": [
+      {
+        "feature": "product_D",
+        "shap_value": 0.7832030057907104,
+        "explanation": "Product D"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.680648148059845,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.6705082058906555,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.1610262393951416,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": 0.14240992069244385,
+        "explanation": "Diversidad de productos activos"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.4707871675491333,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.27473676204681396,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.25398868322372437,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.24844741821289062,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.20138388872146606,
+        "explanation": "Product B Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

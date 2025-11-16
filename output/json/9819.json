@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "9819",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.03984298184514046,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.25792,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.5048429196512763,
+    "cust_hitrate": 0.85158,
+    "product_A_ratio": 0.4299822991281907
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.182149648666382,
+    "top_positive_factors": [
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.3323304057121277,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.20446136593818665,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.13991855084896088,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.10606562346220016,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.09632887691259384,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -2.3874497413635254,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.6182389855384827,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.24153374135494232,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.15524311363697052,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "opp_maturity",
+        "shap_value": -0.15040992200374603,
+        "explanation": "Madurez de la oportunidad"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

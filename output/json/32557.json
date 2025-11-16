@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "32557",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9716342091560364,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.37581333333333333,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.029846227301189715,
+    "cust_hitrate": -0.09577,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.5337963104248047,
+    "top_positive_factors": [
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.7487799525260925,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.6056037545204163,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.45805856585502625,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.452919065952301,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.26404741406440735,
+        "explanation": "Hitrate Contracts"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.11916244775056839,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.08999454230070114,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.04052813723683357,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.026870105415582657,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.019378453493118286,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

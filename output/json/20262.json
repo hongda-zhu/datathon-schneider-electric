@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "20262",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.026668939739465714,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.11253333333333333,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.1058139696724626,
+    "cust_hitrate": 0.69407,
+    "product_A_ratio": -0.7006874241811564
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.5972256660461426,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.07240626215934753,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.027411144226789474,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.024765731766819954,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": 0.01074911653995514,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "opp_maturity",
+        "shap_value": 0.008559493348002434,
+        "explanation": "Madurez de la oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.5157619714736938,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.44798627495765686,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.4479786455631256,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.41197800636291504,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.31520572304725647,
+        "explanation": "Engagement de clientes de Iberia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

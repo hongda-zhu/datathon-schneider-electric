@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "7111",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.010236690752208233,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.5487466666666666,
+    "total_competitors": 2.0,
+    "opp_quality_score": 0.033947227301189625,
+    "cust_hitrate": -1.00666,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.57149076461792,
+    "top_positive_factors": [
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.08394408226013184,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.08299769461154938,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.06351594626903534,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.03380800038576126,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.020535308867692947,
+        "explanation": "Opp Age Squared"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.9773006439208984,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.8677030801773071,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.7630675435066223,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.6256609559059143,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.5868197679519653,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

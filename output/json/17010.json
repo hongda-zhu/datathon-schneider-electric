@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "17010",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Win",
+    "win_probability": 0.007024379447102547,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.24012666666666668,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.029142772698810326,
+    "cust_hitrate": -0.90834,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.951320171356201,
+    "top_positive_factors": [
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.2797549068927765,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.18536342680454254,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.11128611117601395,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.08455672115087509,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.04514531046152115,
+        "explanation": "Competencia en clientes de Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -2.2911221981048584,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.5238741040229797,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.49263644218444824,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.39420560002326965,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.2906351685523987,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

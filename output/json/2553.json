@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "2553",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.1516771763563156,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
+  },
+  "key_features": {
+    "customer_activity": 0.8450099999999999,
+    "total_competitors": 2.0,
+    "opp_quality_score": 0.4213022273011897,
+    "cust_hitrate": -0.01174,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -1.7215075492858887,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.507522702217102,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.15008804202079773,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.09375877678394318,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.07945576310157776,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.030652735382318497,
+        "explanation": "Opp Age Squared"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.6501126289367676,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.39962220191955566,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.28343692421913147,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.228242427110672,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.20732519030570984,
+        "explanation": "N\u00famero total de competidores presentes"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

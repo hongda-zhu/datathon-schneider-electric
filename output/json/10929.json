@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "10929",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.03339189291000366,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.5288233333333333,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.8022486562959612,
+    "cust_hitrate": -0.71782,
+    "product_A_ratio": 2.940604140739903
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.365478038787842,
+    "top_positive_factors": [
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.08430900424718857,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.060321465134620667,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.02412250079214573,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.009065569378435612,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "opp_maturity",
+        "shap_value": 0.008929519914090633,
+        "explanation": "Madurez de la oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.8769472241401672,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.6652251482009888,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.6377968788146973,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.4049876034259796,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.23289375007152557,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

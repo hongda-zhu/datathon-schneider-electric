@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "13703",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.8580203056335449,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.46319,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.017715227301189684,
+    "cust_hitrate": -0.97521,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 1.798943281173706,
+    "top_positive_factors": [
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.5744742155075073,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.47620370984077454,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.34087374806404114,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.290555864572525,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.2048482447862625,
+        "explanation": "Nivel global de actividad del cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.5144447088241577,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.16686558723449707,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.12287319451570511,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.06207242235541344,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.04423630237579346,
+        "explanation": "Hitrate Interaction"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

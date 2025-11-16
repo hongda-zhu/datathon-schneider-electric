@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "30870",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.2918434143066406,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
+  },
+  "key_features": {
+    "customer_activity": 0.49372666666666665,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.7350485149732267,
+    "cust_hitrate": 1.559,
+    "product_A_ratio": 0.2980762874330667
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -0.8864472508430481,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.253940612077713,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.13810740411281586,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.0566805899143219,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.051406048238277435,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.041503895074129105,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.30652931332588196,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.1761094033718109,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.17514273524284363,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.14850226044654846,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": -0.11770172417163849,
+        "explanation": "N\u00famero de contratos con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

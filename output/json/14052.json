@@ -1,0 +1,85 @@
+{
+  "opportunity_id": "14052",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.02171296626329422,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.0750133333333333,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.013294227301189704,
+    "cust_hitrate": -0.60177,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.8078930377960205,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.05140134319663048,
+        "explanation": "Antigüedad de la oportunidad"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.04377460852265358,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": 0.018408367410302162,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.01694910228252411,
+        "explanation": "Número de contratos con el cliente"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.008866841904819012,
+        "explanation": "Opp Age Squared"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.653911828994751,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.5871572494506836,
+        "explanation": "Tasa de éxito histórica con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.5387934446334839,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.405164510011673,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.328171044588089,
+        "explanation": "Interacciones y calidad de relación con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Immediately reassess and improve the opportunity quality score by gathering more detailed information and validating the customer's needs and alignment with our solutions.",
+      "Analyze past customer hit rate data to identify patterns and address any recurring issues that are impacting win rates with this specific customer profile.",
+      "Develop a compelling and urgent value proposition to mitigate the negative impact of the opportunity's current timeline (opp_month) and potentially accelerate the decision-making process."
+    ],
+    "ai_generated": true
+  }
+}

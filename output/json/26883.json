@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "26883",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.5031808018684387,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.73279,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.31138729732014114,
+    "cust_hitrate": -1.1667,
+    "product_A_ratio": 0.6461492566996471
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 0.012723356485366821,
+    "top_positive_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": 0.330504447221756,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.2375943809747696,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.1844588816165924,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.1155172735452652,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.08424696326255798,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.3418317437171936,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.27277034521102905,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.22568272054195404,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.062069009989500046,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.05855468660593033,
+        "explanation": "Score agregado de calidad de oportunidad"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Nurture",
+    "priority": "Medium",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

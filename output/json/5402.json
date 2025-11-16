@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "5402",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.022710077464580536,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.3238866666666666,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.4806841597386251,
+    "cust_hitrate": 0.74261,
+    "product_A_ratio": 0.401837899346563
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.761974334716797,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.07572782039642334,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.023545822128653526,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.02194768562912941,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.012718407437205315,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.006763968151062727,
+        "explanation": "Riesgo asociado a la competencia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.762328028678894,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.4867742359638214,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.37443315982818604,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.33093008399009705,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.3188536465167999,
+        "explanation": "Score agregado de calidad de oportunidad"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

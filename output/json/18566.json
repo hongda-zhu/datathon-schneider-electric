@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "18566",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.21150363981723785,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
+  },
+  "key_features": {
+    "customer_activity": -0.4035666666666667,
+    "total_competitors": 2.0,
+    "opp_quality_score": -0.22112049648219576,
+    "cust_hitrate": -0.90721,
+    "product_A_ratio": 0.43028125879451057
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -1.3158857822418213,
+    "top_positive_factors": [
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.46944087743759155,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.09800439327955246,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.09254173934459686,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.07312498241662979,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.06533373892307281,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.5817058086395264,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.37726029753685,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.251259446144104,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.2486640363931656,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.17747662961483002,
+        "explanation": "Opp Month"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

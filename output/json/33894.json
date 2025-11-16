@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "33894",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.014798465184867382,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.16777,
+    "total_competitors": 1.0,
+    "opp_quality_score": 2.452016549392336,
+    "cust_hitrate": -0.19982,
+    "product_A_ratio": 6.405733873480839
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.1983208656311035,
+    "top_positive_factors": [
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": 0.11354703456163406,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.1017703041434288,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.08331934362649918,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.04641156271100044,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.04031259939074516,
+        "explanation": "N\u00famero total de competidores presentes"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.711533784866333,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.6624437570571899,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.64786696434021,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.6428771615028381,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.40852150321006775,
+        "explanation": "Nivel global de actividad del cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

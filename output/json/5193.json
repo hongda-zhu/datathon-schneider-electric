@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "5193",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.951682984828949,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.043336666666666655,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.4350112273011897,
+    "cust_hitrate": 0.83563,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 2.9804468154907227,
+    "top_positive_factors": [
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.6416336894035339,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.5938456058502197,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.3168787956237793,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.26493847370147705,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.23713263869285583,
+        "explanation": "Hitrate Contracts"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.03449706733226776,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.02730889804661274,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": -0.005316231399774551,
+        "explanation": "Diversidad de productos activos"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.004955876152962446,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "product_A",
+        "shap_value": -0.004696691874414682,
+        "explanation": "Product A"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

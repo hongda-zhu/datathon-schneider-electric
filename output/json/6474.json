@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "6474",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.6681167483329773,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.9853933333333335,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.9598876511717451,
+    "cust_hitrate": 1.60769,
+    "product_A_ratio": 0.4549066279293627
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 0.6996809840202332,
+    "top_positive_factors": [
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.9470075964927673,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.5425853729248047,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.07951994985342026,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.0688149705529213,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.05974185839295387,
+        "explanation": "Cust In Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.2678718864917755,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.17831063270568848,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.09856745600700378,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.08892527222633362,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.07816436141729355,
+        "explanation": "Competencia en clientes de Iberia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Nurture",
+    "priority": "Medium",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

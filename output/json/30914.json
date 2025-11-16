@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "30914",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.993351936340332,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.06440333333333337,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.5710614804830156,
+    "cust_hitrate": 1.20314,
+    "product_A_ratio": 0.47699620120753883
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 5.006774425506592,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 1.0489885807037354,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.6981097459793091,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.6893254518508911,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.4843055009841919,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.40282878279685974,
+        "explanation": "Score agregado de calidad de oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": -0.14468611776828766,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.09327302128076553,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.08326507359743118,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.009593439288437366,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": -0.007635415066033602,
+        "explanation": "Diversidad de productos activos"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "2005",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.7078335285186768,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.35988,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.7985612273011896,
+    "cust_hitrate": 1.73092,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 0.8848855495452881,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.8560754060745239,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.38445451855659485,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.3629356324672699,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": 0.26150229573249817,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.23295296728610992,
+        "explanation": "Nivel global de actividad del cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.5111413598060608,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.2763124108314514,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.2599608600139618,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.21563124656677246,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.2101742923259735,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

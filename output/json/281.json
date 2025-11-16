@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "281",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9091303944587708,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.5609966666666666,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.3251953488282549,
+    "cust_hitrate": -1.12953,
+    "product_A_ratio": 0.4549066279293627
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 2.3030643463134766,
+    "top_positive_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": 0.5232164263725281,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.4386707544326782,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.39345672726631165,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.366033136844635,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.25404128432273865,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.6226376295089722,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.513520359992981,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.02880064584314823,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.024118829518556595,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": -0.016576753929257393,
+        "explanation": "N\u00famero de contratos con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

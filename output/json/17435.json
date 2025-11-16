@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "17435",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9543712139129639,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.17741000000000004,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.6937142273011897,
+    "cust_hitrate": 1.5639,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.0405118465423584,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.8115335702896118,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.6626397967338562,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.4506185054779053,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.41509658098220825,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.20533622801303864,
+        "explanation": "Opp Month"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.12818829715251923,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.08630379289388657,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.024350227788090706,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.019655710086226463,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.016969038173556328,
+        "explanation": "Product A Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

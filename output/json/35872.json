@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "35872",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9318331480026245,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.5677833333333333,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.5548152273011897,
+    "cust_hitrate": 0.71053,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 2.615194082260132,
+    "top_positive_factors": [
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.48141011595726013,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.4468597173690796,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.25417470932006836,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.24143753945827484,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.20704622566699982,
+        "explanation": "Cust In Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.051465511322021484,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.020394468680024147,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.01732916571199894,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": -0.009431859478354454,
+        "explanation": "Diversidad de productos activos"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.00640444178134203,
+        "explanation": "N\u00famero total de competidores presentes"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "3599",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.04866405203938484,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.6712033333333333,
+    "total_competitors": 2.0,
+    "opp_quality_score": -0.38004977269881024,
+    "cust_hitrate": -1.1667,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -2.9729278087615967,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.05984220281243324,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.04797344282269478,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.04425988346338272,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.033989425748586655,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.03171680495142937,
+        "explanation": "Product A Recommended"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.5458216667175293,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.45004135370254517,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.43328455090522766,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.3576742708683014,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.34159359335899353,
+        "explanation": "Riesgo asociado a la competencia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

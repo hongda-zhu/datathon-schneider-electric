@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "15243",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.00037635487387888134,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.030570000000000024,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.14927077269881028,
+    "cust_hitrate": -1.03807,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -7.884598255157471,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.05761052668094635,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.017707375809550285,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": 0.0142114432528615,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "opp_maturity",
+        "shap_value": 0.005517221987247467,
+        "explanation": "Madurez de la oportunidad"
+      },
+      {
+        "feature": "has_past_sales",
+        "shap_value": 0.0017758541507646441,
+        "explanation": "Has Past Sales"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competition_risk",
+        "shap_value": -1.3833378553390503,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -1.1046620607376099,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.9074571132659912,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.7201268672943115,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.629199206829071,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

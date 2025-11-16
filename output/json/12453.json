@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "12453",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.41525378823280334,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.08965000000000001,
+    "total_competitors": 2.0,
+    "opp_quality_score": 0.16783387785929757,
+    "cust_hitrate": -0.73175,
+    "product_A_ratio": 0.9011596946482439
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -0.34228748083114624,
+    "top_positive_factors": [
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.2568551003932953,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.2268058955669403,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.22124817967414856,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.21282881498336792,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.21043755114078522,
+        "explanation": "Nivel global de actividad del cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.5820712447166443,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.28965479135513306,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.2650280296802521,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.1989484578371048,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.1516864150762558,
+        "explanation": "Competition Engagement"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Nurture",
+    "priority": "Medium",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

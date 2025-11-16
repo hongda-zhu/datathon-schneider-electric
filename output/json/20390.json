@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "20390",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.008610177785158157,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.62744,
+    "total_competitors": 0.0,
+    "opp_quality_score": -1.3744487342091964,
+    "cust_hitrate": -1.03541,
+    "product_A_ratio": -2.188984335522991
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.746160507202148,
+    "top_positive_factors": [
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.08576758950948715,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.05368895083665848,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.022946797311306,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.018730489537119865,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.017742468044161797,
+        "explanation": "Engagement de clientes de Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.790637731552124,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.7670061588287354,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.6145633459091187,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.5879272222518921,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.5228666663169861,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

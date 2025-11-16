@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "6579",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.9901694655418396,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.7838333333333333,
+    "total_competitors": 2.0,
+    "opp_quality_score": 0.2991126530023819,
+    "cust_hitrate": 0.69593,
+    "product_A_ratio": -0.36204086749404535
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.6123833656311035,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 1.0849456787109375,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.7769198417663574,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.4461006820201874,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.4294881224632263,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.3772325813770294,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.2397080510854721,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.20258164405822754,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.18595857918262482,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.09021809697151184,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "competitor_diversity",
+        "shap_value": -0.029887985438108444,
+        "explanation": "Diversidad de competidores en la oferta"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

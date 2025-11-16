@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "35048",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.842225968837738,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.05762666666666666,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.22468302231325396,
+    "cust_hitrate": 0.15235,
+    "product_A_ratio": 0.49066505578313485
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 1.674884557723999,
+    "top_positive_factors": [
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.41599106788635254,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.29499804973602295,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.2919355630874634,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.27145782113075256,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.19498102366924286,
+        "explanation": "Opp Month"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.1013609915971756,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.08971478044986725,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.07553865015506744,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.049138206988573074,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.0440312922000885,
+        "explanation": "Cust In Iberia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

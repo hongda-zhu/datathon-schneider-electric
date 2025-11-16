@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "11565",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.944317638874054,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.7114900000000001,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.2547403066558166,
+    "cust_hitrate": -0.51821,
+    "product_A_ratio": 0.4918907666395413
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 2.830798387527466,
+    "top_positive_factors": [
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.5367948412895203,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.523111879825592,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.40255993604660034,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.3849679231643677,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.29737815260887146,
+        "explanation": "Hitrate Contracts"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.35027188062667847,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.10050342231988907,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.050392623990774155,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.03129522502422333,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "product_A",
+        "shap_value": -0.0033307895064353943,
+        "explanation": "Product A"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

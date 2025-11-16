@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "8272",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.047198135405778885,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.5837233333333334,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.2522497726988103,
+    "cust_hitrate": -0.82818,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.005054235458374,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.05028725787997246,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.048755183815956116,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.0226097721606493,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.018880683928728104,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.018619995564222336,
+        "explanation": "Product A Recommended"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.9360123872756958,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.6929571628570557,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.47966429591178894,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.31623050570487976,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.27463579177856445,
+        "explanation": "Score agregado de calidad de oportunidad"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

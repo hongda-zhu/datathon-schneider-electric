@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "757",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.8492459058761597,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.23294,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.2222321859755534,
+    "cust_hitrate": 0.33285,
+    "product_A_ratio": 0.48064796493888345
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 1.728698968887329,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.3310713768005371,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.2791076898574829,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.2648090422153473,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.24536767601966858,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.1970304250717163,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": -0.14041262865066528,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.06846706569194794,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.0665544718503952,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": -0.028868932276964188,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.027027254924178123,
+        "explanation": "Competition Engagement"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

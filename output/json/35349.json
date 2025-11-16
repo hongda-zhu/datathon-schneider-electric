@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "35349",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.059335216879844666,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.64427,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.47689439915683496,
+    "cust_hitrate": -1.06416,
+    "product_A_ratio": 0.0890865021079127
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -2.763385057449341,
+    "top_positive_factors": [
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.34118327498435974,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.1462467461824417,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.07832411676645279,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.04279550537467003,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.02905147336423397,
+        "explanation": "N\u00famero de contratos con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.9271697998046875,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.5337727665901184,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.38059258460998535,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.3554752767086029,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.3498629927635193,
+        "explanation": "Hitrate Contracts"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

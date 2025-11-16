@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "11263",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.02978372387588024,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.63428,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.3553047726988102,
+    "cust_hitrate": -1.12114,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.483558416366577,
+    "top_positive_factors": [
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.06495818495750427,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.06447207927703857,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.04009217768907547,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.027352815493941307,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.022556234151124954,
+        "explanation": "Opp Age Squared"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.8864936828613281,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.6415418982505798,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.49266138672828674,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.42840108275413513,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.4073537290096283,
+        "explanation": "Hitrate Contracts"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

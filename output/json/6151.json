@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "6151",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.994728147983551,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.04846666666666666,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.5226802273011897,
+    "cust_hitrate": 1.12273,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 5.240090370178223,
+    "top_positive_factors": [
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 1.9169431924819946,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.7079843282699585,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.38430169224739075,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.35101011395454407,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.31922948360443115,
+        "explanation": "Score agregado de calidad de oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.02541002817451954,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.009608074091374874,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.006069285329431295,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.005374499596655369,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "product_D",
+        "shap_value": -0.0012338036904111505,
+        "explanation": "Product D"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "1355",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.20142322778701782,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
+  },
+  "key_features": {
+    "customer_activity": 0.25899333333333335,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.6473891709599786,
+    "cust_hitrate": 1.30871,
+    "product_A_ratio": 0.44269542739994655
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -1.3774235248565674,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.4115735590457916,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.27912890911102295,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.06159991770982742,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.012792205438017845,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.011379621922969818,
+        "explanation": "Opp Age Squared"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.49938249588012695,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.34590137004852295,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.2530984878540039,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.16522271931171417,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.1377747654914856,
+        "explanation": "Riesgo asociado a la competencia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

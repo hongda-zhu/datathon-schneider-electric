@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "26196",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.0042404234409332275,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.6561433333333334,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.23082615803814718,
+    "cust_hitrate": -0.39081,
+    "product_A_ratio": 0.37806539509536785
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -5.458839416503906,
+    "top_positive_factors": [
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.18452592194080353,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": 0.18093706667423248,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.09336036443710327,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.038969263434410095,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.005712477024644613,
+        "explanation": "Low Engagement Risk"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -1.8300777673721313,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.8609700202941895,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.45839181542396545,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.4563845098018646,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.38163837790489197,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

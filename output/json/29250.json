@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "29250",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.0006026343908160925,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.5161866666666667,
+    "total_competitors": 2.0,
+    "opp_quality_score": -0.007990609245133062,
+    "cust_hitrate": -0.94075,
+    "product_A_ratio": 1.0727259768871673
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -7.4135966300964355,
+    "top_positive_factors": [
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.07803411036729813,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.06034506484866142,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": 0.05792871117591858,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.03952356427907944,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.028330357745289803,
+        "explanation": "Opp Month"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -2.005232334136963,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -1.1021449565887451,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.5715087056159973,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.5426356196403503,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.4359709918498993,
+        "explanation": "Product A Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

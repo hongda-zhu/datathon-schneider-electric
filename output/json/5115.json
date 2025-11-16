@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "5115",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.237730011343956,
+    "threshold": 0.2624979317188263,
+    "confidence": "Low"
+  },
+  "key_features": {
+    "customer_activity": 0.23307999999999998,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.7605182273011897,
+    "cust_hitrate": 1.73091,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -1.1651661396026611,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.6439470052719116,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.168901726603508,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.09769922494888306,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.048321451991796494,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.027798784896731377,
+        "explanation": "N\u00famero total de competidores presentes"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": -0.45617637038230896,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.3514893651008606,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.33088740706443787,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.17790557444095612,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.17267870903015137,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "21894",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9958814382553101,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.09702333333333335,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.5988660082669373,
+    "cust_hitrate": 1.32274,
+    "product_A_ratio": 0.4323425206673431
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 5.488134860992432,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 1.1290080547332764,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.8592510223388672,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.6800987720489502,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.6013769507408142,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.5023321509361267,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.14677229523658752,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.048547860234975815,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.010294276289641857,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.006779402960091829,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": -0.006288436241447926,
+        "explanation": "Diversidad de productos activos"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

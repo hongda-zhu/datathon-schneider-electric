@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "13150",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.03457126021385193,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.24237999999999996,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.19434972520786864,
+    "cust_hitrate": 0.30453,
+    "product_A_ratio": 0.4392618130196715
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.32955002784729,
+    "top_positive_factors": [
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.31538787484169006,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.052994903177022934,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.047380898147821426,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.04421549662947655,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.01889226771891117,
+        "explanation": "Cust In Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.666378915309906,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.6115283966064453,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.42487087845802307,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.3941984474658966,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.38879382610321045,
+        "explanation": "Product B Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

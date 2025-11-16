@@ -1,0 +1,85 @@
+{
+  "opportunity_id": "18839",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.8704966306686401,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.48019999999999996,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.11171977269881028,
+    "cust_hitrate": -0.46327,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 1.9053566455841064,
+    "top_positive_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.6126871109008789,
+        "explanation": "Número de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.48469340801239014,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.23102107644081116,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.15675088763237,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.12402287125587463,
+        "explanation": "Interacciones y calidad de relación con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.24934731423854828,
+        "explanation": "Tasa de éxito histórica con el cliente"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.04248133674263954,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.03883006423711777,
+        "explanation": "Peso de ventas históricas de Product A"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": -0.020340532064437866,
+        "explanation": "Número de contratos con el cliente"
+      },
+      {
+        "feature": "product_A",
+        "shap_value": -0.0047566210851073265,
+        "explanation": "Product A"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Investigate the reasons behind the lower customer hit rate and address any concerns or objections they may have to increase their confidence in Schneider Electric.",
+      "Highlight the success stories and positive outcomes associated with the current contract hit rate ratio to further solidify the value proposition for the customer.",
+      "Leverage the existing positive customer interactions to build stronger relationships with key stakeholders and gain a deeper understanding of their needs and expectations."
+    ],
+    "ai_generated": true
+  }
+}

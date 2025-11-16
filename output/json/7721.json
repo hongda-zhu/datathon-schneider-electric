@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "7721",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.6854610443115234,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.4597466666666666,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.48808734699761813,
+    "cust_hitrate": -0.68449,
+    "product_A_ratio": -0.36204086749404535
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 0.7789846062660217,
+    "top_positive_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": 0.4019835293292999,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.34034398198127747,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.2948061525821686,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.2579793632030487,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.12749794125556946,
+        "explanation": "Competitor Z"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.48832857608795166,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.3490951955318451,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.07065805792808533,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.05344950407743454,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.05308528244495392,
+        "explanation": "Hitrate Contracts"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Nurture",
+    "priority": "Medium",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

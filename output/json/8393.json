@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "8393",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.02176123671233654,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.46105999999999997,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.2126517726988103,
+    "cust_hitrate": -0.81885,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.8056249618530273,
+    "top_positive_factors": [
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.09834454208612442,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.08336222916841507,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.04163632169365883,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.028085414320230484,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": 0.024474339559674263,
+        "explanation": "Product A Sold In The Past"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.8099998831748962,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.6821823120117188,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.4988398551940918,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.3738253116607666,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.356699675321579,
+        "explanation": "Competition Engagement"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

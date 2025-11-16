@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "803",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.006718981545418501,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.18811000000000003,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.6027711814209418,
+    "cust_hitrate": 0.60699,
+    "product_A_ratio": -2.1032529535523543
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.9960761070251465,
+    "top_positive_factors": [
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.0952104777097702,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.06241650879383087,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.052995774894952774,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.022870758548378944,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.018659943714737892,
+        "explanation": "Opp Age Squared"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.7539523243904114,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.7331081032752991,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.5170053839683533,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.4790135622024536,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.4778502583503723,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

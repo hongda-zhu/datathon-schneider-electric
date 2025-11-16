@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "20039",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9521817564964294,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.4262033333333333,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.19421945780051147,
+    "cust_hitrate": -0.81209,
+    "product_A_ratio": 0.4431713554987213
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 2.9913487434387207,
+    "top_positive_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": 0.9375749826431274,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.40117672085762024,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.35086971521377563,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.2945995032787323,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.1898045837879181,
+        "explanation": "Competition Engagement"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.4212118089199066,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.010910007171332836,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": -0.006083040963858366,
+        "explanation": "Diversidad de productos activos"
+      },
+      {
+        "feature": "product_A",
+        "shap_value": -0.005180386360734701,
+        "explanation": "Product A"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.004822224378585815,
+        "explanation": "Competitor Y"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

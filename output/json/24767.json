@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "24767",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.8717855215072632,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.21985,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.27338638119538317,
+    "cust_hitrate": 0.37212,
+    "product_A_ratio": 0.5692634529884579
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 1.916839838027954,
+    "top_positive_factors": [
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.4318508803844452,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.2942201793193817,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.29288506507873535,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.2807796001434326,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.25086677074432373,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.3151777684688568,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.30438968539237976,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": -0.05190387740731239,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.025864316150546074,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": -0.0010616527870297432,
+        "explanation": "Diversidad de productos activos"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

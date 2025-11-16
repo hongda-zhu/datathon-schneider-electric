@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "24508",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.006859588902443647,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.8724366666666666,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.2397862273011897,
+    "cust_hitrate": -0.64422,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.975221157073975,
+    "top_positive_factors": [
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.34526869654655457,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.10862501710653305,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.061752013862133026,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.040512796491384506,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "competitor_diversity",
+        "shap_value": 0.003488193266093731,
+        "explanation": "Diversidad de competidores en la oferta"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -1.5699462890625,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.7631604671478271,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.6581156253814697,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.5030176639556885,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.38617080450057983,
+        "explanation": "Nivel global de actividad del cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

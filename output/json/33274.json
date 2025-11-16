@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "33274",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.00397745193913579,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.73279,
+    "total_competitors": 2.0,
+    "opp_quality_score": -0.07315270453437339,
+    "cust_hitrate": -1.1667,
+    "product_A_ratio": 1.2417357386640664
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -5.5231242179870605,
+    "top_positive_factors": [
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.1353280246257782,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.06094011291861534,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.056481435894966125,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.025868792086839676,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.024528447538614273,
+        "explanation": "Engagement de clientes de Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.9730307459831238,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.7757498621940613,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.6067275404930115,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.5790930986404419,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.5354651808738708,
+        "explanation": "Riesgo asociado a la competencia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

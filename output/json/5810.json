@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "5810",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.010946555063128471,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.22894666666666666,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.17865177269881027,
+    "cust_hitrate": -0.93763,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.503725528717041,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.07402922958135605,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.05238328129053116,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": 0.04570262134075165,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.024470806121826172,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.01235732901841402,
+        "explanation": "Competencia en clientes de Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.9895983934402466,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.7467343807220459,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.7375213503837585,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.6204057335853577,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.4683239758014679,
+        "explanation": "Riesgo asociado a la competencia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

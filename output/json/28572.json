@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "28572",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9719619750976562,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.28894333333333333,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.04935331505162234,
+    "cust_hitrate": 0.05616,
+    "product_A_ratio": 0.2979707876290558
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.5457520484924316,
+    "top_positive_factors": [
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.8263728618621826,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.4845394492149353,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.4744017720222473,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": 0.4685593545436859,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.38762596249580383,
+        "explanation": "Score agregado de calidad de oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": -0.08247320353984833,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.03477729484438896,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.008766824379563332,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "product_A",
+        "shap_value": -0.008036958053708076,
+        "explanation": "Product A"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.005442747846245766,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

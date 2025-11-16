@@ -1,0 +1,91 @@
+{
+  "opportunity_id": "30395",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9582706093788147,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.2926366666666667,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.1996517726988103,
+    "cust_hitrate": -0.94394,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.1339216232299805,
+    "top_positive_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.5923757553100586,
+        "explanation": "Número de interacciones con el cliente"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.4920641779899597,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.4432520270347595,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.4407065212726593,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.40279412269592285,
+        "explanation": "Opp Month"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.21519781649112701,
+        "explanation": "Tasa de éxito histórica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.09270084649324417,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.07346571981906891,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.05200278386473656,
+        "explanation": "Peso de ventas históricas de Product A"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.038328755646944046,
+        "explanation": "Product B Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      {
+        "step": "Analyze past interactions with the customer to understand the low customer hit rate and identify potential areas for improvement in our approach."
+      },
+      {
+        "step": "Review the contract terms and conditions to identify any areas that might be contributing to the low contract hit rate ratio and explore options for making them more favorable or addressing customer concerns proactively."
+      },
+      {
+        "step": "Leverage our strong customer interactions, Iberian engagement, and high opportunity quality score to further solidify our position against Competitor Z by highlighting our unique value proposition and addressing any specific concerns they might be raising."
+      }
+    ],
+    "ai_generated": true
+  }
+}

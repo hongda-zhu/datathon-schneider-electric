@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "4685",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.8656798005104065,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.14765999999999999,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.08762977269881028,
+    "cust_hitrate": -0.71551,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 1.8632893562316895,
+    "top_positive_factors": [
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.3841932415962219,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.3186728358268738,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.28108134865760803,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.24563553929328918,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.2324296236038208,
+        "explanation": "Score agregado de calidad de oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.3788078725337982,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.22329279780387878,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.08085739612579346,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.034484732896089554,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.022746426984667778,
+        "explanation": "Competitor Y"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

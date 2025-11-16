@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "17201",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9848628640174866,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.28304333333333337,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.062376343384797237,
+    "cust_hitrate": -0.56734,
+    "product_A_ratio": 0.36916335846199305
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.175353050231934,
+    "top_positive_factors": [
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 1.0614798069000244,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.5976755619049072,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.5908176302909851,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.5732668042182922,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.41146114468574524,
+        "explanation": "Hitrate Contracts"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.4493045508861542,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.2666749060153961,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.08790362626314163,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.08240608125925064,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": -0.07772879302501678,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

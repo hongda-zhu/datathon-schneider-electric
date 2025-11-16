@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "32786",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.005183972883969545,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.12687333333333328,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.03816340773764554,
+    "cust_hitrate": -1.05527,
+    "product_A_ratio": 0.9820160193441136
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -5.256982803344727,
+    "top_positive_factors": [
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.29716652631759644,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.03813352808356285,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.03059128113090992,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.014160549268126488,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.012328248471021652,
+        "explanation": "Cust In Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -1.4554108381271362,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.7948793768882751,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.7576183080673218,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.46925100684165955,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.4608505666255951,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

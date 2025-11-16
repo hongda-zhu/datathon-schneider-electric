@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "4813",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.8918946385383606,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.5743833333333334,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.26057068494837765,
+    "cust_hitrate": -0.69148,
+    "product_A_ratio": 0.2979707876290558
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 2.110239028930664,
+    "top_positive_factors": [
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.49029141664505005,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.33514299988746643,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.3255150616168976,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.2782776355743408,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.15253740549087524,
+        "explanation": "Hitrate Contracts"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.3562110662460327,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.04613904282450676,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.024435611441731453,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.012226032093167305,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.009101460687816143,
+        "explanation": "Hitrate Interaction"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

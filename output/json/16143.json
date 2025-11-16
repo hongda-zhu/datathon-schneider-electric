@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "16143",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9905511140823364,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.17766,
+    "total_competitors": 2.0,
+    "opp_quality_score": -0.0832589875527501,
+    "cust_hitrate": -0.25036,
+    "product_A_ratio": -0.15362246888187522
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.652365207672119,
+    "top_positive_factors": [
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.6364984512329102,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.6222205758094788,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.6198411583900452,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.6189842820167542,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.32688555121421814,
+        "explanation": "Riesgo asociado a la competencia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.18912264704704285,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.07276590168476105,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "competitor_diversity",
+        "shap_value": -0.03157668560743332,
+        "explanation": "Diversidad de competidores en la oferta"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.008531861007213593,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "has_past_sales",
+        "shap_value": -0.0025121443904936314,
+        "explanation": "Has Past Sales"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

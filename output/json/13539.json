@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "13539",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.010337773710489273,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.5660333333333333,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.20820077269881027,
+    "cust_hitrate": -0.69904,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.561555862426758,
+    "top_positive_factors": [
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.09318552166223526,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.09222584217786789,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.08385913074016571,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.029103724285960197,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": 0.019333699718117714,
+        "explanation": "Competitor Y"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -2.0203704833984375,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.8438005447387695,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.4795221984386444,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.24218158423900604,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.2184920310974121,
+        "explanation": "Product B Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

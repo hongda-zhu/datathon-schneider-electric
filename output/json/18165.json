@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "18165",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9894365072250366,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.3925366666666667,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.5015457055655296,
+    "cust_hitrate": 0.30711,
+    "product_A_ratio": 0.729129263913824
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.539732456207275,
+    "top_positive_factors": [
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.683758556842804,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.6501314640045166,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.5686930418014526,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.46853235363960266,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.41927382349967957,
+        "explanation": "Riesgo asociado a la competencia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.23020082712173462,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.017557676881551743,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.005227742716670036,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": -0.004366779234260321,
+        "explanation": "Diversidad de productos activos"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": -0.004159160424023867,
+        "explanation": "Product A Recommended"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

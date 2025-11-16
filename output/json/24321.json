@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "24321",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Win",
+    "win_probability": 0.04562431946396828,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.73279,
+    "total_competitors": 2.0,
+    "opp_quality_score": -0.3985257726988103,
+    "cust_hitrate": -1.1667,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.0406172275543213,
+    "top_positive_factors": [
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.2411724328994751,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.1029411181807518,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.07811549305915833,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.05881328135728836,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.03003009967505932,
+        "explanation": "Hitrate Contracts"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.6235739588737488,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.5094172954559326,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.444624662399292,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.4175812304019928,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.38753384351730347,
+        "explanation": "Competitor Y"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

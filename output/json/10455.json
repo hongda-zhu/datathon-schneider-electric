@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "10455",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Loss",
+    "win_probability": 0.9221801161766052,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 1.1343733333333335,
+    "total_competitors": 0.0,
+    "opp_quality_score": 1.0309092273011897,
+    "cust_hitrate": 1.73092,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 2.472341537475586,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.9970127940177917,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.43301743268966675,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.2851583659648895,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.21751533448696136,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.18559181690216064,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.07042894512414932,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.06355470418930054,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.0483015812933445,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.03466932103037834,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.03438285365700722,
+        "explanation": "Product A Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

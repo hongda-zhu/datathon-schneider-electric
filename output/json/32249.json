@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "32249",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9971489310264587,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.4538533333333333,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.8607340211979404,
+    "cust_hitrate": 1.46942,
+    "product_A_ratio": 0.7093800529948512
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 5.857222557067871,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 1.1169135570526123,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.713966429233551,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.6673255562782288,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.46741238236427307,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.42880871891975403,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.039941221475601196,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "product_A",
+        "shap_value": -0.00826121587306261,
+        "explanation": "Product A"
+      },
+      {
+        "feature": "product_D",
+        "shap_value": -0.0016967668198049068,
+        "explanation": "Product D"
+      },
+      {
+        "feature": "has_competition",
+        "shap_value": -0.0009754265192896128,
+        "explanation": "Indicador de presencia de competencia"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.0008567373733967543,
+        "explanation": "Riesgo asociado a la competencia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

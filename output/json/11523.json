@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "11523",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.7393624186515808,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.24697666666666665,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.2000872273011897,
+    "cust_hitrate": -0.15109,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 1.0426583290100098,
+    "top_positive_factors": [
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.38266807794570923,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.377368688583374,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.1378461867570877,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.10743653774261475,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.10245060175657272,
+        "explanation": "Nivel global de actividad del cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.3505783677101135,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.06697351485490799,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.06123000383377075,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.023691531270742416,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.021068645641207695,
+        "explanation": "Product A Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

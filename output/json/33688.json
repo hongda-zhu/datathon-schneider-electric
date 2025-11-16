@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "33688",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9619772434234619,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.30309,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.13879096238858807,
+    "cust_hitrate": -0.10583,
+    "product_A_ratio": -0.04028740597147012
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.2308061122894287,
+    "top_positive_factors": [
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.6759399771690369,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.6208387613296509,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.457754522562027,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.39281806349754333,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.390337735414505,
+        "explanation": "Competition Engagement"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": -0.1787124127149582,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.12513618171215057,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.11792445182800293,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.060492854565382004,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.024599222466349602,
+        "explanation": "Nivel global de actividad del cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

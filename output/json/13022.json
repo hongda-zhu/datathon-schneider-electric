@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "13022",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.0685577243566513,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.73279,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.37861686462625077,
+    "cust_hitrate": -1.1667,
+    "product_A_ratio": 0.4780753384343731
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -2.6090590953826904,
+    "top_positive_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": 0.0980999693274498,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.09715380519628525,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.08237624913454056,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.0682016909122467,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": 0.046245377510786057,
+        "explanation": "Competitor Y"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.5208070874214172,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.4800165891647339,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.4293149709701538,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.37487900257110596,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.27518218755722046,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

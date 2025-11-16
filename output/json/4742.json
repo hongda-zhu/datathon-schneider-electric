@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "4742",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9775945544242859,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.19621999999999998,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.06963713537374927,
+    "cust_hitrate": -0.20909,
+    "product_A_ratio": 0.4780753384343731
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.7757883071899414,
+    "top_positive_factors": [
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.7404451370239258,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.4793497622013092,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.4689020812511444,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.4435167610645294,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.4039774537086487,
+        "explanation": "Competencia en clientes de Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -0.480118989944458,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.28024643659591675,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": -0.2106119990348816,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.09799839556217194,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "opp_maturity",
+        "shap_value": -0.05755947157740593,
+        "explanation": "Madurez de la oportunidad"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

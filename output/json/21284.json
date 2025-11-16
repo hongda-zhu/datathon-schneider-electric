@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "21284",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9921892881393433,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.007853333333333342,
+    "total_competitors": 2.0,
+    "opp_quality_score": 0.36960722730118967,
+    "cust_hitrate": 0.6531,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.8444132804870605,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 1.1578421592712402,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.9068099856376648,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.6856127977371216,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.4804483950138092,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.3893214166164398,
+        "explanation": "Score agregado de calidad de oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.06976611912250519,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.03854231908917427,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "competitor_diversity",
+        "shap_value": -0.03122040070593357,
+        "explanation": "Diversidad de competidores en la oferta"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.029561104252934456,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.028445160016417503,
+        "explanation": "Competitor Z"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

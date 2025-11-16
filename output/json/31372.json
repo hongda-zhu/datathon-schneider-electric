@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "31372",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9808021783828735,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.4428066666666666,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.2607580158630195,
+    "cust_hitrate": -0.8293,
+    "product_A_ratio": 0.3021849603424512
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.93357515335083,
+    "top_positive_factors": [
+      {
+        "feature": "total_past_sales",
+        "shap_value": 1.1537580490112305,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.787848711013794,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.4900391101837158,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.362382709980011,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": 0.32961544394493103,
+        "explanation": "Product A Sold In The Past"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.3519091308116913,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.14557604491710663,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.12918095290660858,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": -0.007492557633668184,
+        "explanation": "Diversidad de productos activos"
+      },
+      {
+        "feature": "product_A",
+        "shap_value": -0.007481030188500881,
+        "explanation": "Product A"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

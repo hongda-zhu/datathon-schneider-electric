@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "6132",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.0010066124377772212,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.28578333333333333,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.1378822273011897,
+    "cust_hitrate": 0.17432,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -6.900152206420898,
+    "top_positive_factors": [
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.046664003282785416,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.04464918002486229,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.012539277784526348,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.0036292087752372026,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "competitor_diversity",
+        "shap_value": 0.001996818697080016,
+        "explanation": "Diversidad de competidores en la oferta"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -2.6502459049224854,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.7275874614715576,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.5076884031295776,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.4610573649406433,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.43248552083969116,
+        "explanation": "Nivel global de actividad del cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

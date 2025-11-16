@@ -1,0 +1,94 @@
+{
+  "opportunity_id": "15987",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.10631682723760605,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.51579,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.13650999173306277,
+    "cust_hitrate": -0.5157,
+    "product_A_ratio": 0.4323425206673431
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -2.128927707672119,
+    "top_positive_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.2267526537179947,
+        "explanation": "Número de interacciones con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.11990231275558472,
+        "explanation": "Volumen total de ventas históricas"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.08174615353345871,
+        "explanation": "Peso de ventas históricas de Product A"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.07521815598011017,
+        "explanation": "Antigüedad de la oportunidad"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.053869638592004776,
+        "explanation": "Riesgo asociado a la competencia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.46833938360214233,
+        "explanation": "Tasa de éxito histórica con el cliente"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.43962419033050537,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.40636035799980164,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.3243711590766907,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.28740671277046204,
+        "explanation": "Interacciones y calidad de relación con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      {
+        "step": "Improve customer hit rate by focusing on understanding their specific needs and tailoring solutions accordingly to demonstrate value and increase their likelihood of selecting Schneider Electric.",
+        "owner": "Sales Team"
+      },
+      {
+        "step": "Increase Iberian engagement by assigning a dedicated Iberian-speaking sales representative or involving Iberian-based technical experts to address any regional specific concerns or requirements.",
+        "owner": "Sales Management"
+      },
+      {
+        "step": "Boost customer activity by proactively reaching out to schedule meetings, demos, or site visits, and provide valuable information or resources to reignite their interest and involvement in the sales process.",
+        "owner": "Sales Team"
+      }
+    ],
+    "ai_generated": true
+  }
+}

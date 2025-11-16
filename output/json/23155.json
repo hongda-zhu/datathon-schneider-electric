@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "23155",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9802883863449097,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.14832,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.1691233339791717,
+    "cust_hitrate": -0.3371,
+    "product_A_ratio": 0.7868733349479292
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.90663480758667,
+    "top_positive_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.6267427206039429,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.5037103295326233,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.3831060528755188,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.37113940715789795,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.35449087619781494,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.16726186871528625,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.011033824644982815,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "product_A",
+        "shap_value": -0.00653122877702117,
+        "explanation": "Product A"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": -0.004865024238824844,
+        "explanation": "Diversidad de productos activos"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.002564092632383108,
+        "explanation": "Riesgo asociado a la competencia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

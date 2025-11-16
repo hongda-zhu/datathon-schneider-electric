@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "14481",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9929359555244446,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.3272766666666667,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.8100815104214913,
+    "cust_hitrate": 1.73092,
+    "product_A_ratio": 0.48155627605372847
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.945650577545166,
+    "top_positive_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": 1.1923739910125732,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 1.1727184057235718,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.3639192283153534,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.30978572368621826,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.3067474365234375,
+        "explanation": "Engagement de clientes de Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.09172232449054718,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.05093275383114815,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.047375671565532684,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.028938431292772293,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": -0.027720371261239052,
+        "explanation": "N\u00famero de contratos con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

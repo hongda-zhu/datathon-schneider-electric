@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "11269",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.8166317343711853,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.50034,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.13718793681755534,
+    "cust_hitrate": -0.69758,
+    "product_A_ratio": 0.5554701579561115
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 1.493692398071289,
+    "top_positive_factors": [
+      {
+        "feature": "product_A",
+        "shap_value": 0.920788586139679,
+        "explanation": "Product A"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.6834266781806946,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": 0.4048534333705902,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.1980135142803192,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": 0.18790948390960693,
+        "explanation": "Diversidad de productos activos"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.7175524234771729,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.1627413034439087,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.15767961740493774,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.14736323058605194,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.13142311573028564,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

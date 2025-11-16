@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "12180",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.03367523103952408,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.55611,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.9698342086341427,
+    "cust_hitrate": -0.63666,
+    "product_A_ratio": -1.5300080215853566
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -3.3567371368408203,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.05332644656300545,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": 0.04203300178050995,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.03669757395982742,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.023510513827204704,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.012091855518519878,
+        "explanation": "N\u00famero total de competidores presentes"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.7942686676979065,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.7012997269630432,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.4752134680747986,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.23372717201709747,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.22248874604701996,
+        "explanation": "Nivel global de actividad del cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

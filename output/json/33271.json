@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "33271",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.017696484923362732,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.87866,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.2998321787426381,
+    "cust_hitrate": 1.07013,
+    "product_A_ratio": -0.7120120531434049
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.016533374786377,
+    "top_positive_factors": [
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.2600308060646057,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.044932927936315536,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.04106653109192848,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": 0.029296359047293663,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.0198283139616251,
+        "explanation": "Opp Age Squared"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.7847008109092712,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.48024120926856995,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.47621244192123413,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.40996575355529785,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.3813399076461792,
+        "explanation": "Score agregado de calidad de oportunidad"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

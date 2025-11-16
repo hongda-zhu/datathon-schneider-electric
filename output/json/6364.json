@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "6364",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9882045984268188,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.2475733333333334,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.9994537461957944,
+    "cust_hitrate": 1.73092,
+    "product_A_ratio": 1.0147643654894862
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.42818546295166,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 1.0028553009033203,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.8133470416069031,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.5307210683822632,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.349102258682251,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.3117154836654663,
+        "explanation": "Competencia en clientes de Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.11268074065446854,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.02702302671968937,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.009358212351799011,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "has_past_sales",
+        "shap_value": -0.008569298312067986,
+        "explanation": "Has Past Sales"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.004130990244448185,
+        "explanation": "Competitor Z"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

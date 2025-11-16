@@ -1,0 +1,85 @@
+{
+  "opportunity_id": "34050",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.587391197681427,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.17558666666666667,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.5312073902464826,
+    "cust_hitrate": 1.24048,
+    "product_A_ratio": 0.26596847561620646
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 0.3531912863254547,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.540738582611084,
+        "explanation": "Tasa de éxito histórica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.09510298073291779,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.08627134561538696,
+        "explanation": "Número de interacciones con el cliente"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.07069525122642517,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.060403451323509216,
+        "explanation": "Antigüedad de la oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.22266289591789246,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.1967420130968094,
+        "explanation": "Interacciones y calidad de relación con el cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.09886306524276733,
+        "explanation": "Peso de ventas históricas de Product A"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.08591555804014206,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.05605940893292427,
+        "explanation": "Product A Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Nurture",
+    "priority": "Medium",
+    "next_steps": [
+      "Initiate direct contact with key stakeholders in Iberia to understand their specific needs and concerns to improve engagement.",
+      "Schedule a meeting with the customer's key decision-makers to address any unmet needs or concerns, ultimately increasing customer engagement and solidifying the relationship.",
+      "Review the proposed solution and identify opportunities to incorporate additional products beyond Product A, diversifying the offering and potentially increasing value for the customer."
+    ],
+    "ai_generated": true
+  }
+}

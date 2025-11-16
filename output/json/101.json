@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "101",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.936914324760437,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.2176633333333333,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.6774087620532502,
+    "cust_hitrate": 1.31514,
+    "product_A_ratio": 0.5439194051331254
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 2.6980979442596436,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.840847373008728,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.4944736957550049,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.3517453372478485,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.2251884639263153,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.20414294302463531,
+        "explanation": "Hitrate Contracts"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.10455211251974106,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.07720503211021423,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.04216970130801201,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": -0.02259427309036255,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.02037769742310047,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

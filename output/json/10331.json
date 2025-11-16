@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "10331",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9782441854476929,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.04261999999999999,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.49682037413220237,
+    "cust_hitrate": 0.76252,
+    "product_A_ratio": 0.7021259353305059
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.8058741092681885,
+    "top_positive_factors": [
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.8655004501342773,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.6577956080436707,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.3697807788848877,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.3260563910007477,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.29680153727531433,
+        "explanation": "Hitrate Contracts"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.05290215462446213,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": -0.039349090307950974,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.024872103706002235,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.024866800755262375,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.005908840801566839,
+        "explanation": "Hitrate Interaction"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

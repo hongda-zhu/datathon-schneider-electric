@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "21711",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.0070946007035672665,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.6313933333333334,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.11599022730118971,
+    "cust_hitrate": -0.81583,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.941300392150879,
+    "top_positive_factors": [
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.216846764087677,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": 0.19128122925758362,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.128883957862854,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.039626847952604294,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": 0.032794006168842316,
+        "explanation": "Competitor Y"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": -1.6497858762741089,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -1.0061540603637695,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.5605273842811584,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": -0.5358061194419861,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.5035075545310974,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

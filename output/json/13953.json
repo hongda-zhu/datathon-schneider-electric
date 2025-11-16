@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "13953",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9563405513763428,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.5379999999999999,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.19738177269881024,
+    "cust_hitrate": -0.69101,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.0866920948028564,
+    "top_positive_factors": [
+      {
+        "feature": "opp_month",
+        "shap_value": 0.4819849729537964,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.39867350459098816,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.3481331169605255,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.3391425609588623,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.26775437593460083,
+        "explanation": "Engagement de clientes de Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.12247110903263092,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.011320507153868675,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.010589913465082645,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "product_D",
+        "shap_value": -0.0024556221906095743,
+        "explanation": "Product D"
+      },
+      {
+        "feature": "product_A",
+        "shap_value": -0.0022756573744118214,
+        "explanation": "Product A"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

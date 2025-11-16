@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "34236",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.0016489876434206963,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": -0.3378233333333333,
+    "total_competitors": 1.0,
+    "opp_quality_score": -0.36430570377019744,
+    "cust_hitrate": -0.49538,
+    "product_A_ratio": -0.2858617594254937
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -6.405942440032959,
+    "top_positive_factors": [
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.08492411673069,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.025092503055930138,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.024162866175174713,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": 0.01921825297176838,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.01890052668750286,
+        "explanation": "Opp Age Squared"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "product_A_recommended",
+        "shap_value": -1.5551462173461914,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -1.1337558031082153,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.7700852751731873,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.7169097065925598,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.6497536897659302,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

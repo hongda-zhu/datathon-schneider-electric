@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "20001",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.980440080165863,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.18247000000000002,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.7493828121468533,
+    "cust_hitrate": 1.35085,
+    "product_A_ratio": 0.7234670303671333
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 3.914515495300293,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 1.1096910238265991,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.5803830623626709,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.3891848921775818,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.3890116512775421,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.3667433261871338,
+        "explanation": "Nivel global de actividad del cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.1452927440404892,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.06351526826620102,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.025501543655991554,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.025451242923736572,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.010852190665900707,
+        "explanation": "Competition Engagement"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "model_performance": {
+    "threshold": 0.2624979317188263,
+    "f1_score": 0.8369507676019058,
+    "auc": 0.9219260047919686,
+    "precision": 0.7568214456677836,
+    "recall": 0.9360568383658969,
+    "accuracy": 0.8284122562674094
+  },
+  "feature_importance_top20": {
+    "opp_maturity": 0.3165907561779022,
+    "opp_age_squared": 0.2509899139404297,
+    "opp_old": 0.09197305887937546,
+    "competitor_diversity": 0.02330554462969303,
+    "cust_hitrate": 0.018840305507183075,
+    "product_A_recommended": 0.016100646927952766,
+    "iberia_competition": 0.012225698679685593,
+    "competition_risk": 0.011464519426226616,
+    "product_A_ratio": 0.011326845735311508,
+    "has_past_sales": 0.011319427751004696,
+    "competition_engagement": 0.011155975051224232,
+    "customer_engagement": 0.010763335973024368,
+    "product_A": 0.010657315142452717,
+    "total_competitors": 0.010490114800632,
+    "cust_interactions": 0.010291855782270432,
+    "product_A_sold_in_the_past": 0.010209289379417896,
+    "competitor_Z": 0.00997160468250513,
+    "contract_hitrate_ratio": 0.009884442202746868,
+    "product_C": 0.00946264062076807,
+    "customer_activity": 0.009392735548317432
+  },
+  "prediction_distribution": {
+    "total_samples": 7180,
+    "predicted_wins": 4178,
+    "predicted_losses": 3002,
+    "win_rate": 0.5818941504178273,
+    "avg_win_probability": 0.7851972579956055,
+    "avg_loss_probability": 0.05729503557085991,
+    "probability_buckets": {
+      "Low": 3110,
+      "Medium": 571,
+      "High": 612,
+      "Very High": 2887
+    }
+  },
+  "feature_statistics": {
+    "customer_activity": {
+      "median": -0.036939999999999994,
+      "p25": -0.4428066666666666,
+      "p75": 0.2961533333333334
+    },
+    "total_competitors": {
+      "median": 0.0,
+      "p25": 0.0,
+      "p75": 1.0
+    },
+    "opp_quality_score": {
+      "median": 0.1281092273011897,
+      "p25": -0.22296436994493302,
+      "p75": 0.5722862273011897
+    },
+    "cust_hitrate": {
+      "median": -0.21872,
+      "p25": -0.93024,
+      "p75": 0.84372
+    },
+    "cust_interactions": {
+      "median": -0.43173,
+      "p25": -0.6817,
+      "p75": 0.36166
+    }
+  },
+  "shap_drivers": {
+    "top_positive": [
+      {
+        "feature": "hitrate_contracts",
+        "mean_shap": 0.014435297809541225
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "mean_shap": 0.016058553010225296
+      },
+      {
+        "feature": "total_past_sales",
+        "mean_shap": 0.028473131358623505
+      }
+    ],
+    "top_negative": [
+      {
+        "feature": "cust_interactions",
+        "mean_shap": -0.06803100556135178
+      },
+      {
+        "feature": "opp_old",
+        "mean_shap": -0.05378417670726776
+      },
+      {
+        "feature": "cust_hitrate",
+        "mean_shap": -0.04202849045395851
+      }
+    ]
+  },
+  "business_insights": [
+    {
+      "id": 1,
+      "text": "Opportunity age (opp_maturity, opp_age_squared, opp_old) is the strongest predictor of win/loss, suggesting that understanding the opportunity lifecycle and timing of engagement is critical for success. Interventions should be timed with the optimal maturity stage of the deal."
+    },
+    {
+      "id": 2,
+      "text": "A high customer hit rate (cust_hitrate) is correlated with higher win probability, indicating strong past performance with existing clients is a key advantage. Leverage customer success stories and build stronger relationships with existing customers to capitalize on this advantage."
+    },
+    {
+      "id": 3,
+      "text": "Competition is a crucial factor (competitor_diversity, iberia_competition, competition_risk) as deals with higher diversity or perceived risk from competitors decrease win probability. Conduct thorough competitive analysis for each deal, focusing on identified risks and competitor strengths in the Iberia region."
+    },
+    {
+      "id": 4,
+      "text": "Product A, whether recommended (product_A_recommended) or as a ratio (product_A_ratio), influences the outcome of opportunities, suggesting specific product strategies correlate with success. Further investigate which Product A strategies lead to higher win rates."
+    },
+    {
+      "id": 5,
+      "text": "Opportunities that are marked as 'older' are not necessarily more likely to be won, indicating that some opportunities linger too long. Sales team intervention is needed on 'stale' deals, either to close or disqualify them."
+    }
+  ],
+  "recommendations": [
+    {
+      "id": 1,
+      "text": "Develop a playbook to standardize and optimize the sales process based on opportunity maturity (opp_maturity, opp_age_squared), outlining key actions and resources at each stage. Improve pipeline management to ensure that resources are focused on deals with high win potential, avoiding 'stale' opportunities."
+    },
+    {
+      "id": 2,
+      "text": "Implement a customer success program to nurture existing relationships and proactively address customer needs, directly impacting cust_hitrate. Develop targeted marketing campaigns and sales approaches for high-potential customer segments based on their success rates."
+    },
+    {
+      "id": 3,
+      "text": "Enhance competitive intelligence gathering, especially in the Iberia region, and provide sales teams with readily accessible competitor profiles and battlecards (competitor_diversity, iberia_competition, competition_risk). Equip sales with targeted strategies to mitigate competitive threats, improving the probability of a win."
+    },
+    {
+      "id": 4,
+      "text": "Analyze sales data to determine the optimal deployment strategies for Product A and train sales teams on effective messaging and value proposition for that product (product_A_recommended, product_A_ratio). Create tailored Product A bundles based on specific customer needs and market segments to increase win rates."
+    },
+    {
+      "id": 5,
+      "text": "Implement an automated alert system for opportunities exceeding a certain age threshold, triggering proactive sales management review and intervention (opp_old). Sales managers should prioritize these 'stale' deals for either quick resolution or qualification, improving overall pipeline efficiency."
+    }
+  ]
+}

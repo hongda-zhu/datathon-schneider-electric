@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "11381",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9349115490913391,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.67693,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.7300283811953833,
+    "cust_hitrate": 0.99748,
+    "product_A_ratio": 0.5692634529884579
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 2.664703607559204,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.631183922290802,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.4592045545578003,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.3934924006462097,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.3385278880596161,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.2947460412979126,
+        "explanation": "Nivel global de actividad del cliente"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.09608981758356094,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "hitrate_interaction",
+        "shap_value": -0.03783508762717247,
+        "explanation": "Hitrate Interaction"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.024585934355854988,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.021528219804167747,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": -0.01859384775161743,
+        "explanation": "N\u00famero de contratos con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

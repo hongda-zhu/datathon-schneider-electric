@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "22180",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.8522043824195862,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.23308333333333334,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.6161372079625796,
+    "cust_hitrate": 1.73092,
+    "product_A_ratio": 0.06734051990644908
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 1.7519958019256592,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.675430953502655,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.28921759128570557,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.25146403908729553,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": 0.1366436630487442,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.10269121825695038,
+        "explanation": "Opp Month"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.16524098813533783,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.0832543596625328,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.05677802115678787,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.01126757264137268,
+        "explanation": "Competitor Y"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": -0.0072259921580553055,
+        "explanation": "Product A Recommended"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

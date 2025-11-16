@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "25445",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.013819226063787937,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.0831,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.2707952273011897,
+    "cust_hitrate": 0.24848,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.267776012420654,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.06403864175081253,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.02616521716117859,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.022071287035942078,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.01399179082363844,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.013213570229709148,
+        "explanation": "Low Engagement Risk"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competition_risk",
+        "shap_value": -1.0716866254806519,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.9044551849365234,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.5469801425933838,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.3805219829082489,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.3162360191345215,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

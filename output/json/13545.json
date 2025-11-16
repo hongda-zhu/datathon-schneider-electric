@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "13545",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9877257943153381,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.40642666666666666,
+    "total_competitors": 1.0,
+    "opp_quality_score": 0.6457462273011897,
+    "cust_hitrate": 1.17499,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.387903213500977,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.822743833065033,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.6508874297142029,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.5477376580238342,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.5204655528068542,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.4595201909542084,
+        "explanation": "Competencia en clientes de Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.16981938481330872,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.086258664727211,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": -0.014017404988408089,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "has_competition",
+        "shap_value": -0.013180575333535671,
+        "explanation": "Indicador de presencia de competencia"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.008000380359590054,
+        "explanation": "Competitor Y"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

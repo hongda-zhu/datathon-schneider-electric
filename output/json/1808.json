@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "1808",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9887984395027161,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.19955333333333336,
+    "total_competitors": 0.0,
+    "opp_quality_score": 0.7202862273011897,
+    "cust_hitrate": 1.63033,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 4.480436325073242,
+    "top_positive_factors": [
+      {
+        "feature": "customer_engagement",
+        "shap_value": 1.1674994230270386,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.9034221768379211,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.5611172914505005,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.47709718346595764,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.453216016292572,
+        "explanation": "Hitrate Contracts"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.05544362589716911,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": -0.04353940114378929,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.03934003785252571,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.02588815800845623,
+        "explanation": "Cust In Iberia"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.006046683993190527,
+        "explanation": "Competencia en clientes de Iberia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

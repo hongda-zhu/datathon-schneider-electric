@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "33147",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.013453692197799683,
+    "threshold": 0.2624979317188263,
+    "confidence": "Medium"
+  },
+  "key_features": {
+    "customer_activity": 0.6169133333333333,
+    "total_competitors": 2.0,
+    "opp_quality_score": 0.45816422730118966,
+    "cust_hitrate": 0.33923,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": -4.294956684112549,
+    "top_positive_factors": [
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.3133854568004608,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.06222531944513321,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.0544576421380043,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.030168352648615837,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.015471389517188072,
+        "explanation": "Low Engagement Risk"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competition_engagement",
+        "shap_value": -0.9040070176124573,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.5242571234703064,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.50296950340271,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": -0.4311329126358032,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.3941759765148163,
+        "explanation": "Riesgo asociado a la competencia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "32893",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9949936270713806,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 1.0141066666666667,
+    "total_competitors": 2.0,
+    "opp_quality_score": 0.8975798214536106,
+    "cust_hitrate": 0.96544,
+    "product_A_ratio": 0.7592895536340267
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 5.292019844055176,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.99256831407547,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.861001193523407,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.6859226822853088,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.49678102135658264,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": 0.4292336702346802,
+        "explanation": "Competencia en clientes de Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.44289714097976685,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.019854145124554634,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "competitor_diversity",
+        "shap_value": -0.009551562368869781,
+        "explanation": "Diversidad de competidores en la oferta"
+      },
+      {
+        "feature": "has_competition",
+        "shap_value": -0.003317758208140731,
+        "explanation": "Indicador de presencia de competencia"
+      },
+      {
+        "feature": "product_D",
+        "shap_value": -0.001822712947614491,
+        "explanation": "Product D"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

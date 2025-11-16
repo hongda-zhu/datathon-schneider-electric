@@ -1,0 +1,91 @@
+{
+  "opportunity_id": "18125",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.7135916352272034,
+    "threshold": 0.2624979317188263,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.70743,
+    "total_competitors": 0.0,
+    "opp_quality_score": -0.39091777269881023,
+    "cust_hitrate": -1.1667,
+    "product_A_ratio": 0.42830306825297426
+  },
+  "shap_analysis": {
+    "base_value": 0.06737297773361206,
+    "prediction_value": 0.9128925800323486,
+    "top_positive_factors": [
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.3252355754375458,
+        "explanation": "Interacciones y calidad de relación con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": 0.24156980216503143,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": 0.21234342455863953,
+        "explanation": "Número de interacciones con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.11488768458366394,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.0984167605638504,
+        "explanation": "Antigüedad de la oportunidad"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.2798963189125061,
+        "explanation": "Tasa de éxito histórica con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.11162985116243362,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.10636750608682632,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.09922443330287933,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": -0.024736352264881134,
+        "explanation": "Número de contratos con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      {
+        "step": "Analyze past opportunities with this customer to understand the reasons for the low hit rate and develop a tailored approach."
+      },
+      {
+        "step": "Proactively re-engage the customer with relevant content and personalized communication to increase their activity and address any potential concerns."
+      },
+      {
+        "step": "Accelerate the deal closure by offering an incentive, if possible, and creating a sense of urgency to counteract the 'opp_month' negative factor."
+      }
+    ],
+    "ai_generated": true
+  }
+}
