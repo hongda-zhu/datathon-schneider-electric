@@ -849,23 +849,11 @@ if page == "Global Insights":
 
         st.markdown("""
         <div class="chart-description">
-            <strong>What does this mean?</strong> The model assigns each opportunity a probability of winning (0-100%).
-            Here they are grouped by confidence level:
-            <br><br>
-            <strong>🔴 Low (0-30%):</strong> <strong>Low</strong> probability of winning. These opportunities require
-            urgent intervention or re-evaluation. Consider whether it is worth investing resources.<br>
-
-            <strong>🟠 Medium (30-50%):</strong> <strong>Medium</strong> probability. They are in a risk zone.
-            <u>Opportunity for improvement:</u> increase interactions, address objections, and reduce competition.<br>
-
-            <strong>🟢 High (50-70%):</strong> <strong>High</strong> probability of winning. Maintain momentum,
-            accelerate the closing process, and ensure the deal is not lost.<br>
-
-            <strong>🔵 Very High (70-100%):</strong> <strong>Very high</strong> probability. Prioritize these deals
-            to close them quickly and free up resources for Medium cases.
-            <br><br>
-            <strong>Recommended strategy:</strong> Focus on moving deals from <strong>Medium → High</strong>
-            by increasing customer touchpoints.
+        <strong>🔴 Low (0-30%):</strong> Urgent intervention or re-evaluation needed<br>
+        <strong>🟠 Medium (30-50%):</strong> Increase interactions, address objections<br>
+        <strong>🟢 High (50-70%):</strong> Maintain momentum, accelerate close<br>
+        <strong>🔵 Very High (70-100%):</strong> Prioritize to close quickly<br><br>
+        <strong>Strategy:</strong> Move Medium → High deals by increasing customer touchpoints
         </div>
         """, unsafe_allow_html=True)
 
