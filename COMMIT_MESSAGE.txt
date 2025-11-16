@@ -1,0 +1,23 @@
+feat: Dashboard de explicabilidad con integración LLM y mejoras UX
+
+Implementación completa del dashboard de explicabilidad para el datathon de Schneider Electric:
+
+- Dashboard Streamlit con 3 páginas: Global Insights, Case Explorer, What-If Simulator
+- Métricas de rendimiento del modelo (F1, AUC, Precision, Recall) con tooltips explicativos
+- Técnicas de explicabilidad: SHAP summary plot, SHAP waterfall, feature importance
+- Integración con Gemini AI para generar insights automáticos y recomendaciones
+- Traducción de features técnicos a lenguaje de negocio
+- Gráfico de distribución de probabilidad por buckets (Low/Medium/High/Very High)
+- Resumen textual de drivers SHAP (top 3 positivos y negativos)
+- Simulador What-If interactivo con sliders para análisis contrafactual
+- Mejoras de UX: CSS profesional, tooltips, descripciones en gráficos
+- Scripts de Colab para integración: Gemini insights, probability buckets, SHAP drivers
+
+Archivos principales:
+- app_final.py: Dashboard principal
+- colab_section_11_gemini.py: Integración Gemini para insights automáticos
+- colab_probability_buckets.py: Cálculo de distribución de probabilidad
+- colab_shap_drivers.py: Cálculo de drivers SHAP textuales
+- requirements.txt: Dependencias del proyecto
+- run_final.sh: Script de lanzamiento rápido
+
