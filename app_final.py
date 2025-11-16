@@ -1280,7 +1280,7 @@ elif page == "What-If Simulator":
         col1, col2 = st.columns(2)
 
         with col1:
-            st.markdown('<div class="md-control-card">', unsafe_allow_html=True)
+            #st.markdown('<div class="md-control-card">', unsafe_allow_html=True)
             st.markdown("**Customer Engagement**")
             if 'cust_interactions' in feature_names:
                 feature_stats = global_insights.get("feature_statistics", {})
@@ -1335,7 +1335,7 @@ elif page == "What-If Simulator":
             st.markdown('</div>', unsafe_allow_html=True)
 
         with col2:
-            st.markdown('<div class="md-control-card">', unsafe_allow_html=True)
+            #st.markdown('<div class="md-control-card">', unsafe_allow_html=True)
             st.markdown("**Opportunity Characteristics**")
             if 'opp_old' in feature_names:
                 current_val = clamp_value(
