@@ -849,23 +849,23 @@ if page == "Global Insights":
 
         st.markdown("""
         <div class="chart-description">
-        <strong>¿Qué significa esto?</strong> El modelo asigna a cada oportunidad una probabilidad de ganar (0-100%).
-        Aquí se agrupan por nivel de confianza:
-        <br><br>
-        <strong>🔴 Low (0-30%):</strong> Probabilidad <strong>baja</strong> de ganar. Estas oportunidades necesitan
-        intervención urgente o re-evaluación. Considerar si vale la pena invertir recursos.<br>
+            <strong>What does this mean?</strong> The model assigns each opportunity a probability of winning (0-100%).
+            Here they are grouped by confidence level:
+            <br><br>
+            <strong>🔴 Low (0-30%):</strong> <strong>Low</strong> probability of winning. These opportunities require
+            urgent intervention or re-evaluation. Consider whether it is worth investing resources.<br>
 
-        <strong>🟠 Medium (30-50%):</strong> Probabilidad <strong>media</strong>. Están en zona de riesgo.
-        <u>Oportunidad de mejora:</u> aumentar interacciones, abordar objeciones, reducir competencia.<br>
+            <strong>🟠 Medium (30-50%):</strong> <strong>Medium</strong> probability. They are in a risk zone.
+            <u>Opportunity for improvement:</u> increase interactions, address objections, and reduce competition.<br>
 
-        <strong>🟢 High (50-70%):</strong> Probabilidad <strong>alta</strong> de ganar. Mantener el momentum,
-        acelerar cierre y asegurar que no se pierdan.<br>
+            <strong>🟢 High (50-70%):</strong> <strong>High</strong> probability of winning. Maintain momentum,
+            accelerate the closing process, and ensure the deal is not lost.<br>
 
-        <strong>🔵 Very High (70-100%):</strong> Probabilidad <strong>muy alta</strong>. Priorizar estos deals
-        para cerrarlos rápidamente y liberar recursos para casos Medium.
-        <br><br>
-        <strong>Estrategia recomendada:</strong> Enfocarse en mover deals de <strong>Medium → High</strong>
-        aumentando touchpoints con el cliente.
+            <strong>🔵 Very High (70-100%):</strong> <strong>Very high</strong> probability. Prioritize these deals
+            to close them quickly and free up resources for Medium cases.
+            <br><br>
+            <strong>Recommended strategy:</strong> Focus on moving deals from <strong>Medium → High</strong>
+            by increasing customer touchpoints.
         </div>
         """, unsafe_allow_html=True)
 
@@ -974,8 +974,24 @@ elif page == "Case Explorer":
     st.markdown("**Explore detailed predictions and explanations for specific opportunities**")
 
     # Case ID input
-    available_ids = X_test.index.tolist()
-    case_id = st.selectbox("Select Opportunity ID", available_ids, index=0)
+    available_ids = sorted(X_test.index.tolist())
+
+    st.info(f"""
+    📋 **Available IDs:** This dashboard shows predictions for the **test set** ({len(available_ids):,} opportunities).
+
+    IDs range from **{available_ids[0]}** to **{available_ids[-1]}**. Not all IDs are consecutive because:
+    - The dataset was split into train (80%) and test (20%)
+    - IDs like 1, 2, 3, 4 are in the **training set**, not available here
+
+    💡 **Quick access:** Try IDs like **102** (high confidence win), **3414** (low confidence), or **12121** (old opportunity).
+    """)
+
+    case_id = st.selectbox(
+        "Select Opportunity ID",
+        available_ids,
+        index=available_ids.index(102) if 102 in available_ids else 0,
+        help=f"Choose from {len(available_ids):,} opportunities in the test set"
+    )
 
     if case_id is not None:
         # Get row data
