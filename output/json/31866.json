@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "31866",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.93658447265625,
+    "threshold": 0.31458529829978943,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.09713333333333335,
+    "total_competitors": 0.0,
+    "opp_old": -0.28185,
+    "cust_hitrate": 0.53377,
+    "product_A_ratio": 0.37786464871068387
+  },
+  "shap_analysis": {
+    "base_value": 0.0683107003569603,
+    "prediction_value": 2.6925272941589355,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.6873294115066528,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": 0.47485408186912537,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.3316210210323334,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": 0.3149580955505371,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.3042512834072113,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.12770095467567444,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.0845760628581047,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": -0.038749706000089645,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.03054429404437542,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.02267574705183506,
+        "explanation": "Score agregado de calidad de oportunidad"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

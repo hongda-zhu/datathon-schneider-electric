@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "25932",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.0010916631435975432,
+    "threshold": 0.31458529829978943,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.00522333333333332,
+    "total_competitors": 2.0,
+    "opp_old": -0.28185,
+    "cust_hitrate": -0.7338,
+    "product_A_ratio": -1.5300080215853566
+  },
+  "shap_analysis": {
+    "base_value": 0.0683107003569603,
+    "prediction_value": -6.818958282470703,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.05427231267094612,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.010843531228601933,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "low_engagement_risk",
+        "shap_value": 0.004689534194767475,
+        "explanation": "Low Engagement Risk"
+      },
+      {
+        "feature": "opp_maturity",
+        "shap_value": 0.0015374154318124056,
+        "explanation": "Madurez de la oportunidad"
+      },
+      {
+        "feature": "product_C",
+        "shap_value": 0.0013530136784538627,
+        "explanation": "Product C"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "competition_risk",
+        "shap_value": -0.8447014093399048,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.7870150804519653,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "customer_engagement",
+        "shap_value": -0.7419087886810303,
+        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.6212208867073059,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.5182658433914185,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

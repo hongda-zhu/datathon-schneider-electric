@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "3414",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Win",
+    "win_probability": 0.11804135888814926,
+    "threshold": 0.31458529829978943,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.17767999999999998,
+    "total_competitors": 0.0,
+    "opp_old": -0.28185,
+    "cust_hitrate": 0.10737,
+    "product_A_ratio": 1.3121270825261528
+  },
+  "shap_analysis": {
+    "base_value": 0.0683107003569603,
+    "prediction_value": -2.011110782623291,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.09364195168018341,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.08523708581924438,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.044202834367752075,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.033871181309223175,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "has_past_sales",
+        "shap_value": 0.022193633019924164,
+        "explanation": "Has Past Sales"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.8794575333595276,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.3032606542110443,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.27538764476776123,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.23450136184692383,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": -0.1878606230020523,
+        "explanation": "Product B Sold In The Past"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

@@ -11,6 +11,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import shap
+import plotly.express as px
 from pathlib import Path
 
 # ============================================================
@@ -102,8 +103,8 @@ METRIC_HELP = {
     "threshold": """
     **Decision Threshold (0 to 1)**: The probability cutoff where we classify an opportunity as "Win" vs "Loss".
 
-    • If probability ≥ threshold → Prediction: Win
-    • If probability < threshold → Prediction: Loss
+    • If probability >= threshold -> Prediction: Win
+    • If probability < threshold -> Prediction: Loss
 
     *This value is optimized to maximize F1 Score on your data.*
     """,
@@ -140,124 +141,437 @@ st.set_page_config(
 # Enhanced CSS
 st.markdown("""
 <style>
-    /* Headers */
-    .main-header {
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-        color: #2c3e50;
-        border-bottom: 3px solid #3ECEAC;
-        padding-bottom: 0.5rem;
-    }
-    .sub-header {
-        font-size: 1.5rem;
-        font-weight: 600;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        color: #34495e;
-        border-bottom: 2px solid #3498db;
-        padding-bottom: 0.5rem;
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
+
+    :root {
+        --md-black: #101010;
+        --md-dark: #383838;
+        --md-cream: #f4efe9;
+        --md-white: #ffffff;
+        --md-blue: #6bc3fb;
+        --md-yellow: #fbdc04;
+        --md-teal: #14ab9b;
+        --md-coral: #fb736b;
+        --md-border: #0f0f10;
+        --md-shadow-hard: -10px 10px 0 rgba(15,15,16,0.9);
+        --md-shadow-soft: 0 18px 40px rgba(0,0,0,0.12);
+        --font-sans: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+        --font-mono: 'Space Mono', 'IBM Plex Mono', monospace;
     }
 
-    /* Enhanced cards with gradients and better contrast */
-    .insight-box {
-        background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-        padding: 1.5rem;
-        border-radius: 0.75rem;
-        border-left: 5px solid #2196f3;
-        margin: 1rem 0;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        transition: transform 0.2s;
-        color: #1a1a1a;  /* Dark text for better contrast */
+    [data-testid="stAppViewContainer"]::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 8px;
+        z-index: 999;
+        background: linear-gradient(90deg, var(--md-yellow), var(--md-teal), var(--md-blue), var(--md-coral));
     }
-    .insight-box:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+
+    html, body, [data-testid="stAppViewContainer"] {
+        background: radial-gradient(circle at top, #fdf9f0 0%, var(--md-cream) 55%, #bce2ff 140%);
+        color: var(--md-dark);
+        font-family: var(--font-sans);
+    }
+
+    [data-testid="block-container"] {
+        padding: 1.5rem 5vw 4rem 5vw;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    a {
+        color: var(--md-blue);
+        font-weight: 600;
+    }
+
+    [data-testid="stSidebar"] {
+        background: #050505;
+        color: #f5f5f5;
+        border-right: 4px solid var(--md-yellow);
+        box-shadow: inset -8px 0 16px rgba(0,0,0,0.65);
+    }
+
+    [data-testid="stSidebar"] * {
+        color: inherit !important;
+    }
+
+    /* Restore Material Icon font so glyphs render instead of text names */
+    .material-icons,
+    .material-icons-round,
+    .material-icons-outlined,
+    .material-icons-two-tone,
+    .material-icons-sharp {
+        font-family: "Material Icons", "Material Icons Round", "Material Icons Outlined", "Material Icons Two Tone", "Material Icons Sharp" !important;
+        font-feature-settings: "liga";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    .sidebar-design {
+        padding: 1rem;
+        border: 1px dashed rgba(251, 220, 4, 0.5);
+        border-radius: 18px;
+        margin-bottom: 1rem;
+        background: rgba(255,255,255,0.05);
+    }
+
+    .sidebar-design .nav-title {
+        font-size: 0.95rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #f7f5e8;
+        margin-bottom: 0.4rem;
+        font-family: var(--font-mono);
+    }
+
+    .sidebar-design .nav-subtitle {
+        font-size: 0.85rem;
+        color: rgba(255,255,255,0.72);
+        line-height: 1.4;
+        margin-top: 0.3rem;
+    }
+
+    .concept-chip {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.2rem 0.75rem;
+        border-radius: 999px;
+        background: rgba(20, 171, 155, 0.18);
+        color: var(--md-black);
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-right: 0.4rem;
+        margin-bottom: 0.3rem;
+        border: 1px solid rgba(20, 171, 155, 0.4);
+        font-family: var(--font-mono);
+    }
+
+    .nav-pill-container {
+        background: linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.02));
+        padding: 0.6rem;
+        border-radius: 1rem;
+        border: 1px solid rgba(255,255,255,0.18);
+        box-shadow: inset 0 0 20px rgba(20, 171, 155, 0.1);
+        margin-bottom: 1.5rem;
+    }
+
+    .nav-chips {
+        margin-top: 0.4rem;
+    }
+
+    .nav-pill-container [data-baseweb="radio"] {
+        background: transparent !important;
+    }
+
+    .nav-pill-container [data-baseweb="radio"] > div {
+        gap: 0.35rem !important;
+    }
+
+    .nav-pill-container .stRadio [role="radiogroup"] label {
+        background: rgba(255,255,255,0.92);
+        border-radius: 999px;
+        padding: 0.45rem 0.9rem;
+        margin-bottom: 0.35rem;
+        border: 1px solid rgba(251, 220, 4, 0.3);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        cursor: pointer;
+    }
+
+    .nav-pill-container .stRadio [role="radiogroup"] label:hover {
+        transform: translateX(6px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .nav-pill-container .stRadio [role="radiogroup"] label span {
+        font-weight: 600 !important;
+        color: var(--md-black) !important;
+        font-family: var(--font-sans);
+    }
+
+    .stSelectbox label,
+    .stSlider label,
+    .stNumberInput label {
+        color: var(--md-black) !important;
+        font-family: var(--font-mono);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+    }
+
+    .stSelectbox div[data-baseweb="select"],
+    .stMultiSelect div[data-baseweb="select"] {
+        background: var(--md-white);
+        border: 2px solid var(--md-border);
+        border-radius: 18px;
+        color: var(--md-black);
+        min-height: 48px;
+    }
+
+    .stSelectbox div[data-baseweb="select"] span,
+    .stMultiSelect div[data-baseweb="select"] span {
+        color: var(--md-black) !important;
+        font-weight: 600;
+    }
+
+    .stSelectbox div[data-baseweb="popover"],
+    .stMultiSelect div[data-baseweb="popover"] {
+        background: var(--md-white);
+        color: var(--md-black);
+    }
+
+    .stSlider [data-testid="stTickBarMin"],
+    .stSlider [data-testid="stTickBarMax"],
+    .stSlider [data-testid="stTickBarValue"] {
+        color: var(--md-dark) !important;
+    }
+
+    .md-control-card {
+        border: 2px solid var(--md-border);
+        border-radius: 26px;
+        background: var(--md-white);
+        padding: 1.25rem;
+        box-shadow: var(--md-shadow-soft);
+        margin-bottom: 1.5rem;
+    }
+
+    .md-driver-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .md-driver-card {
+        border: 2px solid var(--md-border);
+        border-radius: 22px;
+        padding: 1rem 1.25rem;
+        background: var(--md-white);
+        box-shadow: var(--md-shadow-soft);
+    }
+
+    .md-driver-card.positive {
+        border-left: 6px solid var(--md-teal);
+    }
+
+    .md-driver-card.negative {
+        border-left: 6px solid var(--md-coral);
+    }
+
+    .md-driver-card h4 {
+        margin: 0 0 0.6rem 0;
+        font-family: var(--font-mono);
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    .md-driver-card ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .md-driver-card li {
+        margin: 0.35rem 0;
+        font-weight: 600;
+        color: var(--md-dark);
+    }
+
+    [data-testid="stMetric"] {
+        background: var(--md-black);
+        border: 3px solid var(--md-yellow);
+        border-radius: 26px;
+        padding: 1.2rem 1.5rem;
+        margin-bottom: 1.25rem;
+        box-shadow: var(--md-shadow-hard);
+        font-family: var(--font-mono);
+        transition: transform 0.2s ease;
+        color: #fdfdfd;
+    }
+
+    [data-testid="stMetric"]:hover {
+        transform: translate(-4px, -4px);
+    }
+
+    [data-testid="stMetricLabel"] {
+        color: var(--md-yellow) !important;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-size: 0.85rem;
+    }
+
+    [data-testid="stMetricValue"] {
+        color: var(--md-blue) !important;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    [data-testid="stMetricDelta"] {
+        font-weight: 600;
+        color: var(--md-teal) !important;
+    }
+
+    .stButton>button {
+        border-radius: 999px;
+        background: var(--md-black);
+        color: var(--md-yellow);
+        border: 2px solid var(--md-yellow);
+        padding: 0.65rem 1.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        box-shadow: var(--md-shadow-hard);
+        transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+        font-family: var(--font-mono);
+    }
+
+    .stButton>button:hover {
+        background: var(--md-yellow);
+        color: var(--md-black);
+        transform: translate(-4px, -4px);
+    }
+
+    .main-header {
+        font-size: 2.8rem;
+        font-weight: 700;
+        font-family: var(--font-mono);
+        color: var(--md-black);
+        background: var(--md-white);
+        border: 2px solid var(--md-border);
+        padding: 1.25rem 1.75rem;
+        border-radius: 30px;
+        box-shadow: var(--md-shadow-hard);
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+
+    .sub-header {
+        font-family: var(--font-mono);
+        font-size: 1.4rem;
+        color: var(--md-black);
+        margin: 2rem 0 1rem;
+        padding-left: 1rem;
+        border-left: 8px solid var(--md-blue);
+        text-transform: uppercase;
+    }
+
+    .insight-box,
+    .warning-box,
+    .success-box,
+    .chart-description,
+    .combined-insights-box {
+        border-radius: 26px;
+        padding: 1.75rem;
+        margin: 1.5rem 0;
+        border: 2px solid var(--md-border);
+        background: var(--md-white);
+        box-shadow: var(--md-shadow-hard);
+        transition: transform 0.2s ease;
+    }
+
+    .insight-box:hover,
+    .warning-box:hover,
+    .success-box:hover,
+    .chart-description:hover,
+    .combined-insights-box:hover {
+        transform: translate(-6px, -6px);
+    }
+
+    .insight-box {
+        border-top: 10px solid var(--md-blue);
     }
 
     .warning-box {
-        background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
-        padding: 1.5rem;
-        border-radius: 0.75rem;
-        border-left: 5px solid #ff9800;
-        margin: 1rem 0;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        transition: transform 0.2s;
-        color: #1a1a1a;  /* Dark text for better contrast */
-    }
-    .warning-box:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        border-top: 10px solid var(--md-coral);
     }
 
     .success-box {
-        background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
-        padding: 1.5rem;
-        border-radius: 0.75rem;
-        border-left: 5px solid #4caf50;
-        margin: 1rem 0;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        transition: transform 0.2s;
-        color: #1a1a1a;  /* Dark text for better contrast */
-    }
-    .success-box:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        border-top: 10px solid var(--md-teal);
     }
 
-    /* Lists */
-    .insight-box ul, .warning-box ul, .success-box ul {
-        margin: 0.75rem 0;
-        padding-left: 1.5rem;
-    }
-    .insight-box li, .warning-box li, .success-box li {
-        margin: 0.75rem 0;
-        line-height: 1.7;
-        font-size: 1rem;
-    }
-
-    /* Chart descriptions */
     .chart-description {
-        background: #f8f9fa;
-        padding: 1.25rem;
-        border-radius: 0.5rem;
-        margin: 1.5rem 0;
-        font-size: 0.95rem;
-        color: #212529;  /* Darker for better contrast */
-        border-left: 4px solid #6c757d;
+        border-top: 10px solid var(--md-yellow);
+        background: #fffdf3;
+    }
+
+    .insight-box ul,
+    .warning-box ul,
+    .success-box ul {
+        margin: 0.75rem 0;
+        padding-left: 1.25rem;
+        color: var(--md-dark);
+    }
+
+    .insight-box li,
+    .warning-box li,
+    .success-box li {
+        margin-bottom: 0.6rem;
         line-height: 1.6;
-    }
-
-    /* Schneider Electric brand colors */
-    .brand-accent {
-        color: #3ECEAC;
-        font-weight: 600;
-    }
-
-    /* Combined insights box */
-    .combined-insights-box {
-        background: #ffffff;
-        border: 2px solid #e0e0e0;
-        border-radius: 0.75rem;
-        padding: 2rem;
-        margin: 1.5rem 0;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        line-height: 1.8;
-        color: #1a1a1a;
-    }
-
-    .insights-section {
-        margin-bottom: 1.5rem;
-        text-align: justify;
-    }
-
-    .recommendations-section {
-        text-align: justify;
+        font-size: 1rem;
     }
 
     .combined-insights-box strong {
         display: inline-block;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.4rem;
+        font-size: 1.05rem;
+        font-family: var(--font-mono);
+    }
+
+    .brand-accent {
+        color: var(--md-yellow);
+        font-weight: 700;
+    }
+
+    .insights-section,
+    .recommendations-section {
+        text-align: justify;
+        color: var(--md-black);
+        line-height: 1.8;
+    }
+
+    .insights-section {
+        margin-bottom: 1.5rem;
+    }
+
+    [data-testid="stDataFrame"] {
+        background: var(--md-white);
+        border-radius: 26px;
+        border: 2px solid var(--md-border);
+        box-shadow: var(--md-shadow-soft);
+        padding: 0.5rem;
+    }
+
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 0.75rem;
+        background: transparent;
+    }
+
+    .stTabs [data-baseweb="tab"] {
+        border-radius: 18px;
+        padding: 0.4rem 1.5rem;
+        border: 2px solid var(--md-border);
+        background: var(--md-white);
+        color: var(--md-dark);
+        font-weight: 600;
+        font-family: var(--font-mono);
+        transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .stTabs [data-baseweb="tab"]:hover {
+        transform: translate(-3px, -3px);
+        background: #fff8db;
+    }
+
+    .stTabs [data-baseweb="tab"][aria-selected="true"] {
+        color: var(--md-black);
+        background: #dff1ff;
+        border-color: var(--md-blue);
     }
 </style>
 """, unsafe_allow_html=True)
@@ -404,14 +718,14 @@ def plot_shap_waterfall(shap_row, row, base_value):
 # ============================================================
 # SIDEBAR
 # ============================================================
-st.sidebar.markdown("## ⚡ Navigation")
+st.sidebar.markdown("## Navigation")
 page = st.sidebar.radio(
     "Select Page",
-    ["🌍 Global Insights", "🔍 Case Explorer", "🎲 What-If Simulator"]
+    ["Global Insights", "Case Explorer", "What-If Simulator"]
 )
 
 st.sidebar.markdown("---")
-st.sidebar.markdown("### 📊 Model Performance")
+st.sidebar.markdown("### Model Performance")
 perf = global_insights["model_performance"]
 
 st.sidebar.metric(
@@ -433,8 +747,8 @@ st.sidebar.metric(
 # ============================================================
 # PAGE 1: GLOBAL INSIGHTS
 # ============================================================
-if page == "🌍 Global Insights":
-    st.markdown('<div class="main-header">🌍 Global Model Insights</div>', unsafe_allow_html=True)
+if page == "Global Insights":
+    st.markdown('<div class="main-header">Global Model Insights</div>', unsafe_allow_html=True)
     st.markdown("**Comprehensive overview of model performance and key patterns across all opportunities**")
 
     # Combined insights and recommendations at the top
@@ -446,10 +760,10 @@ if page == "🌍 Global Insights":
     combined_html = f"""
     <div class='combined-insights-box'>
         <div class='insights-section'>
-            <strong style='color: #2196f3; font-size: 1.1rem;'>💡 Key Insights:</strong> {insights_text}
+            <strong style='color: #2196f3; font-size: 1.1rem;'>Key Insights:</strong> {insights_text}
         </div>
         <div class='recommendations-section'>
-            <strong style='color: #4caf50; font-size: 1.1rem;'>🎯 Recommendations:</strong> {recommendations_text}
+            <strong style='color: #4caf50; font-size: 1.1rem;'>Recommendations:</strong> {recommendations_text}
         </div>
     </div>
     """
@@ -458,7 +772,7 @@ if page == "🌍 Global Insights":
     st.markdown("---")
 
     # Performance metrics
-    st.markdown('<div class="sub-header">📈 Model Performance Metrics</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sub-header">Model Performance Metrics</div>', unsafe_allow_html=True)
 
     col1, col2, col3, col4 = st.columns(4)
     col1.metric(
@@ -483,11 +797,11 @@ if page == "🌍 Global Insights":
     )
 
     # Prediction distribution
-    st.markdown('<div class="sub-header">📊 Prediction Distribution</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sub-header">Prediction Distribution</div>', unsafe_allow_html=True)
 
     st.markdown("""
     <div class="chart-description">
-    📌 <strong>What does this mean?</strong> Of all opportunities analyzed in the test set,
+    <strong>What does this mean?</strong> Of all opportunities analyzed in the test set,
     the model predicts how many will be won vs. lost. This helps estimate your sales pipeline
     and resource allocation needs.
     </div>
@@ -516,20 +830,36 @@ if page == "🌍 Global Insights":
         st.markdown("---")
         st.markdown("**Win Probability Distribution**")
 
+        bucket_labels = ["Low (0-30%)", "Medium (30-50%)", "High (50-70%)", "Very High (70-100%)"]
         buckets_df = pd.DataFrame({
-            "Confidence Level": list(dist["probability_buckets"].keys()),
-            "Number of Opportunities": list(dist["probability_buckets"].values())
+            "Confidence Level": bucket_labels,
+            "Number of Opportunities": [dist["probability_buckets"].get(label, 0) for label in bucket_labels]
         })
 
-        st.bar_chart(buckets_df.set_index("Confidence Level"))
+        fig_buckets = px.bar(
+            buckets_df,
+            x="Confidence Level",
+            y="Number of Opportunities",
+            text="Number of Opportunities",
+            color="Confidence Level",
+            color_discrete_sequence=["#f94144", "#f3722c", "#90be6d", "#277da1"]
+        )
+        fig_buckets.update_traces(textposition="outside")
+        fig_buckets.update_layout(
+            xaxis_title="Confidence Level",
+            yaxis_title="Number of Opportunities",
+            showlegend=False,
+            margin=dict(l=10, r=10, t=10, b=10)
+        )
+        st.plotly_chart(fig_buckets, use_container_width=True)
         st.caption("Distribution of opportunities by predicted win probability. Focus resources on moving Medium deals to High/Very High categories.")
 
     # Feature importance
-    st.markdown('<div class="sub-header">🔝 Top Influential Features</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sub-header">Top Influential Features</div>', unsafe_allow_html=True)
 
     st.markdown("""
     <div class="chart-description">
-    📌 <strong>What does this mean?</strong> These are the variables that have the most weight
+    <strong>What does this mean?</strong> These are the variables that have the most weight
     in determining whether an opportunity is won or lost. <strong>Focus on improving features
     with the highest bars</strong> to increase your win probability.
     <br><br>
@@ -540,18 +870,39 @@ if page == "🌍 Global Insights":
 
     feat_imp = global_insights["feature_importance_top20"]
     feat_df = pd.DataFrame({
-        "Feature": [translate_feature(f) for f in list(feat_imp.keys())[:10]],
-        "Importance": list(feat_imp.values())[:10]
+        "Feature": [translate_feature(f) for f in list(feat_imp.keys())[:15]],
+        "Importance": list(feat_imp.values())[:15]
     })
-    st.bar_chart(feat_df.set_index("Feature"))
+    feat_df = feat_df.sort_values("Importance", ascending=True)
 
-    # SHAP summary
-    st.markdown('<div class="sub-header">🧠 Feature Impact on Win Probability</div>', unsafe_allow_html=True)
+    fig_feat = px.bar(
+        feat_df,
+        x="Importance",
+        y="Feature",
+        orientation="h",
+        text=feat_df["Importance"].map(lambda v: f"{v:.3f}"),
+        color="Importance",
+        color_continuous_scale="Blues"
+    )
+    fig_feat.update_traces(textposition="outside")
+    fig_feat.update_layout(
+        xaxis_title="Relative Importance (XGBoost gain)",
+        yaxis_title="Feature",
+        margin=dict(l=0, r=0, t=10, b=10),
+        coloraxis_showscale=False
+    )
+    st.plotly_chart(fig_feat, use_container_width=True)
 
+    # SHAP summary (static image)
+    st.markdown('<div class="sub-header">Feature Impact on Win Probability</div>', unsafe_allow_html=True)
     if Path("output/images/shap_summary.png").exists():
-        st.image("output/images/shap_summary.png", use_container_width=True)
-        st.caption("Each dot represents an opportunity. Red = high feature value, Blue = low feature value. Right side increases win chance, left side decreases it.")
+        with st.expander("See SHAP summary plot"):
+            st.image("output/images/shap_summary.png", use_container_width=True)
+            st.caption("Each dot represents an opportunity. Red = high feature value, Blue = low feature value. Right side increases win chance, left side decreases it.")
+    else:
+        st.info("SHAP summary image not found. Please regenerate it from the Colab notebook.")
 
+    # Data dictionary drivers
     # SHAP drivers textual summary
     if "shap_drivers" in global_insights:
         st.markdown("**Key Drivers:**")
@@ -559,18 +910,18 @@ if page == "🌍 Global Insights":
         col_pos, col_neg = st.columns(2)
 
         with col_pos:
-            st.markdown("**✅ Increase Win Chance:**")
+            st.markdown("**Increase Win Chance:**")
             for driver in global_insights["shap_drivers"]["top_positive"]:
                 feat_name = translate_feature(driver["feature"])
                 shap_val = driver["mean_shap"]
-                st.markdown(f"• **{feat_name}** (+{shap_val:.3f})")
+                st.markdown(f"- **{feat_name}** (+{shap_val:.3f})")
 
         with col_neg:
-            st.markdown("**⚠️ Decrease Win Chance:**")
+            st.markdown("**Decrease Win Chance:**")
             for driver in global_insights["shap_drivers"]["top_negative"]:
                 feat_name = translate_feature(driver["feature"])
                 shap_val = driver["mean_shap"]
-                st.markdown(f"• **{feat_name}** ({shap_val:.3f})")
+                st.markdown(f"- **{feat_name}** ({shap_val:.3f})")
 
         st.caption("Average SHAP values across all opportunities. Positive values push predictions toward win, negative values toward loss.")
 
@@ -578,8 +929,8 @@ if page == "🌍 Global Insights":
 # ============================================================
 # PAGE 2: CASE EXPLORER
 # ============================================================
-elif page == "🔍 Case Explorer":
-    st.markdown('<div class="main-header">🔍 Individual Opportunity Analysis</div>', unsafe_allow_html=True)
+elif page == "Case Explorer":
+    st.markdown('<div class="main-header">Individual Opportunity Analysis</div>', unsafe_allow_html=True)
     st.markdown("**Explore detailed predictions and explanations for specific opportunities**")
 
     # Case ID input
@@ -600,7 +951,7 @@ elif page == "🔍 Case Explorer":
         case_json = load_case_json(case_id)
 
         # Prediction results
-        st.markdown('<div class="sub-header">🎯 Prediction Results</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sub-header">Prediction Results</div>', unsafe_allow_html=True)
         col1, col2, col3, col4 = st.columns(4)
         col1.metric("Opportunity ID", str(case_id))
         col2.metric(
@@ -610,12 +961,12 @@ elif page == "🔍 Case Explorer":
         )
         col3.metric(
             "Prediction",
-            "🏆 Win" if pred == 1 else "❌ Loss",
+            "Win" if pred == 1 else "Loss",
             help=f"Classification based on threshold of {threshold:.3f}"
         )
         col4.metric(
             "Actual Outcome",
-            "🏆 Win" if actual == 1 else "❌ Loss",
+            "Win" if actual == 1 else "Loss",
             help="Real outcome of this opportunity"
         )
 
@@ -632,7 +983,6 @@ elif page == "🔍 Case Explorer":
         # Determine confidence based on distance from threshold
         if threshold_distance > 40:  # >40pp above threshold
             confidence_level = "High"
-            confidence_emoji = "✅"
             confidence_class = "success-box"
             explanation = f"Probability ({prob:.1%}) exceeds threshold ({threshold:.1%}) by {threshold_distance:.1f} percentage points."
             if top_positive:
@@ -640,7 +990,6 @@ elif page == "🔍 Case Explorer":
                 explanation += f" Strong positive signals from {top_factor}."
         elif threshold_distance > 10:  # 10-40pp above threshold
             confidence_level = "Medium-High"
-            confidence_emoji = "✅"
             confidence_class = "success-box"
             explanation = f"Probability ({prob:.1%}) is {threshold_distance:.1f}pp above threshold ({threshold:.1%})."
             if top_negative:
@@ -648,7 +997,6 @@ elif page == "🔍 Case Explorer":
                 explanation += f" Watch for potential issues with {top_concern}."
         elif threshold_distance > 0:  # 0-10pp above threshold
             confidence_level = "Medium"
-            confidence_emoji = "⚠️"
             confidence_class = "warning-box"
             explanation = f"Probability ({prob:.1%}) barely exceeds threshold ({threshold:.1%}) by only {threshold_distance:.1f}pp."
             if top_negative:
@@ -656,7 +1004,6 @@ elif page == "🔍 Case Explorer":
                 explanation += f" Negative signals from {top_concern} are holding it back."
         else:  # Below threshold
             confidence_level = "Low"
-            confidence_emoji = "❌"
             confidence_class = "warning-box"
             explanation = f"Probability ({prob:.1%}) is {abs(threshold_distance):.1f}pp below threshold ({threshold:.1%})."
             if top_negative:
@@ -664,12 +1011,12 @@ elif page == "🔍 Case Explorer":
                 explanation += f" Main blocker: {main_blocker}."
 
         st.markdown(
-            f'<div class="{confidence_class}">{confidence_emoji} <strong>{confidence_level} Confidence:</strong> {explanation}</div>',
+            f'<div class="{confidence_class}"><strong>{confidence_level} Confidence:</strong> {explanation}</div>',
             unsafe_allow_html=True
         )
 
         # Key features
-        st.markdown('<div class="sub-header">📊 Key Features for This Opportunity</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sub-header">Key Features for This Opportunity</div>', unsafe_allow_html=True)
         if case_json:
             key_feats = case_json["key_features"]
             feature_stats = global_insights.get("feature_statistics", {})
@@ -708,31 +1055,31 @@ elif page == "🔍 Case Explorer":
 
         # Top SHAP Factors
         if case_json and "shap_analysis" in case_json:
-            st.markdown('<div class="sub-header">🔍 Key Drivers for This Opportunity</div>', unsafe_allow_html=True)
+            st.markdown('<div class="sub-header">Key Drivers for This Opportunity</div>', unsafe_allow_html=True)
 
             col_win, col_loss = st.columns(2)
 
             with col_win:
-                st.markdown("**✅ What Pushes Toward Win:**")
+                st.markdown("**What Pushes Toward Win:**")
                 for factor in case_json["shap_analysis"]["top_positive_factors"][:3]:
                     feat_name = translate_feature(factor["feature"])
                     shap_val = factor["shap_value"]
-                    st.markdown(f"• **{feat_name}** (+{shap_val:.3f})")
+                    st.markdown(f"- **{feat_name}** (+{shap_val:.3f})")
 
             with col_loss:
-                st.markdown("**⚠️ What Holds It Back:**")
+                st.markdown("**What Holds It Back:**")
                 if case_json["shap_analysis"]["top_negative_factors"]:
                     for factor in case_json["shap_analysis"]["top_negative_factors"][:3]:
                         feat_name = translate_feature(factor["feature"])
                         shap_val = factor["shap_value"]
-                        st.markdown(f"• **{feat_name}** ({shap_val:.3f})")
+                        st.markdown(f"- **{feat_name}** ({shap_val:.3f})")
                 else:
-                    st.markdown("• *No significant negative factors*")
+                    st.markdown("- *No significant negative factors*")
 
             st.caption("SHAP values show how each feature affects this specific prediction. Larger absolute values = stronger influence.")
 
         # SHAP Waterfall
-        st.markdown('<div class="sub-header">🌊 Why This Prediction?</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sub-header">Why This Prediction?</div>', unsafe_allow_html=True)
 
         base_val = explainer.expected_value
         if isinstance(base_val, (list, np.ndarray)):
@@ -763,10 +1110,10 @@ elif page == "🔍 Case Explorer":
                 summary_parts.append(f"**Main obstacle:** {top_neg_name} ({top_neg_val:.2f})")
 
             if summary_parts:
-                st.info("📝 **Summary:** " + " | ".join(summary_parts))
+                st.info("**Summary:** " + " | ".join(summary_parts))
 
         # SHAP glossary (expandable)
-        with st.expander("ℹ️ Understanding SHAP Waterfall Charts"):
+        with st.expander("Understanding SHAP Waterfall Charts"):
             st.markdown("""
             **What is SHAP?**
             - SHAP (SHapley Additive exPlanations) shows how each feature contributes to the final prediction
@@ -803,8 +1150,8 @@ elif page == "🔍 Case Explorer":
 # ============================================================
 # PAGE 3: WHAT-IF SIMULATOR
 # ============================================================
-elif page == "🎲 What-If Simulator":
-    st.markdown('<div class="main-header">🎲 What-If Scenario Simulator</div>', unsafe_allow_html=True)
+elif page == "What-If Simulator":
+    st.markdown('<div class="main-header">What-If Scenario Simulator</div>', unsafe_allow_html=True)
     st.markdown("**Simulate changes to key variables and observe real-time impact on win probability**")
 
     # Select base case
@@ -815,14 +1162,26 @@ elif page == "🎲 What-If Simulator":
         row_pos = X_test.index.get_loc(base_id)
         original_row = X_test.loc[base_id].copy()
 
+        # Initialize slider states when opportunity changes
+        if st.session_state.get("last_base_id") != base_id:
+            st.session_state["last_base_id"] = base_id
+            if 'cust_interactions' in feature_names:
+                st.session_state["slider_interactions"] = float(original_row.get('cust_interactions', 0.5))
+            if 'cust_hitrate' in feature_names:
+                st.session_state["slider_hitrate"] = float(original_row.get('cust_hitrate', 0.5))
+            if 'opp_old' in feature_names:
+                st.session_state["slider_opp_old"] = float(original_row.get('opp_old', 0.0))
+            if 'total_competitors' in feature_names:
+                st.session_state["slider_competitors"] = float(original_row.get('total_competitors', 0))
+
         # Get original prediction
         original_prob, original_pred = get_prediction(original_row)
 
         # Display original
-        st.markdown('<div class="sub-header">📍 Original State</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sub-header">Original State</div>', unsafe_allow_html=True)
         col1, col2, col3 = st.columns(3)
         col1.metric("Original Probability", f"{original_prob:.1%}")
-        col2.metric("Prediction", "🏆 Win" if original_pred == 1 else "❌ Loss")
+        col2.metric("Prediction", "Win" if original_pred == 1 else "Loss")
         col3.metric(
             "Confidence",
             "High" if abs(original_prob - 0.5) > 0.3 else "Medium"
@@ -831,27 +1190,27 @@ elif page == "🎲 What-If Simulator":
         st.markdown("---")
 
         # Preset actions
-        st.markdown('<div class="sub-header">⚡ Quick Scenarios</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sub-header">Quick Scenarios</div>', unsafe_allow_html=True)
         st.markdown("Apply common business scenarios to auto-adjust sliders and instantly see the impact.")
 
         preset_options = [
             ("interactions_up", {
-                "label": "📈 +20% Interactions",
+                "label": "+20% Interactions",
                 "short": "+20% Interactions",
                 "description": "Boost customer interactions by 20% (capped at 2.0) to simulate extra touchpoints."
             }),
             ("reduce_comp", {
-                "label": "🎯 Reduce Competitors",
+                "label": "Reduce Competitors",
                 "short": "-1 Competitor",
                 "description": "Remove one competitor to test the impact of a less crowded deal."
             }),
             ("fast_track", {
-                "label": "⚡ Fast-Track (New)",
+                "label": "Fast-Track (New)",
                 "short": "Fast-track Opportunity",
                 "description": "Set opportunity age to very new (-1.0) to mimic speeding up the cycle."
             }),
             ("reset", {
-                "label": "🔄 Reset to Original",
+                "label": "Reset to Original",
                 "short": "Reset sliders",
                 "description": "Return all sliders to their original values."
             })
@@ -877,26 +1236,45 @@ elif page == "🎲 What-If Simulator":
         st.markdown("---")
 
         # What-if controls
-        st.markdown('<div class="sub-header">🎛️ Adjust Variables</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sub-header">Adjust Variables</div>', unsafe_allow_html=True)
 
         modified_row = original_row.copy()
 
         # Apply preset if selected
         if preset_action == "interactions_up" and 'cust_interactions' in feature_names:
-            modified_row['cust_interactions'] = min(2.0, original_row.get('cust_interactions', 0.5) * 1.2)
+            base_val = st.session_state.get("slider_interactions", float(original_row.get('cust_interactions', 0.5)))
+            new_val = min(2.0, base_val * 1.2)
+            st.session_state["slider_interactions"] = new_val
+            modified_row['cust_interactions'] = new_val
         elif preset_action == "reduce_comp" and 'total_competitors' in feature_names:
-            modified_row['total_competitors'] = max(0, int(original_row.get('total_competitors', 2)) - 1)
+            base_val = st.session_state.get("slider_competitors", float(original_row.get('total_competitors', 0)))
+            new_val = max(0, int(base_val) - 1)
+            st.session_state["slider_competitors"] = float(new_val)
+            modified_row['total_competitors'] = float(new_val)
         elif preset_action == "fast_track" and 'opp_old' in feature_names:
+            st.session_state["slider_opp_old"] = -1.0
             modified_row['opp_old'] = -1.0  # Make it new
+        elif preset_action == "reset":
+            if 'cust_interactions' in feature_names:
+                st.session_state["slider_interactions"] = float(original_row.get('cust_interactions', 0.5))
+                modified_row['cust_interactions'] = st.session_state["slider_interactions"]
+            if 'cust_hitrate' in feature_names:
+                st.session_state["slider_hitrate"] = float(original_row.get('cust_hitrate', 0.5))
+                modified_row['cust_hitrate'] = st.session_state["slider_hitrate"]
+            if 'opp_old' in feature_names:
+                st.session_state["slider_opp_old"] = float(original_row.get('opp_old', 0.0))
+                modified_row['opp_old'] = st.session_state["slider_opp_old"]
+            if 'total_competitors' in feature_names:
+                st.session_state["slider_competitors"] = float(original_row.get('total_competitors', 0))
+                modified_row['total_competitors'] = st.session_state["slider_competitors"]
 
         col1, col2 = st.columns(2)
 
         with col1:
-            st.markdown("**🤝 Customer Engagement**")
+            st.markdown('<div class="md-control-card">', unsafe_allow_html=True)
+            st.markdown("**Customer Engagement**")
             if 'cust_interactions' in feature_names:
                 feature_stats = global_insights.get("feature_statistics", {})
-                current_val = float(modified_row.get('cust_interactions', 0.5))
-
                 # Get context for help text
                 stats = feature_stats.get('cust_interactions', {})
                 help_text = "Number of interactions with the customer (normalized)"
@@ -907,7 +1285,6 @@ elif page == "🎲 What-If Simulator":
                     translate_feature("cust_interactions"),
                     min_value=0.0,
                     max_value=2.0,
-                    value=current_val,
                     step=0.1,
                     help=help_text,
                     key="slider_interactions"
@@ -915,8 +1292,6 @@ elif page == "🎲 What-If Simulator":
                 modified_row['cust_interactions'] = new_interactions
 
             if 'cust_hitrate' in feature_names:
-                current_val = float(modified_row.get('cust_hitrate', 0.5))
-
                 feature_stats = global_insights.get("feature_statistics", {})
                 stats = feature_stats.get('cust_hitrate', {})
                 help_text = "Historical success rate with this customer (0-1)"
@@ -927,23 +1302,21 @@ elif page == "🎲 What-If Simulator":
                     translate_feature("cust_hitrate"),
                     min_value=0.0,
                     max_value=1.0,
-                    value=current_val,
                     step=0.05,
                     help=help_text,
                     key="slider_hitrate"
                 )
                 modified_row['cust_hitrate'] = new_hitrate
+            st.markdown('</div>', unsafe_allow_html=True)
 
         with col2:
-            st.markdown("**📊 Opportunity Characteristics**")
+            st.markdown('<div class="md-control-card">', unsafe_allow_html=True)
+            st.markdown("**Opportunity Characteristics**")
             if 'opp_old' in feature_names:
-                current_val = float(modified_row.get('opp_old', 0.0))
-
                 new_opp_age = st.slider(
                     translate_feature("opp_old"),
                     min_value=-2.0,
                     max_value=2.0,
-                    value=current_val,
                     step=0.1,
                     help="Opportunity age (standardized)\n• -2 = Very new\n• 0 = Average age\n• +2 = Very old",
                     key="slider_opp_old"
@@ -951,18 +1324,16 @@ elif page == "🎲 What-If Simulator":
                 modified_row['opp_old'] = new_opp_age
 
             if 'total_competitors' in feature_names:
-                current_val = int(modified_row.get('total_competitors', 0))
-
                 new_competitors = st.slider(
                     translate_feature("total_competitors"),
                     min_value=0,
                     max_value=5,
-                    value=current_val,
                     step=1,
                     help="Number of active competitors\n• 0 = No competition (best)\n• 1-2 = Moderate competition\n• 3+ = High competition (challenging)",
                     key="slider_competitors"
                 )
                 modified_row['total_competitors'] = float(new_competitors)
+            st.markdown('</div>', unsafe_allow_html=True)
 
         # Recalculate derived features
         if 'customer_activity' in feature_names and all(f in feature_names for f in ['cust_hitrate', 'cust_interactions', 'cust_contracts']):
@@ -982,32 +1353,32 @@ elif page == "🎲 What-If Simulator":
         st.markdown("---")
 
         # Show results
-        st.markdown('<div class="sub-header">📊 Simulation Results</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sub-header">Simulation Results</div>', unsafe_allow_html=True)
 
         col1, col2, col3 = st.columns(3)
         col1.metric("New Probability", f"{new_prob:.1%}", delta=f"{delta_prob:+.1%}")
-        col2.metric("New Prediction", "🏆 Win" if new_pred == 1 else "❌ Loss")
+        col2.metric("New Prediction", "Win" if new_pred == 1 else "Loss")
         col3.metric("Change", f"{delta_prob:+.1%}")
 
         # Visual indicator
         if delta_prob > 0.1:
             st.markdown(
-                '<div class="success-box">✅ <strong>Significant Improvement!</strong> These changes increase win probability. Consider implementing these actions.</div>',
+                '<div class="success-box"><strong>Significant Improvement!</strong> These changes increase win probability. Consider implementing these actions.</div>',
                 unsafe_allow_html=True
             )
         elif delta_prob < -0.1:
             st.markdown(
-                '<div class="warning-box">⚠️ <strong>Warning:</strong> These changes decrease win probability. Avoid this scenario.</div>',
+                '<div class="warning-box"><strong>Warning:</strong> These changes decrease win probability. Avoid this scenario.</div>',
                 unsafe_allow_html=True
             )
         else:
             st.markdown(
-                '<div class="insight-box">ℹ️ <strong>Minor change</strong> in win probability.</div>',
+                '<div class="insight-box"><strong>Minor change</strong> in win probability.</div>',
                 unsafe_allow_html=True
             )
 
         # Detailed change summary
-        st.markdown("**📝 What Changed:**")
+        st.markdown("**What Changed:**")
 
         changes = []
         scenario_summary = None
@@ -1023,51 +1394,51 @@ elif page == "🎲 What-If Simulator":
             new_val = float(modified_row.get('cust_interactions', 0))
             if abs(new_val - orig_val) > 0.01:
                 delta_val = new_val - orig_val
-                changes.append(f"**Customer Interactions:** {orig_val:.2f} → {new_val:.2f} ({delta_val:+.2f})")
+                changes.append(f"**Customer Interactions:** {orig_val:.2f} -> {new_val:.2f} ({delta_val:+.2f})")
 
         if 'cust_hitrate' in feature_names:
             orig_val = float(original_row.get('cust_hitrate', 0))
             new_val = float(modified_row.get('cust_hitrate', 0))
             if abs(new_val - orig_val) > 0.01:
                 delta_val = new_val - orig_val
-                changes.append(f"**Customer Success Rate:** {orig_val:.2f} → {new_val:.2f} ({delta_val:+.2f})")
+                changes.append(f"**Customer Success Rate:** {orig_val:.2f} -> {new_val:.2f} ({delta_val:+.2f})")
 
         if 'opp_old' in feature_names:
             orig_val = float(original_row.get('opp_old', 0))
             new_val = float(modified_row.get('opp_old', 0))
             if abs(new_val - orig_val) > 0.01:
                 delta_val = new_val - orig_val
-                changes.append(f"**Opportunity Age:** {orig_val:.2f} → {new_val:.2f} ({delta_val:+.2f})")
+                changes.append(f"**Opportunity Age:** {orig_val:.2f} -> {new_val:.2f} ({delta_val:+.2f})")
 
         if 'total_competitors' in feature_names:
             orig_val = int(original_row.get('total_competitors', 0))
             new_val = int(modified_row.get('total_competitors', 0))
             if orig_val != new_val:
                 delta_val = new_val - orig_val
-                changes.append(f"**Total Competitors:** {orig_val} → {new_val} ({delta_val:+d})")
+                changes.append(f"**Total Competitors:** {orig_val} -> {new_val} ({delta_val:+d})")
 
-        original_label = "🏆 Win" if original_pred == 1 else "❌ Loss"
-        new_label = "🏆 Win" if new_pred == 1 else "❌ Loss"
+        original_label = "Win" if original_pred == 1 else "Loss"
+        new_label = "Win" if new_pred == 1 else "Loss"
         if original_pred != new_pred:
-            changes.insert(0, f"**Prediction:** {original_label} → {new_label}")
+            changes.insert(0, f"**Prediction:** {original_label} -> {new_label}")
 
         if scenario_summary:
             changes.insert(0, f"**Scenario:** {scenario_summary}")
 
         if changes:
             for change in changes:
-                st.markdown(f"• {change}")
+                st.markdown(f"- {change}")
 
             # Impact summary
             pp_change = delta_prob * 100
-            st.info(f"💡 **Net Impact:** These changes moved win probability by **{pp_change:+.1f} percentage points** (from {original_prob:.1%} to {new_prob:.1%})")
+            st.info(f"**Net Impact:** These changes moved win probability by **{pp_change:+.1f} percentage points** (from {original_prob:.1%} to {new_prob:.1%})")
         else:
-            st.markdown("• *No changes made*")
+            st.markdown("- *No changes made*")
 
         st.markdown("---")
 
         # SHAP for modified
-        st.markdown('<div class="sub-header">🌊 Updated SHAP Explanation</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sub-header">Updated SHAP Explanation</div>', unsafe_allow_html=True)
         try:
             new_shap = explainer.shap_values(modified_row.values.reshape(1, -1))
             if isinstance(new_shap, list):
@@ -1085,16 +1456,21 @@ elif page == "🎲 What-If Simulator":
             pos_drivers, neg_drivers = summarize_shap(new_shap, feature_names)
             if pos_drivers or neg_drivers:
                 st.markdown("**Key drivers after your adjustments:**")
+                driver_html = "<div class='md-driver-grid'>"
                 if pos_drivers:
-                    st.markdown("✅ *What helps now*")
+                    driver_html += "<div class='md-driver-card positive'><h4>What helps now</h4><ul>"
                     for name, val in pos_drivers:
-                        st.markdown(f"- {name}: {val:+.2f}")
+                        driver_html += f"<li>{name}: {val:+.2f}</li>"
+                    driver_html += "</ul></div>"
                 if neg_drivers:
-                    st.markdown("❌ *What still hurts*")
+                    driver_html += "<div class='md-driver-card negative'><h4>What still hurts</h4><ul>"
                     for name, val in neg_drivers:
-                        st.markdown(f"- {name}: {val:+.2f}")
+                        driver_html += f"<li>{name}: {val:+.2f}</li>"
+                    driver_html += "</ul></div>"
+                driver_html += "</div>"
+                st.markdown(driver_html, unsafe_allow_html=True)
 
-            with st.expander("ℹ️ How to interpret this chart"):
+            with st.expander("How to interpret this chart"):
                 st.markdown("""
                 - **Base value** is the historical average win probability.
                 - **Red bars** push the probability up (toward Win); **blue bars** push it down (toward Loss).
@@ -1105,15 +1481,15 @@ elif page == "🎲 What-If Simulator":
             st.warning(f"Could not generate SHAP plot: {e}")
 
         # Action recommendation
-        st.markdown('<div class="sub-header">🎯 Action Recommendation</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sub-header">Action Recommendation</div>', unsafe_allow_html=True)
         if delta_prob > 0.1:
             st.markdown("""
             <div class='success-box'>
             <strong>Recommended Actions:</strong>
             <ul>
-            <li>✓ Increase customer touchpoints and engagement</li>
-            <li>✓ Act quickly to maintain momentum</li>
-            <li>✓ Leverage improved position to close the deal</li>
+            <li>Increase customer touchpoints and engagement</li>
+            <li>Act quickly to maintain momentum</li>
+            <li>Leverage improved position to close the deal</li>
             </ul>
             </div>
             """, unsafe_allow_html=True)
@@ -1122,9 +1498,9 @@ elif page == "🎲 What-If Simulator":
             <div class='warning-box'>
             <strong>Recommended Actions:</strong>
             <ul>
-            <li>⚠ Re-evaluate opportunity viability</li>
-            <li>⚠ Consider if resources are better allocated elsewhere</li>
-            <li>⚠ If pursuing, address key blockers identified in SHAP</li>
+            <li>Re-evaluate opportunity viability</li>
+            <li>Consider if resources are better allocated elsewhere</li>
+            <li>If pursuing, address key blockers identified in SHAP</li>
             </ul>
             </div>
             """, unsafe_allow_html=True)

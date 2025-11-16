@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "17241",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.05794272944331169,
+    "threshold": 0.31458529829978943,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.6213033333333332,
+    "total_competitors": 0.0,
+    "opp_old": -0.28185,
+    "cust_hitrate": -1.00613,
+    "product_A_ratio": 0.42043289001223644
+  },
+  "shap_analysis": {
+    "base_value": 0.0683107003569603,
+    "prediction_value": -2.7886128425598145,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.10438615828752518,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.09912502020597458,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "total_competitors",
+        "shap_value": 0.03460147604346275,
+        "explanation": "N\u00famero total de competidores presentes"
+      },
+      {
+        "feature": "competition_risk",
+        "shap_value": 0.033679138869047165,
+        "explanation": "Riesgo asociado a la competencia"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.033522412180900574,
+        "explanation": "Competition Engagement"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": -0.88077712059021,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": -0.3717215657234192,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.3389459550380707,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.33396774530410767,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.2862705588340759,
+        "explanation": "Contract Hitrate Ratio"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Capitalize on the lack of competition to close fast."
+    ]
+  }
+}

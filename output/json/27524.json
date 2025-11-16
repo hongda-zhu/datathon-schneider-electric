@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "27524",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9959385395050049,
+    "threshold": 0.31458529829978943,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.6748600000000001,
+    "total_competitors": 1.0,
+    "opp_old": -0.28185,
+    "cust_hitrate": 0.63262,
+    "product_A_ratio": 0.5043733252439455
+  },
+  "shap_analysis": {
+    "base_value": 0.0683107003569603,
+    "prediction_value": 5.502138137817383,
+    "top_positive_factors": [
+      {
+        "feature": "cust_hitrate",
+        "shap_value": 0.8435595631599426,
+        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.8094252347946167,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": 0.6647682785987854,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": 0.6138321757316589,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.5721095204353333,
+        "explanation": "Competition Engagement"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.1597919464111328,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      },
+      {
+        "feature": "product_A_sold_in_the_past",
+        "shap_value": -0.03885016217827797,
+        "explanation": "Product A Sold In The Past"
+      },
+      {
+        "feature": "iberia_competition",
+        "shap_value": -0.015341519378125668,
+        "explanation": "Competencia en clientes de Iberia"
+      },
+      {
+        "feature": "cust_contracts",
+        "shap_value": -0.011082366108894348,
+        "explanation": "N\u00famero de contratos con el cliente"
+      },
+      {
+        "feature": "has_competition",
+        "shap_value": -0.0038515590131282806,
+        "explanation": "Indicador de presencia de competencia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

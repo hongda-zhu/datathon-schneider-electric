@@ -29,6 +29,12 @@ from imblearn.combine import SMOTETomek
 
 import shap
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 warnings.filterwarnings("ignore")
 plt.rcParams["figure.dpi"] = 120
 

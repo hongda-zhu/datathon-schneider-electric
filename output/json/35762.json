@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "35762",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.009611621499061584,
+    "threshold": 0.31458529829978943,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.10703333333333333,
+    "total_competitors": 1.0,
+    "opp_old": -0.28185,
+    "cust_hitrate": -0.16976,
+    "product_A_ratio": -1.3289702423560688
+  },
+  "shap_analysis": {
+    "base_value": 0.0683107003569603,
+    "prediction_value": -4.6351237297058105,
+    "top_positive_factors": [
+      {
+        "feature": "product_B_sold_in_the_past",
+        "shap_value": 0.16257423162460327,
+        "explanation": "Product B Sold In The Past"
+      },
+      {
+        "feature": "opp_old",
+        "shap_value": 0.1016516461968422,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.025314142927527428,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.01750342547893524,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": 0.015530107542872429,
+        "explanation": "Cust In Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.8327075839042664,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "opp_month",
+        "shap_value": -0.5928462147712708,
+        "explanation": "Opp Month"
+      },
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.5262307524681091,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": -0.4689241051673889,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": -0.4476214349269867,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

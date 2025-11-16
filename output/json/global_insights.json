@@ -1,0 +1,54 @@
+{
+  "model_performance": {
+    "threshold": 0.31458529829978943,
+    "f1_score": 0.8343475321162948,
+    "auc": 0.9211501440923088,
+    "precision": 0.7679860592481952,
+    "recall": 0.9132622853759621,
+    "accuracy": 0.8293871866295265
+  },
+  "feature_importance_top20": {
+    "opp_old": 0.2220253199338913,
+    "opp_age_squared": 0.19357720017433167,
+    "cust_hitrate": 0.03474123775959015,
+    "competitor_diversity": 0.0320499986410141,
+    "product_A_recommended": 0.024918876588344574,
+    "iberia_competition": 0.02193238027393818,
+    "hitrate_interaction": 0.02051543816924095,
+    "competition_engagement": 0.02012774907052517,
+    "product_count": 0.020084736868739128,
+    "competition_risk": 0.019014010205864906,
+    "product_A": 0.018757246434688568,
+    "total_competitors": 0.01826263777911663,
+    "product_C": 0.018237654119729996,
+    "product_A_ratio": 0.018219584599137306,
+    "product_A_sold_in_the_past": 0.018185492604970932,
+    "contract_hitrate_ratio": 0.016940660774707794,
+    "cust_interactions": 0.016691727563738823,
+    "opp_maturity": 0.01652088388800621,
+    "competitor_Z": 0.016384882852435112,
+    "customer_engagement": 0.015808286145329475
+  },
+  "prediction_distribution": {
+    "total_samples": 7180,
+    "predicted_wins": 4017,
+    "predicted_losses": 3163,
+    "win_rate": 0.5594707520891364,
+    "avg_win_probability": 0.8034825921058655,
+    "avg_loss_probability": 0.06996280699968338
+  },
+  "business_insights": [
+    "Customer engagement (activity + hitrate + interactions) is the strongest driver of wins.",
+    "High competitor presence and diversity significantly reduces win probability.",
+    "Opportunities with balanced age (not too new, not too old) show better conversion.",
+    "Historical success with Product A is a strong predictor of future wins.",
+    "Iberia customers behave differently and deserve a tailored strategy."
+  ],
+  "recommendations": [
+    "Prioritize opportunities with high customer_activity and customer_engagement.",
+    "Act early on deals with multiple competitors to avoid losing momentum.",
+    "Leverage historical product_A_sold_in_the_past to design cross-sell strategies.",
+    "De-prioritize very old, low-engagement opportunities (low opp_quality_score).",
+    "Increase touchpoints for medium-probability deals to push them into high-probability segment."
+  ]
+}

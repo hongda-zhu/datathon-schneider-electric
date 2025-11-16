@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "32145",
+  "prediction": {
+    "predicted_outcome": "Loss",
+    "actual_outcome": "Loss",
+    "win_probability": 0.03923900052905083,
+    "threshold": 0.31458529829978943,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": 0.051446666666666675,
+    "total_competitors": 1.0,
+    "opp_old": -0.28185,
+    "cust_hitrate": 0.0231,
+    "product_A_ratio": 0.4086787564766839
+  },
+  "shap_analysis": {
+    "base_value": 0.0683107003569603,
+    "prediction_value": -3.1980535984039307,
+    "top_positive_factors": [
+      {
+        "feature": "opp_old",
+        "shap_value": 0.1091364324092865,
+        "explanation": "Antig\u00fcedad de la oportunidad"
+      },
+      {
+        "feature": "product_A_recommended",
+        "shap_value": 0.021096648648381233,
+        "explanation": "Product A Recommended"
+      },
+      {
+        "feature": "competitor_Z",
+        "shap_value": 0.017497053369879723,
+        "explanation": "Competitor Z"
+      },
+      {
+        "feature": "opp_age_squared",
+        "shap_value": 0.016049256548285484,
+        "explanation": "Opp Age Squared"
+      },
+      {
+        "feature": "iberia_engagement",
+        "shap_value": 0.012872221879661083,
+        "explanation": "Engagement de clientes de Iberia"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": -0.5332100987434387,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "cust_interactions",
+        "shap_value": -0.4203889071941376,
+        "explanation": "N\u00famero de interacciones con el cliente"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": -0.32527396082878113,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "opp_quality_score",
+        "shap_value": -0.2849937677383423,
+        "explanation": "Score agregado de calidad de oportunidad"
+      },
+      {
+        "feature": "competitor_Y",
+        "shap_value": -0.2614688277244568,
+        "explanation": "Competitor Y"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Re-evaluate",
+    "priority": "Low",
+    "next_steps": [
+      "Increase touchpoints and engagement",
+      "Clarify blockers with decision-makers",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

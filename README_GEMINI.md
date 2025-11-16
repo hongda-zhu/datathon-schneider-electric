@@ -212,7 +212,8 @@ After running:
 - Run in Colab: `!pip install google-generativeai`
 
 **"API key error"**
-- Asegúrate de definir `os.environ["GEMINI_API_KEY"] = "tu_api_key"` antes de ejecutar el pipeline en Colab
+- En local, revisa el archivo `.env` (ya contiene la clave por defecto, cámbiala si hace falta)
+- En Colab, define `os.environ["GEMINI_API_KEY"] = "tu_api_key"` antes de ejecutar
 - Verifica tu clave en: https://aistudio.google.com/apikey
 
 **"Dashboard shows technical names"**

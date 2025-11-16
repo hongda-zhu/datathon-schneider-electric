@@ -42,14 +42,15 @@
 
 ### **Step 1: Ejecuta el pipeline completo en Colab**
 
-1. Abre tu notebook en Colab.
+1. Abre tu notebook en Colab (o ejecuta el script localmente).
 2. Instala dependencias y descarga el dataset (ver `colab_full_pipeline.py`, líneas iniciales).
 3. **Copia TODO el contenido de `colab_full_pipeline.py` en una celda** y ejecútala.
-4. (Opcional) Antes de ejecutar, define tu API key si quieres activar Gemini:
+4. Si trabajas en Colab y necesitas usar Gemini, define la API key antes de ejecutar:
    ```python
    import os
    os.environ["GEMINI_API_KEY"] = "tu_api_key"
    ```
+   > En local no hace falta: ya incluimos un archivo `.env` con la clave, y el pipeline carga automáticamente esa variable mediante `python-dotenv`.
 
 El script se encarga de:
 - Entrenar XGBoost + SMOTETomek.

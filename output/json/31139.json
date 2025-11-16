@@ -1,0 +1,84 @@
+{
+  "opportunity_id": "31139",
+  "prediction": {
+    "predicted_outcome": "Win",
+    "actual_outcome": "Win",
+    "win_probability": 0.9733046293258667,
+    "threshold": 0.31458529829978943,
+    "confidence": "High"
+  },
+  "key_features": {
+    "customer_activity": -0.011786666666666687,
+    "total_competitors": 1.0,
+    "opp_old": -0.28185,
+    "cust_hitrate": -0.73175,
+    "product_A_ratio": 0.4325007903888713
+  },
+  "shap_analysis": {
+    "base_value": 0.0683107003569603,
+    "prediction_value": 3.5962045192718506,
+    "top_positive_factors": [
+      {
+        "feature": "contract_hitrate_ratio",
+        "shap_value": 0.5632413625717163,
+        "explanation": "Contract Hitrate Ratio"
+      },
+      {
+        "feature": "competition_engagement",
+        "shap_value": 0.3783038556575775,
+        "explanation": "Competition Engagement"
+      },
+      {
+        "feature": "hitrate_contracts",
+        "shap_value": 0.36675626039505005,
+        "explanation": "Hitrate Contracts"
+      },
+      {
+        "feature": "product_A_ratio",
+        "shap_value": 0.31943848729133606,
+        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
+      },
+      {
+        "feature": "total_past_sales",
+        "shap_value": 0.3095957040786743,
+        "explanation": "Volumen total de ventas hist\u00f3ricas"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "iberia_engagement",
+        "shap_value": -0.05852413922548294,
+        "explanation": "Engagement de clientes de Iberia"
+      },
+      {
+        "feature": "customer_activity",
+        "shap_value": -0.05202735960483551,
+        "explanation": "Nivel global de actividad del cliente"
+      },
+      {
+        "feature": "product_mix",
+        "shap_value": -0.007436857093125582,
+        "explanation": "Diversidad de productos activos"
+      },
+      {
+        "feature": "competitor_diversity",
+        "shap_value": -0.0066732619889080524,
+        "explanation": "Diversidad de competidores en la oferta"
+      },
+      {
+        "feature": "cust_in_iberia",
+        "shap_value": -0.0065640839748084545,
+        "explanation": "Cust In Iberia"
+      }
+    ]
+  },
+  "business_recommendation": {
+    "action": "Accelerate",
+    "priority": "High",
+    "next_steps": [
+      "Leverage existing engagement",
+      "Maintain momentum with key stakeholders",
+      "Monitor competitive landscape and adjust pricing/offer."
+    ]
+  }
+}

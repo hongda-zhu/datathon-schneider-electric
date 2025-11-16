@@ -91,7 +91,7 @@ Open: http://localhost:8501
    ```
 3. **Copia todo `colab_full_pipeline.py` en una celda y ejecútala**.
    - El script entrena, genera SHAP, calcula estadísticas y guarda `output/`.
-   - Si `GEMINI_API_KEY` existe, añade insights/recomendaciones automáticas.
+   - Si `GEMINI_API_KEY` existe (en local se carga desde `.env`, en Colab debes definirla), añade insights/recomendaciones automáticas.
 4. Descarga `output.zip`, extráelo aquí y ejecuta `app_final.py`.
 
 ---

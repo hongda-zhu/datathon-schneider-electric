@@ -14,13 +14,14 @@ I've created the **complete solution** with:
 
 ### **Step 1: Ejecuta el pipeline completo en Colab**
 
-1. Abre tu notebook en Colab.
+1. Abre tu notebook en Colab (o ejecuta el script localmente).
 2. Instala dependencias y descarga el dataset.
-3. (Opcional) Define tu API key antes de ejecutar:
+3. (Para Colab) Define tu API key antes de ejecutar:
    ```python
    import os
    os.environ["GEMINI_API_KEY"] = "tu_api_key"
    ```
+   > En local, el archivo `.env` ya incluye una clave por defecto y se carga automáticamente mediante `python-dotenv`.
 4. **Copia todo el contenido de `colab_full_pipeline.py` en una celda y ejecútala**.
 
 El script completo:
