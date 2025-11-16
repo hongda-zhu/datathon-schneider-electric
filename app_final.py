@@ -964,16 +964,6 @@ elif page == "Case Explorer":
     # Case ID input
     available_ids = sorted(X_test.index.tolist())
 
-    st.info(f"""
-    📋 **Available IDs:** This dashboard shows predictions for the **test set** ({len(available_ids):,} opportunities).
-
-    IDs range from **{available_ids[0]}** to **{available_ids[-1]}**. Not all IDs are consecutive because:
-    - The dataset was split into train (80%) and test (20%)
-    - IDs like 1, 2, 3, 4 are in the **training set**, not available here
-
-    💡 **Quick access:** Try IDs like **102** (high confidence win), **3414** (low confidence), or **12121** (old opportunity).
-    """)
-
     case_id = st.selectbox(
         "Select Opportunity ID",
         available_ids,
