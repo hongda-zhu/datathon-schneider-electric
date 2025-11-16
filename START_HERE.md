@@ -23,7 +23,7 @@
 
 ```
 ├── app_final.py                        ← Dashboard (run this)
-├── colab_section_11_gemini.py          ← Add to Colab
+├── colab_full_pipeline.py              ← Copy to Colab (end-to-end pipeline)
 ├── run_final.sh                        ← Quick launcher
 ├── requirements.txt                    ← Dependencies
 │
@@ -34,30 +34,41 @@
 └── START_HERE.md                       ← This file
 ```
 
-**All outdated files have been removed.** ✅
+➡️ Todos los scripts parciales (“colab_*”) fueron eliminados; **usa exclusivamente `colab_full_pipeline.py`** para regenerar datos e insights. ✅
 
 ---
 
 ## 🎯 3 Steps to Launch
 
-### **Step 1: Add Gemini to Colab**
+### **Step 1: Ejecuta el pipeline completo en Colab**
 
-1. Open `colab_section_11_gemini.py`
-2. Copy ALL code
-3. Paste in your Colab as **Section 11.5** (after Section 11)
-4. Run it
+1. Abre tu notebook en Colab.
+2. Instala dependencias y descarga el dataset (ver `colab_full_pipeline.py`, líneas iniciales).
+3. **Copia TODO el contenido de `colab_full_pipeline.py` en una celda** y ejecútala.
+4. (Opcional) Antes de ejecutar, define tu API key si quieres activar Gemini:
+   ```python
+   import os
+   os.environ["GEMINI_API_KEY"] = "tu_api_key"
+   ```
 
-**You'll see:**
+El script se encarga de:
+- Entrenar XGBoost + SMOTETomek.
+- Generar SHAP, gráficos y JSON globales/individuales.
+- Calcular percentiles, buckets y drivers para la app.
+- Guardar `output/` completo (modelos, imágenes, JSON, metadata).
+- Ejecutar Gemini (si `GEMINI_API_KEY` está definida) para insights y recomendaciones.
+
+Al final verás:
 ```
-🤖 GENERATING AI-POWERED INSIGHTS WITH GEMINI
-✅ Gemini API configured
-✅ Global insights generated: 5 business insights
-✅ Enhanced 15 sample cases with AI recommendations
+🤖 GENERANDO INSIGHTS CON GEMINI
+✅ LLM insights guardados en output/json/global_insights.json
+✅ Recomendaciones AI generadas para n oportunidades
+📦 output.zip listo para descargar
 ```
 
 ---
 
-### **Step 2: Download from Colab**
+### **Step 2: Descarga desde Colab**
 
 In Colab:
 ```python
@@ -67,7 +78,7 @@ shutil.make_archive('output', 'zip', 'output')
 files.download('output.zip')
 ```
 
-Extract `output.zip` to this folder.
+Extrae `output.zip` en esta misma carpeta (junto a `app_final.py`).
 
 ---
 
@@ -208,9 +219,9 @@ If all checked ✅ → You're ready to present!
 
 ## 🚀 Next Step
 
-→ Open `colab_section_11_gemini.py`
-→ Copy to Colab
-→ Run it
-→ Launch dashboard
+→ Abre `colab_full_pipeline.py`
+→ Copia todo en una celda de Colab (define `GEMINI_API_KEY` si quieres insights AI)
+→ Ejecuta, descarga `output/`
+→ Lanza el dashboard
 
 **You're ready! 🎉**

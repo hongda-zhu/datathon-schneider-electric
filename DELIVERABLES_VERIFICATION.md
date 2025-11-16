@@ -33,17 +33,17 @@ Dashboard → **🌍 Global Insights** page
 ┌─────────────────────────────────────────────────┐
 │ Model Performance Metrics                      │
 ├─────────────────────────────────────────────────┤
-│ F1 Score:    0.823  ℹ️ [hover for explanation]│
-│ AUC:         0.856  ℹ️                         │
-│ Precision:   0.791  ℹ️                         │
-│ Recall:      0.857  ℹ️                         │
-│ Threshold:   0.512  ℹ️                         │
+│ F1 Score:    0.834  ℹ️ [hover for explanation]│
+│ AUC:         0.921  ℹ️                         │
+│ Precision:   0.768  ℹ️                         │
+│ Recall:      0.913  ℹ️                         │
+│ Threshold:   0.315  ℹ️                         │
 └─────────────────────────────────────────────────┘
 
 Prediction Distribution:
-  • Total Opportunities: 1,247
-  • Predicted Wins: 524
-  • Win Rate: 42.0%
+  • Total Opportunities: 7,180
+  • Predicted Wins: 4,017
+  • Win Rate: 55.9%
 ```
 
 ### **Enhanced Features:**
@@ -212,7 +212,7 @@ User reads AI-generated insights like:
 3. Get actionable recommendations directly
 
 **Code Reference:**
-- Generation: `colab_section_11_gemini.py` lines 34-78
+- Generation: `colab_full_pipeline.py` (Gemini block ~lines 430-520)
 - Display: `app_final.py` lines 270-280
 
 ---
@@ -383,7 +383,7 @@ Priority: Low
 - ✅ Includes timelines (30% in 2 weeks, close in 30 days)
 - ✅ Addresses key risk factors
 
-**Code Reference:** `colab_section_11_gemini.py` lines 95-150
+**Code Reference:** `colab_full_pipeline.py` (Gemini block ~lines 430-520)
 
 ---
 
@@ -458,7 +458,7 @@ Output Format: JSON
 **Key Point:**
 ✅ SHAP provides numbers → Gemini provides **business meaning**
 
-**Code Reference:** `colab_section_11_gemini.py` lines 26-78
+**Code Reference:** `colab_full_pipeline.py` (Gemini prompt)
 
 ---
 
@@ -505,7 +505,7 @@ Generate 3 specific, actionable next steps for the sales team.
 **Key Point:**
 ✅ SHAP identifies factors → Gemini converts to **actionable steps**
 
-**Code Reference:** `colab_section_11_gemini.py` lines 95-150
+**Code Reference:** `colab_full_pipeline.py` (Gemini block ~lines 430-520)
 
 ---
 
@@ -570,7 +570,7 @@ All deliverables are implemented in:
 | File | Purpose |
 |------|---------|
 | `app_final.py` | Dashboard with all 3 pages |
-| `colab_section_11_gemini.py` | LLM integration for SHAP interpretation |
+| `colab_full_pipeline.py` (Gemini block) | LLM integration for SHAP interpretation |
 | `output/json/global_insights.json` | AI-generated insights |
 | `output/json/{id}.json` | Per-opportunity analysis |
 

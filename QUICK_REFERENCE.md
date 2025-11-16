@@ -40,12 +40,8 @@ Open: http://localhost:8501
 │       ├── shap_summary.png
 │       └── probability_distribution.png
 │
-├── Colab Integration Code:
-│   ├── colab_section_11_gemini.py         ← Add to Colab Section 11.5
-│   ├── colab_probability_buckets.py       ← Add to Colab Section 8
-│   ├── colab_shap_drivers.py              ← Add to Colab Section 7
-│   ├── colab_feature_percentiles.py       ← Add to Colab Section 8
-│   └── colab_improved_charts.py           ← Optional: Replace Section 7
+├── Colab Integration:
+│   └── colab_full_pipeline.py             ← Copy entire script into Colab
 │
 └── Documentation:
     ├── START_HERE.md                      ← Original getting started guide
@@ -87,40 +83,16 @@ Open: http://localhost:8501
 
 ## 🔧 Colab Integration
 
-### Required Additions:
-
-#### Section 7 (SHAP Analysis):
-```python
-# AFTER calculating shap_values_full:
-
-# Calculate mean SHAP values for top drivers
-mean_shap_values = np.mean(shap_values_full, axis=0)
-# ... (see colab_shap_drivers.py for full code)
-```
-
-#### Section 8 (Global Insights):
-```python
-# BEFORE saving global_insights.json:
-
-# 1. Probability buckets
-bucket_counts = {...}
-global_insights["prediction_distribution"]["probability_buckets"] = bucket_counts
-
-# 2. Feature statistics
-feature_stats = {...}
-global_insights["feature_statistics"] = feature_stats
-
-# 3. Then save
-with open("output/json/global_insights.json", "w") as f:
-    json.dump(global_insights, f, indent=2)
-```
-
-#### Section 11.5 (Gemini AI):
-```python
-# Replace entire section with updated prompt
-# Focus on opportunity age as dominant factor
-# ... (see colab_section_11_gemini.py)
-```
+1. Instala dependencias y descarga el dataset en Colab.
+2. Define tu API key antes de ejecutar (opcional):
+   ```python
+   import os
+   os.environ["GEMINI_API_KEY"] = "tu_api_key"
+   ```
+3. **Copia todo `colab_full_pipeline.py` en una celda y ejecútala**.
+   - El script entrena, genera SHAP, calcula estadísticas y guarda `output/`.
+   - Si `GEMINI_API_KEY` existe, añade insights/recomendaciones automáticas.
+4. Descarga `output.zip`, extráelo aquí y ejecuta `app_final.py`.
 
 ---
 
@@ -350,10 +322,10 @@ streamlit --version  # Should be >=1.28
 streamlit run app_final.py --logger.level=debug
 ```
 
-### Gemini insights are generic:
-- Make sure you're using updated `colab_section_11_gemini.py`
-- Check that prompt includes "CRITICAL OBSERVATIONS" section
-- Verify feature_importance in JSON matches actual model
+### Gemini insights son genéricos:
+- Asegúrate de ejecutar la última versión de `colab_full_pipeline.py`
+- Verifica que `GEMINI_API_KEY` esté definido antes de correr el pipeline
+- Comprueba que `global_insights.json` tenga campos `feature_importance_top20` y `shap_drivers`
 
 ### Features show no context labels:
 - Check `global_insights["feature_statistics"]` exists

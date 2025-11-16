@@ -6,16 +6,29 @@
 
 ## 🎯 Quick Start (3 Steps)
 
-### **Step 1: Add to Your Colab**
+### **Step 1: Ejecuta el pipeline completo en Colab**
 
-Copy the entire content of `colab_section_11_gemini.py` and paste it as **Section 11.5** in your Colab notebook (after Section 11).
+1. Abre tu notebook en Colab.
+2. Instala dependencias y descarga el dataset (`xgboost`, `shap`, etc.).
+3. **Copia TODO `colab_full_pipeline.py` en una celda y ejecútala**.
+4. (Opcional) Antes de ejecutar la celda, define tu API key:
+   ```python
+   import os
+   os.environ["GEMINI_API_KEY"] = "tu_api_key"
+   ```
 
-Run all cells. You'll see:
+El script:
+- Entrena el modelo + genera SHAP/JSON.
+- Calcula estadísticas necesarias para el dashboard.
+- Guarda `output/` con modelos, imágenes y análisis.
+- Integra Gemini si hay API key (insights globales + recomendaciones por caso).
+
+Al finalizar:
 ```
-🤖 GENERATING AI-POWERED INSIGHTS WITH GEMINI
-✅ Gemini API configured
-✅ Global insights generated: 5 business insights, 5 recommendations
-✅ Enhanced 15 sample cases with AI recommendations
+🤖 GENERANDO INSIGHTS CON GEMINI
+✅ LLM insights guardados en output/json/global_insights.json
+✅ Recomendaciones AI generadas para N oportunidades
+📦 output.zip listo para descargar
 ```
 
 ---
@@ -140,15 +153,15 @@ Applied to **all charts and displays**.
 
 ```
 ├── app_final.py                   ← MAIN DASHBOARD (English)
-├── colab_section_11_gemini.py     ← ADD TO COLAB
+├── colab_full_pipeline.py         ← COPY TO COLAB (training + Gemini)
 ├── run_final.sh                   ← RUN THIS
 ├── FINAL_IMPLEMENTATION_GUIDE.md  ← DETAILED GUIDE
 ├── venv/                          ← Python environment
-└── output/                        ← EXTRACT HERE
-    ├── model.pkl
+└── output/ (from Colab)           ← EXTRACT HERE
+    ├── model.pkl / explainer.pkl
     ├── json/
     │   ├── global_insights.json   ← AI-ENHANCED
-    │   └── *.json                 ← 15 AI-ENHANCED
+    │   └── *.json                 ← AI-ENHANCED CASES
     └── images/
 ```
 
@@ -199,17 +212,17 @@ After running:
 - Run in Colab: `!pip install google-generativeai`
 
 **"API key error"**
-- Your key is already in the code: `AIzaSyAGltKL6hvhZ9L3YHCqglSafDUz_YTTcR4`
-- Verify at: https://aistudio.google.com/apikey
+- Asegúrate de definir `os.environ["GEMINI_API_KEY"] = "tu_api_key"` antes de ejecutar el pipeline en Colab
+- Verifica tu clave en: https://aistudio.google.com/apikey
 
 **"Dashboard shows technical names"**
 - Make sure you're running `app_final.py` (not `app.py`)
 - Clear cache: `streamlit cache clear`
 
 **"Insights are still generic"**
-- Re-run Colab Section 11.5
-- Re-download `output.zip`
-- Check `output/json/global_insights.json` has new insights
+- Re-ejecuta `colab_full_pipeline.py` con la API key definida
+- Descarga de nuevo `output/`
+- Comprueba que `global_insights.json` y los JSON individuales tengan campos `business_insights`/`recommendations`
 
 ---
 
@@ -222,7 +235,7 @@ You have:
 - ✅ Business-friendly translations
 - ✅ Complete explainability
 
-**Next:** Copy `colab_section_11_gemini.py` → Run in Colab → Download → Launch dashboard
+**Next:** Ejecuta `colab_full_pipeline.py` → Descarga `output/` → Lanza el dashboard
 
 ---
 

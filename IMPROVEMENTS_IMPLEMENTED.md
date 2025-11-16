@@ -30,23 +30,14 @@ All requested improvements have been implemented:
   - `competitor_diversity` (3.2%)
 
 **Solution:**
-- Updated `colab_section_11_gemini.py` with explicit instructions to Gemini
+- Integración de Gemini dentro de `colab_full_pipeline.py` con instrucciones explícitas
 - New prompt forces AI to focus on **actual top features**
 - First insight MUST mention opportunity age as dominant factor
 
 **File Modified:**
-- `colab_section_11_gemini.py` (lines 34-82)
+- `colab_full_pipeline.py` (bloque Gemini ~líneas 430-520)
 
-**What you need to do:**
-1. Replace section 11.5 in your Colab with the updated `colab_section_11_gemini.py`
-2. Re-run the Gemini section to generate correct insights
-3. Download updated `output/json/global_insights.json`
-
-**Expected new insights will mention:**
-- Opportunity age as #1 driver (~40% importance)
-- Competition indicators
-- Customer success rate
-- Product A historical sales
+**Qué debes hacer ahora:** nada extra. Estas instrucciones ya están incorporadas en `colab_full_pipeline.py`, por lo que basta con ejecutar ese script completo en Colab para regenerar `global_insights.json` con insights alineados al ranking real.
 
 ---
 
@@ -65,76 +56,7 @@ All requested improvements have been implemented:
 - ✨ NEW: `colab_probability_buckets.py` - Code to add to Colab Section 8
 - `app_final.py` - Added chart display
 
-**What you need to do:**
-
-#### Step 1: Update Colab Section 8 (Global Insights)
-
-In your Colab, find the section where you build `global_insights` dictionary.
-
-**BEFORE saving `global_insights.json`, add this code:**
-
-```python
-# Calculate probability distribution buckets
-import numpy as np
-
-bins = [0, 0.3, 0.5, 0.7, 1.0]
-labels = ['Low (0-30%)', 'Medium (30-50%)', 'High (50-70%)', 'Very High (70-100%)']
-
-bucket_counts = {}
-for i in range(len(bins) - 1):
-    count = np.sum((y_prob >= bins[i]) & (y_prob < bins[i+1]))
-    bucket_counts[labels[i]] = int(count)
-
-# Handle upper boundary
-bucket_counts[labels[-1]] = int(np.sum((y_prob >= bins[-2]) & (y_prob <= bins[-1])))
-
-# Add to global_insights
-global_insights["prediction_distribution"]["probability_buckets"] = bucket_counts
-
-print("\n📊 Probability Distribution by Buckets:")
-for bucket, count in bucket_counts.items():
-    percentage = (count / len(y_prob)) * 100
-    print(f"  {bucket}: {count} ({percentage:.1f}%)")
-```
-
-#### Step 2: Save and download
-
-After running this, `global_insights.json` will include:
-
-```json
-{
-  "prediction_distribution": {
-    "total_samples": 7180,
-    "predicted_wins": 4017,
-    "win_rate": 0.559,
-    "probability_buckets": {
-      "Low (0-30%)": 2145,
-      "Medium (30-50%)": 1023,
-      "High (50-70%)": 1567,
-      "Very High (70-100%)": 2445
-    }
-  }
-}
-```
-
-#### Step 3: Dashboard will automatically show chart
-
-When you run the dashboard with the updated JSON, you'll see:
-
-```
-📊 Prediction Distribution
-┌─────────────────────────────────────┐
-│ Total: 7180  Wins: 4017  Rate: 56% │
-└─────────────────────────────────────┘
-
-Win Probability Distribution
-┌─────────────────────────────────────┐
-│ Low (0-30%)          ████████        │
-│ Medium (30-50%)      ████            │
-│ High (50-70%)        ██████          │
-│ Very High (70-100%)  ████████████    │
-└─────────────────────────────────────┘
-```
+**¿Qué debes hacer ahora?** Nada manual. El cálculo de buckets ya viene incluido en `colab_full_pipeline.py`; al ejecutarlo se rellenará `prediction_distribution.probability_buckets` automáticamente y el dashboard mostrará la gráfica sin pasos adicionales.
 
 ---
 
@@ -153,11 +75,7 @@ Win Probability Distribution
 - ✨ NEW: `colab_shap_drivers.py` - Code to add to Colab Section 7
 - `app_final.py` - Added textual summary display
 
-**What you need to do:**
-
-#### Step 1: Update Colab Section 7 (SHAP Analysis)
-
-In your Colab, find Section 7 where you calculate `shap_values_full`.
+**¿Qué debes hacer ahora?** Esta lógica ya vive en `colab_full_pipeline.py`. Cuando vuelvas a ejecutar el pipeline, los promedios SHAP se agregarán a `global_insights["shap_drivers"]` y la app mostrará el resumen textual.
 
 **AFTER calculating SHAP values, BEFORE saving `global_insights.json`, add:**
 
@@ -316,7 +234,7 @@ To get all improvements working, update your Colab notebook:
 
 ### ✅ Section 11.5 (Gemini AI)
 
-**Replace:** Entire section with updated `colab_section_11_gemini.py`
+**Estado actual:** el bloque Gemini ya forma parte de `colab_full_pipeline.py`; no necesitas reemplazar nada manualmente.
 
 **What changed:** Improved prompt that focuses on actual top features
 
@@ -405,7 +323,7 @@ unzip output.zip
 
 | File | Changes |
 |------|---------|
-| `colab_section_11_gemini.py` | Improved Gemini prompt to focus on actual top features |
+| `colab_full_pipeline.py` (sección Gemini) | Improved Gemini prompt to focus on actual top features |
 | `app_final.py` | Added probability chart, SHAP drivers, removed duplicates, simplified HTML |
 
 ### New Files Created:
@@ -462,7 +380,7 @@ unzip output.zip
 
 ### "Insights still say customer engagement is strongest"
 
-→ Replace entire Section 11.5 with updated colab_section_11_gemini.py and re-run
+→ Simplemente vuelve a ejecutar `colab_full_pipeline.py` con tu API key para regenerar insights
 
 ---
 

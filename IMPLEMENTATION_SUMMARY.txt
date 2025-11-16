@@ -18,9 +18,9 @@
 1. app_final.py
    → Final English dashboard with all improvements
 
-2. colab_section_11_gemini.py
-   → Code to add to your Colab (Section 11.5)
-   → Generates AI insights with your API key
+2. colab_full_pipeline.py
+   → Script completo para Colab (entrenamiento + Gemini opcional)
+   → Define `GEMINI_API_KEY` y ejecútalo para regenerar `output/`
 
 3. run_final.sh
    → Quick launch script: ./run_final.sh
@@ -36,13 +36,12 @@
 🚀 NEXT STEPS (3 SIMPLE STEPS):
 
 ┌─────────────────────────────────────────────────────────────────────┐
-│ STEP 1: Add to Colab                                               │
+│ STEP 1: Ejecuta el pipeline completo en Colab                      │
 │                                                                     │
-│ • Open: colab_section_11_gemini.py                                 │
-│ • Copy ALL code                                                     │
-│ • Paste as new section in your Colab (after Section 11)           │
-│ • Run it                                                            │
-│ • See: "✅ Global insights generated"                              │
+│ • Abre: colab_full_pipeline.py                                     │
+│ • (Opcional) define os.environ["GEMINI_API_KEY"]                   │
+│ • Copia TODO el script en una celda y ejecútala                     │
+│ • Verás: "✅ LLM insights guardados..."                             │
 └─────────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────────┐
@@ -211,7 +210,7 @@ Talking Points:
 
 Everything is configured and ready to go.
 
-Next: Copy colab_section_11_gemini.py → Run in Colab → Launch dashboard
+Next: Ejecuta colab_full_pipeline.py → Descarga output/ → Lanza el dashboard
 
 Questions? Check:
   • README_GEMINI.md (quick start)

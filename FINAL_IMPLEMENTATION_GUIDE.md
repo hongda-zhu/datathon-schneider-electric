@@ -12,32 +12,30 @@ I've created the **complete solution** with:
 
 ## 📋 Implementation Steps
 
-### **Step 1: Add Gemini Section to Your Colab**
+### **Step 1: Ejecuta el pipeline completo en Colab**
 
-Open your Colab notebook and **add this as a new section** after Section 11:
+1. Abre tu notebook en Colab.
+2. Instala dependencias y descarga el dataset.
+3. (Opcional) Define tu API key antes de ejecutar:
+   ```python
+   import os
+   os.environ["GEMINI_API_KEY"] = "tu_api_key"
+   ```
+4. **Copia todo el contenido de `colab_full_pipeline.py` en una celda y ejecútala**.
 
-```python
-# Copy ALL code from: colab_section_11_gemini.py
-```
+El script completo:
+- ✅ Entrena XGBoost + SMOTETomek
+- ✅ Calcula SHAP, estadísticas, percentiles y buckets necesarios para la app
+- ✅ Guarda todos los artefactos en `output/`
+- ✅ Integra Gemini automáticamente si hay `GEMINI_API_KEY` (insights globales + recomendaciones por caso)
 
-**What it does:**
-- ✅ Connects to Gemini API with your key
-- ✅ Generates 5 professional business insights
-- ✅ Generates 5 actionable recommendations
-- ✅ Enhances 15 sample individual cases with AI recommendations
-- ✅ Saves everything to `output/json/`
-
-**Expected runtime:** ~2-3 minutes
+**Runtime aproximado:** 3-4 minutos
 
 ---
 
-### **Step 2: Run Your Complete Colab**
+### **Step 2: Verifica y descarga `output/`**
 
-Run all cells in your Colab notebook:
-
-1. Sections 0-10: Original training and analysis
-2. Section 11: Save model artifacts
-3. **Section 11.5** (NEW): Gemini AI insights generation
+Una vez finalizado el pipeline verás algo como:
 
 **Output:**
 ```
@@ -60,7 +58,7 @@ output/
 
 ---
 
-### **Step 3: Download Output Folder**
+### **Step 3: Descarga la carpeta Output**
 
 In Colab, run:
 
@@ -77,7 +75,7 @@ files.download('output.zip')
 
 ---
 
-### **Step 4: Extract and Run Dashboard**
+### **Step 4: Extrae y ejecuta el dashboard**
 
 Extract `output.zip` to your project folder:
 
@@ -288,20 +286,15 @@ Features show as:
 
 ## 🔐 API Key Security Note
 
-Your API key is in `colab_section_11_gemini.py`:
+Define your key in Colab **before** running the pipeline:
 ```python
-GEMINI_API_KEY = "AIzaSyAGltKL6hvhZ9L3YHCqglSafDUz_YTTcR4"
+import os
+os.environ["GEMINI_API_KEY"] = "tu_api_key"
 ```
 
-**For production:**
-1. Use environment variables
-2. Add to `.gitignore`
-3. Rotate key after datathon
-
-**For datathon:**
-- ✅ Safe to use as-is in Colab
-- ✅ Key only runs once during training
-- ✅ Dashboard doesn't need the key (uses saved JSON)
+- Nunca subas la clave al repositorio.
+- Puedes rotarla fácilmente desde https://aistudio.google.com/apikey.
+- El dashboard no requiere la clave; solo el pipeline en Colab la usa.
 
 ---
 
@@ -323,7 +316,7 @@ streamlit run app_final.py
 
 ```
 ├── app_final.py                    ✨ NEW - Final dashboard
-├── colab_section_11_gemini.py      ✨ NEW - Gemini integration
+├── colab_full_pipeline.py          ✨ NEW - Training + Gemini integration
 ├── FINAL_IMPLEMENTATION_GUIDE.md   ✨ NEW - This file
 ├── app_improved.py                 (Spanish version)
 ├── app.py                          (Original)
@@ -336,7 +329,7 @@ streamlit run app_final.py
 
 ## ✅ Checklist Before Presentation
 
-- [ ] Run complete Colab with Section 11.5
+- [ ] Ejecutar `colab_full_pipeline.py` completo en Colab (con `GEMINI_API_KEY` si procede)
 - [ ] Download `output.zip`
 - [ ] Extract to project folder
 - [ ] Verify `output/json/global_insights.json` has AI insights
@@ -424,11 +417,11 @@ streamlit run app_final.py
 
 Your complete AI-powered explainable dashboard is ready to impress the judges.
 
-**Next step:** Run Section 11.5 in Colab with your API key!
+**Next step:** Ejecuta `colab_full_pipeline.py` en Colab (define `GEMINI_API_KEY` si quieres insights AI).
 
 ---
 
 **Questions? Check these files:**
 - `app_final.py` - Dashboard source code
-- `colab_section_11_gemini.py` - Gemini integration
+- `colab_full_pipeline.py` - Entrenamiento + Gemini integration
 - `MEJORAS_DASHBOARD.md` - Detailed explanations (Spanish)

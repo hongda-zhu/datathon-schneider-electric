@@ -89,9 +89,7 @@ Opportunity Age: -0.282  - Average
 - Shows if value is Low (<P25), Average (P25-P75), or High (>P75)
 - For competitors: reverses interpretation (Low = Good, High = Concern)
 
-**What you need to do:**
-1. Add `colab_feature_percentiles.py` code to your Colab Section 8
-2. Re-run to generate `feature_statistics` in global_insights.json
+**¿Qué debes hacer ahora?** Nada adicional: el cálculo de percentiles ya forma parte de `colab_full_pipeline.py`. Cada vez que ejecutes el pipeline se actualizarán los campos `feature_statistics` usados por la app para mostrar etiquetas Low/Avg/High.
 
 **Implementation:**
 - Helper function: `app_final.py` lines 277-306
@@ -248,7 +246,7 @@ Help: "Number of active competitors
 | File | Lines Changed | Description |
 |------|---------------|-------------|
 | `app_final.py` | ~200 lines | All dashboard improvements |
-| `colab_section_11_gemini.py` | 50 lines | Fixed contradictory insights (Round 1) |
+| `colab_full_pipeline.py` (Gemini block) | 50 lines | Fixed contradictory insights (Round 1) |
 
 ### New Files Created:
 
@@ -368,7 +366,7 @@ For maximum benefit, your Colab should have these additions:
 ### Section 11.5 (Gemini AI):
 ```python
 # Replace entire section with:
-# Updated colab_section_11_gemini.py
+# Gemini prompt (colab_full_pipeline.py)
 # → Fixes contradictory insights
 ```
 
