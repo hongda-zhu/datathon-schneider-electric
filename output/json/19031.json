@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "19031",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.3659234642982483,
-    "threshold": 0.2624979317188263,
-    "confidence": "Low"
-  },
-  "key_features": {
-    "customer_activity": -0.73279,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.3985257726988103,
-    "cust_hitrate": -1.1667,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -0.5497445464134216,
-    "top_positive_factors": [
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.1564013957977295,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.11685783416032791,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.10801298171281815,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.10411914438009262,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.10284416377544403,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.4225601255893707,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.24329663813114166,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.24312932789325714,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.09480435401201248,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.08430664241313934,
-        "explanation": "Product B Sold In The Past"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

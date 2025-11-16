@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "8024",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.04343181103467941,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.39974333333333334,
-    "total_competitors": 2.0,
-    "opp_quality_score": -0.11452801586301953,
-    "cust_hitrate": -0.38493,
-    "product_A_ratio": 0.3021849603424512
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -3.09216046333313,
-    "top_positive_factors": [
-      {
-        "feature": "product_D",
-        "shap_value": 1.4169888496398926,
-        "explanation": "Product D"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": 0.09477497637271881,
-        "explanation": "Diversidad de productos activos"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.0800265520811081,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.028956862166523933,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.025759421288967133,
-        "explanation": "Opp Age Squared"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.9398877024650574,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.5596723556518555,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.47852009534835815,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.3842758536338806,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.2890774607658386,
-        "explanation": "Product A Sold In The Past"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

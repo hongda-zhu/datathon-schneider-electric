@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "25474",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.8615068197250366,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.07695333333333332,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.2434772316384989,
-    "cust_hitrate": -0.45466,
-    "product_A_ratio": 0.8919730790962472
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 1.8278617858886719,
-    "top_positive_factors": [
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.42988380789756775,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.38693106174468994,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": 0.27570632100105286,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.25872573256492615,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.24224889278411865,
-        "explanation": "Engagement de clientes de Iberia"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.20350174605846405,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.09388332813978195,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.0816284716129303,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.047152139246463776,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.01364445686340332,
-        "explanation": "Riesgo asociado a la competencia"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "10779",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.8352782726287842,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.28479,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.03473722730118972,
-    "cust_hitrate": -0.17049,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 1.6235063076019287,
-    "top_positive_factors": [
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.2576301097869873,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.23644328117370605,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.2181868553161621,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.19390958547592163,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.1895013302564621,
-        "explanation": "Competitor Z"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.12320519983768463,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.07625440508127213,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.0646640956401825,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.04044770076870918,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": -0.01591043546795845,
-        "explanation": "N\u00famero de contratos con el cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

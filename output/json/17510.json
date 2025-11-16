@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "17510",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.880621075630188,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.41577666666666663,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.26617643546331693,
-    "cust_hitrate": 0.37129,
-    "product_A_ratio": 0.07514108865829237
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 1.9983234405517578,
-    "top_positive_factors": [
-      {
-        "feature": "opp_month",
-        "shap_value": 0.5082364678382874,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.3742850720882416,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.31326162815093994,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.2892688810825348,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.25003182888031006,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.23631922900676727,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.06923536211252213,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.06288226693868637,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.05002488195896149,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.04922053590416908,
-        "explanation": "Cust In Iberia"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

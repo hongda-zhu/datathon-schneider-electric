@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "24395",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.011399563401937485,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 0.73913,
-    "total_competitors": 0.0,
-    "opp_quality_score": 1.021214727947238,
-    "cust_hitrate": 0.76022,
-    "product_A_ratio": 1.4285243198680955
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -4.462712287902832,
-    "top_positive_factors": [
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.24003002047538757,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.06385113298892975,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.02158108539879322,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "low_engagement_risk",
-        "shap_value": 0.013817179016768932,
-        "explanation": "Low Engagement Risk"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.010840381495654583,
-        "explanation": "Competitor Z"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.8897057175636292,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.7299193143844604,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.6544625759124756,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.6001403331756592,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": -0.39471539855003357,
-        "explanation": "Hitrate Contracts"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

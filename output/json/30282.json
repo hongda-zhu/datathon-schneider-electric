@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "30282",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9666601419448853,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.1090133333333333,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.4681752273011897,
-    "cust_hitrate": 0.8805,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.367091417312622,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.5488458275794983,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.44249215722084045,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.43751564621925354,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.42253145575523376,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.33001473546028137,
-        "explanation": "Score agregado de calidad de oportunidad"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.060626331716775894,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.05254492908716202,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": -0.031167354434728622,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": -0.01615850254893303,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.014891617931425571,
-        "explanation": "Cust In Iberia"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "2929",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9744229912757874,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.03924333333333337,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.03833191306558209,
-    "cust_hitrate": -0.67582,
-    "product_A_ratio": 0.44046771733604473
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.6401524543762207,
-    "top_positive_factors": [
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.63791424036026,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.5466053485870361,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.40624481439590454,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.37864401936531067,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.28453493118286133,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.1747090369462967,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.0628577321767807,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.01631392538547516,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": -0.0023206991609185934,
-        "explanation": "Product A"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.0020147920586168766,
-        "explanation": "Diversidad de productos activos"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

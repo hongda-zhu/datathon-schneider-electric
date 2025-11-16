@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "24504",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.8267302513122559,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.23308333333333334,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.6161372079625796,
-    "cust_hitrate": 1.73092,
-    "product_A_ratio": 0.06734051990644908
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 1.5626282691955566,
-    "top_positive_factors": [
-      {
-        "feature": "product_D",
-        "shap_value": 0.9829539656639099,
-        "explanation": "Product D"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.3182470500469208,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.2295435220003128,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.164658322930336,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.12398146092891693,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.4341928958892822,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.353732705116272,
-        "explanation": "Diversidad de productos activos"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.09585806727409363,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": -0.0790264904499054,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.06617368757724762,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

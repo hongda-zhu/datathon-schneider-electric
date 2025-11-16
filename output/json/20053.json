@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "20053",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.04056943953037262,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.28909,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.04408643977505308,
-    "cust_hitrate": -0.22686,
-    "product_A_ratio": 0.4971785994376327
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -3.163325309753418,
-    "top_positive_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": 0.09266533702611923,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.08016592264175415,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.06872755289077759,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.03121621534228325,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "low_engagement_risk",
-        "shap_value": 0.00928834080696106,
-        "explanation": "Low Engagement Risk"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.6300594806671143,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.5910930633544922,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.3927304148674011,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.36806657910346985,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.3521439731121063,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

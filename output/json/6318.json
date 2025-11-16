@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "6318",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.004876239225268364,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.17424333333333333,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.055182137027926514,
-    "cust_hitrate": -1.01262,
-    "product_A_ratio": 0.7521921574301837
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -5.318491458892822,
-    "top_positive_factors": [
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.08611081540584564,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.07363022118806839,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.020349707454442978,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.015590875409543514,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.014466294087469578,
-        "explanation": "Opp Age Squared"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -1.3138161897659302,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.5942959785461426,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.5197157263755798,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.5150581002235413,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.5128442645072937,
-        "explanation": "Contract Hitrate Ratio"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

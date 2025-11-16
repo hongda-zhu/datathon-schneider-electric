@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "5642",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9847162961959839,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.04686666666666669,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.12629003761141194,
-    "cust_hitrate": 0.52155,
-    "product_A_ratio": -0.04028740597147012
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 4.165563583374023,
-    "top_positive_factors": [
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.7522306442260742,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.6230942010879517,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.4817582666873932,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.39215901494026184,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.37787115573883057,
-        "explanation": "Engagement de clientes de Iberia"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_month",
-        "shap_value": -0.16587252914905548,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.07127873599529266,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": -0.053728438913822174,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.033357903361320496,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.0316302552819252,
-        "explanation": "Competition Engagement"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

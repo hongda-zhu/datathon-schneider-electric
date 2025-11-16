@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "7173",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.19896921515464783,
-    "threshold": 0.2624979317188263,
-    "confidence": "Low"
-  },
-  "key_features": {
-    "customer_activity": -0.24738000000000002,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.08941222730118971,
-    "cust_hitrate": -0.02565,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -1.3927502632141113,
-    "top_positive_factors": [
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.41106465458869934,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.20397400856018066,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.13999755680561066,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": 0.10336171835660934,
-        "explanation": "Competitor Y"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.09761148691177368,
-        "explanation": "Competition Engagement"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.5534259080886841,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.39238715171813965,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.38251516222953796,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.2988377511501312,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.251150906085968,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

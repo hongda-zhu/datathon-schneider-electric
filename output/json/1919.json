@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "1919",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.9798434376716614,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.4157100000000001,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.5795903811953832,
-    "cust_hitrate": 0.75724,
-    "product_A_ratio": 0.5692634529884579
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.883861780166626,
-    "top_positive_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.6439374089241028,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.4060846269130707,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.39506295323371887,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.30879902839660645,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": 0.2906036078929901,
-        "explanation": "Competencia en clientes de Iberia"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.0858064591884613,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.04666624963283539,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": -0.020092720165848732,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.004448545165359974,
-        "explanation": "Diversidad de productos activos"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.0042107077315449715,
-        "explanation": "Contract Hitrate Ratio"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

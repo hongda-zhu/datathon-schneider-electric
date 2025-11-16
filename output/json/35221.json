@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "35221",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.5468728542327881,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 0.2514766666666667,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.13335190601566405,
-    "cust_hitrate": -0.52885,
-    "product_A_ratio": 0.5414097650391602
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 0.18804305791854858,
-    "top_positive_factors": [
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.300312340259552,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.22056643664836884,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.16360816359519958,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.09849389642477036,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.08235476911067963,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.4553664028644562,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.26989537477493286,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.2595134377479553,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.1295897364616394,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.03437785431742668,
-        "explanation": "Cust In Iberia"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Nurture",
-    "priority": "Medium",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Nurture",
+        "priority": "Medium",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

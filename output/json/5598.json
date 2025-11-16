@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "5598",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.020931264385581017,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.20287000000000002,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.2535033519127211,
-    "cust_hitrate": -1.1667,
-    "product_A_ratio": 0.3934191202181971
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -3.8453609943389893,
-    "top_positive_factors": [
-      {
-        "feature": "opp_month",
-        "shap_value": 0.19014258682727814,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.12461425364017487,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": 0.06884936988353729,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.06729511171579361,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.06552620977163315,
-        "explanation": "Hitrate Contracts"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competition_risk",
-        "shap_value": -1.1169167757034302,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.785943329334259,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.5702320337295532,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.3821146488189697,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.3182867765426636,
-        "explanation": "Engagement de clientes de Iberia"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "526",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.06082852557301521,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.15904666666666664,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.09919622730118971,
-    "cust_hitrate": -0.08137,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -2.7369401454925537,
-    "top_positive_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": 0.08590075373649597,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.030947377905249596,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.029998501762747765,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "opp_maturity",
-        "shap_value": 0.010125748813152313,
-        "explanation": "Madurez de la oportunidad"
-      },
-      {
-        "feature": "product_A_recommended",
-        "shap_value": 0.003197477199137211,
-        "explanation": "Product A Recommended"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.7733818888664246,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.616137683391571,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.43179649114608765,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.27533426880836487,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.14490121603012085,
-        "explanation": "Product B Sold In The Past"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

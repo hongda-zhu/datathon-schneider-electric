@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "13899",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.6619636416435242,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.3256966666666667,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.09684494858611824,
-    "cust_hitrate": 0.05458,
-    "product_A_ratio": 0.4454498714652956
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 0.6720576882362366,
-    "top_positive_factors": [
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.4616203010082245,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.2970787286758423,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.15817591547966003,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.13377204537391663,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.1318577080965042,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.272055983543396,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.19979681074619293,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.10948667675256729,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.10346964746713638,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.09030276536941528,
-        "explanation": "Cust In Iberia"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Nurture",
-    "priority": "Medium",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Nurture",
+        "priority": "Medium",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

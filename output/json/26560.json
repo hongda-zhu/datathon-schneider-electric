@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "26560",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.3564998507499695,
-    "threshold": 0.2624979317188263,
-    "confidence": "Low"
-  },
-  "key_features": {
-    "customer_activity": 0.3604266666666667,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.698681282527881,
-    "cust_hitrate": -0.11271,
-    "product_A_ratio": -1.9324907063197023
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -0.5905883312225342,
-    "top_positive_factors": [
-      {
-        "feature": "iberia_competition",
-        "shap_value": 0.17004536092281342,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.15061603486537933,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.14649420976638794,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.11528050899505615,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.10081566870212555,
-        "explanation": "Hitrate Contracts"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.383485347032547,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.31135043501853943,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.2607000470161438,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.19950571656227112,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.10790306329727173,
-        "explanation": "Competitor Z"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

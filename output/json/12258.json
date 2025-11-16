@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "12258",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.02025005966424942,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 0.94347,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.5722461283360718,
-    "cust_hitrate": -0.57495,
-    "product_A_ratio": 1.1542253208401794
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -3.8791396617889404,
-    "top_positive_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.6660624742507935,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.10590663552284241,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.05011514946818352,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.03120189905166626,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "low_engagement_risk",
-        "shap_value": 0.017127228900790215,
-        "explanation": "Low Engagement Risk"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.8973180055618286,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": -0.8231573104858398,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.7503932118415833,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.5696130394935608,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": -0.4389675259590149,
-        "explanation": "Opp Age Squared"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

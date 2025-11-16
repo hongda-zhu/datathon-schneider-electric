@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "25031",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.00948109570890665,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 0.3160633333333333,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.8506061327936073,
-    "cust_hitrate": 0.6974,
-    "product_A_ratio": 1.3664178319840183
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -4.648925304412842,
-    "top_positive_factors": [
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.19387373328208923,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.06329221278429031,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.021159743890166283,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": 0.009569508954882622,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "low_engagement_risk",
-        "shap_value": 0.007391301915049553,
-        "explanation": "Low Engagement Risk"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.916840136051178,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.6335667371749878,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.528587281703949,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": -0.5215116739273071,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.5122528672218323,
-        "explanation": "Opp Month"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

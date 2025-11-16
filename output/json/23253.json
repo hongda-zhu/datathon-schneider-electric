@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "23253",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9752985239028931,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.044496666666666664,
-    "total_competitors": 2.0,
-    "opp_quality_score": 0.4274262273011897,
-    "cust_hitrate": 0.89818,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.675879716873169,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 1.2658859491348267,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": 1.0812164545059204,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.6098034977912903,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.5056846737861633,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.4458911716938019,
-        "explanation": "Riesgo asociado a la competencia"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": -1.1892650127410889,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": -0.2965899705886841,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.26300132274627686,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.09256310760974884,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "opp_maturity",
-        "shap_value": -0.0739351436495781,
-        "explanation": "Madurez de la oportunidad"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

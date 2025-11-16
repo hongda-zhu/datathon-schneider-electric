@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "14140",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9993749260902405,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 1.79728,
-    "total_competitors": 2.0,
-    "opp_quality_score": 1.9782198737758434,
-    "cust_hitrate": 1.65424,
-    "product_A_ratio": 2.3569096844396085
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 7.376965045928955,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 1.497316837310791,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 1.3355984687805176,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.5859299898147583,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.5732783079147339,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.5077418088912964,
-        "explanation": "N\u00famero de contratos con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.11282667517662048,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.07567834854125977,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.062461141496896744,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "competitor_diversity",
-        "shap_value": -0.03329651057720184,
-        "explanation": "Diversidad de competidores en la oferta"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.030265694484114647,
-        "explanation": "Competitor Z"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

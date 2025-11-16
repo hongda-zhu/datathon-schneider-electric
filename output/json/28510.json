@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "28510",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.2693314552307129,
-    "threshold": 0.2624979317188263,
-    "confidence": "Low"
-  },
-  "key_features": {
-    "customer_activity": 0.22611666666666663,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.19722298733020266,
-    "cust_hitrate": 0.2835,
-    "product_A_ratio": 0.11084496832550665
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -0.9980173707008362,
-    "top_positive_factors": [
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.2667771279811859,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.2281588912010193,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.15033428370952606,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.0820956826210022,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.06932112574577332,
-        "explanation": "Contract Hitrate Ratio"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "product_A",
-        "shap_value": -0.41036516427993774,
-        "explanation": "Product A"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.38131818175315857,
-        "explanation": "Diversidad de productos activos"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.26459211111068726,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": -0.26186472177505493,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.2357381135225296,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

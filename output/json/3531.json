@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "3531",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9209802746772766,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.6503099999999999,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.4981112273011897,
-    "cust_hitrate": 0.43899,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 2.4557414054870605,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.4935304522514343,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.37506163120269775,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.357571005821228,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.31314247846603394,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.26726099848747253,
-        "explanation": "Hitrate Contracts"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.11244838684797287,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.08834721148014069,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.06742384284734726,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.018413294106721878,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.007849358022212982,
-        "explanation": "Diversidad de productos activos"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

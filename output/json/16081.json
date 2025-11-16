@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "16081",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.007546259090304375,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 0.19554333333333332,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.2700079061576646,
-    "cust_hitrate": 0.73797,
-    "product_A_ratio": -0.025115234605838553
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -4.879126071929932,
-    "top_positive_factors": [
-      {
-        "feature": "opp_month",
-        "shap_value": 0.07821666449308395,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.04896365851163864,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.047810815274715424,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.03762609139084816,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.014706647954881191,
-        "explanation": "Opp Age Squared"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.9060739874839783,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.861965000629425,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.5702010989189148,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.39787593483924866,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.39051181077957153,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

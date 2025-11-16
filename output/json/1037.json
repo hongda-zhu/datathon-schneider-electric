@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "1037",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.049983032047748566,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.5154233333333335,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.3333157726988103,
-    "cust_hitrate": -1.1667,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -2.9447991847991943,
-    "top_positive_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": 0.09032972157001495,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.07415711134672165,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.028568407520651817,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "product_A_recommended",
-        "shap_value": 0.017237192019820213,
-        "explanation": "Product A Recommended"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.01649218238890171,
-        "explanation": "Competitor Z"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.6845491528511047,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.5793913006782532,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.5179106593132019,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.3036406636238098,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.23590180277824402,
-        "explanation": "Nivel global de actividad del cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

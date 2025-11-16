@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "31656",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.7587945461273193,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.7255433333333333,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.3963517726988103,
-    "cust_hitrate": -1.1667,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 1.1460816860198975,
-    "top_positive_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.46121421456336975,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.3506324291229248,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.27285951375961304,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.24814076721668243,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.22905272245407104,
-        "explanation": "Competition Engagement"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.32634174823760986,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.12929125130176544,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.1210661232471466,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.09966736286878586,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.08635223656892776,
-        "explanation": "Score agregado de calidad de oportunidad"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

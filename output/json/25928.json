@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "25928",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.2656719386577606,
-    "threshold": 0.2624979317188263,
-    "confidence": "Low"
-  },
-  "key_features": {
-    "customer_activity": -0.5306933333333332,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.15600977269881022,
-    "cust_hitrate": -0.56041,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -1.0166945457458496,
-    "top_positive_factors": [
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.21454952657222748,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.09297774732112885,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.07591336965560913,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.06608051061630249,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.04449442774057388,
-        "explanation": "Engagement de clientes de Iberia"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.7831196784973145,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.42438292503356934,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.25654056668281555,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.08158966153860092,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.055787015706300735,
-        "explanation": "Product B Sold In The Past"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

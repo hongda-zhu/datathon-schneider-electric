@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "35657",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.014933205209672451,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 0.38651333333333343,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.5366818824689515,
-    "cust_hitrate": 0.85441,
-    "product_A_ratio": 0.4110122061723789
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -4.1891188621521,
-    "top_positive_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": 0.06767941266298294,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.03144637495279312,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.02602112479507923,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "opp_maturity",
-        "shap_value": 0.008547973819077015,
-        "explanation": "Madurez de la oportunidad"
-      },
-      {
-        "feature": "low_engagement_risk",
-        "shap_value": 0.004138825461268425,
-        "explanation": "Low Engagement Risk"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.7172724604606628,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.6654186248779297,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.439257949590683,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.36232173442840576,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.3460010290145874,
-        "explanation": "Product A Sold In The Past"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

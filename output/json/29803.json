@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "29803",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.010824829339981079,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 0.8449400000000001,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.28836922730118975,
-    "cust_hitrate": -0.45478,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -4.515030384063721,
-    "top_positive_factors": [
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.23441538214683533,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.07036644965410233,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.0579972006380558,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.04408548027276993,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": 0.008716684766113758,
-        "explanation": "Hitrate Interaction"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": -1.7508163452148438,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.45136985182762146,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.41057920455932617,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.40823328495025635,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": -0.39179396629333496,
-        "explanation": "Opp Age Squared"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "34030",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Win",
-    "win_probability": 0.06935179978609085,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 1.0926166666666666,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.8235322273011896,
-    "cust_hitrate": 1.08142,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -2.596689462661743,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.12567582726478577,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.11311624199151993,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.07617383450269699,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.027377665042877197,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.02214941196143627,
-        "explanation": "Cust In Iberia"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.8208272457122803,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.6343186497688293,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.39711132645606995,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.20434348285198212,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.15165302157402039,
-        "explanation": "Competition Engagement"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

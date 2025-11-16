@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "17344",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.5999242067337036,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.73279,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.386436634124828,
-    "cust_hitrate": -1.1667,
-    "product_A_ratio": 0.45852591468792997
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 0.4051498472690582,
-    "top_positive_factors": [
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.24946804344654083,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.20116423070430756,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.19472499191761017,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.18382501602172852,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.10155817866325378,
-        "explanation": "Contract Hitrate Ratio"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.3094228506088257,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.18056322634220123,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.16534052789211273,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": -0.04096662998199463,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.02575838379561901,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Nurture",
-    "priority": "Medium",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Nurture",
+        "priority": "Medium",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

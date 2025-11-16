@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "24487",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.6547753810882568,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 1.6515733333333333,
-    "total_competitors": 2.0,
-    "opp_quality_score": 1.1860692273011897,
-    "cust_hitrate": 1.73092,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 0.6400973796844482,
-    "top_positive_factors": [
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.6929597854614258,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.6733113527297974,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.32929250597953796,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.2726171016693115,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.2459588497877121,
-        "explanation": "Nivel global de actividad del cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.7552306056022644,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.42588260769844055,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.2669931650161743,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.1628992110490799,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.14509360492229462,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Nurture",
-    "priority": "Medium",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Nurture",
+        "priority": "Medium",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

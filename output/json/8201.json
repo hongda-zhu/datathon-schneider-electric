@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "8201",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.3111068904399872,
-    "threshold": 0.2624979317188263,
-    "confidence": "Low"
-  },
-  "key_features": {
-    "customer_activity": 0.04366666666666668,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.25442022730118974,
-    "cust_hitrate": 0.23333,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -0.7949495315551758,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.20382964611053467,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.10112307965755463,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.09205955266952515,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.06238957494497299,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.04648770019412041,
-        "explanation": "Competitor Z"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.2686154842376709,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.2534200847148895,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.22385266423225403,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.18095681071281433,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.11403097212314606,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

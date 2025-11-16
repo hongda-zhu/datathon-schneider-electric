@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "22547",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9937194585800171,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.12157999999999998,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.5768092038688227,
-    "cust_hitrate": 1.14644,
-    "product_A_ratio": 0.4910080096720568
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 5.063992500305176,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.8672345876693726,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.541724681854248,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.4156401455402374,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": 0.3214731514453888,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.3073679208755493,
-        "explanation": "Hitrate Contracts"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.061166927218437195,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.02981787919998169,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "product_D",
-        "shap_value": -0.0014913111226633191,
-        "explanation": "Product D"
-      },
-      {
-        "feature": "competitor_diversity",
-        "shap_value": -0.0009924486512318254,
-        "explanation": "Diversidad de competidores en la oferta"
-      },
-      {
-        "feature": "product_count",
-        "shap_value": -0.0003791416820604354,
-        "explanation": "N\u00famero de l\u00edneas de producto en la oportunidad"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

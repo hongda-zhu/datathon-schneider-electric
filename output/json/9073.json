@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "9073",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.007961561903357506,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 0.0780466666666667,
-    "total_competitors": 2.0,
-    "opp_quality_score": -0.016500772698810257,
-    "cust_hitrate": -0.70412,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -4.825135707855225,
-    "top_positive_factors": [
-      {
-        "feature": "opp_month",
-        "shap_value": 0.1538480818271637,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.12258626520633698,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.029642855748534203,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "has_competition",
-        "shap_value": 0.023176798596978188,
-        "explanation": "Indicador de presencia de competencia"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.020524855703115463,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -1.1579452753067017,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.5831071734428406,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.5675403475761414,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.5337185859680176,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "product_A_recommended",
-        "shap_value": -0.5127339959144592,
-        "explanation": "Product A Recommended"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

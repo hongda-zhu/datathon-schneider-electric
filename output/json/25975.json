@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "25975",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9718776345252991,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 1.618103333333333,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.6186642273011895,
-    "cust_hitrate": -0.12696,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.54266357421875,
-    "top_positive_factors": [
-      {
-        "feature": "opp_month",
-        "shap_value": 0.503417432308197,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.4337273836135864,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.4172399044036865,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.40592604875564575,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.38072869181632996,
-        "explanation": "Score agregado de calidad de oportunidad"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.13553978502750397,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.031475577503442764,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.022327521815896034,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": -0.010707750916481018,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.0071521662175655365,
-        "explanation": "Hitrate Interaction"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

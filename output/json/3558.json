@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "3558",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.03045603260397911,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.32439333333333337,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.15950777269881028,
-    "cust_hitrate": -0.77837,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -3.4605419635772705,
-    "top_positive_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": 0.08234245330095291,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.06132890656590462,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": 0.037882208824157715,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.026928216218948364,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": 0.017368759959936142,
-        "explanation": "Hitrate Interaction"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -1.0265402793884277,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.5013126730918884,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": -0.4889132082462311,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.3852734863758087,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.34178391098976135,
-        "explanation": "Opp Month"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

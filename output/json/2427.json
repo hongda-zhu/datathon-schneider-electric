@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "2427",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9894058108329773,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.2586766666666666,
-    "total_competitors": 0.0,
-    "opp_quality_score": 1.7844888044684013,
-    "cust_hitrate": 0.74261,
-    "product_A_ratio": 3.7102570111710036
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 4.536807060241699,
-    "top_positive_factors": [
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.6751904487609863,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.6188027262687683,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.5417195558547974,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": 0.4958847761154175,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.43810147047042847,
-        "explanation": "Score agregado de calidad de oportunidad"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "iberia_competition",
-        "shap_value": -0.02642836794257164,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": -0.003016715170815587,
-        "explanation": "Product A"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": -0.0018258391646668315,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "has_past_sales",
-        "shap_value": -0.001332031679339707,
-        "explanation": "Has Past Sales"
-      },
-      {
-        "feature": "product_D",
-        "shap_value": -0.0013009272515773773,
-        "explanation": "Product D"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

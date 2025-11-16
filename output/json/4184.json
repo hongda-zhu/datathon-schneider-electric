@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "4184",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.8098021149635315,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 2.7856166666666664,
-    "total_competitors": 0.0,
-    "opp_quality_score": 1.4389282273011896,
-    "cust_hitrate": 1.43974,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 1.4487242698669434,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.7823787331581116,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.4371272921562195,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.39764249324798584,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.2597435712814331,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.17809227108955383,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.2723342776298523,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.2272876799106598,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": -0.13051478564739227,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.10931818187236786,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.09233586490154266,
-        "explanation": "Product B Sold In The Past"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

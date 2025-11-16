@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "18833",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9684158563613892,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.10949999999999997,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.28294687785929756,
-    "cust_hitrate": -0.36789,
-    "product_A_ratio": 0.9011596946482439
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.4230024814605713,
-    "top_positive_factors": [
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": 0.5439410209655762,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.5231288075447083,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.49774646759033203,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.490198016166687,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.4163708984851837,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.23596541583538055,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.17346671223640442,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": -0.10773476958274841,
-        "explanation": "Competitor Y"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.018659893423318863,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": -0.012953483499586582,
-        "explanation": "N\u00famero de contratos con el cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "3190",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9846788644790649,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.4837000000000001,
-    "total_competitors": 2.0,
-    "opp_quality_score": 0.6851929235838825,
-    "cust_hitrate": 1.22205,
-    "product_A_ratio": 0.43366980895970636
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 4.163079738616943,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.819391667842865,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.7050576210021973,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.43903976678848267,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.43748733401298523,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.4064447283744812,
-        "explanation": "Contract Hitrate Ratio"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.36068108677864075,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.1877230852842331,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.10896811634302139,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.03233242407441139,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.027848614379763603,
-        "explanation": "Riesgo asociado a la competencia"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

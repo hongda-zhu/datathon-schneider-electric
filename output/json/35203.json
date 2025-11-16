@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "35203",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.22988881170749664,
-    "threshold": 0.2624979317188263,
-    "confidence": "Low"
-  },
-  "key_features": {
-    "customer_activity": -0.5695333333333333,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.20261777269881032,
-    "cust_hitrate": -0.67693,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -1.208939790725708,
-    "top_positive_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.2774871587753296,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.214621901512146,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.09443608671426773,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.07118838280439377,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.053083471953868866,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_month",
-        "shap_value": -0.6120535731315613,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.5409210920333862,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.2688571512699127,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.2262411117553711,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": -0.18506956100463867,
-        "explanation": "Hitrate Contracts"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

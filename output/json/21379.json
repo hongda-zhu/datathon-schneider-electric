@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "21379",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.011575174517929554,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.14513,
-    "total_competitors": 0.0,
-    "opp_quality_score": 1.2433250377358491,
-    "cust_hitrate": -0.01234,
-    "product_A_ratio": 3.2264150943396226
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -4.44724702835083,
-    "top_positive_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": 0.0850079134106636,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.042082153260707855,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.025240318849682808,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.02303343079984188,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "opp_maturity",
-        "shap_value": 0.009393896907567978,
-        "explanation": "Madurez de la oportunidad"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -1.072096347808838,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.7349441647529602,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.4749928414821625,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.39295026659965515,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.3826870918273926,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

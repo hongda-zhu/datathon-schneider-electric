@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "19266",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.7467462420463562,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.40714333333333336,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.4924662273011897,
-    "cust_hitrate": 0.66334,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 1.0813326835632324,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.7284811735153198,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.3601878583431244,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.2832963466644287,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.09841490536928177,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.08772114664316177,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_month",
-        "shap_value": -0.27776437997817993,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.15546290576457977,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.07459325343370438,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.06933926790952682,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.06438928097486496,
-        "explanation": "Score agregado de calidad de oportunidad"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

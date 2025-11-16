@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "1660",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.02374224364757538,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.2568066666666667,
-    "total_competitors": 2.0,
-    "opp_quality_score": 0.1204872273011897,
-    "cust_hitrate": 0.08736,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -3.7164716720581055,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.14167021214962006,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.09827157109975815,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.07006774097681046,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.019573364406824112,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.017983872443437576,
-        "explanation": "Cust In Iberia"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.7279568314552307,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.6568424105644226,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.5629995465278625,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.38999608159065247,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.27427124977111816,
-        "explanation": "Product B Sold In The Past"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

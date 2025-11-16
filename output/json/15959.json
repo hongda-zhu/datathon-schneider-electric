@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "15959",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.020966438576579094,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 1.47227,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.4575392273011897,
-    "cust_hitrate": -0.51821,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -3.8436427116394043,
-    "top_positive_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.15102651715278625,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.10729250311851501,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": 0.08172082901000977,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.04943681135773659,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.03045230731368065,
-        "explanation": "Competitor Z"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": -1.6796334981918335,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.4882655143737793,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.4257195293903351,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": -0.37219077348709106,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.30826160311698914,
-        "explanation": "Nivel global de actividad del cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

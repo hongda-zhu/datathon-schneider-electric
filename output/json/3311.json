@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "3311",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.017457813024520874,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.5516033333333333,
-    "total_competitors": 2.0,
-    "opp_quality_score": -1.1763840181923744,
-    "cust_hitrate": -1.13395,
-    "product_A_ratio": -1.6767950454809362
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -4.030357837677002,
-    "top_positive_factors": [
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.1864989548921585,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.07812346518039703,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.05101983994245529,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.023658612743020058,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "low_engagement_risk",
-        "shap_value": 0.013252440840005875,
-        "explanation": "Low Engagement Risk"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -1.145211100578308,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.6558749675750732,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.39946070313453674,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.38051310181617737,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.3134915232658386,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "30080",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9481745362281799,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.3996366666666667,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.026741873968852886,
-    "cust_hitrate": -0.16724,
-    "product_A_ratio": 0.35830281507786776
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 2.906653642654419,
-    "top_positive_factors": [
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.44854867458343506,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.34339168667793274,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.280746728181839,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.242373988032341,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.23309724032878876,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.10040698200464249,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "competitor_X",
-        "shap_value": -0.049938805401325226,
-        "explanation": "Competitor X"
-      },
-      {
-        "feature": "competitor_diversity",
-        "shap_value": -0.014659786596894264,
-        "explanation": "Diversidad de competidores en la oferta"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.010600804351270199,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": -0.010153751820325851,
-        "explanation": "Competitor Y"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

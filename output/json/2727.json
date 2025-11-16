@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "2727",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.41446641087532043,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 0.1741666666666667,
-    "total_competitors": 2.0,
-    "opp_quality_score": 0.6898222273011897,
-    "cust_hitrate": 1.55417,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -0.3455313444137573,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.6326231956481934,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.34555700421333313,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.17924895882606506,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.17067399621009827,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.03236611932516098,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.488169401884079,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.26996245980262756,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.2561468183994293,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.17431609332561493,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.1373097002506256,
-        "explanation": "Product B Sold In The Past"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Nurture",
-    "priority": "Medium",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Nurture",
+        "priority": "Medium",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

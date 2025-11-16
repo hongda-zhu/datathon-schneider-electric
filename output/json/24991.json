@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "24991",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9912051558494568,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.08264333333333335,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.2864838594842736,
-    "cust_hitrate": 0.53377,
-    "product_A_ratio": 0.37786464871068387
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 4.724758148193359,
-    "top_positive_factors": [
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.6041590571403503,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": 0.5658906102180481,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.5385895371437073,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.48215141892433167,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.3721452057361603,
-        "explanation": "Nivel global de actividad del cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.01016332022845745,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.006981686223298311,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": -0.0050042904913425446,
-        "explanation": "Product A"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.003313979599624872,
-        "explanation": "Diversidad de productos activos"
-      },
-      {
-        "feature": "product_D",
-        "shap_value": -0.0009905077749863267,
-        "explanation": "Product D"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

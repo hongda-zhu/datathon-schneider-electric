@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "15091",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.3516508936882019,
-    "threshold": 0.2624979317188263,
-    "confidence": "Low"
-  },
-  "key_features": {
-    "customer_activity": -0.73279,
-    "total_competitors": 2.0,
-    "opp_quality_score": -0.3985257726988103,
-    "cust_hitrate": -1.1667,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -0.6117899417877197,
-    "top_positive_factors": [
-      {
-        "feature": "opp_month",
-        "shap_value": 0.4084946811199188,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.15806050598621368,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.12403244525194168,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.11100010573863983,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.09914165735244751,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.6358059048652649,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.29106810688972473,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.2426358312368393,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": -0.19160109758377075,
-        "explanation": "Competitor Y"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.12546154856681824,
-        "explanation": "Nivel global de actividad del cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

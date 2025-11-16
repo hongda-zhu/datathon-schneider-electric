@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "16116",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.02909020520746708,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.002056666666666651,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.10339922730118972,
-    "cust_hitrate": -0.22435,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -3.507830858230591,
-    "top_positive_factors": [
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.1552932858467102,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.07837008684873581,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.06769531965255737,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.03188733756542206,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.025865567848086357,
-        "explanation": "Competitor Z"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "product_A_recommended",
-        "shap_value": -1.043227195739746,
-        "explanation": "Product A Recommended"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.9867637753486633,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.7271367907524109,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.5607601404190063,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.17663435637950897,
-        "explanation": "Nivel global de actividad del cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

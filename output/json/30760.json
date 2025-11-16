@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "30760",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.03293652832508087,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 0.54604,
-    "total_competitors": 2.0,
-    "opp_quality_score": 0.6891881732351108,
-    "cust_hitrate": 1.00694,
-    "product_A_ratio": 0.5582354330877773
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -3.379680871963501,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.20706059038639069,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.18524114787578583,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.08180873841047287,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.061255309730768204,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.019609151408076286,
-        "explanation": "Opp Age Squared"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.6184104681015015,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.4472789466381073,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.406438946723938,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.3482164442539215,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.34603193402290344,
-        "explanation": "Nivel global de actividad del cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

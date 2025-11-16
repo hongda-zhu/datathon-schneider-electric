@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "23756",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.8252168893814087,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.28018000000000004,
-    "total_competitors": 2.0,
-    "opp_quality_score": 0.7746512273011896,
-    "cust_hitrate": 1.73092,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 1.5521001815795898,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.8532348871231079,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.23184287548065186,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.21878394484519958,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.21275395154953003,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.12535806000232697,
-        "explanation": "Engagement de clientes de Iberia"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.2147739827632904,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.20460905134677887,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.1360405832529068,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": -0.06786748766899109,
-        "explanation": "Competitor Y"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.04972212761640549,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

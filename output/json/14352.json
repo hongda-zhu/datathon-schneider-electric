@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "14352",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.4509521424770355,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.3614833333333333,
-    "total_competitors": 2.0,
-    "opp_quality_score": 0.047042227301189704,
-    "cust_hitrate": -0.05278,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -0.19682440161705017,
-    "top_positive_factors": [
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.4369284212589264,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.15275990962982178,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.11344235390424728,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": 0.10426951199769974,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.0756903737783432,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.34832102060317993,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.1552814394235611,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.15487220883369446,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.15468080341815948,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.13001219928264618,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Nurture",
-    "priority": "Medium",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Nurture",
+        "priority": "Medium",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

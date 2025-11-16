@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "16648",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9994283318519592,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.5670499999999999,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.966504648470224,
-    "cust_hitrate": 1.46101,
-    "product_A_ratio": 0.8952166211755603
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 7.466392517089844,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 1.4261494874954224,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.8693304061889648,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": 0.6562287211418152,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.5886101722717285,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.49777594208717346,
-        "explanation": "N\u00famero de contratos con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.33156782388687134,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "low_engagement_risk",
-        "shap_value": -0.03191748261451721,
-        "explanation": "Low Engagement Risk"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.015964467078447342,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": -0.008115134201943874,
-        "explanation": "Product A"
-      },
-      {
-        "feature": "has_past_sales",
-        "shap_value": -0.002202115021646023,
-        "explanation": "Has Past Sales"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

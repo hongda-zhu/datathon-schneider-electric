@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "31166",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.00933612510561943,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 0.84725,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.5943662273011897,
-    "cust_hitrate": 0.5629,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -4.664484977722168,
-    "top_positive_factors": [
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.24279092252254486,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.12377616763114929,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.04083671793341637,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.02386312372982502,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": 0.019122904166579247,
-        "explanation": "Competitor Y"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": -2.497281551361084,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": -0.6822954416275024,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.2845972180366516,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.28249645233154297,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "opp_maturity",
-        "shap_value": -0.19014953076839447,
-        "explanation": "Madurez de la oportunidad"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

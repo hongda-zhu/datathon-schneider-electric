@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "26249",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.4649442732334137,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.16132999999999997,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.3908253469976181,
-    "cust_hitrate": -0.6587,
-    "product_A_ratio": -0.36204086749404535
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -0.14045366644859314,
-    "top_positive_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.32543352246284485,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.22905108332633972,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.18872536718845367,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.12847810983657837,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.12155918776988983,
-        "explanation": "Opp Month"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.527908205986023,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.3025779128074646,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.2123541235923767,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.19261348247528076,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.1280800998210907,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Nurture",
-    "priority": "Medium",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Nurture",
+        "priority": "Medium",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

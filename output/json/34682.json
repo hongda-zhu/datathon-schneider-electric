@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "34682",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.056062016636133194,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 0.43958,
-    "total_competitors": 1.0,
-    "opp_quality_score": 1.165551595963926,
-    "cust_hitrate": 1.73092,
-    "product_A_ratio": 1.2860039899098148
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -2.823604106903076,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.4880945682525635,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.14435414969921112,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.06763569265604019,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.04362906143069267,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.01703370362520218,
-        "explanation": "Opp Age Squared"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.7790514826774597,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.44872531294822693,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.42909035086631775,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.3576106131076813,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.3494403064250946,
-        "explanation": "Opp Month"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

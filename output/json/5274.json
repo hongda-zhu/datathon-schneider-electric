@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "5274",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.04534974321722984,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.7184966666666667,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.2650317760391613,
-    "cust_hitrate": -1.14556,
-    "product_A_ratio": 0.7354630599020967
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -3.046942710876465,
-    "top_positive_factors": [
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.17118851840496063,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.16617681086063385,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.12873411178588867,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.08771112561225891,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": 0.07859460264444351,
-        "explanation": "Competencia en clientes de Iberia"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -1.1332863569259644,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.51405930519104,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.4210033714771271,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.41992008686065674,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.38786351680755615,
-        "explanation": "Score agregado de calidad de oportunidad"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

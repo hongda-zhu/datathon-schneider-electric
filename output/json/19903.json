@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "19903",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.8390734195709229,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.73279,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.4080873265373436,
-    "cust_hitrate": -1.1667,
-    "product_A_ratio": 0.404399183656641
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 1.6513493061065674,
-    "top_positive_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.31455764174461365,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.23757676780223846,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.23208728432655334,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.2149023860692978,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.12972865998744965,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.15842512249946594,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.07728459686040878,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": -0.0060758269391953945,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": -0.004651584662497044,
-        "explanation": "Product A"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": -0.004466933198273182,
-        "explanation": "Hitrate Contracts"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

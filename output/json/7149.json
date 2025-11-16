@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "7149",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9044666290283203,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.8633333333333333,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.9445092273011897,
-    "cust_hitrate": 1.71396,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 2.247870445251465,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.9601706266403198,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.48197171092033386,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.24067024886608124,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.19558614492416382,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.19448427855968475,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_month",
-        "shap_value": -0.32734525203704834,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.04832732677459717,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.02573992684483528,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.015854759141802788,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.013620579615235329,
-        "explanation": "Hitrate Interaction"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

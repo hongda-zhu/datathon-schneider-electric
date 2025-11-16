@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "16382",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.013238622806966305,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 1.0210266666666667,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.7637062273011898,
-    "cust_hitrate": 0.95359,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -4.311287879943848,
-    "top_positive_factors": [
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.20849913358688354,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": 0.1876346915960312,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.18294741213321686,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": 0.14020350575447083,
-        "explanation": "Competitor Y"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.07147955894470215,
-        "explanation": "Riesgo asociado a la competencia"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": -1.8772791624069214,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": -0.5710076689720154,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.4012877941131592,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.36283284425735474,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.36051854491233826,
-        "explanation": "Nivel global de actividad del cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

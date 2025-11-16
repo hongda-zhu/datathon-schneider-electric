@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "9467",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.004378268960863352,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.6922266666666667,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.34984977269881024,
-    "cust_hitrate": -1.04501,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -5.4267096519470215,
-    "top_positive_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": 0.06953316926956177,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": 0.051252588629722595,
-        "explanation": "Competitor Y"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.040691398084163666,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.03455333784222603,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.03143088519573212,
-        "explanation": "Riesgo asociado a la competencia"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "product_A_recommended",
-        "shap_value": -1.7392174005508423,
-        "explanation": "Product A Recommended"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -1.0318206548690796,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.8329570889472961,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.31130245327949524,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.29475224018096924,
-        "explanation": "Score agregado de calidad de oportunidad"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

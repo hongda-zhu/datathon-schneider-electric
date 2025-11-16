@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "4188",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.30545759201049805,
-    "threshold": 0.2624979317188263,
-    "confidence": "Low"
-  },
-  "key_features": {
-    "customer_activity": 0.0011466666666667031,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.005270227301189728,
-    "cust_hitrate": -0.55465,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -0.8214411735534668,
-    "top_positive_factors": [
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.13279275596141815,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.12869836390018463,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.09425341337919235,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.09036237746477127,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.08543507754802704,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.3156483471393585,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.2991529107093811,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.23416249454021454,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.21096651256084442,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.19884981215000153,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

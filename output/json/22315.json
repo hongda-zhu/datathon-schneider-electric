@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "22315",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.8185327649116516,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 1.45677,
-    "total_competitors": 0.0,
-    "opp_quality_score": 1.1214006449918819,
-    "cust_hitrate": 1.58657,
-    "product_A_ratio": 0.520996612479705
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 1.5064384937286377,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.8585125803947449,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.5506806373596191,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.525088369846344,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.4206928610801697,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.21104979515075684,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.3237084150314331,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.28142914175987244,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.26010558009147644,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.20978917181491852,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.10759241878986359,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

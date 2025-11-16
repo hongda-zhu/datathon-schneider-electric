@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "16457",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.029994869604706764,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 0.6884799999999999,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.12863302049826708,
-    "cust_hitrate": -0.47878,
-    "product_A_ratio": 0.16430755124566776
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -3.476275682449341,
-    "top_positive_factors": [
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.4200060963630676,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.16989389061927795,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.08919981867074966,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.07385970652103424,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": 0.047453686594963074,
-        "explanation": "Product A Sold In The Past"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_interactions",
-        "shap_value": -1.018279790878296,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.7541948556900024,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.43322262167930603,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.4117223918437958,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.32984063029289246,
-        "explanation": "Opp Month"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "25743",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.24689944088459015,
-    "threshold": 0.2624979317188263,
-    "confidence": "Low"
-  },
-  "key_features": {
-    "customer_activity": -0.2559633333333333,
-    "total_competitors": 2.0,
-    "opp_quality_score": -0.18498677269881025,
-    "cust_hitrate": -0.93173,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -1.1152169704437256,
-    "top_positive_factors": [
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.23844724893569946,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.17805981636047363,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.1668315976858139,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.16574683785438538,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.07802493870258331,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.6050066947937012,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.4923793077468872,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": -0.18615372478961945,
-        "explanation": "Competitor Y"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.16485828161239624,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.13678507506847382,
-        "explanation": "Engagement de clientes de Iberia"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

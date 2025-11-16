@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "19680",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.03994663059711456,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.23829666666666668,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.18334977269881025,
-    "cust_hitrate": -0.94394,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -3.17944598197937,
-    "top_positive_factors": [
-      {
-        "feature": "opp_month",
-        "shap_value": 0.1836930364370346,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.08561813086271286,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.08185791224241257,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": 0.057640209794044495,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": 0.04234956577420235,
-        "explanation": "Competitor Y"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.9746087789535522,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.6647284626960754,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.6305986046791077,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.5290378928184509,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.229618638753891,
-        "explanation": "Contract Hitrate Ratio"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

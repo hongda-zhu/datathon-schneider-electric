@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "19381",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9382883906364441,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.26723,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.25517521269504617,
-    "cust_hitrate": -1.1667,
-    "product_A_ratio": 0.43750946826238446
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 2.7215845584869385,
-    "top_positive_factors": [
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.3658323287963867,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.3168115019798279,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.2887561619281769,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.28547149896621704,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.2622968554496765,
-        "explanation": "N\u00famero de contratos con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.05892734229564667,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.03238682076334953,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": -0.0060142637230455875,
-        "explanation": "Product A"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": -0.00599466310814023,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.004843042232096195,
-        "explanation": "Diversidad de productos activos"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "3586",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.9364011287689209,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.5624266666666667,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.7741912273011897,
-    "cust_hitrate": 1.44714,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 2.6894478797912598,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 1.0309107303619385,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.42533645033836365,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.20935824513435364,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.20584702491760254,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.17455700039863586,
-        "explanation": "N\u00famero de contratos con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.053873211145401,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.026963012292981148,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": -0.02399298921227455,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.020386692136526108,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "product_A_recommended",
-        "shap_value": -0.008377084508538246,
-        "explanation": "Product A Recommended"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "3020",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.775569498538971,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.14744666666666667,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.042597022050716644,
-    "cust_hitrate": -0.04103,
-    "product_A_ratio": 0.24785005512679162
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 1.2400314807891846,
-    "top_positive_factors": [
-      {
-        "feature": "product_A",
-        "shap_value": 1.1264761686325073,
-        "explanation": "Product A"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": 0.8880355358123779,
-        "explanation": "Diversidad de productos activos"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.26484739780426025,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.16176345944404602,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.12886221706867218,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.501817524433136,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.3357202410697937,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.30194056034088135,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.22602269053459167,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.18614162504673004,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

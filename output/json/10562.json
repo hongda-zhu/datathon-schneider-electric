@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "10562",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.19519449770450592,
-    "threshold": 0.2624979317188263,
-    "confidence": "Low"
-  },
-  "key_features": {
-    "customer_activity": 0.5061666666666667,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.7523932273011896,
-    "cust_hitrate": 1.43074,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -1.416604995727539,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.2972767651081085,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": 0.2659526765346527,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.17192761600017548,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.10823491960763931,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.083671934902668,
-        "explanation": "Cust In Iberia"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.5446336269378662,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.41541215777397156,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.3660798966884613,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.30025985836982727,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.3001604974269867,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "12293",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9529721736907959,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.6515466666666666,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.41657618904107363,
-    "cust_hitrate": -0.92297,
-    "product_A_ratio": 0.13944702739731582
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.008842706680298,
-    "top_positive_factors": [
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.7043262124061584,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.2815015912055969,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.23804490268230438,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.22824959456920624,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.2235439121723175,
-        "explanation": "Contract Hitrate Ratio"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.02439948543906212,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": -0.007696537766605616,
-        "explanation": "Product A"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.006671935319900513,
-        "explanation": "Diversidad de productos activos"
-      },
-      {
-        "feature": "product_D",
-        "shap_value": -0.002605288755148649,
-        "explanation": "Product D"
-      },
-      {
-        "feature": "has_past_sales",
-        "shap_value": -0.0020294778514653444,
-        "explanation": "Has Past Sales"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "34071",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.02832295000553131,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.54461,
-    "total_competitors": 0.0,
-    "opp_quality_score": 4.781144214162354,
-    "cust_hitrate": -0.83039,
-    "product_A_ratio": 12.984110535405883
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -3.535350799560547,
-    "top_positive_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": 0.08369608223438263,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.0647837370634079,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.026639550924301147,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.021566545590758324,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "competitor_diversity",
-        "shap_value": 0.012866017408668995,
-        "explanation": "Diversidad de competidores en la oferta"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.899149477481842,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.6653506755828857,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.6450872421264648,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.36616504192352295,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": -0.2837573289871216,
-        "explanation": "Hitrate Contracts"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

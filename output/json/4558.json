@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "4558",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.16731491684913635,
-    "threshold": 0.2624979317188263,
-    "confidence": "Low"
-  },
-  "key_features": {
-    "customer_activity": -0.4951533333333333,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.1916137726988103,
-    "cust_hitrate": -0.71463,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -1.6047778129577637,
-    "top_positive_factors": [
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.13002747297286987,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.08888833969831467,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.03268594667315483,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": 0.027532342821359634,
-        "explanation": "Competitor Y"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.026691101491451263,
-        "explanation": "Opp Age Squared"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.6397112607955933,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.3674995005130768,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.25070708990097046,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.2149932086467743,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.19045118987560272,
-        "explanation": "Nivel global de actividad del cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

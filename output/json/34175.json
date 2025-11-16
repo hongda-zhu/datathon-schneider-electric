@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "34175",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.012719162739813328,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.18527333333333332,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.01395822730118973,
-    "cust_hitrate": -0.33927,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -4.35184383392334,
-    "top_positive_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": 0.08508261293172836,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.05840044096112251,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.031670406460762024,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": 0.011276207864284515,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "opp_maturity",
-        "shap_value": 0.009663612581789494,
-        "explanation": "Madurez de la oportunidad"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.9090856313705444,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.53928142786026,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.4840131402015686,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.4271681010723114,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.37499311566352844,
-        "explanation": "Competitor Z"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

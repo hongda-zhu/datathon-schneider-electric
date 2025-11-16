@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "22236",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.6109806299209595,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.5306933333333332,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.15600977269881022,
-    "cust_hitrate": -0.56041,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 0.45143580436706543,
-    "top_positive_factors": [
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.33364084362983704,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.16869628429412842,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.15607872605323792,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.1109386757016182,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.10374029725790024,
-        "explanation": "Score agregado de calidad de oportunidad"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.6356356143951416,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.0807870477437973,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.04613863304257393,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.03810041770339012,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.02880070172250271,
-        "explanation": "Hitrate Interaction"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Nurture",
-    "priority": "Medium",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Nurture",
+        "priority": "Medium",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

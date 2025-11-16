@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "35003",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.45913833379745483,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.17591333333333334,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.28181572794723825,
-    "cust_hitrate": -0.7894,
-    "product_A_ratio": 1.4285243198680955
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -0.1638118475675583,
-    "top_positive_factors": [
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.3784804046154022,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.32167285680770874,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.25447461009025574,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.2328975796699524,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.2268180549144745,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": -0.7025890350341797,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.42473694682121277,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.305251806974411,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": -0.13370686769485474,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "opp_maturity",
-        "shap_value": -0.10699856281280518,
-        "explanation": "Madurez de la oportunidad"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Nurture",
-    "priority": "Medium",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Nurture",
+        "priority": "Medium",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

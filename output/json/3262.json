@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "3262",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.008634703233838081,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.026853333333333358,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.030693772698810323,
-    "cust_hitrate": -0.64653,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -4.7432942390441895,
-    "top_positive_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": 0.07254869490861893,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.04280700907111168,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.0251060351729393,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.02054164558649063,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.018420180305838585,
-        "explanation": "N\u00famero de contratos con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.9266716837882996,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.6601517796516418,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.5993490815162659,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.4252692759037018,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.38065195083618164,
-        "explanation": "Nivel global de actividad del cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

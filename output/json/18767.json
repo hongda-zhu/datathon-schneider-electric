@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "18767",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.9697693586349487,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.004696666666666664,
-    "total_competitors": 2.0,
-    "opp_quality_score": 0.4197582273011897,
-    "cust_hitrate": 0.83282,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.4682047367095947,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 1.188291072845459,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.7114837765693665,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.3953463137149811,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.39466965198516846,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.3212139308452606,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.12290435284376144,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.06882215291261673,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.06254010647535324,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "low_engagement_risk",
-        "shap_value": -0.0381811261177063,
-        "explanation": "Low Engagement Risk"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.035537101328372955,
-        "explanation": "Competitor Z"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

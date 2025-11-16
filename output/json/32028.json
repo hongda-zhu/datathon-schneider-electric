@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "32028",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.006394119933247566,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.012523333333333315,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.02640095235592918,
-    "cust_hitrate": -0.70412,
-    "product_A_ratio": 0.4714801191101769
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -5.045957565307617,
-    "top_positive_factors": [
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.1393735706806183,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.03793453052639961,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.035992324352264404,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.011565511114895344,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "has_competition",
-        "shap_value": 0.010703806765377522,
-        "explanation": "Indicador de presencia de competencia"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "product_A_recommended",
-        "shap_value": -1.5125936269760132,
-        "explanation": "Product A Recommended"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -1.0645796060562134,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.554619550704956,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.2955528199672699,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.29449212551116943,
-        "explanation": "Nivel global de actividad del cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

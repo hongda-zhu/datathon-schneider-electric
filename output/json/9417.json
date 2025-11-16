@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "9417",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.0021622797939926386,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.14665000000000003,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.17253452344740178,
-    "cust_hitrate": -1.03852,
-    "product_A_ratio": 0.4575411913814955
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -6.134424209594727,
-    "top_positive_factors": [
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.13601745665073395,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.10888975113630295,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.039289072155952454,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": 0.03649243339896202,
-        "explanation": "Competitor Y"
-      },
-      {
-        "feature": "low_engagement_risk",
-        "shap_value": 0.016419246792793274,
-        "explanation": "Low Engagement Risk"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -1.6238317489624023,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": -1.5281291007995605,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.8944106698036194,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.5431275367736816,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": -0.2908870577812195,
-        "explanation": "Opp Age Squared"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

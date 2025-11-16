@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "19969",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9927331209182739,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.8626866666666667,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.26439015898786394,
-    "cust_hitrate": 0.13101,
-    "product_A_ratio": -0.08429710253034009
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 4.917139053344727,
-    "top_positive_factors": [
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 1.1181448698043823,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.738328754901886,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.6031814217567444,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.5876067280769348,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.4908953309059143,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.26415956020355225,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.15975506603717804,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.03178144246339798,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "low_engagement_risk",
-        "shap_value": -0.0050760661251842976,
-        "explanation": "Low Engagement Risk"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.004031980410218239,
-        "explanation": "Diversidad de productos activos"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

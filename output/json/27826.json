@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "27826",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.10009964555501938,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.73279,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.31138729732014114,
-    "cust_hitrate": -1.1667,
-    "product_A_ratio": 0.6461492566996471
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -2.1961185932159424,
-    "top_positive_factors": [
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.12363342940807343,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.07830549031496048,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.0694141834974289,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.03207669034600258,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.023661252111196518,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.4427720904350281,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.4265972077846527,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.41282394528388977,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.3056667149066925,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.22707679867744446,
-        "explanation": "Opp Month"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

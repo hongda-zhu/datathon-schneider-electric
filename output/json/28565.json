@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "28565",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.023892894387245178,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.70743,
-    "total_competitors": 2.0,
-    "opp_quality_score": -0.39091777269881023,
-    "cust_hitrate": -1.1667,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -3.7099924087524414,
-    "top_positive_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.16284073889255524,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": 0.10154036432504654,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.0699266716837883,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.057766709476709366,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.03684862703084946,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.7170107960700989,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.665542483329773,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.5995447635650635,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.45613768696784973,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.40501490235328674,
-        "explanation": "N\u00famero total de competidores presentes"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "8349",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Win",
-    "win_probability": 0.06173725426197052,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.6268066666666666,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.5012163681469657,
-    "cust_hitrate": -1.1667,
-    "product_A_ratio": 0.09208907963258577
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -2.721144676208496,
-    "top_positive_factors": [
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.0821949690580368,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.07211979478597641,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.06669565290212631,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.029678240418434143,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": 0.01511580590158701,
-        "explanation": "Competitor Y"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.7478458285331726,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.47172659635543823,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.3902859091758728,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.3561915457248688,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.25215014815330505,
-        "explanation": "Score agregado de calidad de oportunidad"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

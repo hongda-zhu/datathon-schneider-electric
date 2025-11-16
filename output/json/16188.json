@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "16188",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.008349214680492878,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 0.89265,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.3268262273011897,
-    "cust_hitrate": -0.3743,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -4.777205944061279,
-    "top_positive_factors": [
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.21524880826473236,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.05168965831398964,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.03136127069592476,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.02772415801882744,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": 0.018819216638803482,
-        "explanation": "N\u00famero total de competidores presentes"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": -1.7893427610397339,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.6658074259757996,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.5061785578727722,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": -0.49893975257873535,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.36907950043678284,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

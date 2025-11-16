@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "81",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9067943692207336,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.18879666666666664,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.11732522730118972,
-    "cust_hitrate": 0.00881,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 2.2751076221466064,
-    "top_positive_factors": [
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.433875173330307,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.35502123832702637,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.33902934193611145,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.26844844222068787,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.1792166829109192,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.11559924483299255,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.03180438652634621,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": -0.02986142411828041,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.005260830279439688,
-        "explanation": "Diversidad de productos activos"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": -0.004592560697346926,
-        "explanation": "Product A"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

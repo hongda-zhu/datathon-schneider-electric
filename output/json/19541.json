@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "19541",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.043429549783468246,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.6476700000000001,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.3065980922312447,
-    "cust_hitrate": -1.07436,
-    "product_A_ratio": 0.5250272694218883
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -3.0922162532806396,
-    "top_positive_factors": [
-      {
-        "feature": "opp_month",
-        "shap_value": 0.2113482803106308,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.1268644779920578,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.06357340514659882,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": 0.03798190876841545,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.03639799728989601,
-        "explanation": "Product B Sold In The Past"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.8925802707672119,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.6839833855628967,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.4169234335422516,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.32442837953567505,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.29395636916160583,
-        "explanation": "Competitor Z"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

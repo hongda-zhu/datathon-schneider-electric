@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "14892",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.07473216950893402,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.5423866666666667,
-    "total_competitors": 2.0,
-    "opp_quality_score": -0.2654267726988103,
-    "cust_hitrate": -0.91344,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -2.516172170639038,
-    "top_positive_factors": [
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.09356918931007385,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.07213634252548218,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.0688268169760704,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.05403126776218414,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.046529799699783325,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.7129902243614197,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.5940664410591125,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.45939233899116516,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.3058984577655792,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.23376092314720154,
-        "explanation": "N\u00famero total de competidores presentes"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "31973",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.0197046659886837,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.15517666666666666,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.07708677269881026,
-    "cust_hitrate": -0.67285,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -3.9070005416870117,
-    "top_positive_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": 0.07714222371578217,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.06309173256158829,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": 0.02702530100941658,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.026500053703784943,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": 0.011994498781859875,
-        "explanation": "Competitor Y"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.7568821310997009,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.7148464322090149,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "product_A_recommended",
-        "shap_value": -0.5616778135299683,
-        "explanation": "Product A Recommended"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.3773735463619232,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.27605462074279785,
-        "explanation": "Score agregado de calidad de oportunidad"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

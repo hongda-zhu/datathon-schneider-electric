@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "24831",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9448134899139404,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.33281666666666665,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.45633822730118967,
-    "cust_hitrate": 0.61724,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 2.8402693271636963,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.7275877594947815,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.5262722373008728,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.3112243711948395,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.25503984093666077,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.22964556515216827,
-        "explanation": "Opp Month"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "iberia_competition",
-        "shap_value": -0.04954425245523453,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": -0.043459147214889526,
-        "explanation": "Competitor Y"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.03359327092766762,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.012209760025143623,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.009847109206020832,
-        "explanation": "Product A Sold In The Past"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

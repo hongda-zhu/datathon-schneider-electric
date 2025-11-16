@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "22317",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.8504728078842163,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 1.0044166666666665,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.46338651497322664,
-    "cust_hitrate": 0.14277,
-    "product_A_ratio": 0.2980762874330667
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 1.738313913345337,
-    "top_positive_factors": [
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.7730665802955627,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.48848336935043335,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.4289420545101166,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": 0.29455283284187317,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.11744740605354309,
-        "explanation": "Hitrate Contracts"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.24152211844921112,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.1921580284833908,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.09486765414476395,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": -0.0843038484454155,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.08154301345348358,
-        "explanation": "Cust In Iberia"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

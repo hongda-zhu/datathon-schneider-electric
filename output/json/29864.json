@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "29864",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.0010366066126152873,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.2998166666666667,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.20257765661520274,
-    "cust_hitrate": -0.86766,
-    "product_A_ratio": 0.36916335846199305
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -6.87076473236084,
-    "top_positive_factors": [
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.17962169647216797,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.1643192321062088,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.0879051685333252,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.05162395164370537,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": 0.007787324022501707,
-        "explanation": "Competitor Y"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": -1.979617714881897,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -1.2741672992706299,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.5848312377929688,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": -0.4953819215297699,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.4772316813468933,
-        "explanation": "Nivel global de actividad del cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "29054",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.06608182191848755,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.013833333333333345,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.021171459854014613,
-    "cust_hitrate": 0.2946,
-    "product_A_ratio": -0.2635036496350365
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -2.648498296737671,
-    "top_positive_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": 0.07751587778329849,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.0303239356726408,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.02793564461171627,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.016859518364071846,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.014380903914570808,
-        "explanation": "Competition Engagement"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.5364378690719604,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.4795530438423157,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.34889358282089233,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.3260735869407654,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.26296722888946533,
-        "explanation": "Opp Month"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

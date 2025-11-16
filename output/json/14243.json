@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "14243",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9815706610679626,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.15017,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.028940703770197487,
-    "cust_hitrate": 0.13451,
-    "product_A_ratio": -0.2858617594254937
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.975212812423706,
-    "top_positive_factors": [
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.4488721489906311,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.4382340908050537,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.4151880145072937,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.4087308347225189,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.3183811604976654,
-        "explanation": "Hitrate Contracts"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.07480846345424652,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.0077734035439789295,
-        "explanation": "Diversidad de productos activos"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.007217847276479006,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": -0.0028703410644084215,
-        "explanation": "Product A"
-      },
-      {
-        "feature": "product_D",
-        "shap_value": -0.0011901622638106346,
-        "explanation": "Product D"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

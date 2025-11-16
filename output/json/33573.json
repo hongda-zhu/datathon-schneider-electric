@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "33573",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.0063933623023331165,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.73279,
-    "total_competitors": 2.0,
-    "opp_quality_score": -0.3985257726988103,
-    "cust_hitrate": -1.1667,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -5.046084403991699,
-    "top_positive_factors": [
-      {
-        "feature": "opp_month",
-        "shap_value": 0.2759866416454315,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.09921832382678986,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.053476449102163315,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.027759524062275887,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.02656647376716137,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": -2.270716905593872,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.8636701107025146,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": -0.5309041142463684,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.38148927688598633,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.2625057101249695,
-        "explanation": "N\u00famero total de competidores presentes"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

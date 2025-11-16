@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "18084",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9929779171943665,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.013006666666666647,
-    "total_competitors": 1.0,
-    "opp_quality_score": 2.300590849505955,
-    "cust_hitrate": -1.12471,
-    "product_A_ratio": 6.585254623764888
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 4.9516520500183105,
-    "top_positive_factors": [
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.7544932961463928,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.5648366212844849,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.5386039614677429,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.44077596068382263,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.4351719319820404,
-        "explanation": "Hitrate Contracts"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.29201725125312805,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.06588154286146164,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.04172685369849205,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": -0.005340126343071461,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": -0.0029676081612706184,
-        "explanation": "Product A"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

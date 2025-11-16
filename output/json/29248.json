@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "29248",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9861293435096741,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.6881233333333334,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.9548100912700908,
-    "cust_hitrate": 1.12888,
-    "product_A_ratio": 1.0242727281752269
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 4.264015197753906,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.925491213798523,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.7209064960479736,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.5162354707717896,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.4777064323425293,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.34842637181282043,
-        "explanation": "Product B Sold In The Past"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.06555179506540298,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": -0.04450635239481926,
-        "explanation": "Competitor Y"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": -0.03612273558974266,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.028139518573880196,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.01871039718389511,
-        "explanation": "Competitor Z"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "8544",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9611219763755798,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.73279,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.6119454623336348,
-    "cust_hitrate": -1.1667,
-    "product_A_ratio": -0.10524615583408707
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.2076706886291504,
-    "top_positive_factors": [
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": 0.6744154691696167,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.5678802728652954,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.28036171197891235,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.2507704198360443,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.24540062248706818,
-        "explanation": "Contract Hitrate Ratio"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.17726342380046844,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.0249454565346241,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": -0.02370368130505085,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.006412583403289318,
-        "explanation": "Diversidad de productos activos"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": -0.002964636078104377,
-        "explanation": "Product A"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

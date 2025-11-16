@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "29430",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9398964643478394,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.70743,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.39091777269881023,
-    "cust_hitrate": -1.1667,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 2.749701738357544,
-    "top_positive_factors": [
-      {
-        "feature": "opp_month",
-        "shap_value": 0.6142670512199402,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.4098493158817291,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.29264453053474426,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.2868451476097107,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.2232874184846878,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.08029858022928238,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "low_engagement_risk",
-        "shap_value": -0.059902213513851166,
-        "explanation": "Low Engagement Risk"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.023194054141640663,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.015551812015473843,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": -0.011359361931681633,
-        "explanation": "Competencia en clientes de Iberia"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

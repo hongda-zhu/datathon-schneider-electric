@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "24629",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.012598656117916107,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.6762933333333333,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.3731167726988103,
-    "cust_hitrate": -1.1385,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -4.361486911773682,
-    "top_positive_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": 0.08656250685453415,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.022349899634718895,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "product_A_recommended",
-        "shap_value": 0.019884860143065453,
-        "explanation": "Product A Recommended"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.017707083374261856,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "opp_maturity",
-        "shap_value": 0.009977411478757858,
-        "explanation": "Madurez de la oportunidad"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.8604041337966919,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.7117388248443604,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.6469489932060242,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.4757083058357239,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": -0.4484608769416809,
-        "explanation": "Hitrate Contracts"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

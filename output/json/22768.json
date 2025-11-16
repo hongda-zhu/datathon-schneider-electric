@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "22768",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.05492742732167244,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.6127966666666667,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.3001817726988103,
-    "cust_hitrate": -0.95888,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -2.8452508449554443,
-    "top_positive_factors": [
-      {
-        "feature": "opp_month",
-        "shap_value": 0.19091829657554626,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.1747424453496933,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.06645878404378891,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.05151711776852608,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.047675322741270065,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.8968054056167603,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.6408823132514954,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.3758574426174164,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.2571975886821747,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.23710943758487701,
-        "explanation": "Competitor Z"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

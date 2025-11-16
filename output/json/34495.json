@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "34495",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9340214133262634,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.2885433333333333,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.10715837413220239,
-    "cust_hitrate": -0.29043,
-    "product_A_ratio": 0.7021259353305059
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 2.6501688957214355,
-    "top_positive_factors": [
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.6834617257118225,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.28446346521377563,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.26142558455467224,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.23280103504657745,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.2283991426229477,
-        "explanation": "Product B Sold In The Past"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.053868792951107025,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.03080068901181221,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.026598401367664337,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.01633104681968689,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": -0.005457442253828049,
-        "explanation": "Competitor Y"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

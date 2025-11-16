@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "842",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9876723885536194,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.8484033333333333,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.3676685294117647,
-    "cust_hitrate": -0.21892,
-    "product_A_ratio": 0.44705882352941173
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 4.383516788482666,
-    "top_positive_factors": [
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.6408911943435669,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.6165082454681396,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.6102556586265564,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.3935140371322632,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.35933998227119446,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competitor_Y",
-        "shap_value": -0.07989674061536789,
-        "explanation": "Competitor Y"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.06497885286808014,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.05066820979118347,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": -0.01427110843360424,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.005491845775395632,
-        "explanation": "Competitor Z"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

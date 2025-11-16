@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "8359",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.980714738368988,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.7472233333333334,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.2992330181923745,
-    "cust_hitrate": 0.49106,
-    "product_A_ratio": -1.6767950454809362
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.9289352893829346,
-    "top_positive_factors": [
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.8899704813957214,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.6122515201568604,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.591815710067749,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.48197367787361145,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.4733130931854248,
-        "explanation": "Score agregado de calidad de oportunidad"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.3435021638870239,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": -0.2427024394273758,
-        "explanation": "Competitor Y"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.17838676273822784,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": -0.0316021703183651,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.026803072541952133,
-        "explanation": "Competitor Z"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

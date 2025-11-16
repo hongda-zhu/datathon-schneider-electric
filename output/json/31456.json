@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "31456",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9464778900146484,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.5170233333333333,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.18080167982477965,
-    "cust_hitrate": -0.66069,
-    "product_A_ratio": 0.4312808004380507
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 2.872650623321533,
-    "top_positive_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.6562981605529785,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.32878416776657104,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.3096648156642914,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.2953915297985077,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.28898388147354126,
-        "explanation": "Score agregado de calidad de oportunidad"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.08679934591054916,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.04950108751654625,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.01988755166530609,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.012438606470823288,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": -0.011126738041639328,
-        "explanation": "N\u00famero de contratos con el cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

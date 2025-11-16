@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "32389",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.006006094627082348,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.2022733333333333,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.26231383301046124,
-    "cust_hitrate": -0.67285,
-    "product_A_ratio": 1.3121270825261528
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -5.108953952789307,
-    "top_positive_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": 0.02662467584013939,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.013211649842560291,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "low_engagement_risk",
-        "shap_value": 0.0036667827516794205,
-        "explanation": "Low Engagement Risk"
-      },
-      {
-        "feature": "has_competition",
-        "shap_value": 0.003169088624417782,
-        "explanation": "Indicador de presencia de competencia"
-      },
-      {
-        "feature": "has_past_sales",
-        "shap_value": 0.0024758505169302225,
-        "explanation": "Has Past Sales"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.8837667107582092,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.5226307511329651,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.5200464129447937,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.4614562392234802,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.45078277587890625,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

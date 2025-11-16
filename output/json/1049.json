@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "1049",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9516401290893555,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.43951,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.21263333066827578,
-    "cust_hitrate": -0.92276,
-    "product_A_ratio": 0.49011917332931054
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 2.9795174598693848,
-    "top_positive_factors": [
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.6794050931930542,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.5435580015182495,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.5393839478492737,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.5338484048843384,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.22138454020023346,
-        "explanation": "Engagement de clientes de Iberia"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.2581518590450287,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.20006772875785828,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.06438983976840973,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": -0.01379629597067833,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.006774674169719219,
-        "explanation": "Competitor Z"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

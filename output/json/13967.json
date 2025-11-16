@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "13967",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.0275974553078413,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.42408,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.1324107726988103,
-    "cust_hitrate": -0.58836,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -3.5620481967926025,
-    "top_positive_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": 0.07646454870700836,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.03361382335424423,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.022167986258864403,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "product_A_recommended",
-        "shap_value": 0.01492791436612606,
-        "explanation": "Product A Recommended"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.014195690862834454,
-        "explanation": "N\u00famero de contratos con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.506979763507843,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.47593414783477783,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.39542657136917114,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.31841251254081726,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.2888640761375427,
-        "explanation": "Competition Engagement"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

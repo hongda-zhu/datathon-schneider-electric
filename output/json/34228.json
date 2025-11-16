@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "34228",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.7508931159973145,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.7228966666666666,
-    "total_competitors": 2.0,
-    "opp_quality_score": -0.3866537726988102,
-    "cust_hitrate": -1.13702,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 1.1033813953399658,
-    "top_positive_factors": [
-      {
-        "feature": "opp_month",
-        "shap_value": 0.6775802373886108,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.6512100696563721,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.4309671223163605,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": 0.20996420085430145,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.18495386838912964,
-        "explanation": "Hitrate Contracts"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.7215138077735901,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.24059779942035675,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.17849919199943542,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.12034973502159119,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.11159554123878479,
-        "explanation": "Nivel global de actividad del cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "11647",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9609569907188416,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.42316000000000004,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.2327771175310484,
-    "cust_hitrate": -0.90078,
-    "product_A_ratio": 0.4110122061723789
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.2032651901245117,
-    "top_positive_factors": [
-      {
-        "feature": "product_A_recommended",
-        "shap_value": 0.9122601747512817,
-        "explanation": "Product A Recommended"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.509977400302887,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.49796539545059204,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.22152437269687653,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.2049986869096756,
-        "explanation": "Product B Sold In The Past"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.18777413666248322,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.0991627499461174,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.06010914593935013,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.058388158679008484,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.01814931444823742,
-        "explanation": "Cust In Iberia"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

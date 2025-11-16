@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "21422",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.6891987323760986,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.42685666666666666,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.0015870840558606936,
-    "cust_hitrate": -1.00558,
-    "product_A_ratio": 0.4300747898603481
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 0.7963773608207703,
-    "top_positive_factors": [
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.7595583200454712,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.4155408442020416,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.3579399287700653,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.2812694311141968,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.08677313476800919,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.5610311627388,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.4743614196777344,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.28004881739616394,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.1076151579618454,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.06652840226888657,
-        "explanation": "Engagement de clientes de Iberia"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Nurture",
-    "priority": "Medium",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Nurture",
+        "priority": "Medium",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

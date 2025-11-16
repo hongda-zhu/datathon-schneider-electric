@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "26875",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.03772552311420441,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.29352666666666666,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.13153908405586073,
-    "cust_hitrate": -0.71837,
-    "product_A_ratio": 0.4300747898603481
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -3.238964557647705,
-    "top_positive_factors": [
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.13828034698963165,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.05774921551346779,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": 0.04954687878489494,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.013951834291219711,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "product_A_recommended",
-        "shap_value": 0.01302102766931057,
-        "explanation": "Product A Recommended"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.6848828196525574,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.41477730870246887,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.39777442812919617,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.39769476652145386,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.3366815745830536,
-        "explanation": "Nivel global de actividad del cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

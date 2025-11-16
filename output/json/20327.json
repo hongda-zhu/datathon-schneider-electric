@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "20327",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.148359015583992,
-    "threshold": 0.2624979317188263,
-    "confidence": "Low"
-  },
-  "key_features": {
-    "customer_activity": -0.22385999999999998,
-    "total_competitors": 2.0,
-    "opp_quality_score": 0.0771004666468603,
-    "cust_hitrate": 0.25141,
-    "product_A_ratio": 0.1720886666171507
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -1.7475309371948242,
-    "top_positive_factors": [
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": 0.21678689122200012,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.20140591263771057,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.14865848422050476,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.09244472533464432,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.0800904780626297,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.474504679441452,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.34757333993911743,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.3115967810153961,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.29417309165000916,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.28600993752479553,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

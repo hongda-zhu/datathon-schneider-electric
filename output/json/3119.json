@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "3119",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9773966073989868,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.17629666666666668,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.709620144414169,
-    "cust_hitrate": 0.4267,
-    "product_A_ratio": -1.9618528610354222
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.766789674758911,
-    "top_positive_factors": [
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.5088371634483337,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.4501813054084778,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.4002540409564972,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": 0.29867732524871826,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.29205620288848877,
-        "explanation": "Engagement de clientes de Iberia"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "low_engagement_risk",
-        "shap_value": -0.08721492439508438,
-        "explanation": "Low Engagement Risk"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.04050439968705177,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.0039021861739456654,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": -0.0033192133996635675,
-        "explanation": "Product A"
-      },
-      {
-        "feature": "product_D",
-        "shap_value": -0.0012619857443496585,
-        "explanation": "Product D"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

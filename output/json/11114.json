@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "11114",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9953540563583374,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.31689,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.6229753339791717,
-    "cust_hitrate": 0.71053,
-    "product_A_ratio": 0.7868733349479292
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 5.367103099822998,
-    "top_positive_factors": [
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.7438713312149048,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.6777690052986145,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.6665269136428833,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.582002580165863,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.5065312385559082,
-        "explanation": "Opp Month"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.1295512169599533,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.026396766304969788,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.023696566000580788,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.0191907100379467,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": -0.015757152810692787,
-        "explanation": "Competitor Y"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

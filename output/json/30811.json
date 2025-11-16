@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "30811",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.002613876713439822,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 1.1178066666666666,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.5274480543076485,
-    "cust_hitrate": -0.01657,
-    "product_A_ratio": 0.4926926357691214
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -5.944297790527344,
-    "top_positive_factors": [
-      {
-        "feature": "iberia_competition",
-        "shap_value": 0.40104222297668457,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.04464040324091911,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": 0.04036260396242142,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.004362004809081554,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "competitor_diversity",
-        "shap_value": 0.0014741531340405345,
-        "explanation": "Diversidad de competidores en la oferta"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": -2.0000529289245605,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.9606190323829651,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.7599060535430908,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": -0.5482016801834106,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": -0.3315621018409729,
-        "explanation": "Hitrate Contracts"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

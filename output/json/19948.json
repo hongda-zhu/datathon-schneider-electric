@@ -1,85 +1,12 @@
 {
-  "opportunity_id": "19948",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.9905802607536316,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.09629,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.1435622273011897,
-    "cust_hitrate": 0.00376,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 4.655483245849609,
-    "top_positive_factors": [
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 1.739061951637268,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.5833109021186829,
-        "explanation": "Número de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.38071703910827637,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.34839195013046265,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.31612974405288696,
-        "explanation": "Nivel global de actividad del cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.043138135224580765,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": -0.0301546361297369,
-        "explanation": "Número de contratos con el cliente"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.026549795642495155,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.02167678251862526,
-        "explanation": "Peso de ventas históricas de Product A"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.004651481751352549,
-        "explanation": "Diversidad de productos activos"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Finalize the contract details, addressing any outstanding questions or concerns to capitalize on the high contract hit rate ratio.",
-      "Maintain the high level of customer interaction to reinforce the relationship and ensure a smooth closing process.",
-      "Proactively address the customer's past purchases of Products A and B by highlighting the benefits and differentiation of the current offering to reaffirm its value."
-    ],
-    "ai_generated": true
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Finalize the contract details, addressing any outstanding questions or concerns to capitalize on the high contract hit rate ratio.",
+            "Maintain the high level of customer interaction to reinforce the relationship and ensure a smooth closing process.",
+            "Proactively address the customer's past purchases of Products A and B by highlighting the benefits and differentiation of the current offering to reaffirm its value."
+        ],
+        "ai_generated": true
+    }
 }

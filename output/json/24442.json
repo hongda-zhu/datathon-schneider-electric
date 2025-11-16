@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "24442",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.45605775713920593,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 0.4432933333333334,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.028008854940434452,
-    "cust_hitrate": 0.4596,
-    "product_A_ratio": -0.6071478626489138
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -0.17622379958629608,
-    "top_positive_factors": [
-      {
-        "feature": "iberia_competition",
-        "shap_value": 0.1784493327140808,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.1279543787240982,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.08491495996713638,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.07000487297773361,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.06743789464235306,
-        "explanation": "Hitrate Contracts"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.1780664026737213,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.14695240557193756,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.14186905324459076,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.11795156449079514,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.11490533500909805,
-        "explanation": "Hitrate Interaction"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Nurture",
-    "priority": "Medium",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Nurture",
+        "priority": "Medium",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "13981",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9145358204841614,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.17467666666666667,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.07749833202967735,
-    "cust_hitrate": -0.2314,
-    "product_A_ratio": 0.4983033300741933
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 2.3703198432922363,
-    "top_positive_factors": [
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.5184220671653748,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.32015541195869446,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.29967379570007324,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.21651636064052582,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.20997488498687744,
-        "explanation": "Competitor Z"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_month",
-        "shap_value": -0.32328006625175476,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": -0.02029934525489807,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.012383770197629929,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.00884276069700718,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": -0.005402469076216221,
-        "explanation": "Product A"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

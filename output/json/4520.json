@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "4520",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.974850594997406,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.14715666666666663,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.23120364847022412,
-    "cust_hitrate": -0.5701,
-    "product_A_ratio": 0.8952166211755603
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.657449960708618,
-    "top_positive_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.8522875905036926,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.6359138488769531,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.4621685743331909,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.3659191429615021,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": 0.3518790006637573,
-        "explanation": "Product A Sold In The Past"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.3355138897895813,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": -0.024037552997469902,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.009288877248764038,
-        "explanation": "Diversidad de productos activos"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": -0.009131588973104954,
-        "explanation": "Product A"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.005438949912786484,
-        "explanation": "Cust In Iberia"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

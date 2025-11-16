@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "23931",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9920473098754883,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.21519666666666667,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.137235,
-    "cust_hitrate": 0.1035,
-    "product_A_ratio": 0.42686
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 4.826261520385742,
-    "top_positive_factors": [
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.6602944135665894,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.5079768300056458,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.4562348425388336,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": 0.4191668927669525,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.40512987971305847,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.027653127908706665,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": -0.004474850371479988,
-        "explanation": "Product A"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": -0.00396379642188549,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.0027693824376910925,
-        "explanation": "Diversidad de productos activos"
-      },
-      {
-        "feature": "product_D",
-        "shap_value": -0.0007891191053204238,
-        "explanation": "Product D"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

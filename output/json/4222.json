@@ -1,85 +1,12 @@
 {
-  "opportunity_id": "4222",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.27921175956726074,
-    "threshold": 0.2624979317188263,
-    "confidence": "Low"
-  },
-  "key_features": {
-    "customer_activity": 0.12618333333333334,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.2238492273011897,
-    "cust_hitrate": 0.04891,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -0.9483742117881775,
-    "top_positive_factors": [
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.1974344104528427,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.09271147847175598,
-        "explanation": "Antigüedad de la oportunidad"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.060544926673173904,
-        "explanation": "Volumen total de ventas históricas"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.03459355607628822,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.017006266862154007,
-        "explanation": "Cust In Iberia"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.4087553918361664,
-        "explanation": "Número de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.3416629433631897,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.14965641498565674,
-        "explanation": "Tasa de éxito histórica con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.11315635591745377,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.1018325537443161,
-        "explanation": "Interacciones y calidad de relación con el cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase customer engagement by scheduling a meeting to address their specific concerns and demonstrate the value of our solution.",
-      "Accelerate the sales cycle by offering a limited-time promotion or discount to incentivize the customer to make a decision this month.",
-      "Improve the customer's win rate perception by providing them with case studies and testimonials from similar companies who have achieved success with our products."
-    ],
-    "ai_generated": true
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase customer engagement by scheduling a meeting to address their specific concerns and demonstrate the value of our solution.",
+            "Accelerate the sales cycle by offering a limited-time promotion or discount to incentivize the customer to make a decision this month.",
+            "Improve the customer's win rate perception by providing them with case studies and testimonials from similar companies who have achieved success with our products."
+        ],
+        "ai_generated": true
+    }
 }

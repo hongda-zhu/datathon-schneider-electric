@@ -1,91 +1,18 @@
 {
-  "opportunity_id": "3078",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.5835632681846619,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.6462933333333333,
-    "total_competitors": 2.0,
-    "opp_quality_score": -0.2947297726988103,
-    "cust_hitrate": -0.90721,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 0.3374195694923401,
-    "top_positive_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.9393351078033447,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.5543191432952881,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.32092881202697754,
-        "explanation": "Interacciones y calidad de relación con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.29115334153175354,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.2662155032157898,
-        "explanation": "Número de interacciones con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": -0.6472136974334717,
-        "explanation": "Antigüedad de la oportunidad"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.4758349359035492,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.3288111388683319,
-        "explanation": "Número total de competidores presentes"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.3112955391407013,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": -0.21884208917617798,
-        "explanation": "Opp Age Squared"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Nurture",
-    "priority": "Medium",
-    "next_steps": [
-      {
-        "step": "Re-engage the customer with updated information or a refreshed offer to combat the 'opp_old' factor and demonstrate continued value."
-      },
-      {
-        "step": "Develop a specific competitive counter-strategy that directly addresses the points of engagement used by the competition to reduce the 'competition_engagement' impact."
-      },
-      {
-        "step": "Focus on highlighting unique differentiators to mitigate the impact of having 'total_competitors' by demonstrating superior value and features."
-      }
-    ],
-    "ai_generated": true
-  }
+    "business_recommendation": {
+        "action": "Nurture",
+        "priority": "Medium",
+        "next_steps": [
+            {
+                "step": "Re-engage the customer with updated information or a refreshed offer to combat the 'opp_old' factor and demonstrate continued value."
+            },
+            {
+                "step": "Develop a specific competitive counter-strategy that directly addresses the points of engagement used by the competition to reduce the 'competition_engagement' impact."
+            },
+            {
+                "step": "Focus on highlighting unique differentiators to mitigate the impact of having 'total_competitors' by demonstrating superior value and features."
+            }
+        ],
+        "ai_generated": true
+    }
 }

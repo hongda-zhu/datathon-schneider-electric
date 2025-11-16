@@ -1,74 +1,11 @@
 {
-  "opportunity_id": "30951",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.99776291847229,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.4946,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.7904527431061048,
-    "cust_hitrate": 1.52646,
-    "product_A_ratio": 0.46033685776526223
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 6.100334644317627,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 1.1294721364974976,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.5640653371810913,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.5501053929328918,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": 0.49736183881759644,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.41976526379585266,
-        "explanation": "Competition Engagement"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.0061895232647657394,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "product_D",
-        "shap_value": -0.0015106321079656482,
-        "explanation": "Product D"
-      },
-      {
-        "feature": "product_count",
-        "shap_value": -0.0006979716708883643,
-        "explanation": "N\u00famero de l\u00edneas de producto en la oportunidad"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

@@ -1,91 +1,18 @@
 {
-  "opportunity_id": "17081",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.2084450125694275,
-    "threshold": 0.2624979317188263,
-    "confidence": "Low"
-  },
-  "key_features": {
-    "customer_activity": -0.73279,
-    "total_competitors": 2.0,
-    "opp_quality_score": -0.3985257726988103,
-    "cust_hitrate": -1.1667,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -1.3343231678009033,
-    "top_positive_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.49663376808166504,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "product_A_recommended",
-        "shap_value": 0.4124332368373871,
-        "explanation": "Product A Recommended"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.23516127467155457,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.19676458835601807,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": 0.08633492887020111,
-        "explanation": "Competencia en clientes de Iberia"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.6536203622817993,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.6320372223854065,
-        "explanation": "Tasa de éxito histórica con el cliente"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.4994339644908905,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.479579359292984,
-        "explanation": "Número total de competidores presentes"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": -0.26804855465888977,
-        "explanation": "Competitor Y"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      {
-        "step": "Develop a direct competitive counter-strategy, focusing on Schneider Electric's superior value proposition and differentiators compared to the competition to mitigate the 'competition_risk'."
-      },
-      {
-        "step": "Analyze past win/loss data ('cust_hitrate') for this customer to identify patterns and address potential concerns or objections proactively."
-      },
-      {
-        "step": "Increase proactive engagement and build stronger relationships with key decision-makers at the customer organization to counteract 'competition_engagement' and solidify Schneider Electric's position."
-      }
-    ],
-    "ai_generated": true
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            {
+                "step": "Develop a direct competitive counter-strategy, focusing on Schneider Electric's superior value proposition and differentiators compared to the competition to mitigate the 'competition_risk'."
+            },
+            {
+                "step": "Analyze past win/loss data ('cust_hitrate') for this customer to identify patterns and address potential concerns or objections proactively."
+            },
+            {
+                "step": "Increase proactive engagement and build stronger relationships with key decision-makers at the customer organization to counteract 'competition_engagement' and solidify Schneider Electric's position."
+            }
+        ],
+        "ai_generated": true
+    }
 }

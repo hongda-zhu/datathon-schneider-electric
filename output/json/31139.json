@@ -1,91 +1,18 @@
 {
-  "opportunity_id": "31139",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9851976037025452,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.011786666666666687,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.050060683844451476,
-    "cust_hitrate": -0.73175,
-    "product_A_ratio": 0.4325007903888713
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 4.198055744171143,
-    "top_positive_factors": [
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.5089529752731323,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.47924450039863586,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.4454957842826843,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.41804730892181396,
-        "explanation": "Volumen total de ventas históricas"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.3904719352722168,
-        "explanation": "Opp Month"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.06964773684740067,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.02023930475115776,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": -0.019181301817297935,
-        "explanation": "Competitor Y"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.006915790494531393,
-        "explanation": "Diversidad de productos activos"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": -0.003686317475512624,
-        "explanation": "Número de contratos con el cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      {
-        "step": "Increase engagement with the Iberia team by proactively sharing successful case studies from similar projects in the region to build confidence and support."
-      },
-      {
-        "step": "Boost customer activity by scheduling a follow-up meeting to address any lingering questions or concerns, and reaffirm the value proposition."
-      },
-      {
-        "step": "Monitor competitor Y's activity and messaging to proactively counter any potential strategies they may be deploying, reinforcing our superior solution."
-      }
-    ],
-    "ai_generated": true
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            {
+                "step": "Increase engagement with the Iberia team by proactively sharing successful case studies from similar projects in the region to build confidence and support."
+            },
+            {
+                "step": "Boost customer activity by scheduling a follow-up meeting to address any lingering questions or concerns, and reaffirm the value proposition."
+            },
+            {
+                "step": "Monitor competitor Y's activity and messaging to proactively counter any potential strategies they may be deploying, reinforcing our superior solution."
+            }
+        ],
+        "ai_generated": true
+    }
 }

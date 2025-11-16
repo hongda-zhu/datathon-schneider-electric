@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "22279",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.004264154937118292,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.5344933333333333,
-    "total_competitors": 2.0,
-    "opp_quality_score": -0.10418561880461674,
-    "cust_hitrate": -0.57181,
-    "product_A_ratio": 0.5692634529884579
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -5.453235626220703,
-    "top_positive_factors": [
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.25072017312049866,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.24192476272583008,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": 0.05588672682642937,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.05457790195941925,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.04365091770887375,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competition_risk",
-        "shap_value": -1.4774545431137085,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.8555075526237488,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.777488648891449,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "product_A_recommended",
-        "shap_value": -0.6796271800994873,
-        "explanation": "Product A Recommended"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.48576828837394714,
-        "explanation": "Score agregado de calidad de oportunidad"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

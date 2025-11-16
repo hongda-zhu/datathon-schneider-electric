@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "20400",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.915056049823761,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.6268066666666666,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.3829839613830106,
-    "cust_hitrate": -1.1667,
-    "product_A_ratio": 0.38767009654247336
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 2.376992702484131,
-    "top_positive_factors": [
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.48532041907310486,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.4185692369937897,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.33713117241859436,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.2895568907260895,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.25838255882263184,
-        "explanation": "Competition Engagement"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.32311519980430603,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.17367221415042877,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.06807994842529297,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.035112641751766205,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "low_engagement_risk",
-        "shap_value": -0.03397703543305397,
-        "explanation": "Low Engagement Risk"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

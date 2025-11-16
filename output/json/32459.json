@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "32459",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.006019084248691797,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.36347666666666667,
-    "total_competitors": 2.0,
-    "opp_quality_score": -0.15579107414104879,
-    "cust_hitrate": -0.85215,
-    "product_A_ratio": 0.5222423146473779
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -5.106778621673584,
-    "top_positive_factors": [
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.15440566837787628,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.05890154838562012,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.02307368628680706,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": 0.01019829697906971,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "low_engagement_risk",
-        "shap_value": 0.006534126587212086,
-        "explanation": "Low Engagement Risk"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.8651149868965149,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.5504870414733887,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.4614260196685791,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.4580182731151581,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.40884464979171753,
-        "explanation": "Riesgo asociado a la competencia"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

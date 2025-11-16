@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "3643",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.00510056596249342,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 0.44239999999999996,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.1867982273011897,
-    "cust_hitrate": -0.39081,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -5.273287773132324,
-    "top_positive_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": 0.043885428458452225,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.012046132236719131,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.0075758229941129684,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.006720663048326969,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "opp_maturity",
-        "shap_value": 0.004383969586342573,
-        "explanation": "Madurez de la oportunidad"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "product_A_recommended",
-        "shap_value": -0.7577463984489441,
-        "explanation": "Product A Recommended"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.6966577768325806,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.5645569562911987,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.5479059815406799,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.4686720073223114,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

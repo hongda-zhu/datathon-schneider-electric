@@ -1,85 +1,12 @@
 {
-  "opportunity_id": "19807",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9746674299240112,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.41926,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.7931642273011896,
-    "cust_hitrate": 1.65355,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.6500070095062256,
-    "top_positive_factors": [
-      {
-        "feature": "customer_engagement",
-        "shap_value": 1.0913758277893066,
-        "explanation": "Interacciones y calidad de relación con el cliente"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.9223295450210571,
-        "explanation": "Tasa de éxito histórica con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.42810505628585815,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.29520758986473083,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.21965239942073822,
-        "explanation": "Número de interacciones con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.24599029123783112,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.0681333839893341,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": -0.037245165556669235,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.03274033963680267,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.010626431554555893,
-        "explanation": "Product A Sold In The Past"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Reinforce customer engagement through a high-level executive touchpoint to solidify the relationship and demonstrate commitment.",
-      "Develop a specific strategy to address the competitive landscape in Iberia, highlighting Schneider Electric's unique value proposition.",
-      "Proactively manage the Iberian team's engagement by providing them with additional support and resources to counter any perceived disadvantage."
-    ],
-    "ai_generated": true
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Reinforce customer engagement through a high-level executive touchpoint to solidify the relationship and demonstrate commitment.",
+            "Develop a specific strategy to address the competitive landscape in Iberia, highlighting Schneider Electric's unique value proposition.",
+            "Proactively manage the Iberian team's engagement by providing them with additional support and resources to counter any perceived disadvantage."
+        ],
+        "ai_generated": true
+    }
 }

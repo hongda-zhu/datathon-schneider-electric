@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "8726",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9713398814201355,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.04245333333333334,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.2727773254605416,
-    "cust_hitrate": 0.28957,
-    "product_A_ratio": 0.4329258136513541
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.5231692790985107,
-    "top_positive_factors": [
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.6493349075317383,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.49387115240097046,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.4840899109840393,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.3959743082523346,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.328651487827301,
-        "explanation": "Contract Hitrate Ratio"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.07908907532691956,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": -0.05199780687689781,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.006432577036321163,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.002890895353630185,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": -0.002648948458954692,
-        "explanation": "Product A"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

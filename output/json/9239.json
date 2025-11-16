@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "9239",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9866430759429932,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.1993366666666667,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.6486514147157191,
-    "cust_hitrate": 1.23842,
-    "product_A_ratio": 0.5433110367892976
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 4.302273273468018,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.9464658498764038,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.6865929961204529,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.4336697459220886,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.42488062381744385,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.3249538242816925,
-        "explanation": "Nivel global de actividad del cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_month",
-        "shap_value": -0.24647487699985504,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": -0.08554097265005112,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.013504238799214363,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "low_engagement_risk",
-        "shap_value": -0.00452675623819232,
-        "explanation": "Low Engagement Risk"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.0019053065916523337,
-        "explanation": "Diversidad de productos activos"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

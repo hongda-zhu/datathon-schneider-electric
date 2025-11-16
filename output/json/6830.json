@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "6830",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.958551287651062,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.88952,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.13909101819237457,
-    "cust_hitrate": 0.88257,
-    "product_A_ratio": -1.6767950454809362
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.1409640312194824,
-    "top_positive_factors": [
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.5134177207946777,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.44699549674987793,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.3580017387866974,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.3549891412258148,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.32827287912368774,
-        "explanation": "Product B Sold In The Past"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.42232784628868103,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.11429346352815628,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": -0.10454566776752472,
-        "explanation": "Competitor Y"
-      },
-      {
-        "feature": "has_competition",
-        "shap_value": -0.016913780942559242,
-        "explanation": "Indicador de presencia de competencia"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.016828762367367744,
-        "explanation": "Nivel global de actividad del cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "15591",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.7237626910209656,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.5593533333333333,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.0632091221407024,
-    "cust_hitrate": -0.85289,
-    "product_A_ratio": 0.9011596946482439
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 0.9632033705711365,
-    "top_positive_factors": [
-      {
-        "feature": "product_mix",
-        "shap_value": 1.5125401020050049,
-        "explanation": "Diversidad de productos activos"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": 1.2204744815826416,
-        "explanation": "Product A"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.31744298338890076,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.10040359199047089,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.09329133480787277,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.5765507221221924,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.41878417134284973,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.4124283194541931,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.33615073561668396,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.26026415824890137,
-        "explanation": "Nivel global de actividad del cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

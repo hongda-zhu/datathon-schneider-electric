@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "18483",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9880556464195251,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.36206000000000005,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.5890338732320586,
-    "cust_hitrate": 0.84626,
-    "product_A_ratio": 0.5663446830801466
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 4.4154815673828125,
-    "top_positive_factors": [
-      {
-        "feature": "opp_month",
-        "shap_value": 0.6477804780006409,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": 0.5731487274169922,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.515666663646698,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.4899713099002838,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": 0.40360793471336365,
-        "explanation": "Product A Sold In The Past"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.16396473348140717,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.12296796590089798,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.0640268623828888,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": -0.018918117508292198,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.004444607999175787,
-        "explanation": "Diversidad de productos activos"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

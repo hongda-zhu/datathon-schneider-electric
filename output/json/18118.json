@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "18118",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.9208559393882751,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.3329233333333333,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.20554008082315448,
-    "cust_hitrate": 0.0329,
-    "product_A_ratio": 0.7388677020578861
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 2.4540305137634277,
-    "top_positive_factors": [
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.9415913224220276,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": 0.41063207387924194,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.3163314163684845,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.18719567358493805,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.1443474292755127,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.2431887835264206,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": -0.02922389656305313,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": -0.01896512135863304,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.010855122469365597,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.00359970866702497,
-        "explanation": "Diversidad de productos activos"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

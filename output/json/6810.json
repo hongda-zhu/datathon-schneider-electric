@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "6810",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.994495689868927,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.29978333333333335,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.5448123811953831,
-    "cust_hitrate": 0.75724,
-    "product_A_ratio": 0.5692634529884579
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 5.196720123291016,
-    "top_positive_factors": [
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.5291192531585693,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.5062222480773926,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.5026975870132446,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.49034544825553894,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.46673107147216797,
-        "explanation": "Score agregado de calidad de oportunidad"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.029174188151955605,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.0035200391430407763,
-        "explanation": "Diversidad de productos activos"
-      },
-      {
-        "feature": "product_D",
-        "shap_value": -0.0017520827241241932,
-        "explanation": "Product D"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": -0.0015919136349111795,
-        "explanation": "Product A"
-      },
-      {
-        "feature": "product_count",
-        "shap_value": -0.0003922021423932165,
-        "explanation": "N\u00famero de l\u00edneas de producto en la oportunidad"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

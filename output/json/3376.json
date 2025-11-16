@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "3376",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9911412000656128,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.6312966666666666,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.5376967927621404,
-    "cust_hitrate": 0.49106,
-    "product_A_ratio": 0.502474481905351
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 4.717452526092529,
-    "top_positive_factors": [
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.7849083542823792,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.5797874331474304,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.5156297087669373,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.44762319326400757,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.3467068672180176,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.0344807431101799,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.005390665493905544,
-        "explanation": "Diversidad de productos activos"
-      },
-      {
-        "feature": "product_D",
-        "shap_value": -0.0018284334801137447,
-        "explanation": "Product D"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": -0.0015964220510795712,
-        "explanation": "Product A"
-      },
-      {
-        "feature": "product_count",
-        "shap_value": -0.0007454013684764504,
-        "explanation": "N\u00famero de l\u00edneas de producto en la oportunidad"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

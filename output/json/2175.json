@@ -1,91 +1,18 @@
 {
-  "opportunity_id": "2175",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.0654040202498436,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 0.7311433333333334,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.5807738109589263,
-    "cust_hitrate": 1.01884,
-    "product_A_ratio": 0.13944702739731582
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -2.6595306396484375,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.2839981019496918,
-        "explanation": "Tasa de éxito histórica con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.08911265432834625,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.041762709617614746,
-        "explanation": "Antigüedad de la oportunidad"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.020501254126429558,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.01892748847603798,
-        "explanation": "Opp Age Squared"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.6922887563705444,
-        "explanation": "Número de interacciones con el cliente"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.6777114272117615,
-        "explanation": "Volumen total de ventas históricas"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.5285519361495972,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.4117012321949005,
-        "explanation": "Interacciones y calidad de relación con el cliente"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.2916518449783325,
-        "explanation": "Peso de ventas históricas de Product A"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      {
-        "step": "Immediately increase engagement with the customer by scheduling a meeting to better understand their current needs and pain points to address the negative impact of low 'cust_interactions'."
-      },
-      {
-        "step": "Develop a targeted strategy to highlight the value proposition of Schneider Electric's solutions in relation to the customer's business objectives to overcome the negative 'total_past_sales' factor."
-      },
-      {
-        "step": "Review and update the opportunity details in the CRM system to accurately reflect the current status and customer requirements, thereby improving the 'opp_quality_score'."
-      }
-    ],
-    "ai_generated": true
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            {
+                "step": "Immediately increase engagement with the customer by scheduling a meeting to better understand their current needs and pain points to address the negative impact of low 'cust_interactions'."
+            },
+            {
+                "step": "Develop a targeted strategy to highlight the value proposition of Schneider Electric's solutions in relation to the customer's business objectives to overcome the negative 'total_past_sales' factor."
+            },
+            {
+                "step": "Review and update the opportunity details in the CRM system to accurately reflect the current status and customer requirements, thereby improving the 'opp_quality_score'."
+            }
+        ],
+        "ai_generated": true
+    }
 }

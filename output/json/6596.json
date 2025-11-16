@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "6596",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9980138540267944,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.14959,
-    "total_competitors": 2.0,
-    "opp_quality_score": 0.22113080610815355,
-    "cust_hitrate": -0.01938,
-    "product_A_ratio": 0.45516951527038385
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 6.219590663909912,
-    "top_positive_factors": [
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 1.2794116735458374,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.6859385371208191,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.6425960063934326,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.6313820481300354,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.5954445600509644,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.182097390294075,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.06388621032238007,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.021449802443385124,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.01626567542552948,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.010974433273077011,
-        "explanation": "Competition Engagement"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

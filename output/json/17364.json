@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "17364",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.01708957925438881,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 0.4976,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.2660792273011897,
-    "cust_hitrate": -0.18174,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -4.0520477294921875,
-    "top_positive_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": 0.06857825815677643,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.046081893146038055,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": 0.02636420913040638,
-        "explanation": "Competitor Y"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.01830911636352539,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "opp_maturity",
-        "shap_value": 0.01019962690770626,
-        "explanation": "Madurez de la oportunidad"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.7227836847305298,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.5581308603286743,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.48154962062835693,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.3691447079181671,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.36717361211776733,
-        "explanation": "Opp Month"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

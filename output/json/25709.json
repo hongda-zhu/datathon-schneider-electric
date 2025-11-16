@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "25709",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.8198888301849365,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.6530900000000001,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.12145019433251764,
-    "cust_hitrate": -1.1667,
-    "product_A_ratio": 1.0612170141687058
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 1.5155935287475586,
-    "top_positive_factors": [
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.38646745681762695,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.22495152056217194,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.21490634977817535,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": 0.20528006553649902,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.161078542470932,
-        "explanation": "Opp Month"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.14135701954364777,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.10547992587089539,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "low_engagement_risk",
-        "shap_value": -0.10294171422719955,
-        "explanation": "Low Engagement Risk"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.06483185291290283,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.03666126728057861,
-        "explanation": "Riesgo asociado a la competencia"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

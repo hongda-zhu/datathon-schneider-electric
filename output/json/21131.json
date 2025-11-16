@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "21131",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.05810388922691345,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 1.2906733333333333,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.9927942273011897,
-    "cust_hitrate": 1.44757,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -2.7856619358062744,
-    "top_positive_factors": [
-      {
-        "feature": "product_mix",
-        "shap_value": 0.5533757209777832,
-        "explanation": "Diversidad de productos activos"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.46858692169189453,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": 0.09042879194021225,
-        "explanation": "Product A"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.04543137177824974,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.03944104164838791,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_interactions",
-        "shap_value": -1.4369111061096191,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.5022132992744446,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.29826465249061584,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": -0.24435149133205414,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": -0.2193799912929535,
-        "explanation": "Competencia en clientes de Iberia"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

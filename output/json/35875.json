@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "35875",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9729859232902527,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.5199833333333332,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.14315777269881025,
-    "cust_hitrate": -0.52828,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.5840113162994385,
-    "top_positive_factors": [
-      {
-        "feature": "opp_month",
-        "shap_value": 0.5336288213729858,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.50091952085495,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.3890419006347656,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.37845414876937866,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.33072060346603394,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.030048804357647896,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.02521628327667713,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.013049016706645489,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.00558487419039011,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.0033274898305535316,
-        "explanation": "Diversidad de productos activos"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

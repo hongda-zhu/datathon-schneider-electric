@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "19763",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.015034499578177929,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.6140566666666666,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.3035118862259678,
-    "cust_hitrate": -1.00613,
-    "product_A_ratio": 0.4563602844350803
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -4.1822590827941895,
-    "top_positive_factors": [
-      {
-        "feature": "product_A_recommended",
-        "shap_value": 1.129703164100647,
-        "explanation": "Product A Recommended"
-      },
-      {
-        "feature": "product_count",
-        "shap_value": 0.056341737508773804,
-        "explanation": "N\u00famero de l\u00edneas de producto en la oportunidad"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.05237838253378868,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": 0.03441901132464409,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": 0.02264862135052681,
-        "explanation": "Opp Age Squared"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -1.0171457529067993,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.7181738018989563,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.492074579000473,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.4167451858520508,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.4152314364910126,
-        "explanation": "Opp Month"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

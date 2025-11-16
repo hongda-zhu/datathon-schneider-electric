@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "15467",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9840919971466064,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.35055,
-    "total_competitors": 2.0,
-    "opp_quality_score": 0.07089924154657047,
-    "cust_hitrate": -0.01998,
-    "product_A_ratio": 0.45514560386642616
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 4.1249003410339355,
-    "top_positive_factors": [
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.7195844054222107,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.5208455920219421,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.40968871116638184,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.4084303677082062,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.3692546486854553,
-        "explanation": "Competition Engagement"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.2249986082315445,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "low_engagement_risk",
-        "shap_value": -0.024142952635884285,
-        "explanation": "Low Engagement Risk"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.019551970064640045,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": -0.014669830910861492,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "competitor_diversity",
-        "shap_value": -0.004325833637267351,
-        "explanation": "Diversidad de competidores en la oferta"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

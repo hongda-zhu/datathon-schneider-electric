@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "9390",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9802016615867615,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.27267666666666673,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.14191045146759523,
-    "cust_hitrate": 0.53464,
-    "product_A_ratio": -0.25071137133101196
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.902161121368408,
-    "top_positive_factors": [
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 1.0134390592575073,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.6117554306983948,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.40014025568962097,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.3580095171928406,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.34358012676239014,
-        "explanation": "Nivel global de actividad del cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.1287471354007721,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.0700458437204361,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "has_competition",
-        "shap_value": -0.00890889298170805,
-        "explanation": "Indicador de presencia de competencia"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.006156600080430508,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": -0.004298870451748371,
-        "explanation": "Product A"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

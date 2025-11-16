@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "22926",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9266185164451599,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.27324,
-    "total_competitors": 0.0,
-    "opp_quality_score": -0.15445076900163354,
-    "cust_hitrate": -1.01017,
-    "product_A_ratio": 0.1665705774959162
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 2.5358688831329346,
-    "top_positive_factors": [
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.5646868944168091,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "product_A_recommended",
-        "shap_value": 0.5153810381889343,
-        "explanation": "Product A Recommended"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.4848816692829132,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.3640170693397522,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.36117786169052124,
-        "explanation": "Contract Hitrate Ratio"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.44592246413230896,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.28970491886138916,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.21353498101234436,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.037550147622823715,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.032151706516742706,
-        "explanation": "Product B Sold In The Past"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

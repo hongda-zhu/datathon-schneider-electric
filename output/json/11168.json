@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "11168",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.008820046670734882,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.2643933333333333,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.06573522730118972,
-    "cust_hitrate": -0.08756,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -4.721866130828857,
-    "top_positive_factors": [
-      {
-        "feature": "product_A_recommended",
-        "shap_value": 1.4719679355621338,
-        "explanation": "Product A Recommended"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.11556970328092575,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": 0.08157317340373993,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "product_count",
-        "shap_value": 0.07087588310241699,
-        "explanation": "N\u00famero de l\u00edneas de producto en la oportunidad"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": 0.02172849327325821,
-        "explanation": "Hitrate Interaction"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": -2.891728639602661,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": -0.8442421555519104,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.3936800956726074,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.30724918842315674,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": -0.25368571281433105,
-        "explanation": "Engagement de clientes de Iberia"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }

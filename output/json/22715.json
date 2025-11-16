@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "22715",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9723167419433594,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.23308333333333334,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.3911101168905401,
-    "cust_hitrate": 1.73092,
-    "product_A_ratio": -0.49522720777364965
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.5588572025299072,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 1.0763027667999268,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.3607539236545563,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": 0.3375812768936157,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.3042861819267273,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.19922959804534912,
-        "explanation": "Opp Month"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "low_engagement_risk",
-        "shap_value": -0.027948299422860146,
-        "explanation": "Low Engagement Risk"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.026130467653274536,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": -0.01857437938451767,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "has_past_sales",
-        "shap_value": -0.0029928095173090696,
-        "explanation": "Has Past Sales"
-      },
-      {
-        "feature": "product_D",
-        "shap_value": -0.0013648769818246365,
-        "explanation": "Product D"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

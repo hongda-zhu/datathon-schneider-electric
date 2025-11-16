@@ -1,97 +1,24 @@
 {
-  "opportunity_id": "20381",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.30921560525894165,
-    "threshold": 0.2624979317188263,
-    "confidence": "Low"
-  },
-  "key_features": {
-    "customer_activity": -0.31702666666666673,
-    "total_competitors": 2.0,
-    "opp_quality_score": -0.2737967726988103,
-    "cust_hitrate": -1.1667,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -0.8037876486778259,
-    "top_positive_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.3954896926879883,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": 0.21303516626358032,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": 0.16986314952373505,
-        "explanation": "Interacciones y calidad de relación con el cliente"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.11384725570678711,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.10117558389902115,
-        "explanation": "Número de interacciones con el cliente"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competition_engagement",
-        "shap_value": -0.7190515995025635,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.5354317426681519,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.32361146807670593,
-        "explanation": "Tasa de éxito histórica con el cliente"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.22061015665531158,
-        "explanation": "Número total de competidores presentes"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": -0.17961685359477997,
-        "explanation": "Competitor Y"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      {
-        "step": "Develop a competitive counter-strategy, focusing on differentiation and unique value proposition, to directly address the competitor's engagement and mitigate the perceived risk.",
-        "owner": "Sales Team",
-        "due_date": "2024-03-15"
-      },
-      {
-        "step": "Analyze past opportunities with this customer to understand the drivers of lower win rates (cust_hitrate) and identify areas for improvement in our offering or approach.",
-        "owner": "Sales Operations",
-        "due_date": "2024-03-08"
-      },
-      {
-        "step": "Leverage the strong Iberia engagement to advocate for our solution internally within the customer organization and build champions who can influence the decision-making process.",
-        "owner": "Sales Team",
-        "due_date": "2024-03-01"
-      }
-    ],
-    "ai_generated": true
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            {
+                "step": "Develop a competitive counter-strategy, focusing on differentiation and unique value proposition, to directly address the competitor's engagement and mitigate the perceived risk.",
+                "owner": "Sales Team",
+                "due_date": "2024-03-15"
+            },
+            {
+                "step": "Analyze past opportunities with this customer to understand the drivers of lower win rates (cust_hitrate) and identify areas for improvement in our offering or approach.",
+                "owner": "Sales Operations",
+                "due_date": "2024-03-08"
+            },
+            {
+                "step": "Leverage the strong Iberia engagement to advocate for our solution internally within the customer organization and build champions who can influence the decision-making process.",
+                "owner": "Sales Team",
+                "due_date": "2024-03-01"
+            }
+        ],
+        "ai_generated": true
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "1786",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9730923771858215,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.77526,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.3841003806970509,
-    "cust_hitrate": 0.41192,
-    "product_A_ratio": 0.06986595174262734
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.588069438934326,
-    "top_positive_factors": [
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.8091334104537964,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.477623850107193,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.40010759234428406,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.30037274956703186,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.2117813527584076,
-        "explanation": "Riesgo asociado a la competencia"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.025476014241576195,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": -0.020432699471712112,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": -0.01841605082154274,
-        "explanation": "Competitor Y"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.007191868033260107,
-        "explanation": "Diversidad de productos activos"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.005302343983203173,
-        "explanation": "Opp Month"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "19420",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.009625366888940334,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": -0.0999033333333333,
-    "total_competitors": 2.0,
-    "opp_quality_score": 0.06683962847021158,
-    "cust_hitrate": -0.8578,
-    "product_A_ratio": 0.8853765711755288
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -4.633677005767822,
-    "top_positive_factors": [
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.290271520614624,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "iberia_competition",
-        "shap_value": 0.08020179718732834,
-        "explanation": "Competencia en clientes de Iberia"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.054243460297584534,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": 0.05137929692864418,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.0468188114464283,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.7754820585250854,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.7225512862205505,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.6766569018363953,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.4894579350948334,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": -0.4322039783000946,
-        "explanation": "Nivel global de actividad del cliente"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

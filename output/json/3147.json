@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "3147",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9692621231079102,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.6008299999999999,
-    "total_competitors": 2.0,
-    "opp_quality_score": -0.1990721785463892,
-    "cust_hitrate": -1.07513,
-    "product_A_ratio": 0.7592895536340267
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.451038360595703,
-    "top_positive_factors": [
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.6943402886390686,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.6281587481498718,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.38257312774658203,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.37834256887435913,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.3212985098361969,
-        "explanation": "Opp Month"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.409726619720459,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.13029591739177704,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.08062219619750977,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "competitor_diversity",
-        "shap_value": -0.01568436250090599,
-        "explanation": "Diversidad de competidores en la oferta"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.006406067870557308,
-        "explanation": "Diversidad de productos activos"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

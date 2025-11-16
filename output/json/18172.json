@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "18172",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.9447526335716248,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.08897,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.08927197591562164,
-    "cust_hitrate": -0.18909,
-    "product_A_ratio": 0.4317249397890541
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 2.8391008377075195,
-    "top_positive_factors": [
-      {
-        "feature": "opp_quality_score",
-        "shap_value": 0.47340118885040283,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.396040141582489,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.291439950466156,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.27635908126831055,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.1919461339712143,
-        "explanation": "Engagement de clientes de Iberia"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.08385034650564194,
-        "explanation": "Cust In Iberia"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.003767270129173994,
-        "explanation": "Diversidad de productos activos"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.002240095054730773,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "product_D",
-        "shap_value": -0.0013120564399287105,
-        "explanation": "Product D"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": -0.0006482989992946386,
-        "explanation": "Product A"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

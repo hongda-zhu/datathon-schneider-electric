@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "11015",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.4663814902305603,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 0.11169000000000001,
-    "total_competitors": 2.0,
-    "opp_quality_score": 0.2195012273011897,
-    "cust_hitrate": 0.04891,
-    "product_A_ratio": 0.42830306825297426
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -0.13467755913734436,
-    "top_positive_factors": [
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.35404494404792786,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.09543530642986298,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "cust_contracts",
-        "shap_value": 0.0797688439488411,
-        "explanation": "N\u00famero de contratos con el cliente"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 0.07836984097957611,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.07801789790391922,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.33228132128715515,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": -0.2249649316072464,
-        "explanation": "Opp Month"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.20732749998569489,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": -0.14299018681049347,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.07951302826404572,
-        "explanation": "Score agregado de calidad de oportunidad"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Nurture",
-    "priority": "Medium",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Nurture",
+        "priority": "Medium",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "3637",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.4628322124481201,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 0.06912333333333336,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.2362464408490511,
-    "cust_hitrate": 0.47826,
-    "product_A_ratio": -1.0011536021226277
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -0.14894604682922363,
-    "top_positive_factors": [
-      {
-        "feature": "product_A",
-        "shap_value": 0.6314873695373535,
-        "explanation": "Product A"
-      },
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.3289927840232849,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.17920677363872528,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": 0.14988012611865997,
-        "explanation": "Diversidad de productos activos"
-      },
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.14491066336631775,
-        "explanation": "Competition Engagement"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.3030587136745453,
-        "explanation": "Score agregado de calidad de oportunidad"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": -0.20386052131652832,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": -0.19383497536182404,
-        "explanation": "Competitor Y"
-      },
-      {
-        "feature": "product_A_recommended",
-        "shap_value": -0.18762421607971191,
-        "explanation": "Product A Recommended"
-      },
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.16138848662376404,
-        "explanation": "Riesgo asociado a la competencia"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Nurture",
-    "priority": "Medium",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Nurture",
+        "priority": "Medium",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

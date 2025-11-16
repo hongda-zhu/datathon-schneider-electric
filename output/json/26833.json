@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "26833",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Loss",
-    "win_probability": 0.9541012644767761,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.21886999999999998,
-    "total_competitors": 1.0,
-    "opp_quality_score": 0.2724536545086119,
-    "cust_hitrate": 0.2835,
-    "product_A_ratio": 0.30435663627152987
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.034329652786255,
-    "top_positive_factors": [
-      {
-        "feature": "iberia_engagement",
-        "shap_value": 0.6186503767967224,
-        "explanation": "Engagement de clientes de Iberia"
-      },
-      {
-        "feature": "product_D",
-        "shap_value": 0.46450334787368774,
-        "explanation": "Product D"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.360493004322052,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.340239018201828,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": 0.33178552985191345,
-        "explanation": "Diversidad de productos activos"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "competition_risk",
-        "shap_value": -0.15593372285366058,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": -0.13431033492088318,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": -0.06354828178882599,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.05988330766558647,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.04239172115921974,
-        "explanation": "N\u00famero total de competidores presentes"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

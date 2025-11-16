@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "33757",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9700533151626587,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": -0.03259333333333336,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.015541118203859339,
-    "cust_hitrate": -0.85938,
-    "product_A_ratio": 0.6301272044903516
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.477932929992676,
-    "top_positive_factors": [
-      {
-        "feature": "competition_risk",
-        "shap_value": 0.6947206258773804,
-        "explanation": "Riesgo asociado a la competencia"
-      },
-      {
-        "feature": "product_B_sold_in_the_past",
-        "shap_value": 0.6601919531822205,
-        "explanation": "Product B Sold In The Past"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.6000053286552429,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "product_A_sold_in_the_past",
-        "shap_value": 0.3443048894405365,
-        "explanation": "Product A Sold In The Past"
-      },
-      {
-        "feature": "opp_month",
-        "shap_value": 0.34343597292900085,
-        "explanation": "Opp Month"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.7432882189750671,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.07482540607452393,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.023245355114340782,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": -0.00997354369610548,
-        "explanation": "Diversidad de productos activos"
-      },
-      {
-        "feature": "has_past_sales",
-        "shap_value": -0.003565015969797969,
-        "explanation": "Has Past Sales"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "2103",
-  "prediction": {
-    "predicted_outcome": "Loss",
-    "actual_outcome": "Loss",
-    "win_probability": 0.004741080570966005,
-    "threshold": 0.2624979317188263,
-    "confidence": "Medium"
-  },
-  "key_features": {
-    "customer_activity": 0.08526,
-    "total_competitors": 1.0,
-    "opp_quality_score": -0.01704423352139811,
-    "cust_hitrate": -0.67971,
-    "product_A_ratio": 0.40322691619650475
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": -5.346735000610352,
-    "top_positive_factors": [
-      {
-        "feature": "competition_engagement",
-        "shap_value": 0.027197761461138725,
-        "explanation": "Competition Engagement"
-      },
-      {
-        "feature": "opp_old",
-        "shap_value": 0.02713043987751007,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "has_competition",
-        "shap_value": 0.02355618216097355,
-        "explanation": "Indicador de presencia de competencia"
-      },
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.019102808088064194,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "total_competitors",
-        "shap_value": 0.00662187859416008,
-        "explanation": "N\u00famero total de competidores presentes"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "product_A_recommended",
-        "shap_value": -1.3669143915176392,
-        "explanation": "Product A Recommended"
-      },
-      {
-        "feature": "cust_hitrate",
-        "shap_value": -0.9695097208023071,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": -0.6493934392929077,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "competitor_Z",
-        "shap_value": -0.3612583875656128,
-        "explanation": "Competitor Z"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": -0.3115251660346985,
-        "explanation": "Contract Hitrate Ratio"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Re-evaluate",
-    "priority": "Low",
-    "next_steps": [
-      "Increase touchpoints and engagement",
-      "Clarify blockers with decision-makers",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Re-evaluate",
+        "priority": "Low",
+        "next_steps": [
+            "Increase touchpoints and engagement",
+            "Clarify blockers with decision-makers",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

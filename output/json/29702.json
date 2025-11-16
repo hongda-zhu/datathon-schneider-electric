@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "29702",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.9469383955001831,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.20964666666666665,
-    "total_competitors": 2.0,
-    "opp_quality_score": 0.13022732546054164,
-    "cust_hitrate": -0.35279,
-    "product_A_ratio": 0.4329258136513541
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 2.881777763366699,
-    "top_positive_factors": [
-      {
-        "feature": "total_past_sales",
-        "shap_value": 0.524925708770752,
-        "explanation": "Volumen total de ventas hist\u00f3ricas"
-      },
-      {
-        "feature": "contract_hitrate_ratio",
-        "shap_value": 0.4591185450553894,
-        "explanation": "Contract Hitrate Ratio"
-      },
-      {
-        "feature": "cust_interactions",
-        "shap_value": 0.3153601586818695,
-        "explanation": "N\u00famero de interacciones con el cliente"
-      },
-      {
-        "feature": "customer_activity",
-        "shap_value": 0.293796569108963,
-        "explanation": "Nivel global de actividad del cliente"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.27261897921562195,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "total_competitors",
-        "shap_value": -0.13447532057762146,
-        "explanation": "N\u00famero total de competidores presentes"
-      },
-      {
-        "feature": "hitrate_interaction",
-        "shap_value": -0.07583587616682053,
-        "explanation": "Hitrate Interaction"
-      },
-      {
-        "feature": "competitor_Y",
-        "shap_value": -0.04121878370642662,
-        "explanation": "Competitor Y"
-      },
-      {
-        "feature": "competitor_diversity",
-        "shap_value": -0.028538478538393974,
-        "explanation": "Diversidad de competidores en la oferta"
-      },
-      {
-        "feature": "opp_quality_score",
-        "shap_value": -0.020334795117378235,
-        "explanation": "Score agregado de calidad de oportunidad"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Monitor competitive landscape and adjust pricing/offer."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Monitor competitive landscape and adjust pricing/offer."
+        ]
+    }
 }

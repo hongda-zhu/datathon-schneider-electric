@@ -1,84 +1,11 @@
 {
-  "opportunity_id": "16798",
-  "prediction": {
-    "predicted_outcome": "Win",
-    "actual_outcome": "Win",
-    "win_probability": 0.981891930103302,
-    "threshold": 0.2624979317188263,
-    "confidence": "High"
-  },
-  "key_features": {
-    "customer_activity": 0.4069766666666667,
-    "total_competitors": 0.0,
-    "opp_quality_score": 0.725925985043415,
-    "cust_hitrate": 1.73092,
-    "product_A_ratio": 0.21139246260853753
-  },
-  "shap_analysis": {
-    "base_value": 0.06737297773361206,
-    "prediction_value": 3.99312424659729,
-    "top_positive_factors": [
-      {
-        "feature": "cust_hitrate",
-        "shap_value": 1.3338145017623901,
-        "explanation": "Tasa de \u00e9xito hist\u00f3rica con el cliente"
-      },
-      {
-        "feature": "product_A",
-        "shap_value": 0.9436609745025635,
-        "explanation": "Product A"
-      },
-      {
-        "feature": "product_A_recommended",
-        "shap_value": 0.791032612323761,
-        "explanation": "Product A Recommended"
-      },
-      {
-        "feature": "product_A_ratio",
-        "shap_value": 0.584211528301239,
-        "explanation": "Peso de ventas hist\u00f3ricas de Product A"
-      },
-      {
-        "feature": "product_mix",
-        "shap_value": 0.5082745552062988,
-        "explanation": "Diversidad de productos activos"
-      }
-    ],
-    "top_negative_factors": [
-      {
-        "feature": "opp_old",
-        "shap_value": -0.48988890647888184,
-        "explanation": "Antig\u00fcedad de la oportunidad"
-      },
-      {
-        "feature": "opp_age_squared",
-        "shap_value": -0.40591344237327576,
-        "explanation": "Opp Age Squared"
-      },
-      {
-        "feature": "customer_engagement",
-        "shap_value": -0.2828353941440582,
-        "explanation": "Interacciones y calidad de relaci\u00f3n con el cliente"
-      },
-      {
-        "feature": "hitrate_contracts",
-        "shap_value": -0.141988143324852,
-        "explanation": "Hitrate Contracts"
-      },
-      {
-        "feature": "cust_in_iberia",
-        "shap_value": -0.07472209632396698,
-        "explanation": "Cust In Iberia"
-      }
-    ]
-  },
-  "business_recommendation": {
-    "action": "Accelerate",
-    "priority": "High",
-    "next_steps": [
-      "Leverage existing engagement",
-      "Maintain momentum with key stakeholders",
-      "Capitalize on the lack of competition to close fast."
-    ]
-  }
+    "business_recommendation": {
+        "action": "Accelerate",
+        "priority": "High",
+        "next_steps": [
+            "Leverage existing engagement",
+            "Maintain momentum with key stakeholders",
+            "Capitalize on the lack of competition to close fast."
+        ]
+    }
 }
