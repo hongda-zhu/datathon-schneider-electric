@@ -619,6 +619,10 @@ def get_feature_context(feature_name, value, feature_stats):
 
     return label, delta_color
 
+def clamp_value(value, min_value, max_value):
+    """Clamp numeric value to a specific range"""
+    return max(min_value, min(max_value, value))
+
 # ============================================================
 # LOAD DATA
 # ============================================================
@@ -1243,30 +1247,35 @@ elif page == "What-If Simulator":
         # Apply preset if selected
         if preset_action == "interactions_up" and 'cust_interactions' in feature_names:
             base_val = st.session_state.get("slider_interactions", float(original_row.get('cust_interactions', 0.5)))
-            new_val = min(2.0, base_val * 1.2)
+            new_val = clamp_value(base_val * 1.2, 0.0, 2.0)
             st.session_state["slider_interactions"] = new_val
             modified_row['cust_interactions'] = new_val
         elif preset_action == "reduce_comp" and 'total_competitors' in feature_names:
             base_val = st.session_state.get("slider_competitors", float(original_row.get('total_competitors', 0)))
-            new_val = max(0, int(base_val) - 1)
+            new_val = clamp_value(int(base_val) - 1, 0, 5)
             st.session_state["slider_competitors"] = float(new_val)
             modified_row['total_competitors'] = float(new_val)
         elif preset_action == "fast_track" and 'opp_old' in feature_names:
-            st.session_state["slider_opp_old"] = -1.0
-            modified_row['opp_old'] = -1.0  # Make it new
+            new_val = clamp_value(-1.0, -2.0, 2.0)
+            st.session_state["slider_opp_old"] = new_val
+            modified_row['opp_old'] = new_val  # Make it new
         elif preset_action == "reset":
             if 'cust_interactions' in feature_names:
-                st.session_state["slider_interactions"] = float(original_row.get('cust_interactions', 0.5))
-                modified_row['cust_interactions'] = st.session_state["slider_interactions"]
+                base_val = clamp_value(float(original_row.get('cust_interactions', 0.5)), 0.0, 2.0)
+                st.session_state["slider_interactions"] = base_val
+                modified_row['cust_interactions'] = base_val
             if 'cust_hitrate' in feature_names:
-                st.session_state["slider_hitrate"] = float(original_row.get('cust_hitrate', 0.5))
-                modified_row['cust_hitrate'] = st.session_state["slider_hitrate"]
+                base_val = clamp_value(float(original_row.get('cust_hitrate', 0.5)), 0.0, 1.0)
+                st.session_state["slider_hitrate"] = base_val
+                modified_row['cust_hitrate'] = base_val
             if 'opp_old' in feature_names:
-                st.session_state["slider_opp_old"] = float(original_row.get('opp_old', 0.0))
-                modified_row['opp_old'] = st.session_state["slider_opp_old"]
+                base_val = clamp_value(float(original_row.get('opp_old', 0.0)), -2.0, 2.0)
+                st.session_state["slider_opp_old"] = base_val
+                modified_row['opp_old'] = base_val
             if 'total_competitors' in feature_names:
-                st.session_state["slider_competitors"] = float(original_row.get('total_competitors', 0))
-                modified_row['total_competitors'] = st.session_state["slider_competitors"]
+                base_val = clamp_value(float(original_row.get('total_competitors', 0)), 0.0, 5.0)
+                st.session_state["slider_competitors"] = base_val
+                modified_row['total_competitors'] = base_val
 
         col1, col2 = st.columns(2)
 
@@ -1281,10 +1290,18 @@ elif page == "What-If Simulator":
                 if stats:
                     help_text += f"\n• Average: {stats.get('median', 0):.2f}\n• P25: {stats.get('p25', 0):.2f}, P75: {stats.get('p75', 0):.2f}"
 
+                current_val = clamp_value(
+                    float(st.session_state.get("slider_interactions", float(modified_row.get('cust_interactions', 0.5)))),
+                    0.0,
+                    2.0
+                )
+                st.session_state["slider_interactions"] = current_val
+
                 new_interactions = st.slider(
                     translate_feature("cust_interactions"),
                     min_value=0.0,
                     max_value=2.0,
+                    value=current_val,
                     step=0.1,
                     help=help_text,
                     key="slider_interactions"
@@ -1298,10 +1315,18 @@ elif page == "What-If Simulator":
                 if stats:
                     help_text += f"\n• Average: {stats.get('median', 0):.2f}\n• P25: {stats.get('p25', 0):.2f}, P75: {stats.get('p75', 0):.2f}"
 
+                current_val = clamp_value(
+                    float(st.session_state.get("slider_hitrate", float(modified_row.get('cust_hitrate', 0.5)))),
+                    0.0,
+                    1.0
+                )
+                st.session_state["slider_hitrate"] = current_val
+
                 new_hitrate = st.slider(
                     translate_feature("cust_hitrate"),
                     min_value=0.0,
                     max_value=1.0,
+                    value=current_val,
                     step=0.05,
                     help=help_text,
                     key="slider_hitrate"
@@ -1313,10 +1338,18 @@ elif page == "What-If Simulator":
             st.markdown('<div class="md-control-card">', unsafe_allow_html=True)
             st.markdown("**Opportunity Characteristics**")
             if 'opp_old' in feature_names:
+                current_val = clamp_value(
+                    float(st.session_state.get("slider_opp_old", float(modified_row.get('opp_old', 0.0)))),
+                    -2.0,
+                    2.0
+                )
+                st.session_state["slider_opp_old"] = current_val
+
                 new_opp_age = st.slider(
                     translate_feature("opp_old"),
                     min_value=-2.0,
                     max_value=2.0,
+                    value=current_val,
                     step=0.1,
                     help="Opportunity age (standardized)\n• -2 = Very new\n• 0 = Average age\n• +2 = Very old",
                     key="slider_opp_old"
@@ -1324,10 +1357,18 @@ elif page == "What-If Simulator":
                 modified_row['opp_old'] = new_opp_age
 
             if 'total_competitors' in feature_names:
+                current_val = clamp_value(
+                    float(st.session_state.get("slider_competitors", float(modified_row.get('total_competitors', 0)))),
+                    0.0,
+                    5.0
+                )
+                st.session_state["slider_competitors"] = current_val
+
                 new_competitors = st.slider(
                     translate_feature("total_competitors"),
                     min_value=0,
                     max_value=5,
+                    value=int(current_val),
                     step=1,
                     help="Number of active competitors\n• 0 = No competition (best)\n• 1-2 = Moderate competition\n• 3+ = High competition (challenging)",
                     key="slider_competitors"
