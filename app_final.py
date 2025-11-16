@@ -573,6 +573,10 @@ st.markdown("""
         background: #dff1ff;
         border-color: var(--md-blue);
     }
+    
+    .st-emotion-cache-11ofl8m {
+        background: #d5d5d5;
+    }
 </style>
 """, unsafe_allow_html=True)
 
